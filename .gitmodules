@@ -1,0 +1,3 @@
+[submodule "src/lib/filament"]
+	path = src/lib/filament
+	url = https://github.com/borodust/filament.git
