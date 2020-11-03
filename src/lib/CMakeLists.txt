@@ -12,6 +12,7 @@ set_source_files_properties(adapter.c PROPERTIES LANGUAGE CXX)
 set_property(TARGET ${TARGET} PROPERTY CXX_STANDARD 17)
 
 target_include_directories(${TARGET}
+  PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/../"
   PRIVATE "${FILAMENT_DIR}/filament/include/"
   PRIVATE "${FILAMENT_DIR}/filament/backend/include/"
   PRIVATE "${FILAMENT_DIR}/libs/utils/include/"

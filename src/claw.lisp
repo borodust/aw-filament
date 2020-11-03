@@ -39,12 +39,18 @@
                                     "filament/Material.h"
 
                                     "utils/EntityManager.h"
-                                    "backend/PixelBufferDescriptor.h")
+                                    "backend/PixelBufferDescriptor.h"
+
+                                    ;; bundled materials
+                                    "lib/materials.h")
                           (:includes :filament-includes :backend-includes
                                      :util-includes :math-includes
                                      :filabridge-includes)
                           (:include-definitions "^filament::.*"
-                                                "^utils::.*")
+                                                "^utils::.*"
+                                                "^MATERIALS_PACKAGE$"
+                                                "^MATERIALS_.*_OFFSET$"
+                                                "^MATERIALS_.*_SIZE$")
                           (:exclude-definitions "^filament::math::details::TMat44<double>.*"
                                                 "^filament::math::details::TVec4<double>.*"
                                                 "^utils::bitset.*")
