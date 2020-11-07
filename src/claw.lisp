@@ -15,11 +15,19 @@
                            (:ctor))
       (claw-utils:in-class "filament::math::details::TVec2<filament::math::half>"
                            (:ctor))
-      ("filament::math::getBits" :any)
+
       (claw-utils:in-class "filament::Renderer"
                            ("readPixels" :any))
       (claw-utils:in-class "filament::math::fp<1,5,10>"
-                           (:ctor :any)))))
+                           (:ctor :any))
+
+       (claw-utils:in-class "utils::CString"
+                           (:ctor :any)
+                           ("operator=" :any))
+      (claw-utils:in-class "filamat::IncludeResult"
+                           (:ctor))
+
+      ("filament::math::getBits" :any))))
 
 
 (claw.wrapper:defwrapper (filament::claw-filament
@@ -42,12 +50,16 @@
                                     "backend/PixelBufferDescriptor.h"
 
                                     ;; bundled materials
-                                    "lib/materials.h")
+                                    "lib/materials.h"
+                                    ;; material builder
+                                    "filamat/MaterialBuilder.h")
                           (:includes :filament-includes :backend-includes
                                      :util-includes :math-includes
-                                     :filabridge-includes)
+                                     :filabridge-includes :filamat-includes)
                           (:include-definitions "^filament::.*"
-                                                "^utils::.*"
+                                                "^utils::Entity.*"
+                                                "^utils::MaterialBuilder"
+                                                "^filamat::.*"
                                                 "^MATERIALS_PACKAGE$"
                                                 "^MATERIALS_.*_OFFSET$"
                                                 "^MATERIALS_.*_SIZE$")
