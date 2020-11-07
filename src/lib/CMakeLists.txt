@@ -24,8 +24,10 @@ target_include_directories(${TARGET}
   PRIVATE "${FILAMENT_DIR}/filament/backend/include/"
   PRIVATE "${FILAMENT_DIR}/libs/utils/include/"
   PRIVATE "${FILAMENT_DIR}/libs/math/include/"
-  PRIVATE "${FILAMENT_DIR}/libs/filabridge/include/")
+  PRIVATE "${FILAMENT_DIR}/libs/filabridge/include/"
+  PRIVATE "${FILAMENT_DIR}/tools/matc/src/")
 
 target_link_libraries(${TARGET}
   PRIVATE filament
-  PRIVATE filamat)
+  PRIVATE filamat
+  PRIVATE matlang)

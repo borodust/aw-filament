@@ -51,15 +51,24 @@
 
                                     ;; bundled materials
                                     "lib/materials.h"
+                                    ;; memory io for matc
+                                    "lib/ClawMemIo.h"
                                     ;; material builder
-                                    "filamat/MaterialBuilder.h")
+                                    "filamat/MaterialBuilder.h"
+                                    ;; material compiler
+                                    "matc/MaterialCompiler.h"
+                                    "matc/Config.h")
                           (:includes :filament-includes :backend-includes
                                      :util-includes :math-includes
-                                     :filabridge-includes :filamat-includes)
+                                     :filabridge-includes :filamat-includes
+                                     :matc-includes)
                           (:include-definitions "^filament::.*"
                                                 "^utils::Entity.*"
                                                 "^utils::MaterialBuilder"
                                                 "^filamat::.*"
+                                                "^matc::MaterialCompiler"
+                                                "^claw::filament::.*"
+
                                                 "^MATERIALS_PACKAGE$"
                                                 "^MATERIALS_.*_OFFSET$"
                                                 "^MATERIALS_.*_SIZE$")

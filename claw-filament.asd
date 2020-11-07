@@ -13,7 +13,8 @@
                (:module :util-includes :pathname "lib/filament/libs/utils/include/")
                (:module :math-includes :pathname "lib/filament/libs/math/include/")
                (:module :filabridge-includes :pathname "lib/filament/libs/filabridge/include/")
-               (:module :filamat-includes :pathname "lib/filament/libs/filamat/include/")))
+               (:module :filamat-includes :pathname "lib/filament/libs/filamat/include/")
+               (:module :matc-includes :pathname "lib/filament/tools/matc/src/")))
 
 
 (asdf:defsystem :claw-filament/example
