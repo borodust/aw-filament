@@ -9,23 +9,20 @@
 (eval-when (:compile-toplevel :load-toplevel :execute)
   (defun ignore-uninstantiable ()
     (claw-utils:ignore-functions
-      (claw-utils:in-class "filament::math::details::TVec4<filament::math::half>"
-                           (:ctor))
-      (claw-utils:in-class "filament::math::details::TVec3<filament::math::half>"
-                           (:ctor))
-      (claw-utils:in-class "filament::math::details::TVec2<filament::math::half>"
-                           (:ctor))
+      (:in-class "filament::math::details::TVec4<filament::math::half>"
+                 (:ctor))
+      (:in-class "filament::math::details::TVec3<filament::math::half>"
+                 (:ctor))
+      (:in-class "filament::math::details::TVec2<filament::math::half>"
+                 (:ctor))
 
-      (claw-utils:in-class "filament::Renderer"
-                           ("readPixels" :any))
-      (claw-utils:in-class "filament::math::fp<1,5,10>"
-                           (:ctor :any))
-
-       (claw-utils:in-class "utils::CString"
-                           (:ctor :any)
-                           ("operator=" :any))
-      (claw-utils:in-class "filamat::IncludeResult"
-                           (:ctor))
+      (:in-class "filament::Renderer"
+                 ("readPixels" :any))
+      (:in-class "utils::CString"
+                 (:ctor :any)
+                 ("operator=" :any))
+      (:in-class "filamat::IncludeResult"
+                 (:ctor))
 
       ("filament::math::getBits" :any))))
 
@@ -49,15 +46,16 @@
                                     "utils/EntityManager.h"
                                     "backend/PixelBufferDescriptor.h"
 
-                                    ;; bundled materials
-                                    "lib/materials.h"
-                                    ;; memory io for matc
-                                    "lib/ClawMemIo.h"
                                     ;; material builder
                                     "filamat/MaterialBuilder.h"
                                     ;; material compiler
                                     "matc/MaterialCompiler.h"
-                                    "matc/Config.h")
+                                    "matc/Config.h"
+
+                                    ;; bundled materials
+                                    "lib/materials.h"
+                                    ;; memory io for matc
+                                    "lib/ClawMemIo.h")
                           (:includes :filament-includes :backend-includes
                                      :util-includes :math-includes
                                      :filabridge-includes :filamat-includes
@@ -72,9 +70,18 @@
                                                 "^MATERIALS_PACKAGE$"
                                                 "^MATERIALS_.*_OFFSET$"
                                                 "^MATERIALS_.*_SIZE$")
-                          (:exclude-definitions "^filament::math::details::TMat44<double>.*"
-                                                "^filament::math::details::TVec4<double>.*"
-                                                "^utils::bitset.*")
+                          (:exclude-definitions "^utils::bitset.*"
+                                                "^filament::math::fp"
+                                                "^filament::math::details::half"
+                                                "^filamat::IncludeCallback"
+                                                "::includeCallback"
+                                                "::function<"
+                                                "filament::math::half"
+
+                                                ;; i don't know why those friends
+                                                ;; are not welcome
+                                                "filament::math::details::length2"
+                                                "filament::math::details::norm2")
                           (:targets :local)
                           (:persistent nil)
                           (:language :c++))
