@@ -39,10 +39,12 @@
                                     "filament/LightManager.h"
                                     "filament/Frustum.h"
                                     "filament/Skybox.h"
+                                    "filament/IndirectLight.h"
 
                                     "filament/VertexBuffer.h"
                                     "filament/IndexBuffer.h"
                                     "filament/Material.h"
+                                    "filament/Texture.h"
 
                                     "utils/EntityManager.h"
                                     "backend/PixelBufferDescriptor.h"
