@@ -36,6 +36,7 @@
                                     "filament/Viewport.h"
                                     "filament/RenderableManager.h"
                                     "filament/TransformManager.h"
+                                    "filament/LightManager.h"
                                     "filament/Frustum.h"
                                     "filament/Skybox.h"
 
