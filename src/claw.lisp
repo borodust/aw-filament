@@ -24,7 +24,18 @@
       (:in-class "filamat::IncludeResult"
                  (:ctor))
 
-      ("filament::math::getBits" :any))))
+      ("filament::math::getBits" :any)))
+
+  (defun instantiate-some (decl)
+    (when (and (string= "filament" (claw.resect::declaration-namespace decl))
+               (string= "setParameter" (claw.resect::declaration-name decl)))
+      '(("bool") ("float")
+        ("int32_t") ("uint32_t")
+        ("math::bool2") ("math::bool3") ("math::bool4")
+        ("math::int2") ("math::int3") ("math::int4")
+        ("math::uint2") ("math::uint3") ("math::uint4")
+        ("math::float2") ("math::float3") ("math::float4")
+        ("math::mat3f") ("math::mat4f")))))
 
 
 (claw.wrapper:defwrapper (filament::claw-filament
@@ -44,10 +55,12 @@
                                     "filament/VertexBuffer.h"
                                     "filament/IndexBuffer.h"
                                     "filament/Material.h"
+                                    "filament/MaterialInstance.h"
+
                                     "filament/Texture.h"
+                                    "backend/PixelBufferDescriptor.h"
 
                                     "utils/EntityManager.h"
-                                    "backend/PixelBufferDescriptor.h"
 
                                     ;; material builder
                                     "filamat/MaterialBuilder.h"
@@ -81,10 +94,12 @@
                                                 "::function<"
                                                 "filament::math::half"
 
-                                                ;; i don't know why those friends
-                                                ;; are not welcome
+                                                ;; TODO: i don't know why those friends
+                                                ;; are not welcome, smth to do
+                                                ;; with crazy namespacing
                                                 "filament::math::details::length2"
                                                 "filament::math::details::norm2")
+                          (:instantiate #'instantiate-some)
                           (:targets :local)
                           (:persistent nil)
                           (:language :c++))
