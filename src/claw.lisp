@@ -58,6 +58,7 @@
                                     "filament/MaterialInstance.h"
 
                                     "filament/Texture.h"
+                                    "filament/TextureSampler.h"
                                     "backend/PixelBufferDescriptor.h"
 
                                     "utils/EntityManager.h"
