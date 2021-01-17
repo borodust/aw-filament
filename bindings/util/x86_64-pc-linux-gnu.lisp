@@ -360,116 +360,54 @@
               (%filament.util::%%claw-this-
                (:pointer %filament.util::matc+material-compiler)))
 
-(export '%filament.util::std+basic-ostream<char> "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+data "%FILAMENT.UTIL")
-
-(export '%filament.util::std+unique-ptr<const+char[]+std+default-delete<const+char[]>>
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::size-t "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+read "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+to-string "%FILAMENT.UTIL")
-
-(export '%filament.util::uint8-t "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+close "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+in-memory-input
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+config+input "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+material-compiler "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+material-compiler+material-config-processor
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+config "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-output-stream
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~material-data
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-name "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-input "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~in-memory-input
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::std+ostream "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+size "%FILAMENT.UTIL")
-
-(export '%filament.util::std+basic-string<char+std+char-traits<char>+std+allocator<char>>
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+open "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+in-memory-config
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+run "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+material-data "%FILAMENT.UTIL")
-
-(export '%filament.util::std+string "%FILAMENT.UTIL")
-
-(export '%filament.util::ssize-t "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+write "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+check-parameters "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+in-memory-output
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+~material-compiler "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~in-memory-output
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+material-compiler+material-config-processor-json
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+config+output "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~in-memory-config
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-output "%FILAMENT.UTIL")
-
-(defmethod claw.generator.common:build-adapter ((claw.generator.common::wrapper-name
-                                                 (eql
-                                                  ':claw-filament-util))
-                                                &key
-                                                claw.generator.common::target
-                                                claw.generator.common::dependencies
-                                                claw.generator.common::compiler
-                                                claw.generator.common::flags)
-  (declare (ignore claw.generator.common::wrapper-name))
-  (claw.generator.common::build-static-adapter
-    nil
-    #P"/home/borodust/devel/repo/claw-filament/src/lib/util-adapter.cxx"
-    (list #P"/home/borodust/devel/repo/claw-filament/src/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/utils/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/filamat/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/")
-    (merge-pathnames
-      (or claw.generator.common::target "adapter.so")
-      #P"/home/borodust/devel/repo/claw-filament/src/")
-    :dependencies
-    claw.generator.common::dependencies
-    :compiler
-    claw.generator.common::compiler
-    :flags
-    claw.generator.common::flags
-    :intrinsics
-    'nil))
+(eval-when (:load-toplevel :compile-toplevel :execute)
+  (export '%filament.util::std+basic-ostream<char> "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+data "%FILAMENT.UTIL")
+  (export '%filament.util::std+unique-ptr<const+char[]+std+default-delete<const+char[]>>
+          "%FILAMENT.UTIL")
+  (export '%filament.util::size-t "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+read "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+to-string "%FILAMENT.UTIL")
+  (export '%filament.util::uint8-t "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+close "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+in-memory-input
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+config+input "%FILAMENT.UTIL")
+  (export '%filament.util::matc+material-compiler "%FILAMENT.UTIL")
+  (export '%filament.util::matc+material-compiler+material-config-processor
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+config "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-output-stream
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~material-data
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-name "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-input "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~in-memory-input
+          "%FILAMENT.UTIL")
+  (export '%filament.util::std+ostream "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+size "%FILAMENT.UTIL")
+  (export '%filament.util::std+basic-string<char+std+char-traits<char>+std+allocator<char>>
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+open "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+in-memory-config
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+run "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+material-data
+          "%FILAMENT.UTIL")
+  (export '%filament.util::std+string "%FILAMENT.UTIL")
+  (export '%filament.util::ssize-t "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+write "%FILAMENT.UTIL")
+  (export '%filament.util::matc+check-parameters "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+in-memory-output
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+~material-compiler "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~in-memory-output
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+material-compiler+material-config-processor-json
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+config+output "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~in-memory-config
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-output "%FILAMENT.UTIL"))
 

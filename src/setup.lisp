@@ -5,13 +5,15 @@
 
 
 (defun ignore-uninstantiable ()
-  (claw-utils:ignore-functions
+  (claw.resect:ignore-functions
     (:in-class "filament::math::details::TVec4<filament::math::half>"
                (:ctor))
     (:in-class "filament::math::details::TVec3<filament::math::half>"
                (:ctor))
     (:in-class "filament::math::details::TVec2<filament::math::half>"
                (:ctor))
+    (:in-class "filament::math::fp<1,5,10>"
+               (:ctor :any))
 
     (:in-class "filament::Renderer"
                ("readPixels" :any))
@@ -24,8 +26,8 @@
     ("filament::math::getBits" :any)))
 
 (defun instantiate-some (decl)
-  (when (and (string= "filament" (claw.resect::declaration-namespace decl))
-             (string= "setParameter" (claw.resect::declaration-name decl)))
+  (when (and (string= "filament" (claw.resect:declaration-namespace decl))
+             (string= "setParameter" (claw.resect:declaration-name decl)))
     '(("bool") ("float")
       ("int32_t") ("uint32_t")
       ("math::bool2") ("math::bool3") ("math::bool4")

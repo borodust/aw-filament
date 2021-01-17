@@ -317,23 +317,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec2)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:35:24"
-                (%filament::v (:pointer :float) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec2_float__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:49:11")
-                (%filament::x :float :setter
-                 "__claw_set_filament_math_details_TVec2_float__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec2_float__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:50:20")
-                (%filament::y :float :setter
-                 "__claw_set_filament_math_details_TVec2_float__y"
-                 :getter
-                 "__claw_get_filament_math_details_TVec2_float__y"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:50:23"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:35:24")
 
 (iffi:defitype %filament::filament+math+float2
                %filament::filament+math+details+t-vec2<float>
@@ -404,56 +388,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :int) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec3_int__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<int>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_int__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_int__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<int>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_int__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_int__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<int>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_int__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_int__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :int :setter
-                 "__claw_set_filament_math_details_TVec3_int__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_int__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :int :setter
-                 "__claw_set_filament_math_details_TVec3_int__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_int__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :int :setter
-                 "__claw_set_filament_math_details_TVec3_int__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_int__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defitype %filament::filament+math+int3
                %filament::filament+math+details+t-vec3<int>
@@ -480,56 +415,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :bool) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec3_bool__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<bool>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_bool__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_bool__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<bool>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_bool__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_bool__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<bool>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_bool__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_bool__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :bool :setter
-                 "__claw_set_filament_math_details_TVec3_bool__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_bool__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :bool :setter
-                 "__claw_set_filament_math_details_TVec3_bool__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_bool__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :bool :setter
-                 "__claw_set_filament_math_details_TVec3_bool__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_bool__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defitype %filament::filament+math+bool3
                %filament::filament+math+details+t-vec3<bool>
@@ -556,56 +442,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :float) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec3_float__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_float__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_float__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_float__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_float__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_float__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_float__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :float :setter
-                 "__claw_set_filament_math_details_TVec3_float__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_float__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :float :setter
-                 "__claw_set_filament_math_details_TVec3_float__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_float__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :float :setter
-                 "__claw_set_filament_math_details_TVec3_float__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_float__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defitype %filament::filament+math+float3
                %filament::filament+math+details+t-vec3<float>
@@ -632,57 +469,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :unsigned-int) :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+int>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_int__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+int>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_int__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+int>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_int__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :unsigned-int :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_int__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :unsigned-int :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_int__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :unsigned-int :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_int__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_int__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defitype %filament::filament+math+uint3
                %filament::filament+math+details+t-vec3<unsigned+int>
@@ -915,83 +702,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec4)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:33:24"
-                (%filament::v (:pointer :float) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec4_float__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_float__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_float__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:22")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_float__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:26")
-                (%filament::xyz
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_float__xyz"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__xyz"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:18")
-                (%filament::stp
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_float__stp"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__stp"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:23")
-                (%filament::rgb
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<float>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_float__rgb"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__rgb"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:28")
-                (%filament::x :float :setter
-                 "__claw_set_filament_math_details_TVec4_float__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:23")
-                (%filament::s :float :setter
-                 "__claw_set_filament_math_details_TVec4_float__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:26")
-                (%filament::r :float :setter
-                 "__claw_set_filament_math_details_TVec4_float__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_float__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:29"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:33:24")
 
 (iffi:defitype %filament::filament+math+float4
                %filament::filament+math+details+t-vec4<float>
@@ -1866,14 +1577,17 @@
 
 (define-symbol-macro
   %filament::*filament+backend+flag-integer-target*
-  (let ((#:ptr9440
+  (let ((%filament::ptr
          (cffi:foreign-symbol-pointer "FLAG_INTEGER_TARGET")))
-    (when #:ptr9440 (cffi:mem-ref #:ptr9440 '%filament::uint8-t))))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::uint8-t))))
 
 (define-symbol-macro
   %filament::*filament+backend+flag-normalized*
-  (let ((#:ptr9441 (cffi:foreign-symbol-pointer "FLAG_NORMALIZED")))
-    (when #:ptr9441 (cffi:mem-ref #:ptr9441 '%filament::uint8-t))))
+  (let ((%filament::ptr
+         (cffi:foreign-symbol-pointer "FLAG_NORMALIZED")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::uint8-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40backendE40SE40Attribute_claw_ctor"
                %filament::filament+backend+attribute)
@@ -2835,7 +2549,9 @@
 (iffi:deficlass (%filament::filament+math+half :size-reporter
                  "__claw_sizeof_filament_math_half"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_half")
+                 "__claw_alignof_filament_math_half" :constructor
+                 %filament::filament+math+half :destructor
+                 %filament::filament+math+~half)
                 nil
                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:136:7")
 
@@ -2849,12 +2565,11 @@
 
 (cffi:defcstruct (%filament::long-double :class
                   %filament::emulated$long-double :size 16)
-                 (claw.generator.common::data :unsigned-char :count
-                  16))
+                 (%filament::data :unsigned-char :count 16))
 
-(defmethod cffi:foreign-type-alignment ((claw.generator.common::this
+(defmethod cffi:foreign-type-alignment ((%filament::this
                                          %filament::emulated$long-double))
-  (declare (ignore claw.generator.common::this))
+  (declare (ignore %filament::this))
   16)
 
 (cffi:defctype %filament::long-double
@@ -2906,56 +2621,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :double) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec3_double__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<double>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_double__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_double__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<double>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_double__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_double__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<double>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_double__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_double__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :double :setter
-                 "__claw_set_filament_math_details_TVec3_double__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_double__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :double :setter
-                 "__claw_set_filament_math_details_TVec3_double__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_double__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :double :setter
-                 "__claw_set_filament_math_details_TVec3_double__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_double__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:deficlass (%filament::filament+math+details+t-vec4<double>
                  :size-reporter
@@ -3025,25 +2691,7 @@
                  :getter
                  "__claw_get_filament_math_details_TVec4_double__rgb"
                  :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:28")
-                (%filament::x :double :setter
-                 "__claw_set_filament_math_details_TVec4_double__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_double__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:23")
-                (%filament::s :double :setter
-                 "__claw_set_filament_math_details_TVec4_double__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_double__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:26")
-                (%filament::r :double :setter
-                 "__claw_set_filament_math_details_TVec4_double__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_double__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:29"))
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:28"))
 
 (iffi:deficlass (%filament::filament+math+details+t-quaternion<double>
                  :size-reporter
@@ -3055,58 +2703,7 @@
                  :destructor
                  %filament::filament+math+details+~t-quaternion)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:36:24"
-                (%filament::xyzw
-                 (:pointer
-                  %filament::filament+math+details+t-vec4<double>)
-                 :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__xyzw"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__xyzw"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:64:18")
-                (%filament::xyz
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<double>)
-                 :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__xyz"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__xyz"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:65:18")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<double>)
-                 :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:66:18")
-                (%filament::x :double :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__x"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:20")
-                (%filament::y :double :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__y"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__y"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:23")
-                (%filament::z :double :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__z"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__z"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:26")
-                (%filament::w :double :setter
-                 "__claw_set_filament_math_details_TQuaternion_double__w"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_double__w"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:29"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:36:24")
 
 (iffi:defitype %filament::filament+math+quat
                %filament::filament+math+details+t-quaternion<double>
@@ -3189,8 +2786,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+col-size*
-  (let ((#:ptr9442 (cffi:foreign-symbol-pointer "COL_SIZE")))
-    (when #:ptr9442 (cffi:mem-ref #:ptr9442 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COL_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (cffi:defcenum (%filament::filament+math+details+t-mat33<double>+no-init
                 :unsigned-int)
@@ -3283,18 +2881,21 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+num-cols*
-  (let ((#:ptr9443 (cffi:foreign-symbol-pointer "NUM_COLS")))
-    (when #:ptr9443 (cffi:mem-ref #:ptr9443 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_COLS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+num-rows*
-  (let ((#:ptr9444 (cffi:foreign-symbol-pointer "NUM_ROWS")))
-    (when #:ptr9444 (cffi:mem-ref #:ptr9444 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_ROWS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+row-size*
-  (let ((#:ptr9445 (cffi:foreign-symbol-pointer "ROW_SIZE")))
-    (when #:ptr9445 (cffi:mem-ref #:ptr9445 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "ROW_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TMat33E3EE23d_claw_ctor"
                %filament::filament+math+details+t-mat33<double>)
@@ -3314,8 +2915,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+col-size*
-  (let ((#:ptr9446 (cffi:foreign-symbol-pointer "COL_SIZE")))
-    (when #:ptr9446 (cffi:mem-ref #:ptr9446 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COL_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (cffi:defcenum (%filament::filament+math+details+t-mat33<float>+no-init
                 :unsigned-int)
@@ -3471,18 +3073,21 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+num-cols*
-  (let ((#:ptr9447 (cffi:foreign-symbol-pointer "NUM_COLS")))
-    (when #:ptr9447 (cffi:mem-ref #:ptr9447 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_COLS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+num-rows*
-  (let ((#:ptr9448 (cffi:foreign-symbol-pointer "NUM_ROWS")))
-    (when #:ptr9448 (cffi:mem-ref #:ptr9448 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_ROWS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+row-size*
-  (let ((#:ptr9449 (cffi:foreign-symbol-pointer "ROW_SIZE")))
-    (when #:ptr9449 (cffi:mem-ref #:ptr9449 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "ROW_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TMat33E3EE23f_claw_ctor"
                %filament::filament+math+details+t-mat33<float>)
@@ -3519,8 +3124,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+col-size*
-  (let ((#:ptr9450 (cffi:foreign-symbol-pointer "COL_SIZE")))
-    (when #:ptr9450 (cffi:mem-ref #:ptr9450 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COL_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (cffi:defbitfield (%filament::filament+math+details+t-mat44<double>+fov
                    :int)
@@ -3662,18 +3268,21 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+num-cols*
-  (let ((#:ptr9451 (cffi:foreign-symbol-pointer "NUM_COLS")))
-    (when #:ptr9451 (cffi:mem-ref #:ptr9451 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_COLS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+num-rows*
-  (let ((#:ptr9452 (cffi:foreign-symbol-pointer "NUM_ROWS")))
-    (when #:ptr9452 (cffi:mem-ref #:ptr9452 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_ROWS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+row-size*
-  (let ((#:ptr9453 (cffi:foreign-symbol-pointer "ROW_SIZE")))
-    (when #:ptr9453 (cffi:mem-ref #:ptr9453 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "ROW_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TMat44E3EE23d_claw_ctor"
                %filament::filament+math+details+t-mat44<double>)
@@ -3693,8 +3302,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+col-size*
-  (let ((#:ptr9454 (cffi:foreign-symbol-pointer "COL_SIZE")))
-    (when #:ptr9454 (cffi:mem-ref #:ptr9454 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COL_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (cffi:defbitfield (%filament::filament+math+details+t-mat44<float>+fov
                    :int)
@@ -3836,18 +3446,21 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+num-cols*
-  (let ((#:ptr9455 (cffi:foreign-symbol-pointer "NUM_COLS")))
-    (when #:ptr9455 (cffi:mem-ref #:ptr9455 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_COLS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+num-rows*
-  (let ((#:ptr9456 (cffi:foreign-symbol-pointer "NUM_ROWS")))
-    (when #:ptr9456 (cffi:mem-ref #:ptr9456 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_ROWS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+row-size*
-  (let ((#:ptr9457 (cffi:foreign-symbol-pointer "ROW_SIZE")))
-    (when #:ptr9457 (cffi:mem-ref #:ptr9457 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "ROW_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TMat44E3EE23f_claw_ctor"
                %filament::filament+math+details+t-mat44<float>)
@@ -4693,6 +4306,34 @@
                (:pointer
                 %filament::filament+math+details+t-mat-transform<t-mat44+float>)))
 
+(iffi:deficlass (%filament::filament+math+details+t-quat-functions<t-quaternion+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TQuatFunctions_TQuaternion_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TQuatFunctions_TQuaternion_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-quat-functions<t-quaternion+filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-quat-functions)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:157:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+details+t-quat-functions<t-quaternion+filament+math+half>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quat-functions<t-quaternion+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-quat-functions)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quat-functions<t-quaternion+filament+math+half>)))
+
 (iffi:deficlass (%filament::filament+math+details+t-quat-functions<t-quaternion+bool>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TQuatFunctions_TQuaternion_bool_"
@@ -4984,6 +4625,290 @@
                (:pointer
                 %filament::filament+math+details+t-quat-product-operators<t-quaternion+float>)))
 
+(iffi:deficlass (%filament::filament+math+details+t-vec2<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVec2_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVec2_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-vec2<filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-vec2)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:35:24"
+                (%filament::v
+                 (:pointer %filament::filament+math+half) :setter nil
+                 :getter
+                 "__claw_get_filament_math_details_TVec2_filament_math_half__v"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:49:11")
+                (%filament::x
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TVec2_filament_math_half__x"
+                 :getter
+                 "__claw_get_filament_math_details_TVec2_filament_math_half__x"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:50:20")
+                (%filament::y
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TVec2_filament_math_half__y"
+                 :getter
+                 "__claw_get_filament_math_details_TVec2_filament_math_half__y"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:50:23"))
+
+(iffi:deficlass (%filament::filament+math+details+t-vec3<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-vec3<filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-vec3)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
+
+(iffi:deficlass (%filament::filament+math+details+t-vec4<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-vec4<filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-vec4)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:33:24"
+                (%filament::v
+                 (:pointer %filament::filament+math+half) :setter nil
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__v"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:47:11")
+                (%filament::xy
+                 (:pointer
+                  %filament::filament+math+details+t-vec2<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__xy"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__xy"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:18")
+                (%filament::st
+                 (:pointer
+                  %filament::filament+math+details+t-vec2<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__st"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__st"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:22")
+                (%filament::rg
+                 (:pointer
+                  %filament::filament+math+details+t-vec2<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__rg"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__rg"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:26")
+                (%filament::xyz
+                 (:pointer
+                  %filament::filament+math+details+t-vec3<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__xyz"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__xyz"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:18")
+                (%filament::stp
+                 (:pointer
+                  %filament::filament+math+details+t-vec3<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__stp"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__stp"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:23")
+                (%filament::rgb
+                 (:pointer
+                  %filament::filament+math+details+t-vec3<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__rgb"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__rgb"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:28")
+                (%filament::x
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__x"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__x"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:23")
+                (%filament::s
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__s"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__s"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:26")
+                (%filament::r
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TVec4_filament_math_half__r"
+                 :getter
+                 "__claw_get_filament_math_details_TVec4_filament_math_half__r"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:29"))
+
+(iffi:deficlass (%filament::filament+math+details+t-quaternion<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TQuaternion_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TQuaternion_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-quaternion<filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-quaternion)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:36:24"
+                (%filament::xyzw
+                 (:pointer
+                  %filament::filament+math+details+t-vec4<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__xyzw"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__xyzw"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:64:18")
+                (%filament::xyz
+                 (:pointer
+                  %filament::filament+math+details+t-vec3<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__xyz"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__xyz"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:65:18")
+                (%filament::xy
+                 (:pointer
+                  %filament::filament+math+details+t-vec2<filament+math+half>)
+                 :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__xy"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__xy"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:66:18")
+                (%filament::x
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__x"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__x"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:20")
+                (%filament::y
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__y"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__y"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:23")
+                (%filament::z
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__z"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__z"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:26")
+                (%filament::w
+                 (:pointer %filament::filament+math+half) :setter
+                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__w"
+                 :getter
+                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__w"
+                 :documentation
+                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:29"))
+
+(cffi:defcenum (%filament::filament+math+details+t-quaternion<filament+math+half>+no-init
+                :unsigned-int)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:43:10"
+               (:no-init 0))
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEC1Ev"
+               %filament::filament+math+details+t-quaternion<filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:96:15"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>)))
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEC1ENS4_7no_initE"
+               %filament::filament+math+details+t-quaternion<filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:93:24"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>))
+              (%filament::arg0
+               %filament::filament+math+details+t-quaternion<filament+math+half>+no-init))
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEixEm"
+               %filament::filament+math+details+operator[])
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:79:25"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionINS0_4halfEEixEm"
+               %filament::filament+math+details+operator[]
+               :non-mutating t)
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:73:31"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionINS0_4halfEEcoEv"
+               %filament::filament+math+details+operator~
+               :non-mutating t)
+              (:pointer
+               %filament::filament+math+details+t-quaternion<filament+math+half>)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:120:27"
+              (%filament::%%claw-result-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>))
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>)))
+
+(iffi:defitype %filament::filament+math+details+t-quaternion<filament+math+half>+size-type
+               :unsigned-long
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:49:20")
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEE4sizeEv"
+               %filament::filament+math+details+t-quaternion<filament+math+half>+size)
+              %filament::filament+math+details+t-quaternion<filament+math+half>+size-type
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:70:39")
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEED1Ev"
+               %filament::filament+math+details+~t-quaternion)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:87:5"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuaternionE3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+details+t-quaternion<filament+math+half>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-quaternion<filament+math+half>)))
+
 (cffi:defcenum (%filament::filament+math+details+t-quaternion<bool>+no-init
                 :unsigned-int)
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:43:10"
@@ -5224,10 +5149,50 @@
                (:pointer
                 %filament::filament+math+details+t-quaternion<float>)))
 
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2INS0_4halfEEixEm"
+               %filament::filament+math+details+operator[])
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:63:25"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec2<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2INS0_4halfEEixEm"
+               %filament::filament+math+details+operator[]
+               :non-mutating t)
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:58:31"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec2<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defitype %filament::filament+math+details+t-vec2<filament+math+half>+size-type
+               :unsigned-long
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:45:20")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2INS0_4halfEE4sizeEv"
+               %filament::filament+math+details+size :non-mutating t)
+              %filament::filament+math+details+t-vec2<filament+math+half>+size-type
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:55:32"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec2<filament+math+half>)))
+
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9458 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9458 (cffi:mem-ref #:ptr9458 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-vec2)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec2<filament+math+half>)))
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec2IiEC1Ev"
                %filament::filament+math+details+t-vec2<int>)
@@ -5270,8 +5235,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9459 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9459 (cffi:mem-ref #:ptr9459 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23I_claw_ctor"
                %filament::filament+math+details+t-vec2<int>)
@@ -5358,8 +5324,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9460 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9460 (cffi:mem-ref #:ptr9460 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23S_claw_ctor"
                %filament::filament+math+details+t-vec2<short>)
@@ -5418,8 +5385,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9461 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9461 (cffi:mem-ref #:ptr9461 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23b_claw_ctor"
                %filament::filament+math+details+t-vec2<bool>)
@@ -5507,8 +5475,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9462 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9462 (cffi:mem-ref #:ptr9462 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23c_claw_ctor"
                %filament::filament+math+details+t-vec2<unsigned+char>)
@@ -5567,8 +5536,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9463 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9463 (cffi:mem-ref #:ptr9463 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23d_claw_ctor"
                %filament::filament+math+details+t-vec2<double>)
@@ -5627,8 +5597,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9464 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9464 (cffi:mem-ref #:ptr9464 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23f_claw_ctor"
                %filament::filament+math+details+t-vec2<float>)
@@ -5687,8 +5658,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9465 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9465 (cffi:mem-ref #:ptr9465 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23i_claw_ctor"
                %filament::filament+math+details+t-vec2<unsigned+int>)
@@ -5776,8 +5748,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9466 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9466 (cffi:mem-ref #:ptr9466 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23r_claw_ctor"
                %filament::filament+math+details+t-vec2<char>)
@@ -5865,8 +5838,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9467 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9467 (cffi:mem-ref #:ptr9467 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23s_claw_ctor"
                %filament::filament+math+details+t-vec2<unsigned+short>)
@@ -5884,10 +5858,50 @@
                (:pointer
                 %filament::filament+math+details+t-vec2<unsigned+short>)))
 
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3INS0_4halfEEixEm"
+               %filament::filament+math+details+operator[])
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec3<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3INS0_4halfEEixEm"
+               %filament::filament+math+details+operator[]
+               :non-mutating t)
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec3<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defitype %filament::filament+math+details+t-vec3<filament+math+half>+size-type
+               :unsigned-long
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3INS0_4halfEE4sizeEv"
+               %filament::filament+math+details+size :non-mutating t)
+              %filament::filament+math+details+t-vec3<filament+math+half>+size-type
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:68:32"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec3<filament+math+half>)))
+
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9468 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9468 (cffi:mem-ref #:ptr9468 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-vec3)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec3<filament+math+half>)))
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec3IiEC1Ev"
                %filament::filament+math+details+t-vec3<int>)
@@ -5930,8 +5944,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9469 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9469 (cffi:mem-ref #:ptr9469 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23I_claw_ctor"
                %filament::filament+math+details+t-vec3<int>)
@@ -5959,56 +5974,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :short) :setter nil :getter
-                 "__claw_get_filament_math_details_TVec3_short__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<short>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_short__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_short__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<short>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_short__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_short__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<short>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_short__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_short__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :short :setter
-                 "__claw_set_filament_math_details_TVec3_short__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_short__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :short :setter
-                 "__claw_set_filament_math_details_TVec3_short__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_short__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :short :setter
-                 "__claw_set_filament_math_details_TVec3_short__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_short__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec3IsEC1Ev"
                %filament::filament+math+details+t-vec3<short>)
@@ -6051,8 +6017,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9470 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9470 (cffi:mem-ref #:ptr9470 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23S_claw_ctor"
                %filament::filament+math+details+t-vec3<short>)
@@ -6111,8 +6078,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9471 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9471 (cffi:mem-ref #:ptr9471 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23b_claw_ctor"
                %filament::filament+math+details+t-vec3<bool>)
@@ -6140,57 +6108,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :unsigned-char) :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+char>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_char__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+char>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_char__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+char>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_char__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :unsigned-char :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_char__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :unsigned-char :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_char__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :unsigned-char :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_char__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_char__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec3IhEC1Ev"
                %filament::filament+math+details+t-vec3<unsigned+char>)
@@ -6233,8 +6151,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9472 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9472 (cffi:mem-ref #:ptr9472 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23c_claw_ctor"
                %filament::filament+math+details+t-vec3<unsigned+char>)
@@ -6293,8 +6212,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9473 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9473 (cffi:mem-ref #:ptr9473 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23d_claw_ctor"
                %filament::filament+math+details+t-vec3<double>)
@@ -6353,8 +6273,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9474 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9474 (cffi:mem-ref #:ptr9474 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23f_claw_ctor"
                %filament::filament+math+details+t-vec3<float>)
@@ -6413,8 +6334,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9475 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9475 (cffi:mem-ref #:ptr9475 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23i_claw_ctor"
                %filament::filament+math+details+t-vec3<unsigned+int>)
@@ -6442,57 +6364,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v claw-utils:claw-string :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<char>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_char__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<char>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_char__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<char>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_char__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :char :setter
-                 "__claw_set_filament_math_details_TVec3_char__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :char :setter
-                 "__claw_set_filament_math_details_TVec3_char__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :char :setter
-                 "__claw_set_filament_math_details_TVec3_char__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_char__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec3IaEC1Ev"
                %filament::filament+math+details+t-vec3<char>)
@@ -6535,8 +6407,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9476 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9476 (cffi:mem-ref #:ptr9476 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23r_claw_ctor"
                %filament::filament+math+details+t-vec3<char>)
@@ -6564,57 +6437,7 @@
                  :destructor
                  %filament::filament+math+details+~t-vec3)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v (:pointer :unsigned-short) :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+short>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_short__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+short>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_short__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<unsigned+short>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_short__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x :unsigned-short :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_short__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s :unsigned-short :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_short__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r :unsigned-short :setter
-                 "__claw_set_filament_math_details_TVec3_unsigned_short__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_unsigned_short__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec3ItEC1Ev"
                %filament::filament+math+details+t-vec3<unsigned+short>)
@@ -6657,8 +6480,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9477 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9477 (cffi:mem-ref #:ptr9477 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23s_claw_ctor"
                %filament::filament+math+details+t-vec3<unsigned+short>)
@@ -6676,10 +6500,50 @@
                (:pointer
                 %filament::filament+math+details+t-vec3<unsigned+short>)))
 
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4INS0_4halfEEixEm"
+               %filament::filament+math+details+operator[])
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:76:25"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec4<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4INS0_4halfEEixEm"
+               %filament::filament+math+details+operator[]
+               :non-mutating t)
+              (:pointer %filament::filament+math+half)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:71:31"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec4<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defitype %filament::filament+math+details+t-vec4<filament+math+half>+size-type
+               :unsigned-long
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:43:20")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4INS0_4halfEE4sizeEv"
+               %filament::filament+math+details+size :non-mutating t)
+              %filament::filament+math+details+t-vec4<filament+math+half>+size-type
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:68:32"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec4<filament+math+half>)))
+
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9478 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9478 (cffi:mem-ref #:ptr9478 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-vec4)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec4<filament+math+half>)))
 
 (iffi:defifun ("__claw__ZN8filament4math7details5TVec4IiEC1Ev"
                %filament::filament+math+details+t-vec4<int>)
@@ -6722,8 +6586,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9479 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9479 (cffi:mem-ref #:ptr9479 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23I_claw_ctor"
                %filament::filament+math+details+t-vec4<int>)
@@ -6870,8 +6735,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9480 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9480 (cffi:mem-ref #:ptr9480 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23S_claw_ctor"
                %filament::filament+math+details+t-vec4<short>)
@@ -6930,8 +6796,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9481 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9481 (cffi:mem-ref #:ptr9481 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23b_claw_ctor"
                %filament::filament+math+details+t-vec4<bool>)
@@ -7079,8 +6946,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9482 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9482 (cffi:mem-ref #:ptr9482 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23c_claw_ctor"
                %filament::filament+math+details+t-vec4<unsigned+char>)
@@ -7139,8 +7007,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9483 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9483 (cffi:mem-ref #:ptr9483 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23d_claw_ctor"
                %filament::filament+math+details+t-vec4<double>)
@@ -7199,8 +7068,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9484 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9484 (cffi:mem-ref #:ptr9484 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23f_claw_ctor"
                %filament::filament+math+details+t-vec4<float>)
@@ -7259,8 +7129,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9485 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9485 (cffi:mem-ref #:ptr9485 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23i_claw_ctor"
                %filament::filament+math+details+t-vec4<unsigned+int>)
@@ -7408,8 +7279,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9486 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9486 (cffi:mem-ref #:ptr9486 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23r_claw_ctor"
                %filament::filament+math+details+t-vec4<char>)
@@ -7557,8 +7429,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9487 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9487 (cffi:mem-ref #:ptr9487 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23s_claw_ctor"
                %filament::filament+math+details+t-vec4<unsigned+short>)
@@ -9480,6 +9353,34 @@
                (:pointer
                 %filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+short>)))
 
+(iffi:deficlass (%filament::filament+math+details+t-vec-functions<t-vec2+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec2_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecFunctions_TVec2_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-vec-functions<t-vec2+filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-vec-functions)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+details+t-vec-functions<t-vec2+filament+math+half>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec-functions<t-vec2+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-vec-functions)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec-functions<t-vec2+filament+math+half>)))
+
 (iffi:deficlass (%filament::filament+math+details+t-vec-functions<t-vec2+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecFunctions_TVec2_int_"
@@ -9732,6 +9633,34 @@
                (:pointer
                 %filament::filament+math+details+t-vec-functions<t-vec2+unsigned+short>)))
 
+(iffi:deficlass (%filament::filament+math+details+t-vec-functions<t-vec3+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecFunctions_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-vec-functions<t-vec3+filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-vec-functions)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+details+t-vec-functions<t-vec3+filament+math+half>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec-functions<t-vec3+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-vec-functions)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec-functions<t-vec3+filament+math+half>)))
+
 (iffi:deficlass (%filament::filament+math+details+t-vec-functions<t-vec3+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecFunctions_TVec3_int_"
@@ -9983,6 +9912,34 @@
               (%filament::%%claw-this-
                (:pointer
                 %filament::filament+math+details+t-vec-functions<t-vec3+unsigned+short>)))
+
+(iffi:deficlass (%filament::filament+math+details+t-vec-functions<t-vec4+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecFunctions_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+details+t-vec-functions<t-vec4+filament+math+half>
+                 :destructor
+                 %filament::filament+math+details+~t-vec-functions)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+details+t-vec-functions<t-vec4+filament+math+half>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec-functions<t-vec4+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+details+~t-vec-functions)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+details+t-vec-functions<t-vec4+filament+math+half>)))
 
 (iffi:deficlass (%filament::filament+math+details+t-vec-functions<t-vec4+int>
                  :size-reporter
@@ -12417,8 +12374,9 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+col-size*
-  (let ((#:ptr9488 (cffi:foreign-symbol-pointer "COL_SIZE")))
-    (when #:ptr9488 (cffi:mem-ref #:ptr9488 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COL_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defistruct (%filament::filament+math+details+t-mat33+row-major-init
                   :size-reporter nil :alignment-reporter nil
@@ -12429,23 +12387,27 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+num-cols*
-  (let ((#:ptr9489 (cffi:foreign-symbol-pointer "NUM_COLS")))
-    (when #:ptr9489 (cffi:mem-ref #:ptr9489 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_COLS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+num-rows*
-  (let ((#:ptr9490 (cffi:foreign-symbol-pointer "NUM_ROWS")))
-    (when #:ptr9490 (cffi:mem-ref #:ptr9490 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_ROWS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+row-size*
-  (let ((#:ptr9491 (cffi:foreign-symbol-pointer "ROW_SIZE")))
-    (when #:ptr9491 (cffi:mem-ref #:ptr9491 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "ROW_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+col-size*
-  (let ((#:ptr9492 (cffi:foreign-symbol-pointer "COL_SIZE")))
-    (when #:ptr9492 (cffi:mem-ref #:ptr9492 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COL_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (cffi:defcenum (%filament::filament+math+details+t-mat44+fov :int)
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/mat4.h:297:16"
@@ -12461,63 +12423,198 @@
 
 (define-symbol-macro
   %filament::*filament+math+details+num-cols*
-  (let ((#:ptr9493 (cffi:foreign-symbol-pointer "NUM_COLS")))
-    (when #:ptr9493 (cffi:mem-ref #:ptr9493 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_COLS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+num-rows*
-  (let ((#:ptr9494 (cffi:foreign-symbol-pointer "NUM_ROWS")))
-    (when #:ptr9494 (cffi:mem-ref #:ptr9494 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "NUM_ROWS")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+row-size*
-  (let ((#:ptr9495 (cffi:foreign-symbol-pointer "ROW_SIZE")))
-    (when #:ptr9495 (cffi:mem-ref #:ptr9495 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "ROW_SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9496 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9496 (cffi:mem-ref #:ptr9496 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9497 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9497 (cffi:mem-ref #:ptr9497 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (define-symbol-macro
   %filament::*filament+math+details+size*
-  (let ((#:ptr9498 (cffi:foreign-symbol-pointer "SIZE")))
-    (when #:ptr9498 (cffi:mem-ref #:ptr9498 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "SIZE")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
+
+(iffi:deficlass (%filament::filament+math+fp<1+5+10> :size-reporter
+                 "__claw_sizeof_filament_math_fp_1_5_10_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_fp_1_5_10_"
+                 :constructor %filament::filament+math+fp<1+5+10>
+                 :destructor %filament::filament+math+~fp)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:30:7")
 
 (define-symbol-macro
   %filament::*filament+math+e-mask*
-  (let ((#:ptr9499 (cffi:foreign-symbol-pointer "E_MASK")))
-    (when #:ptr9499 (cffi:mem-ref #:ptr9499 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "E_MASK")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+e-shift*
-  (let ((#:ptr9500 (cffi:foreign-symbol-pointer "E_SHIFT")))
-    (when #:ptr9500 (cffi:mem-ref #:ptr9500 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "E_SHIFT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE5fromfEf"
+               %filament::filament+math+fp<1+5+10>+fromf)
+              (:pointer %filament::filament+math+fp<1+5+10>)
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:58:25"
+              (%filament::%%claw-result-
+               (:pointer %filament::filament+math+fp<1+5+10>))
+              (%filament::f :float))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE11getBitCountEv"
+               %filament::filament+math+fp<1+5+10>+get-bit-count)
+              %filament::size-t
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:96:29")
+
+(iffi:defifun ("__claw__ZNK8filament4math2fpILj1ELj5ELj10EE4getEEv"
+               %filament::filament+math+get-e :non-mutating t)
+              :unsigned-int
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:103:28"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>)))
+
+(iffi:defifun ("__claw__ZNK8filament4math2fpILj1ELj5ELj10EE4getMEv"
+               %filament::filament+math+get-m :non-mutating t)
+              :unsigned-int
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:104:28"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>)))
+
+(iffi:defifun ("__claw__ZNK8filament4math2fpILj1ELj5ELj10EE4getSEv"
+               %filament::filament+math+get-s :non-mutating t)
+              :unsigned-int
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:102:28"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>)))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE4setEEj"
+               %filament::filament+math+set-e)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:100:20"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>))
+              (%filament::s :unsigned-int))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE4setMEj"
+               %filament::filament+math+set-m)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:101:20"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>))
+              (%filament::s :unsigned-int))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE4setSEj"
+               %filament::filament+math+set-s)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:99:20"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>))
+              (%filament::s :unsigned-int))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE3tofES2_"
+               %filament::filament+math+fp<1+5+10>+tof)
+              :float
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:83:28"
+              (%filament::in
+               (:pointer %filament::filament+math+fp<1+5+10>)))
 
 (define-symbol-macro
   %filament::*filament+math+m-mask*
-  (let ((#:ptr9501 (cffi:foreign-symbol-pointer "M_MASK")))
-    (when #:ptr9501 (cffi:mem-ref #:ptr9501 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "M_MASK")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+m-shift*
-  (let ((#:ptr9502 (cffi:foreign-symbol-pointer "M_SHIFT")))
-    (when #:ptr9502 (cffi:mem-ref #:ptr9502 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "M_SHIFT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+s-mask*
-  (let ((#:ptr9503 (cffi:foreign-symbol-pointer "S_MASK")))
-    (when #:ptr9503 (cffi:mem-ref #:ptr9503 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "S_MASK")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+s-shift*
-  (let ((#:ptr9504 (cffi:foreign-symbol-pointer "S_SHIFT")))
-    (when #:ptr9504 (cffi:mem-ref #:ptr9504 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "S_SHIFT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
+
+(iffi:defitype %filament::filament+math+fp<1+5+10>+type
+               :unsigned-short
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:33:11")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40fpE3EE23Vi1E23Vi5E23Vi10_claw_dtor"
+               %filament::filament+math+~fp)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+fp<1+5+10>)))
+
+(cffi:defcenum (%filament::filament+math+half+binary :unsigned-int)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:149:10"
+               (:binary 0))
+
+(iffi:defifun ("__claw__ZN8filament4math4halfC1Ev"
+               %filament::filament+math+half)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:140:5"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+half)))
+
+(iffi:defifun ("__claw__ZN8filament4math4halfC1Ef"
+               %filament::filament+math+half)
+              :void
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:141:15"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+half))
+              (%filament::v :float))
+
+(iffi:defifun ("__claw__ZNK8filament4math4halfcvfEv"
+               %filament::filament+math+operator+float :non-mutating
+               t)
+              :float
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:142:15"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+half)))
+
+(iffi:defitype %filament::filament+math+half+fp16
+               %filament::filament+math+fp<1+5+10>
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:137:11")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+~half)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer %filament::filament+math+half)))
 
 (iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-quaternion<double>>
                  :size-reporter
@@ -12572,6 +12669,33 @@
               (%filament::%%claw-this-
                (:pointer
                 %filament::filament+math+is-arithmetic<filament+math+details+t-quaternion<float>>)))
+
+(iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec2_filament_math_half__"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec2_filament_math_half__"
+                 :constructor
+                 %filament::filament+math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>
+                 :destructor %filament::filament+math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+~is-arithmetic)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>)))
 
 (iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<int>>
                  :size-reporter
@@ -12816,6 +12940,33 @@
                (:pointer
                 %filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+short>>)))
 
+(iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec3_filament_math_half__"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec3_filament_math_half__"
+                 :constructor
+                 %filament::filament+math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>
+                 :destructor %filament::filament+math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+~is-arithmetic)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>)))
+
 (iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<int>>
                  :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec3_int__"
@@ -13059,6 +13210,33 @@
                (:pointer
                 %filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+short>>)))
 
+(iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec4_filament_math_half__"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec4_filament_math_half__"
+                 :constructor
+                 %filament::filament+math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>
+                 :destructor %filament::filament+math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+~is-arithmetic)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>)))
+
 (iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<bool>>
                  :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec4_bool__"
@@ -13139,6 +13317,33 @@
               (%filament::%%claw-this-
                (:pointer
                 %filament::filament+math+is-arithmetic<filament+math+details+t-vec4<float>>)))
+
+(iffi:deficlass (%filament::filament+math+is-arithmetic<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_half_"
+                 :constructor
+                 %filament::filament+math+is-arithmetic<filament+math+half>
+                 :destructor %filament::filament+math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/half.h:165:19")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::filament+math+is-arithmetic<filament+math+half>)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::filament+math+~is-arithmetic)
+              :void
+              "::"
+              (%filament::%%claw-this-
+               (:pointer
+                %filament::filament+math+is-arithmetic<filament+math+half>)))
 
 (iffi:deficlass (%filament::filament+math+is-arithmetic<int>
                  :size-reporter
@@ -13385,33 +13590,39 @@
 
 (define-symbol-macro
   %filament::*filament+math+e-mask*
-  (let ((#:ptr9505 (cffi:foreign-symbol-pointer "E_MASK")))
-    (when #:ptr9505 (cffi:mem-ref #:ptr9505 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "E_MASK")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+e-shift*
-  (let ((#:ptr9506 (cffi:foreign-symbol-pointer "E_SHIFT")))
-    (when #:ptr9506 (cffi:mem-ref #:ptr9506 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "E_SHIFT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+m-mask*
-  (let ((#:ptr9507 (cffi:foreign-symbol-pointer "M_MASK")))
-    (when #:ptr9507 (cffi:mem-ref #:ptr9507 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "M_MASK")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+m-shift*
-  (let ((#:ptr9508 (cffi:foreign-symbol-pointer "M_SHIFT")))
-    (when #:ptr9508 (cffi:mem-ref #:ptr9508 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "M_SHIFT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+s-mask*
-  (let ((#:ptr9509 (cffi:foreign-symbol-pointer "S_MASK")))
-    (when #:ptr9509 (cffi:mem-ref #:ptr9509 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "S_MASK")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (define-symbol-macro
   %filament::*filament+math+s-shift*
-  (let ((#:ptr9510 (cffi:foreign-symbol-pointer "S_SHIFT")))
-    (when #:ptr9510 (cffi:mem-ref #:ptr9510 ':unsigned-int))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "S_SHIFT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr ':unsigned-int))))
 
 (iffi:defitype %filament::filament+math+byte2
                %filament::filament+math+details+t-vec2<char>
@@ -13436,6 +13647,18 @@
 (iffi:defitype %filament::filament+math+double4
                %filament::filament+math+details+t-vec4<double>
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/mathfwd.h:70:7")
+
+(iffi:defitype %filament::filament+math+half2
+               %filament::filament+math+details+t-vec2<filament+math+half>
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:100:7")
+
+(iffi:defitype %filament::filament+math+half3
+               %filament::filament+math+details+t-vec3<filament+math+half>
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:120:7")
+
+(iffi:defitype %filament::filament+math+half4
+               %filament::filament+math+details+t-vec4<filament+math+half>
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:118:7")
 
 (iffi:defitype %filament::filament+math+mat2
                %filament::filament+math+details+t-mat22<double>
@@ -15263,26 +15486,27 @@
 
 (define-symbol-macro
   %filament::*filament+efficiency-fluorescent*
-  (let ((#:ptr9511
+  (let ((%filament::ptr
          (cffi:foreign-symbol-pointer "EFFICIENCY_FLUORESCENT")))
-    (when #:ptr9511 (cffi:mem-ref #:ptr9511 ':float))))
+    (when %filament::ptr (cffi:mem-ref %filament::ptr ':float))))
 
 (define-symbol-macro
   %filament::*filament+efficiency-halogen*
-  (let ((#:ptr9512
+  (let ((%filament::ptr
          (cffi:foreign-symbol-pointer "EFFICIENCY_HALOGEN")))
-    (when #:ptr9512 (cffi:mem-ref #:ptr9512 ':float))))
+    (when %filament::ptr (cffi:mem-ref %filament::ptr ':float))))
 
 (define-symbol-macro
   %filament::*filament+efficiency-incandescent*
-  (let ((#:ptr9513
+  (let ((%filament::ptr
          (cffi:foreign-symbol-pointer "EFFICIENCY_INCANDESCENT")))
-    (when #:ptr9513 (cffi:mem-ref #:ptr9513 ':float))))
+    (when %filament::ptr (cffi:mem-ref %filament::ptr ':float))))
 
 (define-symbol-macro
   %filament::*filament+efficiency-led*
-  (let ((#:ptr9514 (cffi:foreign-symbol-pointer "EFFICIENCY_LED")))
-    (when #:ptr9514 (cffi:mem-ref #:ptr9514 ':float))))
+  (let ((%filament::ptr
+         (cffi:foreign-symbol-pointer "EFFICIENCY_LED")))
+    (when %filament::ptr (cffi:mem-ref %filament::ptr ':float))))
 
 (iffi:defifun ("__claw__ZN8filament12LightManager7destroyEN5utils6EntityE"
                %filament::filament+destroy)
@@ -16152,16 +16376,6 @@
               (%filament::%%claw-this-
                (:pointer %filament::filament+material)))
 
-(iffi:defifun ("__claw__ZNK8filament8Material21getRequiredAttributesEv"
-               %filament::filament+get-required-attributes
-               :non-mutating t)
-              (:pointer %filament::filament+attribute-bitset)
-              "/home/borodust/devel/repo/claw-filament/src/lib/filament/filament/include/filament/Material.h:186:21"
-              (%filament::%%claw-result-
-               (:pointer %filament::filament+attribute-bitset))
-              (%filament::%%claw-this-
-               (:pointer %filament::filament+material)))
-
 (iffi:defitype %filament::filament+material+shading
                %filament::filament+shading
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/filament/include/filament/Material.h:52:11")
@@ -16624,20 +16838,6 @@
               (%filament::instance
                (:pointer
                 %filament::filament+renderable-manager+instance)))
-
-(iffi:defifun ("__claw__ZNK8filament17RenderableManager22getEnabledAttributesAtEN5utils14EntityInstanceIS0_Lb0EEEm"
-               %filament::filament+get-enabled-attributes-at
-               :non-mutating t)
-              (:pointer %filament::filament+attribute-bitset)
-              "/home/borodust/devel/repo/claw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:469:21"
-              (%filament::%%claw-result-
-               (:pointer %filament::filament+attribute-bitset))
-              (%filament::%%claw-this-
-               (:pointer %filament::filament+renderable-manager))
-              (%filament::instance
-               (:pointer
-                %filament::filament+renderable-manager+instance))
-              (%filament::primitive-index %filament::size-t))
 
 (iffi:defifun ("__claw__ZNK8filament17RenderableManager11getInstanceEN5utils6EntityE"
                %filament::filament+get-instance :non-mutating t)
@@ -17222,16 +17422,16 @@
 
 (define-symbol-macro
   %filament::*filament+clear*
-  (let ((#:ptr9515 (cffi:foreign-symbol-pointer "CLEAR")))
-    (when #:ptr9515
-      (cffi:mem-ref #:ptr9515
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "CLEAR")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr
                     '%filament::filament+renderer+copy-frame-flag))))
 
 (define-symbol-macro
   %filament::*filament+commit*
-  (let ((#:ptr9516 (cffi:foreign-symbol-pointer "COMMIT")))
-    (when #:ptr9516
-      (cffi:mem-ref #:ptr9516
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "COMMIT")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr
                     '%filament::filament+renderer+copy-frame-flag))))
 
 (iffi:defitype %filament::filament+renderer+copy-frame-flag
@@ -17486,10 +17686,10 @@
 
 (define-symbol-macro
   %filament::*filament+set-presentation-time*
-  (let ((#:ptr9517
+  (let ((%filament::ptr
          (cffi:foreign-symbol-pointer "SET_PRESENTATION_TIME")))
-    (when #:ptr9517
-      (cffi:mem-ref #:ptr9517
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr
                     '%filament::filament+renderer+copy-frame-flag))))
 
 (iffi:defifun ("__claw_cE3AE40NE40filamentE40SE40Renderer_claw_ctor"
@@ -17768,8 +17968,9 @@
 
 (define-symbol-macro
   %filament::*filament+base-level*
-  (let ((#:ptr9518 (cffi:foreign-symbol-pointer "BASE_LEVEL")))
-    (when #:ptr9518 (cffi:mem-ref #:ptr9518 '%filament::size-t))))
+  (let ((%filament::ptr (cffi:foreign-symbol-pointer "BASE_LEVEL")))
+    (when %filament::ptr
+      (cffi:mem-ref %filament::ptr '%filament::size-t))))
 
 (iffi:defitype %filament::filament+texture+compressed-type
                %filament::filament+backend+compressed-pixel-data-type
@@ -21565,6 +21766,18 @@
                %filament::filament+math+details+t-mat44<float>
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/mat4.h:558:32")
 
+(iffi:defitype %filament::filament+math+details+t-quaternion<filament+math+half>+const-reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:48:22")
+
+(iffi:defitype %filament::filament+math+details+t-quaternion<filament+math+half>+reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:47:16")
+
+(iffi:defitype %filament::filament+math+details+t-quaternion<filament+math+half>+value-type
+               %filament::filament+math+half
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:46:15")
+
 (iffi:defitype %filament::filament+math+details+t-quaternion<bool>+const-reference
                (:pointer :bool)
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:48:22")
@@ -21600,248 +21813,6 @@
 (iffi:defitype %filament::filament+math+details+t-quaternion<float>+value-type
                :float
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:46:15")
-
-(iffi:deficlass (%filament::filament+math+details+t-vec2<filament+math+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVec2_filament_math_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVec2_filament_math_half_")
-                nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:35:24"
-                (%filament::v
-                 (:pointer %filament::filament+math+half) :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec2_filament_math_half__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:49:11")
-                (%filament::x
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec2_filament_math_half__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec2_filament_math_half__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:50:20")
-                (%filament::y
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec2_filament_math_half__y"
-                 :getter
-                 "__claw_get_filament_math_details_TVec2_filament_math_half__y"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:50:23"))
-
-(iffi:deficlass (%filament::filament+math+details+t-vec3<filament+math+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVec3_filament_math_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVec3_filament_math_half_")
-                nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-                (%filament::v
-                 (:pointer %filament::filament+math+half) :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_filament_math_half__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_filament_math_half__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:49:18")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec3_filament_math_half__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:50:18")
-                (%filament::x
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec3_filament_math_half__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:53:19")
-                (%filament::s
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec3_filament_math_half__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:54:19")
-                (%filament::r
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec3_filament_math_half__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec3_filament_math_half__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:55:19"))
-
-(iffi:deficlass (%filament::filament+math+details+t-vec4<filament+math+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVec4_filament_math_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVec4_filament_math_half_")
-                nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:33:24"
-                (%filament::v
-                 (:pointer %filament::filament+math+half) :setter nil
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__v"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:47:11")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:18")
-                (%filament::st
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__st"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__st"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:22")
-                (%filament::rg
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__rg"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__rg"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:48:26")
-                (%filament::xyz
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__xyz"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__xyz"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:18")
-                (%filament::stp
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__stp"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__stp"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:23")
-                (%filament::rgb
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__rgb"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__rgb"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:49:28")
-                (%filament::x
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__x"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:23")
-                (%filament::s
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__s"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__s"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:26")
-                (%filament::r
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TVec4_filament_math_half__r"
-                 :getter
-                 "__claw_get_filament_math_details_TVec4_filament_math_half__r"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:51:29"))
-
-(iffi:deficlass (%filament::filament+math+details+t-quaternion<filament+math+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TQuaternion_filament_math_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TQuaternion_filament_math_half_")
-                nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:36:24"
-                (%filament::xyzw
-                 (:pointer
-                  %filament::filament+math+details+t-vec4<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__xyzw"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__xyzw"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:64:18")
-                (%filament::xyz
-                 (:pointer
-                  %filament::filament+math+details+t-vec3<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__xyz"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__xyz"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:65:18")
-                (%filament::xy
-                 (:pointer
-                  %filament::filament+math+details+t-vec2<filament+math+half>)
-                 :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__xy"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__xy"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:66:18")
-                (%filament::x
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__x"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__x"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:20")
-                (%filament::y
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__y"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__y"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:23")
-                (%filament::z
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__z"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__z"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:26")
-                (%filament::w
-                 (:pointer %filament::filament+math+half) :setter
-                 "__claw_set_filament_math_details_TQuaternion_filament_math_half__w"
-                 :getter
-                 "__claw_get_filament_math_details_TQuaternion_filament_math_half__w"
-                 :documentation
-                 "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/quat.h:63:29"))
 
 (iffi:defitype %filament::filament+math+quath
                %filament::filament+math+details+t-quaternion<filament+math+half>
@@ -21938,6 +21909,18 @@
 (defparameter %filament::*filament+math+f+two-over-pi* 0.6366197466850281D0)
 
 (defparameter %filament::*filament+math+f+two-over-sqrtpi* 1.128379225730896D0)
+
+(iffi:defitype %filament::filament+math+details+t-vec2<filament+math+half>+const-reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:44:22")
+
+(iffi:defitype %filament::filament+math+details+t-vec2<filament+math+half>+reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:43:16")
+
+(iffi:defitype %filament::filament+math+details+t-vec2<filament+math+half>+value-type
+               %filament::filament+math+half
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:42:15")
 
 (iffi:defitype %filament::filament+math+details+t-vec2<int>+const-reference
                (:pointer :int)
@@ -22047,6 +22030,18 @@
                :unsigned-short
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec2.h:42:15")
 
+(iffi:defitype %filament::filament+math+details+t-vec3<filament+math+half>+const-reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:42:22")
+
+(iffi:defitype %filament::filament+math+details+t-vec3<filament+math+half>+reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:41:16")
+
+(iffi:defitype %filament::filament+math+details+t-vec3<filament+math+half>+value-type
+               %filament::filament+math+half
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:40:15")
+
 (iffi:defitype %filament::filament+math+details+t-vec3<int>+const-reference
                (:pointer :int)
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:42:22")
@@ -22154,6 +22149,18 @@
 (iffi:defitype %filament::filament+math+details+t-vec3<unsigned+short>+value-type
                :unsigned-short
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec3.h:40:15")
+
+(iffi:defitype %filament::filament+math+details+t-vec4<filament+math+half>+const-reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:42:22")
+
+(iffi:defitype %filament::filament+math+details+t-vec4<filament+math+half>+reference
+               (:pointer %filament::filament+math+half)
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:41:16")
+
+(iffi:defitype %filament::filament+math+details+t-vec4<filament+math+half>+value-type
+               %filament::filament+math+half
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:40:15")
 
 (iffi:defitype %filament::filament+math+details+t-vec4<int>+const-reference
                (:pointer :int)
@@ -22263,3395 +22270,2070 @@
                :unsigned-short
                "/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/math/vec4.h:40:15")
 
-(export '%filament::*filament+math+d+pi-4* "%FILAMENT")
-
-(export '%filament::filament+math+mat3 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+operator/= "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-product-operators<t-mat33+double+t-vec3>
-        "%FILAMENT")
-
-(export '%filament::utils+~entity "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+char>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+height "%FILAMENT")
-
-(export '%filament::filament+get-material-instance-at "%FILAMENT")
-
-(export '%filament::filament+index-buffer+buffer-descriptor
-        "%FILAMENT")
-
-(export '%filament::filament+set-scaling "%FILAMENT")
-
-(export '%filament::filament+backend+operator== "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<char> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<short>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+texture+face-offsets "%FILAMENT")
-
-(export '%filament::filament+get-transform "%FILAMENT")
-
-(export '%filament::filament+culling "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-mat-product-operators
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<float>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+set-camera "%FILAMENT")
-
-(export '%filament::filament+get-entities "%FILAMENT")
-
-(export '%filament::discard-end "%FILAMENT")
-
-(export '%filament::filament+get-sun-halo-size "%FILAMENT")
-
-(export '%filament::*filament+math+f-tau* "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<char> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+double>
-        "%FILAMENT")
-
-(export '%filament::filament+material+builder "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+compressed-pixel-data-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-product-operators<t-mat44+float+t-vec4>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+subpass-type "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+short>>
-        "%FILAMENT")
-
-(export '%filament::filament+get-user-time "%FILAMENT")
-
-(export '%filament::far "%FILAMENT")
-
-(export '%filament::filament+vsm-shadow-options "%FILAMENT")
-
-(export '%filament::filament+view+vignette-options "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-compare-func "%FILAMENT")
-
-(export '%filament::filament+backend+pump-events "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+int>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double> "%FILAMENT")
-
-(export '%filament::|FILAMENT+MATH+OPERATOR""-I| "%FILAMENT")
-
-(export '%filament::utils+operator== "%FILAMENT")
-
-(export '%filament::ray-count "%FILAMENT")
-
-(export '%filament::filament+backend+platform+swap-chain "%FILAMENT")
-
-(export '%filament::utils+unregister-listener "%FILAMENT")
-
-(export '%filament::power "%FILAMENT")
-
-(export '%filament::filament+has-component "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-mat33+double>
-        "%FILAMENT")
-
-(export '%filament::filament+transparency-mode "%FILAMENT")
-
-(export '%filament::filament+set-anti-aliasing "%FILAMENT")
-
-(export '%filament::filament+view+fog-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+set-rotation "%FILAMENT")
-
-(export '%filament::filament+get-anti-aliasing "%FILAMENT")
-
-(export '%filament::filament+set-anisotropy "%FILAMENT")
-
-(export '%filament::utils+create "%FILAMENT")
-
-(export '%filament::*filament+backend+config-sampler-binding-count*
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec-comparison-operators
-        "%FILAMENT")
-
-(export '%filament::filament+add-entities "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<int>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+uniform-interface-block "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<float>>
-        "%FILAMENT")
-
-(export '%filament::filament+get-frustum "%FILAMENT")
-
-(export '%filament::filament+get-sensitivity "%FILAMENT")
-
-(export '%filament::|FILAMENT+BACKEND+OPERATOR()| "%FILAMENT")
-
-(export '%filament::interval "%FILAMENT")
-
-(export '%filament::v "%FILAMENT")
-
-(export '%filament::*filament+backend+max-vertex-attribute-count*
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<char>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-mat-transform
-        "%FILAMENT")
-
-(export '%filament::filament+get-viewport "%FILAMENT")
-
-(export '%filament::filament+backend+swap-chain "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+frustum
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+operator*= "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<bool>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+~bloom-options "%FILAMENT")
-
-(export '%filament::filament+priority "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quat-functions<t-quaternion+double>
-        "%FILAMENT")
-
-(export '%filament::filament+set-scene "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-helpers<t-mat33+double>
-        "%FILAMENT")
-
-(export '%filament::clear "%FILAMENT")
-
-(export '%filament::filament+engine+create-callback "%FILAMENT")
-
-(export '%filament::filament+backend+present-callable "%FILAMENT")
-
-(export '%filament::filament+material+parameter-info "%FILAMENT")
-
-(export '%filament::filament+intensity-candela "%FILAMENT")
-
-(export '%filament::utils+entity+import "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+reset-user-time "%FILAMENT")
-
-(export '%filament::in-scattering-start "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+has-entity "%FILAMENT")
-
-(export '%filament::*filament+math+f+e* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<double> "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+char>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+get-mask-threshold "%FILAMENT")
-
-(export '%filament::*filament+math+f+log10e* "%FILAMENT")
-
-(export '%filament::filament+light-manager+shadow-cascades+compute-log-splits
-        "%FILAMENT")
-
-(export '%filament::filament+math+double4 "%FILAMENT")
-
-(export '%filament::filament+get-instance "%FILAMENT")
-
-(export '%filament::subpass-mask "%FILAMENT")
-
-(export '%filament::filament+backend+~buffer-descriptor "%FILAMENT")
-
-(export '%filament::sample-count "%FILAMENT")
-
-(export '%filament::filament+math+float3 "%FILAMENT")
-
-(export '%filament::filament+get-direction "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+int>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-view-matrix "%FILAMENT")
-
-(export '%filament::filament+~vignette-options "%FILAMENT")
-
-(export '%filament::*filament+math+f-pi* "%FILAMENT")
-
-(export '%filament::uint64-t "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-color "%FILAMENT")
-
-(export '%filament::*filament+math+f-pi-2* "%FILAMENT")
-
-(export '%filament::filament+~render-quality "%FILAMENT")
-
-(export '%filament::filament+~dynamic-resolution-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<float>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<float>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+material+precision "%FILAMENT")
-
-(export '%filament::filament+engine "%FILAMENT")
-
-(export '%filament::filament+backend+is-s3tc-compression "%FILAMENT")
-
-(export '%filament::filament+receive-shadows "%FILAMENT")
-
-(export '%filament::filament+transform-manager+children-iterator
-        "%FILAMENT")
-
-(export '%filament::filament+get-interpolation "%FILAMENT")
-
-(export '%filament::filament+backend+is-depth-format "%FILAMENT")
-
-(export '%filament::filament+math+ushort2 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<char>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+levels "%FILAMENT")
-
-(export '%filament::filament+set-color-grading "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-skybox "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-mat33+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-helpers<t-mat44+double>
-        "%FILAMENT")
-
-(export '%filament::*filament+efficiency-incandescent* "%FILAMENT")
-
-(export '%filament::filament+create-fence "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<short>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<float>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+stream-alloc "%FILAMENT")
-
-(export '%filament::filament+texture+usage "%FILAMENT")
-
-(export '%filament::filament+~ssct "%FILAMENT")
-
-(export '%filament::feedback "%FILAMENT")
-
-(export '%filament::filament+get-forward-vector "%FILAMENT")
-
-(export '%filament::filament+get-model-matrix "%FILAMENT")
-
-(export '%filament::xyzw "%FILAMENT")
-
-(export '%filament::filament+size "%FILAMENT")
-
-(export '%filament::filament+texture+internal-format "%FILAMENT")
-
-(export '%filament::filament+get-wrap-mode-r "%FILAMENT")
-
-(export '%filament::filament+light-manager+shadow-options "%FILAMENT")
-
-(export '%filament::constant-bias "%FILAMENT")
-
-(export '%filament::filament+~prefilter-options "%FILAMENT")
-
-(export '%filament::filament+math+uint3 "%FILAMENT")
-
-(export '%filament::filament+set-culling-mode "%FILAMENT")
-
-(export '%filament::threshold "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<short>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-children "%FILAMENT")
-
-(export '%filament::filament+backend+disable-blending "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-square-functions<t-mat44+float>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+default-platform "%FILAMENT")
-
-(export '%filament::filament+set-culling "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-mat33+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+~material-instance "%FILAMENT")
-
-(export '%filament::filament+set-sun-angular-radius "%FILAMENT")
-
-(export '%filament::filament+open-local-transform-transaction
-        "%FILAMENT")
-
-(export '%filament::filament+get-compare-func "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<char>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-field-of-view-in-degrees "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<short> "%FILAMENT")
-
-(export '%filament::filament+camera+inverse-projection "%FILAMENT")
-
-(export '%filament::filament+dynamic-resolution-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+row-type
-        "%FILAMENT")
-
-(export '%filament::filament+ssct "%FILAMENT")
-
-(export '%filament::filament+math+byte3 "%FILAMENT")
-
-(export '%filament::filament+backend+pixel-buffer-descriptor
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+char>>
-        "%FILAMENT")
-
-(export '%filament::filament+is-sampler "%FILAMENT")
-
-(export '%filament::filament+~bone "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<int>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+backend+depth-range "%FILAMENT")
-
-(export '%filament::filament+math+short4 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+row-type
-        "%FILAMENT")
-
-(export '%filament::*filament+math+f+one-over-pi* "%FILAMENT")
-
-(export '%filament::filament+backend+external-texture "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<float>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+display-info "%FILAMENT")
-
-(export '%filament::filament+~scene "%FILAMENT")
-
-(export '%filament::filament+buffer-count "%FILAMENT")
-
-(export '%filament::utils+operator> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+char>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+int>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+translate-to "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>
-        "%FILAMENT")
-
-(export '%filament::filament+is-shadowing-enabled "%FILAMENT")
-
-(export '%filament::utils+operator= "%FILAMENT")
-
-(export '%filament::filament+set-buffer "%FILAMENT")
-
-(export '%filament::filament+material+interpolation "%FILAMENT")
-
-(export '%filament::filament+linear-color "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<short>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+light-manager+instance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+destroy "%FILAMENT")
-
-(export '%filament::filament+material+parameter-type "%FILAMENT")
-
-(export '%filament::is-sampler "%FILAMENT")
-
-(export '%filament::*filament+math+d+tau* "%FILAMENT")
-
-(export '%filament::*filament+math+d+two-over-sqrtpi* "%FILAMENT")
-
-(export '%filament::count "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<float>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+usage "%FILAMENT")
-
-(export '%filament::filament+engine+get-engine "%FILAMENT")
-
-(export '%filament::reserved "%FILAMENT")
-
-(export '%filament::filament+culler "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<bool>>
-        "%FILAMENT")
-
-(export '%filament::filament+render "%FILAMENT")
-
-(export '%filament::utils+entity-instance<filament+light-manager+true>
-        "%FILAMENT")
-
-(export '%filament::filament+get-children-begin "%FILAMENT")
-
-(export '%filament::min "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+double>
-        "%FILAMENT")
-
-(export '%filament::filament+renderer+copy-frame-flag "%FILAMENT")
-
-(export '%filament::shadow-near-hint "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+char>+reference
-        "%FILAMENT")
-
-(export '%filament::translation "%FILAMENT")
-
-(export '%filament::filament+~children-iterator "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-mat-helpers "%FILAMENT")
-
-(export '%filament::*filament+math+f+tau* "%FILAMENT")
-
-(export '%filament::filament+math+float2 "%FILAMENT")
-
-(export '%filament::filament+get-type "%FILAMENT")
-
-(export '%filament::filament+parameter-info "%FILAMENT")
-
-(export '%filament::filament+blending-mode "%FILAMENT")
-
-(export '%filament::filament+view+anti-aliasing "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+set-model-matrix "%FILAMENT")
-
-(export '%filament::filament+stream "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<double> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-quaternion+float>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+f-1-pi* "%FILAMENT")
-
-(export '%filament::light-cone-rad "%FILAMENT")
-
-(export '%filament::filament+environment "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+int>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-quaternion+double>
-        "%FILAMENT")
-
-(export '%filament::filament+frustum+plane "%FILAMENT")
-
-(export '%filament::filament+math+details+upper-left "%FILAMENT")
-
-(export '%filament::filament+s-rgb-color-a "%FILAMENT")
-
-(export '%filament::filament+get-sampler-params "%FILAMENT")
-
-(export '%filament::long-double "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>+const-reference
-        "%FILAMENT")
-
-(export '%filament::*filament+math+details+size* "%FILAMENT")
-
-(export '%filament::filament+get-renderable-manager "%FILAMENT")
-
-(export '%filament::filament+set-display-info "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>+no-init
-        "%FILAMENT")
-
-(export '%filament::%%elems- "%FILAMENT")
-
-(export '%filament::filament+get-bounding-sphere "%FILAMENT")
-
-(export '%filament::clear-color "%FILAMENT")
-
-(export '%filament::mid-point "%FILAMENT")
-
-(export '%filament::*filament+math+f-2-sqrtpi* "%FILAMENT")
-
-(export '%filament::anamorphism "%FILAMENT")
-
-(export '%filament::filament+irradiance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+int>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+quath "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+char>
-        "%FILAMENT")
-
-(export '%filament::filament+get-intensity "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-mat-square-functions
-        "%FILAMENT")
-
-(export '%filament::filament+set-material-instance-at "%FILAMENT")
-
-(export '%filament::filament+set-wrap-mode-r "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+char>+size-type
-        "%FILAMENT")
-
-(export '%filament::r "%FILAMENT")
-
-(export '%filament::filament+light-manager+shadow-cascades+compute-practical-splits
-        "%FILAMENT")
-
-(export '%filament::filament+camera+projection "%FILAMENT")
-
-(export '%filament::filament+set-tone-mapping "%FILAMENT")
-
-(export '%filament::filament+get-culling-far "%FILAMENT")
-
-(export '%filament::filament+copy-frame "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<short>>
-        "%FILAMENT")
-
-(export '%filament::filament+get-specular-anti-aliasing-variance
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+int>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+f+two-over-pi* "%FILAMENT")
-
-(export '%filament::clear-stencil "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-quaternion+float>
-        "%FILAMENT")
-
-(export '%filament::radius "%FILAMENT")
-
-(export '%filament::filament+get-ambient-occlusion-options
-        "%FILAMENT")
-
-(export '%filament::stp "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec-product-operators
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~face-offsets "%FILAMENT")
-
-(export '%filament::filament+backend+raster-state+blend-equation
-        "%FILAMENT")
-
-(export '%filament::filament+builder "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+char>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+backend+driver "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+half "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec-functions
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+set-axis-aligned-bounding-box
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<float>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<bool>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+bool>
-        "%FILAMENT")
-
-(export '%filament::*filament+set-presentation-time* "%FILAMENT")
-
-(export '%filament::xy "%FILAMENT")
-
-(export '%filament::filament+is-spot-light "%FILAMENT")
-
-(export '%filament::height-falloff "%FILAMENT")
-
-(export '%filament::filament+backend+raster-state+culling-mode
-        "%FILAMENT")
-
-(export '%filament::filament+set-geometry-at "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer+populate-tangent-quaternions
-        "%FILAMENT")
-
-(export '%filament::filament+get-fog-options "%FILAMENT")
-
-(export '%filament::*filament+math+d+pi-2* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-mat44+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<bool>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+short>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+backend+render-pass-flags "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>+size
-        "%FILAMENT")
-
-(export '%filament::filament+ambient-occlusion-options "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec-add-operators
-        "%FILAMENT")
-
-(export '%filament::filament+box "%FILAMENT")
-
-(export '%filament::homogeneous-scaling "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+~skybox "%FILAMENT")
-
-(export '%filament::filament+has-specular-anti-aliasing "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<bool>+value-type
-        "%FILAMENT")
-
-(export '%filament::utils+entity-instance<filament+transform-manager+false>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<int>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~default-platform "%FILAMENT")
-
-(export '%filament::highlight "%FILAMENT")
-
-(export '%filament::filament+set-dithering "%FILAMENT")
-
-(export '%filament::filament+math+details+arithmetic-result<float+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+int>
-        "%FILAMENT")
-
-(export '%filament::filament+texture+is-texture-format-supported
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+get-scene "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<bool>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-rotation "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<char>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+as-array "%FILAMENT")
-
-(export '%filament::*filament+math+s-shift* "%FILAMENT")
-
-(export '%filament::filament+has-shadow-multiplier "%FILAMENT")
-
-(export '%filament::filament+material+sampler-format "%FILAMENT")
-
-(export '%filament::filament+f-material "%FILAMENT")
-
-(export '%filament::*filament+efficiency-halogen* "%FILAMENT")
-
-(export '%filament::*filament+math+s-mask* "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-params "%FILAMENT")
-
-(export '%filament::filament+is-point-light "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<filament+math+half>
-        "%FILAMENT")
-
-(export '%filament::filament+math+int4 "%FILAMENT")
-
-(export '%filament::filament+camera "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<double>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+swap-chain "%FILAMENT")
-
-(export '%filament::filament+~transform-manager "%FILAMENT")
-
-(export '%filament::name "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<double>+value-type
-        "%FILAMENT")
-
-(export '%filament::*filament+math+d+pi* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+value-type
-        "%FILAMENT")
-
-(export '%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+utils+entity-instance<filament+transform-manager+false>*+utils+entity-instance<filament+transform-manager+false>&>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<char>+reference
-        "%FILAMENT")
-
-(export '%filament::roundness "%FILAMENT")
-
-(export '%filament::z "%FILAMENT")
-
-(export '%filament::fog-color-from-ibl "%FILAMENT")
-
-(export '%filament::filament+get-material "%FILAMENT")
-
-(export '%filament::filament+set-bloom-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+double>
-        "%FILAMENT")
-
-(export '%filament::filament+rotation "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::vsync-offset-nanos "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<int>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<int>>
-        "%FILAMENT")
-
-(export '%filament::filament+is-post-processing-enabled "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+int>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+light-manager "%FILAMENT")
-
-(export '%filament::filament+backend+~attribute "%FILAMENT")
-
-(export '%filament::filament+is-screen-space-refraction-enabled
-        "%FILAMENT")
-
-(export '%filament::rg "%FILAMENT")
-
-(export '%filament::filament+backend+get-user "%FILAMENT")
-
-(export '%filament::filament+backend+render-pass-params "%FILAMENT")
-
-(export '%filament::filament+set-image "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<short>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+~ambient-occlusion-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+f-log10e* "%FILAMENT")
-
-(export '%filament::utils+entity "%FILAMENT")
-
-(export '%filament::filament+import "%FILAMENT")
-
-(export '%filament::filament+backend+set-callback "%FILAMENT")
-
-(export '%filament::filament+math+details+operator~ "%FILAMENT")
-
-(export '%filament::filament+index-buffer "%FILAMENT")
-
-(export '%filament::filament+material+blending-mode "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat22<double> "%FILAMENT")
-
-(export '%filament::filament+get-vertex-domain "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+row-major-init
-        "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer+buffer-descriptor
-        "%FILAMENT")
-
-(export '%filament::discard "%FILAMENT")
-
-(export '%filament::filament+engine+create "%FILAMENT")
-
-(export '%filament::utils+bitset<unsigned+int+1+void> "%FILAMENT")
-
-(export '%filament::filament+to-linear "%FILAMENT")
-
-(export '%filament::*filament+commit* "%FILAMENT")
-
-(export '%filament::filament+get-target "%FILAMENT")
-
-(export '%filament::filament+backend+default-platform+create
-        "%FILAMENT")
-
-(export '%filament::filament+~light-manager "%FILAMENT")
-
-(export '%filament::slope "%FILAMENT")
-
-(export '%filament::filament+skinning "%FILAMENT")
-
-(export '%filament::utils+as-value "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+float>
-        "%FILAMENT")
-
-(export '%filament::filament+material+shader-model "%FILAMENT")
-
-(export '%filament::*filament+backend+pipeline-stage-count*
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+scene "%FILAMENT")
-
-(export '%filament::*filament+efficiency-led* "%FILAMENT")
-
-(export '%filament::filament+backend+platform+external-texture
-        "%FILAMENT")
-
-(export '%filament::filament+set-skybox "%FILAMENT")
-
-(export '%filament::filament+indirect-light+get-color-estimate
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-quaternion+float>
-        "%FILAMENT")
-
-(export '%filament::tangents-stride "%FILAMENT")
-
-(export '%filament::filament+set-indirect-light "%FILAMENT")
-
-(export '%filament::filament+operator= "%FILAMENT")
-
-(export '%filament::filament+set-blend-mode "%FILAMENT")
-
-(export '%filament::filament+backend+stream "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+stream-type "%FILAMENT")
-
-(export '%filament::filament+backend+fence-status "%FILAMENT")
-
-(export '%filament::filament+get-default-instance "%FILAMENT")
-
-(export '%filament::buffer "%FILAMENT")
-
-(export '%filament::filament+backend+buffer-usage "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<short>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+set-wrap-mode-s "%FILAMENT")
-
-(export '%filament::filament+is-depth-culling-enabled "%FILAMENT")
-
-(export '%filament::filament+~index-buffer "%FILAMENT")
-
-(export '%filament::filament+set-frustum-culling-enabled "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+char>+size-type
-        "%FILAMENT")
-
-(export '%filament::strength "%FILAMENT")
-
-(export '%filament::filament+attribute "%FILAMENT")
-
-(export '%filament::filament+texture "%FILAMENT")
-
-(export '%filament::filament+backend+element-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<float>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-renderable-count "%FILAMENT")
-
-(export '%filament::filament+backend+~external-texture "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+int>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::utils+operator!= "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quat-product-operators<t-quaternion+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec3 "%FILAMENT")
-
-(export '%filament::filament+set-buffer-at "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<char>>
-        "%FILAMENT")
-
-(export '%filament::filament+begin "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+int>
-        "%FILAMENT")
-
-(export '%filament::filament+set-exposure "%FILAMENT")
-
-(export '%filament::filament+~shadow-options "%FILAMENT")
-
-(export '%filament::filament+indirect-light+builder "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<float>>
-        "%FILAMENT")
-
-(export '%filament::maximum-opacity "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+int>>
-        "%FILAMENT")
-
-(export '%filament::filament+get-child-count "%FILAMENT")
-
-(export '%filament::filament+set-min-filter "%FILAMENT")
-
-(export '%filament::utils+entity-instance-base+type "%FILAMENT")
-
-(export '%filament::polygon-offset-constant "%FILAMENT")
-
-(export '%filament::filament+math+bool4 "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec4 "%FILAMENT")
-
-(export '%filament::filament+set-specular-anti-aliasing-threshold
-        "%FILAMENT")
-
-(export '%filament::filament+~vsm-shadow-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<char>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+int>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+blend-function "%FILAMENT")
-
-(export '%filament::normals "%FILAMENT")
-
-(export '%filament::filament+backend+operator[] "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<bool> "%FILAMENT")
-
-(export '%filament::filament+set-depth-of-field-options "%FILAMENT")
-
-(export '%filament::filament+get-wrap-mode-t "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-mat33+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+create-driver "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<char> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+short>+value-type
-        "%FILAMENT")
-
-(export '%filament::*filament+math+f-sqrt1-2* "%FILAMENT")
-
-(export '%filament::filament+empty "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<float>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-tone-mapping "%FILAMENT")
-
-(export '%filament::alignment "%FILAMENT")
-
-(export '%filament::filament+fence "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+char>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~fence "%FILAMENT")
-
-(export '%filament::filament+view+tone-mapping "%FILAMENT")
-
-(export '%filament::*filament+math+d+two-over-pi* "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<double>>
-        "%FILAMENT")
-
-(export '%filament::hdr-color-buffer "%FILAMENT")
-
-(export '%filament::filament+get-corners "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer+attribute-type "%FILAMENT")
-
-(export '%filament::filament+is-depth-write-enabled "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<bool>+reference
-        "%FILAMENT")
-
-(export '%filament::utils+entity-instance<filament+renderable-manager+false>
-        "%FILAMENT")
-
-(export '%filament::dirt-strength "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-helpers<t-mat33+float>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+default-platform+destroy
-        "%FILAMENT")
-
-(export '%filament::filament+set-name "%FILAMENT")
-
-(export '%filament::filament+texture+sampler "%FILAMENT")
-
-(export '%filament::filament+get-texture "%FILAMENT")
-
-(export '%filament::filament+set-sun-halo-size "%FILAMENT")
-
-(export '%filament::filament+material+shading "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+float>
-        "%FILAMENT")
-
-(export '%filament::filament+is-double-sided "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<float> "%FILAMENT")
-
-(export '%filament::height "%FILAMENT")
-
-(export '%filament::*filament+backend+fence-wait-for-ever*
-        "%FILAMENT")
-
-(export '%filament::filament+skybox "%FILAMENT")
-
-(export '%filament::filament+~builder "%FILAMENT")
-
-(export '%filament::filament+commit-local-transform-transaction
-        "%FILAMENT")
-
-(export '%filament::filament+set-temporal-anti-aliasing-options
-        "%FILAMENT")
-
-(export '%filament::bottom "%FILAMENT")
-
-(export '%filament::utils+job-system "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<filament+math+half>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<bool>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+texture-sampler "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+arithmetic-result<float+float>+type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+~vertex-buffer "%FILAMENT")
-
-(export '%filament::filament+material-instance+culling-mode
-        "%FILAMENT")
-
-(export '%filament::filament+renderable-manager+bone "%FILAMENT")
-
-(export '%filament::filament+debug-registry "%FILAMENT")
-
-(export '%filament::filament+get-entity "%FILAMENT")
-
-(export '%filament::filament+normalized "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<int>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-specular-anti-aliasing-threshold
-        "%FILAMENT")
-
-(export '%filament::filament+swizzle "%FILAMENT")
-
-(export '%filament::filament+uniform-buffer "%FILAMENT")
-
-(export '%filament::filament+get-layer-mask "%FILAMENT")
-
-(export '%filament::filament+get-color-grading "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+int>
-        "%FILAMENT")
-
-(export '%filament::filament+get-light-count "%FILAMENT")
-
-(export '%filament::filament+get-blending-mode "%FILAMENT")
-
-(export '%filament::filament+backend+has-callback "%FILAMENT")
-
-(export '%filament::filament+math+details+get-row-size "%FILAMENT")
-
-(export '%filament::filament+math+details+get-row-count "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+float>
-        "%FILAMENT")
-
-(export '%filament::filament+~box "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+row-major-init
-        "%FILAMENT")
-
-(export '%filament::|FILAMENT+MATH+OPERATOR""-K| "%FILAMENT")
-
-(export '%filament::filament+backend+raster-state+depth-func
-        "%FILAMENT")
-
-(export '%filament::min-scale "%FILAMENT")
-
-(export '%filament::filament+get-vertex-count "%FILAMENT")
-
-(export '%filament::out-buffer "%FILAMENT")
-
-(export '%filament::filament+get-debug-registry "%FILAMENT")
-
-(export '%filament::filament+temporal-anti-aliasing-options
-        "%FILAMENT")
-
-(export '%filament::utils+destroy "%FILAMENT")
-
-(export '%filament::filament+color-grading "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+int>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-compare-mode "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<char>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+spot-light-cone "%FILAMENT")
-
-(export '%filament::uintptr-t "%FILAMENT")
-
-(export '%filament::out-stride "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<int>>
-        "%FILAMENT")
-
-(export '%filament::presentation-deadline-nanos "%FILAMENT")
-
-(export '%filament::filament+get-culling-projection-matrix
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+double>
-        "%FILAMENT")
-
-(export '%filament::filament+get-normalized-plane "%FILAMENT")
-
-(export '%filament::low-pass-filter "%FILAMENT")
-
-(export '%filament::*filament+math+d+sqrt1-2* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+int>
-        "%FILAMENT")
-
-(export '%filament::*filament+base-level* "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<double>>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+d+ln2* "%FILAMENT")
-
-(export '%filament::filament+flush-and-wait "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+char>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+texture-sampler+wrap-mode "%FILAMENT")
-
-(export '%filament::*filament+material-version* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quat-product-operators<t-quaternion+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-quat-product-operators
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+const-reference
-        "%FILAMENT")
-
-(export '%filament::*filament+clear* "%FILAMENT")
-
-(export '%filament::filament+get-position "%FILAMENT")
-
-(export '%filament::filament+get-anisotropy "%FILAMENT")
-
-(export '%filament::*filament+math+f+deg-to-rad* "%FILAMENT")
-
-(export '%filament::filament+backend+is-compressed-format "%FILAMENT")
-
-(export '%filament::filament+~frustum "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<char>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<float> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<float>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+short>
-        "%FILAMENT")
-
-(export '%filament::filament+get-wrap-mode-s "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+set-dynamic-lighting-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-mag-filter "%FILAMENT")
-
-(export '%filament::filament+backend+blend-equation "%FILAMENT")
-
-(export '%filament::filament+get-sun-angular-radius "%FILAMENT")
-
-(export '%filament::filament+create-swap-chain "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<double>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<short>+size-type
-        "%FILAMENT")
-
-(export '%filament::screen-space-contact-shadows "%FILAMENT")
-
-(export '%filament::filament+backend+shader-model "%FILAMENT")
-
-(export '%filament::s "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+float>
-        "%FILAMENT")
-
-(export '%filament::filament+set-sun-halo-falloff "%FILAMENT")
-
-(export '%filament::filament+end-frame "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+char>
-        "%FILAMENT")
-
-(export '%filament::filament+create-renderer "%FILAMENT")
-
-(export '%filament::filament+radiance "%FILAMENT")
-
-(export '%filament::filament+view+vsm-shadow-options "%FILAMENT")
-
-(export '%filament::filament+material+vertex-domain "%FILAMENT")
-
-(export '%filament::filament+set-screen-space-contact-shadows
-        "%FILAMENT")
-
-(export '%filament::filament+light-manager+type "%FILAMENT")
-
-(export '%filament::uint8-t "%FILAMENT")
-
-(export '%filament::filament+backend+~render-pass-flags "%FILAMENT")
-
-(export '%filament::map-size "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-transform<t-mat44+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+float>
-        "%FILAMENT")
-
-(export '%filament::filament+set-shadow-type "%FILAMENT")
-
-(export '%filament::filament+set-cast-shadows "%FILAMENT")
-
-(export '%filament::filament+set-default-parameter "%FILAMENT")
-
-(export '%filament::*filament+math+f-ln2* "%FILAMENT")
-
-(export '%filament::max-aperture-diameter "%FILAMENT")
-
-(export '%filament::*filament+math+d+sqrt2* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>+no-init
-        "%FILAMENT")
-
-(export '%filament::filament+set-falloff "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+char>+reference
-        "%FILAMENT")
-
-(export '%filament::*filament+math+details+num-cols* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-mat44+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<int>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+backend+pixel-buffer-descriptor+compute-data-size
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double> "%FILAMENT")
-
-(export '%filament::utils+is-valid "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+double>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+viewport "%FILAMENT")
-
-(export '%filament::filament+color-conversion "%FILAMENT")
-
-(export '%filament::x "%FILAMENT")
-
-(export '%filament::filament+get-sun-halo-falloff "%FILAMENT")
-
-(export '%filament::filament+create "%FILAMENT")
-
-(export '%filament::filament+index-count "%FILAMENT")
-
-(export '%filament::filament+render-target "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<double>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+color+cct "%FILAMENT")
-
-(export '%filament::*filament+max-morph-targets* "%FILAMENT")
-
-(export '%filament::filament+backend+face-offsets+size-type
-        "%FILAMENT")
-
-(export '%filament::bias "%FILAMENT")
-
-(export '%filament::filament+set-mag-filter "%FILAMENT")
-
-(export '%filament::filament+math+uint4 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+int>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+is-frustum-culling-enabled "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<short> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-quaternion<float>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+int2 "%FILAMENT")
-
-(export '%filament::filament+fog-options "%FILAMENT")
-
-(export '%filament::intensity "%FILAMENT")
-
-(export '%filament::uint16-t "%FILAMENT")
-
-(export '%filament::filament+engine+destroy "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-quaternion+double>
-        "%FILAMENT")
-
-(export '%filament::cascade-split-positions "%FILAMENT")
-
-(export '%filament::filament+get-format "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>
-        "%FILAMENT")
-
-(export '%filament::filament+set-shadowing-enabled "%FILAMENT")
-
-(export '%filament::utils+entity-instance-base "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+short>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-sample-count "%FILAMENT")
-
-(export '%filament::filament+is-directional "%FILAMENT")
-
-(export '%filament::filament+interpolation "%FILAMENT")
-
-(export '%filament::filter-width "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+get-column-count
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+get-transform-for-normals
-        "%FILAMENT")
-
-(export '%filament::std+array<filament+backend+attribute+16>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<int>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+set-wrap-mode-t "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-transform<t-mat33+double>
-        "%FILAMENT")
-
-(export '%filament::refresh-rate "%FILAMENT")
-
-(export '%filament::filament+light-manager+builder "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+no-init
-        "%FILAMENT")
-
-(export '%filament::filament+f-texture "%FILAMENT")
-
-(export '%filament::*filament+math+f-pi-4* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+has-blending "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+int>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+aabb+corners+value-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+char>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+primitive-type "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-min-filter "%FILAMENT")
-
-(export '%filament::filament+f-light-manager "%FILAMENT")
-
-(export '%filament::filament+remove-entities "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer "%FILAMENT")
-
-(export '%filament::filament+backend+polygon-offset "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+get-name "%FILAMENT")
-
-(export '%filament::filament+get-max "%FILAMENT")
-
-(export '%filament::filament+texture+compressed-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>+size-type
-        "%FILAMENT")
-
-(export '%filament::*filament+math+e-shift* "%FILAMENT")
-
-(export '%filament::filament+sun-angular-radius "%FILAMENT")
-
-(export '%filament::filament+get-axis-aligned-bounding-box
-        "%FILAMENT")
-
-(export '%filament::filament+generate-mipmaps "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-product-operators<t-mat33+float+t-vec3>
-        "%FILAMENT")
-
-(export '%filament::filament+is-empty "%FILAMENT")
-
-(export '%filament::filament+texture+type "%FILAMENT")
-
-(export '%filament::filament+set-lens-projection "%FILAMENT")
-
-(export '%filament::*filament+max-custom-attributes* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+get-transform-for-normals
-        "%FILAMENT")
-
-(export '%filament::filament+view+dithering "%FILAMENT")
-
-(export '%filament::filament+shading "%FILAMENT")
-
-(export '%filament::*filament+math+d+one-over-pi* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<bool> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+row-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<bool>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-min-filter "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+short>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+set "%FILAMENT")
-
-(export '%filament::filament+backend+face-offsets "%FILAMENT")
-
-(export '%filament::filament+get-backend "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+bool>
-        "%FILAMENT")
-
-(export '%filament::|FILAMENT+MATH+OPERATOR""-J| "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+int>+value-type
-        "%FILAMENT")
-
-(export '%filament::utils+~entity-instance-base "%FILAMENT")
-
-(export '%filament::utils+entity-manager "%FILAMENT")
-
-(export '%filament::filament+buffer-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<int> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quat-functions<t-quaternion+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+char>
-        "%FILAMENT")
-
-(export '%filament::filament+texture+pixel-buffer-descriptor
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<double>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+direction "%FILAMENT")
-
-(export '%filament::filament+backend+operator= "%FILAMENT")
-
-(export '%filament::filament+backend+pixel-buffer-descriptor+pixel-data-format
-        "%FILAMENT")
-
-(export '%filament::filament+get-camera "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+short>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+backend+platform "%FILAMENT")
-
-(export '%filament::filament+get-irradiance-texture "%FILAMENT")
-
-(export '%filament::center "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<short> "%FILAMENT")
-
-(export '%filament::utils+get-id "%FILAMENT")
-
-(export '%filament::filament+~temporal-anti-aliasing-options
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+ortho
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+light-manager+shadow-cascades+compute-uniform-splits
-        "%FILAMENT")
-
-(export '%filament::filament+get-shutter-speed "%FILAMENT")
-
-(export '%filament::*filament+math+d+rad-to-deg* "%FILAMENT")
-
-(export '%filament::filament+renderer+display-info "%FILAMENT")
-
-(export '%filament::filament+set-render-quality "%FILAMENT")
-
-(export '%filament::int8-t "%FILAMENT")
-
-(export '%filament::*filament+backend+shader-model-count* "%FILAMENT")
-
-(export '%filament::filament+set-custom-projection "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+double>
-        "%FILAMENT")
-
-(export '%filament::filament+get-up-vector "%FILAMENT")
-
-(export '%filament::width "%FILAMENT")
-
-(export '%filament::filament+set-visible-layers "%FILAMENT")
-
-(export '%filament::filament+backend+backend "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+view+ambient-occlusion-options
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~stream "%FILAMENT")
-
-(export '%filament::filament+is-front-face-winding-inverted
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+size "%FILAMENT")
-
-(export '%filament::filament+backend+frame-finished-callback
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+no-init
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~present-callable "%FILAMENT")
-
-(export '%filament::filament+renderable-manager+primitive-type
-        "%FILAMENT")
-
-(export '%filament::filament+format "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quat-functions<t-quaternion+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+~shadow-cascades "%FILAMENT")
-
-(export '%filament::filament+width "%FILAMENT")
-
-(export '%filament::filament+get-near "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+double>
-        "%FILAMENT")
-
-(export '%filament::filament+set-intensity-candela "%FILAMENT")
-
-(export '%filament::filament+engine+backend "%FILAMENT")
-
-(export '%filament::filament+set-intensity "%FILAMENT")
-
-(export '%filament::flags "%FILAMENT")
-
-(export '%filament::filament+view+blend-mode "%FILAMENT")
-
-(export '%filament::mirror "%FILAMENT")
-
-(export '%filament::filament+backend+~pixel-buffer-descriptor
-        "%FILAMENT")
-
-(export '%filament::filament+texture-sampler+compare-func "%FILAMENT")
-
-(export '%filament::filament+specular-ambient-occlusion "%FILAMENT")
-
-(export '%filament::shadow-cascades "%FILAMENT")
-
-(export '%filament::filament+texture+cubemap-face "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+short>
-        "%FILAMENT")
-
-(export '%filament::filament+show-sun "%FILAMENT")
-
-(export '%filament::filament+set-blend-order-at "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<int> "%FILAMENT")
-
-(export '%filament::size-t "%FILAMENT")
-
-(export '%filament::filament+renderer+clear-options "%FILAMENT")
-
-(export '%filament::|FILAMENT+MATH+DETAILS+OPERATOR()| "%FILAMENT")
-
-(export '%filament::filament+to-srgb "%FILAMENT")
-
-(export '%filament::utils+entity-manager+get "%FILAMENT")
-
-(export '%filament::filament+math+byte4 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44+fov "%FILAMENT")
-
-(export '%filament::filament+math+mat2 "%FILAMENT")
-
-(export '%filament::*filament+efficiency-fluorescent* "%FILAMENT")
-
-(export '%filament::utils+on-entities-destroyed "%FILAMENT")
-
-(export '%filament::filament+set-layer-mask "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+short>
-        "%FILAMENT")
-
-(export '%filament::type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-square-functions<t-mat33+float>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+details+col-size* "%FILAMENT")
-
-(export '%filament::filament+material+culling-mode "%FILAMENT")
-
-(export '%filament::filament+f-vertex-buffer "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+double>
-        "%FILAMENT")
-
-(export '%filament::min-horizon-angle-rad "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-format "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<int>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-vsm-shadow-options "%FILAMENT")
-
-(export '%filament::filament+~aabb "%FILAMENT")
-
-(export '%filament::filament+transform-manager+instance "%FILAMENT")
-
-(export '%filament::ssct "%FILAMENT")
-
-(export '%filament::half-extent "%FILAMENT")
-
-(export '%filament::filament+backend+is-etc2compression "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<int> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-mat33+float>
-        "%FILAMENT")
-
-(export '%filament::filament+color+illuminant-d "%FILAMENT")
-
-(export '%filament::*filament+backend+swap-chain-config-enable-xcb*
-        "%FILAMENT")
-
-(export '%filament::utils+operator-- "%FILAMENT")
-
-(export '%filament::filament+material "%FILAMENT")
-
-(export '%filament::filament+math+mat4 "%FILAMENT")
-
-(export '%filament::filament+get-children-end "%FILAMENT")
-
-(export '%filament::filament+math+short3 "%FILAMENT")
-
-(export '%filament::filament+set-projection "%FILAMENT")
-
-(export '%filament::filament+get-transform-manager "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<double>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<int>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+destroy-camera-component "%FILAMENT")
-
-(export '%filament::filament+view+shadow-type "%FILAMENT")
-
-(export '%filament::int32-t "%FILAMENT")
-
-(export '%filament::filament+blend-order "%FILAMENT")
-
-(export '%filament::filament+set-clear-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quat-product-operators<t-quaternion+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::in-scattering-size "%FILAMENT")
-
-(export '%filament::filament+texture+compute-texture-data-size
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<bool>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-temporal-anti-aliasing-options
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+char>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+f+sqrt1-2* "%FILAMENT")
-
-(export '%filament::left "%FILAMENT")
-
-(export '%filament::*filament+math+f-log2e* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+perspective
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+short>+reference
-        "%FILAMENT")
-
-(export '%filament::*filament+backend+flag-normalized* "%FILAMENT")
-
-(export '%filament::filament+set-front-face-winding-inverted
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<float>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+get-column-size "%FILAMENT")
-
-(export '%filament::near "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+fuzzy-equal
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+to-quaternion "%FILAMENT")
-
-(export '%filament::filament+get-light-manager "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<filament+math+half>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+m-shift* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-mat44+float>
-        "%FILAMENT")
-
-(export '%filament::*filament+math+d+log10e* "%FILAMENT")
-
-(export '%filament::filament+get-falloff "%FILAMENT")
-
-(export '%filament::filament+set-spot-light-cone "%FILAMENT")
-
-(export '%filament::normals-stride "%FILAMENT")
-
-(export '%filament::filament+attribute-bitset "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-quaternion+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+get-color-estimate "%FILAMENT")
-
-(export '%filament::filament+set-shadow-options "%FILAMENT")
-
-(export '%filament::filament+vertex-domain "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<double>+const-reference
-        "%FILAMENT")
-
-(export '%filament::|FILAMENT+MATH+OPERATOR""-H| "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::contact-distance-max "%FILAMENT")
-
-(export '%filament::filament+set-specular-anti-aliasing-variance
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+short>
-        "%FILAMENT")
-
-(export '%filament::filament+refraction-type "%FILAMENT")
-
-(export '%filament::unit-quaternion "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<double>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+clear-options "%FILAMENT")
-
-(export '%filament::filament+set-morph-weights "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+col-type
-        "%FILAMENT")
-
-(export '%filament::filament+backend+pixel-data-format "%FILAMENT")
-
-(export '%filament::filament+intensity "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<bool>+size-type
-        "%FILAMENT")
-
-(export '%filament::st "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<short>>
-        "%FILAMENT")
-
-(export '%filament::filament+bounding-box "%FILAMENT")
-
-(export '%filament::filament+backend+~render-pass-params "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::size "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-mat44+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+pack-tangent-frame
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-quat-functions
-        "%FILAMENT")
-
-(export '%filament::filament+set-vsm-shadow-options "%FILAMENT")
-
-(export '%filament::quality "%FILAMENT")
-
-(export '%filament::filament+rgb-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+ubyte3 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+int>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+backend+top "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+perspective
-        "%FILAMENT")
-
-(export '%filament::filament+f-indirect-light "%FILAMENT")
-
-(export '%filament::filament+skybox+builder "%FILAMENT")
-
-(export '%filament::polygon-offset-slope "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-helpers<t-mat44+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<double> "%FILAMENT")
-
-(export '%filament::filament+set-depth-write "%FILAMENT")
-
-(export '%filament::filament+get-reflections-texture "%FILAMENT")
-
-(export '%filament::filament+color "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+col-type
-        "%FILAMENT")
-
-(export '%filament::filament+~quat-tangent-context "%FILAMENT")
-
-(export '%filament::filament+corners "%FILAMENT")
-
-(export '%filament::filament+math+mat3f "%FILAMENT")
-
-(export '%filament::filament+backend+attribute "%FILAMENT")
-
-(export '%filament::filament+shadow-cascades "%FILAMENT")
-
-(export '%filament::filament+math+mat2f "%FILAMENT")
-
-(export '%filament::filament+backend+attribute-array "%FILAMENT")
-
-(export '%filament::scale-rate "%FILAMENT")
-
-(export '%filament::filament+backend+fence "%FILAMENT")
-
-(export '%filament::filament+set-ambient-occlusion "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-quaternion+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+get-vignette-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>+reference
-        "%FILAMENT")
-
-(export '%filament::depth-bias "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<double>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<bool> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+char>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-dynamic-resolution-options
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+char>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+bool>
-        "%FILAMENT")
-
-(export '%filament::light-direction "%FILAMENT")
-
-(export '%filament::filament+view "%FILAMENT")
-
-(export '%filament::filament+set-external-stream "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-product-operators<t-mat44+double+t-vec4>
-        "%FILAMENT")
-
-(export '%filament::filament+get-shadow-options "%FILAMENT")
-
-(export '%filament::*filament+math+d+log2e* "%FILAMENT")
-
-(export '%filament::utils+operator++ "%FILAMENT")
-
-(export '%filament::filament+math+double2 "%FILAMENT")
-
-(export '%filament::filament+bloom-options "%FILAMENT")
-
-(export '%filament::filament+texture+builder "%FILAMENT")
-
-(export '%filament::filament+set-shadows-enabled "%FILAMENT")
-
-(export '%filament::filament+get-material-domain "%FILAMENT")
-
-(export '%filament::anisotropy "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<short>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+double3 "%FILAMENT")
-
-(export '%filament::filament+refraction-mode "%FILAMENT")
-
-(export '%filament::filament+~corners "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-quaternion<double>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-square-functions<t-mat44+double>
-        "%FILAMENT")
-
-(export '%filament::filament+set-depth-culling "%FILAMENT")
-
-(export '%filament::filament+math+short2 "%FILAMENT")
-
-(export '%filament::filament+get-engine "%FILAMENT")
-
-(export '%filament::filament+~viewport "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+short>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+short>
-        "%FILAMENT")
-
-(export '%filament::filament+set-debug-camera "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<float>>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+col-type
-        "%FILAMENT")
-
-(export '%filament::filament+view+bloom-options+blend-mode
-        "%FILAMENT")
-
-(export '%filament::filament+unset-scissor "%FILAMENT")
-
-(export '%filament::filament+create-scene "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+fov
-        "%FILAMENT")
-
-(export '%filament::filament+math+ubyte2 "%FILAMENT")
-
-(export '%filament::filament+backend+texture-swizzle "%FILAMENT")
-
-(export '%filament::filament+extent "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+short>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-wrap-mode "%FILAMENT")
-
-(export '%filament::filament+set-color-write "%FILAMENT")
-
-(export '%filament::*filament+math+f+two-over-sqrtpi* "%FILAMENT")
-
-(export '%filament::filament+get-refraction-mode "%FILAMENT")
-
-(export '%filament::stable "%FILAMENT")
-
-(export '%filament::*filament+backend+max-sampler-count* "%FILAMENT")
-
-(export '%filament::filament+~depth-of-field-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+view+bloom-options "%FILAMENT")
-
-(export '%filament::filament+f-render-primitive "%FILAMENT")
-
-(export '%filament::utils+entity-instance<filament+transform-manager+true>
-        "%FILAMENT")
-
-(export '%filament::filament+set-fog-options "%FILAMENT")
-
-(export '%filament::filament+backend+~depth-range "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<bool>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-camera-component "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<char> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+view+dynamic-resolution-options
-        "%FILAMENT")
-
-(export '%filament::filament+operator* "%FILAMENT")
-
-(export '%filament::filament+cast-light "%FILAMENT")
-
-(export '%filament::filament+get-aperture "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<filament+math+half>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+set-bones "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+set-scissor "%FILAMENT")
-
-(export '%filament::filament+~view "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec4+char>
-        "%FILAMENT")
-
-(export '%filament::clear-depth "%FILAMENT")
-
-(export '%filament::filament+~display-info "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+int>+value-type
-        "%FILAMENT")
-
-(export '%filament::quat-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>
-        "%FILAMENT")
-
-(export '%filament::filament+set-color "%FILAMENT")
-
-(export '%filament::filament+get-parameter-count "%FILAMENT")
-
-(export '%filament::top "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>+no-init
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+row-major-init
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+short>>
-        "%FILAMENT")
-
-(export '%filament::uint32-t "%FILAMENT")
-
-(export '%filament::filament+set-priority "%FILAMENT")
-
-(export '%filament::filament+backend+shader-type "%FILAMENT")
-
-(export '%filament::filament+sun-halo-size "%FILAMENT")
-
-(export '%filament::filament+get-blend-mode "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<double>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+set-sample-count "%FILAMENT")
-
-(export '%filament::*filament+material-properties-count* "%FILAMENT")
-
-(export '%filament::filament+reflections "%FILAMENT")
-
-(export '%filament::filament+falloff "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<int> "%FILAMENT")
-
-(export '%filament::filament+get-direction-estimate "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+viewport "%FILAMENT")
-
-(export '%filament::filament+is-shadow-caster "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+get-mrt-color-flag "%FILAMENT")
-
-(export '%filament::filament+render-quality "%FILAMENT")
-
-(export '%filament::utils+operator>= "%FILAMENT")
-
-(export '%filament::utils+operator+unsigned+int "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-quaternion+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>+size
-        "%FILAMENT")
-
-(export '%filament::filament+f-skybox "%FILAMENT")
-
-(export '%filament::*filament+math+f+pi* "%FILAMENT")
-
-(export '%filament::*filament+math+f-ln10* "%FILAMENT")
-
-(export '%filament::filament+is-shadow-receiver "%FILAMENT")
-
-(export '%filament::filament+get-parent "%FILAMENT")
-
-(export '%filament::utils+operator< "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<short>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+intersects "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+backend+texture-format "%FILAMENT")
-
-(export '%filament::filament+get-depth-of-field-options "%FILAMENT")
-
-(export '%filament::utils+entity-instance<filament+light-manager+false>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+remove "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+get-height "%FILAMENT")
-
-(export '%filament::filament+get-min "%FILAMENT")
-
-(export '%filament::filament+math+details+~arithmetic-result
-        "%FILAMENT")
-
-(export '%filament::filament+get-shading "%FILAMENT")
-
-(export '%filament::utils+operator<= "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+make-half "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-mat44+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<double>+size
-        "%FILAMENT")
-
-(export '%filament::filament+backend+uniform-type "%FILAMENT")
-
-(export '%filament::*filament+math+d+ln10* "%FILAMENT")
-
-(export '%filament::filament+morphing "%FILAMENT")
-
-(export '%filament::shadow-distance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<char>+size-type
-        "%FILAMENT")
-
-(export '%filament::utils+entity+smuggle "%FILAMENT")
-
-(export '%filament::filament+backend+buffer-descriptor+callback
-        "%FILAMENT")
-
-(export '%filament::filament+set-viewport "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+float>
-        "%FILAMENT")
-
-(export '%filament::filament+view+quality-level "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+short>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<bool>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+transform-manager "%FILAMENT")
-
-(export '%filament::*filament+math+f-sqrt2* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<short> "%FILAMENT")
-
-(export '%filament::filament+index-buffer+builder "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+renderable-manager+instance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+mat4f "%FILAMENT")
-
-(export '%filament::*filament+math+d+e* "%FILAMENT")
-
-(export '%filament::filament+set-transform "%FILAMENT")
-
-(export '%filament::filament+backend+~raster-state "%FILAMENT")
-
-(export '%filament::filament+backend+right "%FILAMENT")
-
-(export '%filament::enabled "%FILAMENT")
-
-(export '%filament::filament+execute "%FILAMENT")
-
-(export '%filament::filament+indirect-light+get-direction-estimate
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+short>
-        "%FILAMENT")
-
-(export '%filament::filament+set-frame-rate-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+short>
-        "%FILAMENT")
-
-(export '%filament::filament+contains "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<double>+size-type
-        "%FILAMENT")
-
-(export '%filament::discard-start "%FILAMENT")
-
-(export '%filament::xyz "%FILAMENT")
-
-(export '%filament::filament+backend+target-buffer-flags "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<int>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<char>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+~clear-options "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-mat44 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+set-double-sided "%FILAMENT")
-
-(export '%filament::*filament+math+f+sqrt2* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44+row-major-init
-        "%FILAMENT")
-
-(export '%filament::filament+material-domain "%FILAMENT")
-
-(export '%filament::filament+sun-halo-falloff "%FILAMENT")
-
-(export '%filament::filament+sampler "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+texture+format "%FILAMENT")
-
-(export '%filament::*filament+math+m-mask* "%FILAMENT")
-
-(export '%filament::filament+set-compare-mode "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-quaternion "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+char>
-        "%FILAMENT")
-
-(export '%filament::filament+get-ambient-occlusion "%FILAMENT")
-
-(export '%filament::offset "%FILAMENT")
-
-(export '%filament::head-room-ratio "%FILAMENT")
-
-(export '%filament::filament+renderable-manager+builder "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+no-init
-        "%FILAMENT")
-
-(export '%filament::blend-mode "%FILAMENT")
-
-(export '%filament::utils+register-listener "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<bool>>
-        "%FILAMENT")
-
-(export '%filament::filament+get-directional-light-camera "%FILAMENT")
-
-(export '%filament::filament+backend+operator!= "%FILAMENT")
-
-(export '%filament::filament+light-manager+builder+result "%FILAMENT")
-
-(export '%filament::filament+get-refraction-type "%FILAMENT")
-
-(export '%filament::vertices "%FILAMENT")
-
-(export '%filament::filament+math+uint2 "%FILAMENT")
-
-(export '%filament::density "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec2 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-quaternion+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+no-init
-        "%FILAMENT")
-
-(export '%filament::filament+math+int3 "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-vec-unary-operators
-        "%FILAMENT")
-
-(export '%filament::utils+~entity-instance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+float>
-        "%FILAMENT")
-
-(export '%filament::utils+entity-manager+get-max-entity-count
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+~t-mat33 "%FILAMENT")
-
-(export '%filament::*filament+math+details+num-rows* "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<bool>>
-        "%FILAMENT")
-
-(export '%filament::filament+depth-of-field-options "%FILAMENT")
-
-(export '%filament::*filament+backend+config-uniform-binding-count*
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+fuzzy-equal
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<bool> "%FILAMENT")
-
-(export '%filament::utils+entity-manager+listener "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+short>+size-type
-        "%FILAMENT")
-
-(export '%filament::max "%FILAMENT")
-
-(export '%filament::utils+is-alive "%FILAMENT")
-
-(export '%filament::*filament+math+f+ln2* "%FILAMENT")
-
-(export '%filament::filament+get-width "%FILAMENT")
-
-(export '%filament::filament+backend+sampler-type "%FILAMENT")
-
-(export '%filament::filament+backend+get-callback "%FILAMENT")
-
-(export '%filament::filament+operator== "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<double> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat22<float> "%FILAMENT")
-
-(export '%filament::*filament+backend+swap-chain-config-transparent*
-        "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer+builder "%FILAMENT")
-
-(export '%filament::upsampling "%FILAMENT")
-
-(export '%filament::filament+backend+platform+stream "%FILAMENT")
-
-(export '%filament::filament+operator++ "%FILAMENT")
-
-(export '%filament::filament+build "%FILAMENT")
-
-(export '%filament::filament+backend+sync-status "%FILAMENT")
-
-(export '%filament::filament+property "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+double>
-        "%FILAMENT")
-
-(export '%filament::filament+renderable-manager "%FILAMENT")
-
-(export '%filament::filament+texture-sampler+min-filter "%FILAMENT")
-
-(export '%filament::filament+f-transform-manager "%FILAMENT")
-
-(export '%filament::filament+screen-space-contact-shadows "%FILAMENT")
-
-(export '%filament::filament+~fog-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<float>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+operator!= "%FILAMENT")
-
-(export '%filament::filament+backend+is-s3tcsrgb-compression
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~polygon-offset "%FILAMENT")
-
-(export '%filament::filament+math+float4 "%FILAMENT")
-
-(export '%filament::*filament+math+f+ln10* "%FILAMENT")
-
-(export '%filament::filament+f-index-buffer "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-mat33+double>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+bool3 "%FILAMENT")
-
-(export '%filament::filament+~color "%FILAMENT")
-
-(export '%filament::filament+set-position "%FILAMENT")
-
-(export '%filament::filament+material+sampler-type "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<int>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+create-view "%FILAMENT")
-
-(export '%filament::filament+texture+prefilter-options "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<bool> "%FILAMENT")
-
-(export '%filament::filament+math+details+operator- "%FILAMENT")
-
-(export '%filament::filament+s-rgb-color "%FILAMENT")
-
-(export '%filament::filament+math+byte2 "%FILAMENT")
-
-(export '%filament::filament+center "%FILAMENT")
-
-(export '%filament::filament+layer-mask "%FILAMENT")
-
-(export '%filament::distance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+short>
-        "%FILAMENT")
-
-(export '%filament::levels "%FILAMENT")
-
-(export '%filament::filament+position "%FILAMENT")
-
-(export '%filament::filament+get-render-target "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+short>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+~renderer "%FILAMENT")
-
-(export '%filament::*filament+backend+swap-chain-config-readable*
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float> "%FILAMENT")
-
-(export '%filament::filament+~texture-sampler "%FILAMENT")
-
-(export '%filament::intptr-t "%FILAMENT")
-
-(export '%filament::filament+get-compare-mode "%FILAMENT")
-
-(export '%filament::filament+vertex-count "%FILAMENT")
-
-(export '%filament::filament+frustum "%FILAMENT")
-
-(export '%filament::stride "%FILAMENT")
-
-(export '%filament::filament+view+ambient-occlusion-options+ssct
-        "%FILAMENT")
-
-(export '%filament::filament+get-levels "%FILAMENT")
-
-(export '%filament::filament+backend+raster-state+blend-function
-        "%FILAMENT")
-
-(export '%filament::filament+get-projection-matrix "%FILAMENT")
-
-(export '%filament::filament+f-engine "%FILAMENT")
-
-(export '%filament::y "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec3+short>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+row-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+char>
-        "%FILAMENT")
-
-(export '%filament::filament+begin-frame "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<float> "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec4+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+unsigned+int>
-        "%FILAMENT")
-
-(export '%filament::filament+f-renderable-manager "%FILAMENT")
-
-(export '%filament::filament+vertex-attribute "%FILAMENT")
-
-(export '%filament::resolution "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-transform<t-mat44+double>
-        "%FILAMENT")
-
-(export '%filament::filament+~texture "%FILAMENT")
-
-(export '%filament::filament+get-bloom-options "%FILAMENT")
-
-(export '%filament::filament+linear-color-a "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec3+double>
-        "%FILAMENT")
-
-(export '%filament::viewport "%FILAMENT")
-
-(export '%filament::filament+cast-shadows "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+int>
-        "%FILAMENT")
-
-(export '%filament::normal-bias "%FILAMENT")
-
-(export '%filament::filament+math+details+t-quaternion<bool>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+col-type
-        "%FILAMENT")
-
-(export '%filament::filament+look-at "%FILAMENT")
-
-(export '%filament::filament+texture+swizzle "%FILAMENT")
-
-(export '%filament::filament+backend+texture-usage "%FILAMENT")
-
-(export '%filament::filament+set-external-image "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+int>+reference
-        "%FILAMENT")
-
-(export '%filament::max-shadow-distance "%FILAMENT")
-
-(export '%filament::dirt "%FILAMENT")
-
-(export '%filament::filament+index-buffer+index-type "%FILAMENT")
-
-(export '%filament::filament+get-world-transform "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<double>+row-major-init
-        "%FILAMENT")
-
-(export '%filament::filament+get-mag-filter "%FILAMENT")
-
-(export '%filament::filament+view+temporal-anti-aliasing-options
-        "%FILAMENT")
-
-(export '%filament::filament+~camera "%FILAMENT")
-
-(export '%filament::filament+set-mask-threshold "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<float>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+renderable-manager+builder+result
-        "%FILAMENT")
-
-(export '%filament::filament+frame-rate-options "%FILAMENT")
-
-(export '%filament::utils+is-null "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<int>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+short>
-        "%FILAMENT")
-
-(export '%filament::filament+quat-tangent-context "%FILAMENT")
-
-(export '%filament::filament+set-post-processing-enabled "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-transform<t-mat33+float>
-        "%FILAMENT")
-
-(export '%filament::filament+color+absorption-at-distance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+pack-tangent-frame
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+unsigned+short>
-        "%FILAMENT")
-
-(export '%filament::w "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<short>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<short>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+set-parameter "%FILAMENT")
-
-(export '%filament::filament+has-parameter "%FILAMENT")
-
-(export '%filament::coc-scale "%FILAMENT")
-
-(export '%filament::depth-range "%FILAMENT")
-
-(export '%filament::filament+get-left-vector "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer+quat-type "%FILAMENT")
-
-(export '%filament::filament+backend+precision "%FILAMENT")
-
-(export '%filament::filament+bone "%FILAMENT")
-
-(export '%filament::filament+engine+platform "%FILAMENT")
-
-(export '%filament::*filament+math+f-e* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<char>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+scale "%FILAMENT")
-
-(export '%filament::filament+engine+create-async "%FILAMENT")
-
-(export '%filament::filament+get-component-count "%FILAMENT")
-
-(export '%filament::filament+math+details+operator[] "%FILAMENT")
-
-(export '%filament::filament+get-normalized-planes "%FILAMENT")
-
-(export '%filament::filament+add-entity "%FILAMENT")
-
-(export '%filament::filament+set-shadow-caster "%FILAMENT")
-
-(export '%filament::constant "%FILAMENT")
-
-(export '%filament::filament+set-dynamic-resolution-options
-        "%FILAMENT")
-
-(export '%filament::filament+~frame-rate-options "%FILAMENT")
-
-(export '%filament::filament+material-instance "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+int>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+bool>
-        "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<float> "%FILAMENT")
-
-(export '%filament::filament+get-dithering "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec3+int>
-        "%FILAMENT")
-
-(export '%filament::filament+set-polygon-offset "%FILAMENT")
-
-(export '%filament::filament+backend+~viewport "%FILAMENT")
-
-(export '%filament::filament+math+bool2 "%FILAMENT")
-
-(export '%filament::*filament+backend+flag-integer-target*
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+char>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+transform "%FILAMENT")
-
-(export '%filament::filament+set-vignette-options "%FILAMENT")
-
-(export '%filament::*filament+math+d+deg-to-rad* "%FILAMENT")
-
-(export '%filament::filament+create-camera "%FILAMENT")
-
-(export '%filament::*filament+math+f+log2e* "%FILAMENT")
-
-(export '%filament::*filament+math+e-mask* "%FILAMENT")
-
-(export '%filament::filament+get-spot-light-outer-cone "%FILAMENT")
-
-(export '%filament::*filament+math+f-2-pi* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+fov
-        "%FILAMENT")
-
-(export '%filament::history "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33<float>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+rgba-type "%FILAMENT")
-
-(export '%filament::quat-count "%FILAMENT")
-
-(export '%filament::filament+renderer+frame-rate-options "%FILAMENT")
-
-(export '%filament::filament+backend+backend-to-string "%FILAMENT")
-
-(export '%filament::filament+backend+pixel-buffer-descriptor+pixel-data-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+float>
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<unsigned+short>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+shadow-options "%FILAMENT")
-
-(export '%filament::utils+clear "%FILAMENT")
-
-(export '%filament::precision "%FILAMENT")
-
-(export '%filament::filament+set-receive-shadows "%FILAMENT")
-
-(export '%filament::filament+~parameter-info "%FILAMENT")
-
-(export '%filament::filament+backend+present-callable+present-fn
-        "%FILAMENT")
-
-(export '%filament::filament+get-job-system "%FILAMENT")
-
-(export '%filament::filament+backend+buffer-descriptor "%FILAMENT")
-
-(export '%filament::filament+package "%FILAMENT")
-
-(export '%filament::filament+get-primitive-count "%FILAMENT")
-
-(export '%filament::filament+aabb "%FILAMENT")
-
-(export '%filament::*filament+math+f+rad-to-deg* "%FILAMENT")
-
-(export '%filament::utils+entity-instance<filament+renderable-manager+true>
-        "%FILAMENT")
-
-(export '%filament::filament+backend+stream-callback "%FILAMENT")
-
-(export '%filament::filament+light-manager+shadow-cascades
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<short>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+get-visible-layers "%FILAMENT")
-
-(export '%filament::utils+operator+bool "%FILAMENT")
-
-(export '%filament::filament+backend+raster-state "%FILAMENT")
-
-(export '%filament::filament+view+ambient-occlusion "%FILAMENT")
-
-(export '%filament::filament+get-render-quality "%FILAMENT")
-
-(export '%filament::filament+vertex-buffer+quat-tangent-context
-        "%FILAMENT")
-
-(export '%filament::filament+depth "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-functions<t-vec2+char>
-        "%FILAMENT")
-
-(export '%filament::filament+view+depth-of-field-options "%FILAMENT")
-
-(export '%filament::filament+union-self "%FILAMENT")
-
-(export '%filament::max-scale "%FILAMENT")
-
-(export '%filament::filament+math+is-arithmetic<bool> "%FILAMENT")
-
-(export '%filament::filament+math+ushort4 "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec2+double>
-        "%FILAMENT")
-
-(export '%filament::filament+indirect-light "%FILAMENT")
-
-(export '%filament::*filament+math+details+row-size* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+set-parent "%FILAMENT")
-
-(export '%filament::filament+vignette-options "%FILAMENT")
-
-(export '%filament::color "%FILAMENT")
-
-(export '%filament::filament+create-instance "%FILAMENT")
-
-(export '%filament::filament+math+quat "%FILAMENT")
-
-(export '%filament::filament+backend+get-os-version "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec3<double>+reference
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<char>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+backend+platform+fence "%FILAMENT")
-
-(export '%filament::filament+backend+culling-mode "%FILAMENT")
-
-(export '%filament::focus-distance "%FILAMENT")
-
-(export '%filament::shadow-far-hint "%FILAMENT")
-
-(export '%filament::filament+get-transparency-mode "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat-square-functions<t-mat33+double>
-        "%FILAMENT")
-
-(export '%filament::tangents "%FILAMENT")
-
-(export '%filament::image "%FILAMENT")
-
-(export '%filament::filament+~material "%FILAMENT")
-
-(export '%filament::filament+math+~is-arithmetic "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float> "%FILAMENT")
-
-(export '%filament::filament+backend+texture-cubemap-face "%FILAMENT")
-
-(export '%filament::filament+texture-sampler+compare-mode "%FILAMENT")
-
-(export '%filament::rgb "%FILAMENT")
-
-(export '%filament::filament+texture-sampler+mag-filter "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-add-operators<t-vec2+char>
-        "%FILAMENT")
-
-(export '%filament::filament+get-required-attributes "%FILAMENT")
-
-(export '%filament::utils+entity+type "%FILAMENT")
-
-(export '%filament::filament+material+transparency-mode "%FILAMENT")
-
-(export '%filament::filament+filament-api "%FILAMENT")
-
-(export '%filament::filament+math+quatf "%FILAMENT")
-
-(export '%filament::filament+get-culling-mode "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec2<unsigned+short>+const-reference
-        "%FILAMENT")
-
-(export '%filament::filament+get-parameters "%FILAMENT")
-
-(export '%filament::utils+get-generation-for-index "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-product-operators<t-vec4+unsigned+char>
-        "%FILAMENT")
-
-(export '%filament::feather "%FILAMENT")
-
-(export '%filament::*filament+math+f+pi-4* "%FILAMENT")
-
-(export '%filament::filament+geometry "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<double>+frustum
-        "%FILAMENT")
-
-(export '%filament::shadow-far "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat33+row-major-init
-        "%FILAMENT")
-
-(export '%filament::filament+set-direction "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<char>+value-type
-        "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec4<double>+size-type
-        "%FILAMENT")
-
-(export '%filament::filament+set-render-target "%FILAMENT")
-
-(export '%filament::filament+generate-prefilter-mipmap "%FILAMENT")
-
-(export '%filament::filament+view+render-quality "%FILAMENT")
-
-(export '%filament::depth-slope-bias "%FILAMENT")
-
-(export '%filament::filament+math+details+t-mat44<float>+ortho
-        "%FILAMENT")
-
-(export '%filament::filament+~renderable-manager "%FILAMENT")
-
-(export '%filament::filament+backend+pixel-data-type "%FILAMENT")
-
-(export '%filament::filament+backend+~swap-chain "%FILAMENT")
-
-(export '%filament::filament+camera+fov "%FILAMENT")
-
-(export '%filament::filament+set-screen-space-refraction-enabled
-        "%FILAMENT")
-
-(export '%filament::filament+math+ushort3 "%FILAMENT")
-
-(export '%filament::filament+get-default-material "%FILAMENT")
-
-(export '%filament::filament+color+to-linear "%FILAMENT")
-
-(export '%filament::*filament+math+f+pi-2* "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+char>
-        "%FILAMENT")
-
-(export '%filament::filament+get-enabled-attributes-at "%FILAMENT")
-
-(export '%filament::filament+prefilter-options "%FILAMENT")
-
-(export '%filament::filament+get-depth "%FILAMENT")
-
-(export '%filament::step-count "%FILAMENT")
-
-(export '%filament::filament+get-scaling "%FILAMENT")
-
-(export '%filament::filament+math+ubyte4 "%FILAMENT")
-
-(export '%filament::filament+is-color-write-enabled "%FILAMENT")
-
-(export '%filament::filament+data "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-unary-operators<t-mat44+double>
-        "%FILAMENT")
-
-(export '%filament::filament+renderer "%FILAMENT")
-
-(export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+float>
-        "%FILAMENT")
-
-(export '%filament::filament+set-ambient-occlusion-options
-        "%FILAMENT")
-
-(export '%filament::filament+backend+~sampler-params "%FILAMENT")
-
-(export '%filament::filament+aabb+corners "%FILAMENT")
-
-(export '%filament::filament+~indirect-light "%FILAMENT")
-
-(export '%filament::filament+get-index-count "%FILAMENT")
-
-(export '%filament::filament+end "%FILAMENT")
-
-(defmethod claw.generator.common:build-adapter ((claw.generator.common::wrapper-name
-                                                 (eql
-                                                  ':claw-filament))
-                                                &key
-                                                claw.generator.common::target
-                                                claw.generator.common::dependencies
-                                                claw.generator.common::compiler
-                                                claw.generator.common::flags)
-  (declare (ignore claw.generator.common::wrapper-name))
-  (claw.generator.common::build-static-adapter
-    nil
-    #P"/home/borodust/devel/repo/claw-filament/src/lib/adapter.cxx"
-    (list #P"/home/borodust/devel/repo/claw-filament/src/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/filament/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/filament/backend/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/utils/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/filabridge/include/")
-    (merge-pathnames
-      (or claw.generator.common::target "adapter.so")
-      #P"/home/borodust/devel/repo/claw-filament/src/")
-    :dependencies
-    claw.generator.common::dependencies
-    :compiler
-    claw.generator.common::compiler
-    :flags
-    claw.generator.common::flags
-    :intrinsics
-    'nil))
+(eval-when (:load-toplevel :compile-toplevel :execute)
+  (export '%filament::*filament+math+d+pi-4* "%FILAMENT")
+  (export '%filament::filament+math+mat3 "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+operator/= "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-product-operators<t-mat33+double+t-vec3>
+          "%FILAMENT")
+  (export '%filament::utils+~entity "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+char>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+height "%FILAMENT")
+  (export '%filament::filament+get-material-instance-at "%FILAMENT")
+  (export '%filament::filament+index-buffer+buffer-descriptor
+          "%FILAMENT")
+  (export '%filament::filament+set-scaling "%FILAMENT")
+  (export '%filament::filament+backend+operator== "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<char> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<short>+reference
+          "%FILAMENT")
+  (export '%filament::filament+texture+face-offsets "%FILAMENT")
+  (export '%filament::filament+get-transform "%FILAMENT")
+  (export '%filament::filament+culling "%FILAMENT")
+  (export '%filament::filament+math+details+~t-mat-product-operators
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<float>+reference
+          "%FILAMENT")
+  (export '%filament::filament+set-camera "%FILAMENT")
+  (export '%filament::filament+get-entities "%FILAMENT")
+  (export '%filament::discard-end "%FILAMENT")
+  (export '%filament::filament+get-sun-halo-size "%FILAMENT")
+  (export '%filament::*filament+math+f-tau* "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<char> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+double>
+          "%FILAMENT")
+  (export '%filament::filament+set-ambient-occlusion-options
+          "%FILAMENT")
+  (export '%filament::filament+material+builder "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+backend+compressed-pixel-data-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-product-operators<t-mat44+float+t-vec4>
+          "%FILAMENT")
+  (export '%filament::filament+backend+subpass-type "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+short>>
+          "%FILAMENT")
+  (export '%filament::filament+get-user-time "%FILAMENT")
+  (export '%filament::far "%FILAMENT")
+  (export '%filament::filament+vsm-shadow-options "%FILAMENT")
+  (export '%filament::filament+view+vignette-options "%FILAMENT")
+  (export '%filament::filament+backend+sampler-compare-func
+          "%FILAMENT")
+  (export '%filament::filament+backend+pump-events "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+int>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>
+          "%FILAMENT")
+  (export '%filament::|FILAMENT+MATH+OPERATOR""-I| "%FILAMENT")
+  (export '%filament::utils+operator== "%FILAMENT")
+  (export '%filament::ray-count "%FILAMENT")
+  (export '%filament::filament+backend+platform+swap-chain
+          "%FILAMENT")
+  (export '%filament::utils+unregister-listener "%FILAMENT")
+  (export '%filament::power "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-mat33+double>
+          "%FILAMENT")
+  (export '%filament::filament+transparency-mode "%FILAMENT")
+  (export '%filament::filament+set-anti-aliasing "%FILAMENT")
+  (export '%filament::filament+view+fog-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+set-rotation "%FILAMENT")
+  (export '%filament::filament+get-anti-aliasing "%FILAMENT")
+  (export '%filament::filament+set-anisotropy "%FILAMENT")
+  (export '%filament::utils+create "%FILAMENT")
+  (export '%filament::*filament+backend+config-sampler-binding-count*
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec-comparison-operators
+          "%FILAMENT")
+  (export '%filament::filament+add-entities "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<int>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+uniform-interface-block "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<float>>
+          "%FILAMENT")
+  (export '%filament::filament+get-frustum "%FILAMENT")
+  (export '%filament::filament+get-sensitivity "%FILAMENT")
+  (export '%filament::|FILAMENT+BACKEND+OPERATOR()| "%FILAMENT")
+  (export '%filament::interval "%FILAMENT")
+  (export '%filament::v "%FILAMENT")
+  (export '%filament::*filament+backend+max-vertex-attribute-count*
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<char>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-mat-transform
+          "%FILAMENT")
+  (export '%filament::filament+get-viewport "%FILAMENT")
+  (export '%filament::filament+backend+swap-chain "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+frustum
+          "%FILAMENT")
+  (export '%filament::filament+math+details+operator*= "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<bool>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+~bloom-options "%FILAMENT")
+  (export '%filament::filament+priority "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-functions<t-quaternion+double>
+          "%FILAMENT")
+  (export '%filament::filament+has-component "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-helpers<t-mat33+double>
+          "%FILAMENT")
+  (export '%filament::clear "%FILAMENT")
+  (export '%filament::filament+engine+create-callback "%FILAMENT")
+  (export '%filament::filament+backend+present-callable "%FILAMENT")
+  (export '%filament::filament+material+parameter-info "%FILAMENT")
+  (export '%filament::filament+intensity-candela "%FILAMENT")
+  (export '%filament::utils+entity+import "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+bool>
+          "%FILAMENT")
+  (export '%filament::filament+reset-user-time "%FILAMENT")
+  (export '%filament::in-scattering-start "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+has-entity "%FILAMENT")
+  (export '%filament::*filament+math+f+e* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<double>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+char>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+get-mask-threshold "%FILAMENT")
+  (export '%filament::*filament+math+f+log10e* "%FILAMENT")
+  (export '%filament::filament+light-manager+shadow-cascades+compute-log-splits
+          "%FILAMENT")
+  (export '%filament::filament+math+double4 "%FILAMENT")
+  (export '%filament::filament+get-instance "%FILAMENT")
+  (export '%filament::subpass-mask "%FILAMENT")
+  (export '%filament::filament+backend+~buffer-descriptor
+          "%FILAMENT")
+  (export '%filament::sample-count "%FILAMENT")
+  (export '%filament::filament+math+float3 "%FILAMENT")
+  (export '%filament::filament+get-direction "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+int>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+get-view-matrix "%FILAMENT")
+  (export '%filament::filament+~vignette-options "%FILAMENT")
+  (export '%filament::*filament+math+f-pi* "%FILAMENT")
+  (export '%filament::uint64-t "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+get-color "%FILAMENT")
+  (export '%filament::*filament+math+f-pi-2* "%FILAMENT")
+  (export '%filament::filament+~render-quality "%FILAMENT")
+  (export '%filament::filament+~dynamic-resolution-options
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<float>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<float>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+material+precision "%FILAMENT")
+  (export '%filament::filament+engine "%FILAMENT")
+  (export '%filament::filament+set-scene "%FILAMENT")
+  (export '%filament::filament+receive-shadows "%FILAMENT")
+  (export '%filament::filament+transform-manager+children-iterator
+          "%FILAMENT")
+  (export '%filament::filament+get-interpolation "%FILAMENT")
+  (export '%filament::filament+backend+is-depth-format "%FILAMENT")
+  (export '%filament::filament+math+ushort2 "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<char>+reference
+          "%FILAMENT")
+  (export '%filament::filament+levels "%FILAMENT")
+  (export '%filament::filament+set-color-grading "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+get-skybox "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-mat33+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-helpers<t-mat44+double>
+          "%FILAMENT")
+  (export '%filament::*filament+efficiency-incandescent* "%FILAMENT")
+  (export '%filament::filament+create-fence "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<short>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+backend+is-s3tc-compression
+          "%FILAMENT")
+  (export '%filament::filament+stream-alloc "%FILAMENT")
+  (export '%filament::filament+light-manager+shadow-options
+          "%FILAMENT")
+  (export '%filament::filament+~ssct "%FILAMENT")
+  (export '%filament::filament+texture+usage "%FILAMENT")
+  (export '%filament::filament+get-forward-vector "%FILAMENT")
+  (export '%filament::filament+math+fp<1+5+10>+fromf "%FILAMENT")
+  (export '%filament::xyzw "%FILAMENT")
+  (export '%filament::filament+size "%FILAMENT")
+  (export '%filament::filament+get-model-matrix "%FILAMENT")
+  (export '%filament::filament+get-wrap-mode-r "%FILAMENT")
+  (export '%filament::feedback "%FILAMENT")
+  (export '%filament::constant-bias "%FILAMENT")
+  (export '%filament::filament+~prefilter-options "%FILAMENT")
+  (export '%filament::filament+math+get-s "%FILAMENT")
+  (export '%filament::filament+set-culling-mode "%FILAMENT")
+  (export '%filament::threshold "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<filament+math+half>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+uint3 "%FILAMENT")
+  (export '%filament::filament+backend+pixel-buffer-descriptor
+          "%FILAMENT")
+  (export '%filament::filament+texture+internal-format "%FILAMENT")
+  (export '%filament::filament+backend+disable-blending "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-square-functions<t-mat44+float>
+          "%FILAMENT")
+  (export '%filament::filament+backend+default-platform "%FILAMENT")
+  (export '%filament::filament+set-culling "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<filament+math+half>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+~material-instance "%FILAMENT")
+  (export '%filament::filament+set-sun-angular-radius "%FILAMENT")
+  (export '%filament::filament+open-local-transform-transaction
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<short>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-mat33+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<char>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+get-field-of-view-in-degrees
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<short>
+          "%FILAMENT")
+  (export '%filament::filament+camera+inverse-projection "%FILAMENT")
+  (export '%filament::filament+dynamic-resolution-options
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+row-type
+          "%FILAMENT")
+  (export '%filament::filament+get-children "%FILAMENT")
+  (export '%filament::filament+math+byte3 "%FILAMENT")
+  (export '%filament::filament+~bone "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+char>>
+          "%FILAMENT")
+  (export '%filament::filament+is-sampler "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<int>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+backend+depth-range "%FILAMENT")
+  (export '%filament::filament+math+short4 "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+row-type
+          "%FILAMENT")
+  (export '%filament::*filament+math+f+one-over-pi* "%FILAMENT")
+  (export '%filament::filament+backend+external-texture "%FILAMENT")
+  (export '%filament::filament+ssct "%FILAMENT")
+  (export '%filament::filament+display-info "%FILAMENT")
+  (export '%filament::filament+~scene "%FILAMENT")
+  (export '%filament::filament+get-compare-func "%FILAMENT")
+  (export '%filament::filament+buffer-count "%FILAMENT")
+  (export '%filament::utils+operator> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+char>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<float>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+int>+reference
+          "%FILAMENT")
+  (export '%filament::filament+translate-to "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>
+          "%FILAMENT")
+  (export '%filament::filament+is-shadowing-enabled "%FILAMENT")
+  (export '%filament::utils+operator= "%FILAMENT")
+  (export '%filament::filament+set-buffer "%FILAMENT")
+  (export '%filament::filament+material+interpolation "%FILAMENT")
+  (export '%filament::filament+linear-color "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<short>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+light-manager+instance "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+destroy "%FILAMENT")
+  (export '%filament::filament+material+parameter-type "%FILAMENT")
+  (export '%filament::is-sampler "%FILAMENT")
+  (export '%filament::*filament+math+d+tau* "%FILAMENT")
+  (export '%filament::*filament+math+d+two-over-sqrtpi* "%FILAMENT")
+  (export '%filament::count "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<float>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+usage "%FILAMENT")
+  (export '%filament::filament+engine+get-engine "%FILAMENT")
+  (export '%filament::reserved "%FILAMENT")
+  (export '%filament::filament+culler "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<bool>>
+          "%FILAMENT")
+  (export '%filament::filament+render "%FILAMENT")
+  (export '%filament::utils+entity-instance<filament+light-manager+true>
+          "%FILAMENT")
+  (export '%filament::filament+get-children-begin "%FILAMENT")
+  (export '%filament::min "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+double>
+          "%FILAMENT")
+  (export '%filament::filament+renderer+copy-frame-flag "%FILAMENT")
+  (export '%filament::shadow-near-hint "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+char>+reference
+          "%FILAMENT")
+  (export '%filament::translation "%FILAMENT")
+  (export '%filament::filament+~children-iterator "%FILAMENT")
+  (export '%filament::filament+math+details+~t-mat-helpers
+          "%FILAMENT")
+  (export '%filament::*filament+math+f+tau* "%FILAMENT")
+  (export '%filament::filament+math+float2 "%FILAMENT")
+  (export '%filament::filament+get-type "%FILAMENT")
+  (export '%filament::filament+parameter-info "%FILAMENT")
+  (export '%filament::filament+blending-mode "%FILAMENT")
+  (export '%filament::filament+view+anti-aliasing "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+bool>
+          "%FILAMENT")
+  (export '%filament::filament+set-model-matrix "%FILAMENT")
+  (export '%filament::filament+stream "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-quaternion+float>
+          "%FILAMENT")
+  (export '%filament::*filament+math+f-1-pi* "%FILAMENT")
+  (export '%filament::light-cone-rad "%FILAMENT")
+  (export '%filament::filament+environment "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+int>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-quaternion+double>
+          "%FILAMENT")
+  (export '%filament::filament+frustum+plane "%FILAMENT")
+  (export '%filament::filament+math+details+upper-left "%FILAMENT")
+  (export '%filament::filament+s-rgb-color-a "%FILAMENT")
+  (export '%filament::*filament+math+details+size* "%FILAMENT")
+  (export '%filament::long-double "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+get-renderable-manager "%FILAMENT")
+  (export '%filament::filament+set-display-info "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>+no-init
+          "%FILAMENT")
+  (export '%filament::%%elems- "%FILAMENT")
+  (export '%filament::filament+get-bounding-sphere "%FILAMENT")
+  (export '%filament::clear-color "%FILAMENT")
+  (export '%filament::mid-point "%FILAMENT")
+  (export '%filament::*filament+math+f-2-sqrtpi* "%FILAMENT")
+  (export '%filament::anamorphism "%FILAMENT")
+  (export '%filament::filament+irradiance "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+int>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+quath "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+char>
+          "%FILAMENT")
+  (export '%filament::filament+get-intensity "%FILAMENT")
+  (export '%filament::filament+math+details+~t-mat-square-functions
+          "%FILAMENT")
+  (export '%filament::filament+set-material-instance-at "%FILAMENT")
+  (export '%filament::filament+light-manager+shadow-cascades+compute-practical-splits
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+char>+size-type
+          "%FILAMENT")
+  (export '%filament::r "%FILAMENT")
+  (export '%filament::stp "%FILAMENT")
+  (export '%filament::filament+math+half+binary "%FILAMENT")
+  (export '%filament::filament+camera+projection "%FILAMENT")
+  (export '%filament::filament+set-tone-mapping "%FILAMENT")
+  (export '%filament::filament+get-culling-far "%FILAMENT")
+  (export '%filament::filament+copy-frame "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<short>>
+          "%FILAMENT")
+  (export '%filament::filament+get-specular-anti-aliasing-variance
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+filament+math+half>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+int>
+          "%FILAMENT")
+  (export '%filament::*filament+math+f+two-over-pi* "%FILAMENT")
+  (export '%filament::clear-stencil "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-quaternion+float>
+          "%FILAMENT")
+  (export '%filament::radius "%FILAMENT")
+  (export '%filament::filament+math+set-m "%FILAMENT")
+  (export '%filament::filament+get-sampler-params "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec-product-operators
+          "%FILAMENT")
+  (export '%filament::filament+backend+~face-offsets "%FILAMENT")
+  (export '%filament::filament+backend+raster-state+blend-equation
+          "%FILAMENT")
+  (export '%filament::filament+builder "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+char>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+driver "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+half "%FILAMENT")
+  (export '%filament::filament+math+half+fp16 "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec-functions
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+set-axis-aligned-bounding-box
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<float>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<bool>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+set-wrap-mode-r "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>+size
+          "%FILAMENT")
+  (export '%filament::xy "%FILAMENT")
+  (export '%filament::filament+is-spot-light "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+int>
+          "%FILAMENT")
+  (export '%filament::filament+get-ambient-occlusion-options
+          "%FILAMENT")
+  (export '%filament::height-falloff "%FILAMENT")
+  (export '%filament::filament+backend+raster-state+culling-mode
+          "%FILAMENT")
+  (export '%filament::filament+set-geometry-at "%FILAMENT")
+  (export '%filament::filament+vertex-buffer+populate-tangent-quaternions
+          "%FILAMENT")
+  (export '%filament::filament+get-fog-options "%FILAMENT")
+  (export '%filament::*filament+math+d+pi-2* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-mat44+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+get-m "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+short>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+render-pass-flags "%FILAMENT")
+  (export '%filament::filament+~ambient-occlusion-options
+          "%FILAMENT")
+  (export '%filament::filament+ambient-occlusion-options "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec-add-operators
+          "%FILAMENT")
+  (export '%filament::filament+box "%FILAMENT")
+  (export '%filament::homogeneous-scaling "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+~skybox "%FILAMENT")
+  (export '%filament::filament+has-specular-anti-aliasing
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<bool>+value-type
+          "%FILAMENT")
+  (export '%filament::*filament+math+s-shift* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<int>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+~default-platform "%FILAMENT")
+  (export '%filament::highlight "%FILAMENT")
+  (export '%filament::filament+set-dithering "%FILAMENT")
+  (export '%filament::filament+math+details+arithmetic-result<float+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<bool>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+int>
+          "%FILAMENT")
+  (export '%filament::filament+texture+is-texture-format-supported
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+get-scene "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<bool>+reference
+          "%FILAMENT")
+  (export '%filament::filament+get-rotation "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<char>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+as-array "%FILAMENT")
+  (export '%filament::filament+swap-chain "%FILAMENT")
+  (export '%filament::filament+has-shadow-multiplier "%FILAMENT")
+  (export '%filament::filament+material+sampler-format "%FILAMENT")
+  (export '%filament::filament+f-material "%FILAMENT")
+  (export '%filament::*filament+efficiency-halogen* "%FILAMENT")
+  (export '%filament::*filament+math+s-mask* "%FILAMENT")
+  (export '%filament::filament+backend+sampler-params "%FILAMENT")
+  (export '%filament::filament+is-point-light "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<filament+math+half>
+          "%FILAMENT")
+  (export '%filament::filament+math+int4 "%FILAMENT")
+  (export '%filament::filament+camera "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<double>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<filament+math+half>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+double>
+          "%FILAMENT")
+  (export '%filament::filament+~transform-manager "%FILAMENT")
+  (export '%filament::name "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<double>+value-type
+          "%FILAMENT")
+  (export '%filament::*filament+set-presentation-time* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+value-type
+          "%FILAMENT")
+  (export '%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+utils+entity-instance<filament+transform-manager+false>*+utils+entity-instance<filament+transform-manager+false>&>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<float>+const-reference
+          "%FILAMENT")
+  (export '%filament::roundness "%FILAMENT")
+  (export '%filament::z "%FILAMENT")
+  (export '%filament::utils+entity-instance<filament+transform-manager+false>
+          "%FILAMENT")
+  (export '%filament::filament+get-material "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<filament+math+half>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+set-bloom-options "%FILAMENT")
+  (export '%filament::filament+get-target "%FILAMENT")
+  (export '%filament::filament+rotation "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::vsync-offset-nanos "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<int>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<char>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<int>>
+          "%FILAMENT")
+  (export '%filament::filament+is-post-processing-enabled
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+int>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+light-manager "%FILAMENT")
+  (export '%filament::filament+backend+~attribute "%FILAMENT")
+  (export '%filament::filament+is-screen-space-refraction-enabled
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>+value-type
+          "%FILAMENT")
+  (export '%filament::rg "%FILAMENT")
+  (export '%filament::filament+backend+get-user "%FILAMENT")
+  (export '%filament::filament+backend+render-pass-params
+          "%FILAMENT")
+  (export '%filament::filament+set-image "%FILAMENT")
+  (export '%filament::*filament+math+d+pi* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+int>
+          "%FILAMENT")
+  (export '%filament::*filament+math+f-log10e* "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-functions<t-quaternion+filament+math+half>
+          "%FILAMENT")
+  (export '%filament::utils+entity "%FILAMENT")
+  (export '%filament::filament+import "%FILAMENT")
+  (export '%filament::filament+backend+set-callback "%FILAMENT")
+  (export '%filament::filament+math+details+operator~ "%FILAMENT")
+  (export '%filament::filament+index-buffer "%FILAMENT")
+  (export '%filament::filament+material+blending-mode "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat22<double>
+          "%FILAMENT")
+  (export '%filament::filament+get-vertex-domain "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+row-major-init
+          "%FILAMENT")
+  (export '%filament::filament+vertex-buffer+buffer-descriptor
+          "%FILAMENT")
+  (export '%filament::discard "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+filament+math+half>
+          "%FILAMENT")
+  (export '%filament::filament+engine+create "%FILAMENT")
+  (export '%filament::utils+bitset<unsigned+int+1+void> "%FILAMENT")
+  (export '%filament::filament+to-linear "%FILAMENT")
+  (export '%filament::*filament+commit* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<float>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+backend+default-platform+create
+          "%FILAMENT")
+  (export '%filament::filament+~light-manager "%FILAMENT")
+  (export '%filament::slope "%FILAMENT")
+  (export '%filament::filament+skinning "%FILAMENT")
+  (export '%filament::utils+as-value "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+float>
+          "%FILAMENT")
+  (export '%filament::filament+material+shader-model "%FILAMENT")
+  (export '%filament::*filament+backend+pipeline-stage-count*
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+scene "%FILAMENT")
+  (export '%filament::*filament+efficiency-led* "%FILAMENT")
+  (export '%filament::filament+backend+platform+external-texture
+          "%FILAMENT")
+  (export '%filament::filament+set-skybox "%FILAMENT")
+  (export '%filament::filament+indirect-light+get-color-estimate
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-quaternion+float>
+          "%FILAMENT")
+  (export '%filament::tangents-stride "%FILAMENT")
+  (export '%filament::fog-color-from-ibl "%FILAMENT")
+  (export '%filament::filament+set-indirect-light "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<filament+math+half>+reference
+          "%FILAMENT")
+  (export '%filament::filament+operator= "%FILAMENT")
+  (export '%filament::filament+set-blend-mode "%FILAMENT")
+  (export '%filament::filament+backend+stream "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+backend+stream-type "%FILAMENT")
+  (export '%filament::filament+backend+fence-status "%FILAMENT")
+  (export '%filament::filament+get-default-instance "%FILAMENT")
+  (export '%filament::buffer "%FILAMENT")
+  (export '%filament::filament+backend+buffer-usage "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<short>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<filament+math+half>+reference
+          "%FILAMENT")
+  (export '%filament::filament+get-renderable-count "%FILAMENT")
+  (export '%filament::filament+is-depth-culling-enabled "%FILAMENT")
+  (export '%filament::filament+~index-buffer "%FILAMENT")
+  (export '%filament::filament+set-frustum-culling-enabled
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+char>+size-type
+          "%FILAMENT")
+  (export '%filament::strength "%FILAMENT")
+  (export '%filament::filament+attribute "%FILAMENT")
+  (export '%filament::filament+texture "%FILAMENT")
+  (export '%filament::filament+backend+element-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<bool>+reference
+          "%FILAMENT")
+  (export '%filament::filament+set-buffer-at "%FILAMENT")
+  (export '%filament::filament+backend+~external-texture "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+fp<1+5+10>+get-bit-count
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+int>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::utils+operator!= "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-product-operators<t-quaternion+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec3 "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<char>>
+          "%FILAMENT")
+  (export '%filament::filament+begin "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+int>
+          "%FILAMENT")
+  (export '%filament::filament+set-exposure "%FILAMENT")
+  (export '%filament::filament+~shadow-options "%FILAMENT")
+  (export '%filament::filament+indirect-light+builder "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<float>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>+no-init
+          "%FILAMENT")
+  (export '%filament::maximum-opacity "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<unsigned+int>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+set-min-filter "%FILAMENT")
+  (export '%filament::utils+entity-instance-base+type "%FILAMENT")
+  (export '%filament::polygon-offset-constant "%FILAMENT")
+  (export '%filament::filament+math+bool4 "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec4 "%FILAMENT")
+  (export '%filament::filament+set-specular-anti-aliasing-threshold
+          "%FILAMENT")
+  (export '%filament::filament+~vsm-shadow-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<char>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+int>
+          "%FILAMENT")
+  (export '%filament::filament+backend+blend-function "%FILAMENT")
+  (export '%filament::normals "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<short>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+operator[] "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<bool>
+          "%FILAMENT")
+  (export '%filament::filament+set-wrap-mode-s "%FILAMENT")
+  (export '%filament::filament+get-wrap-mode-t "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-mat33+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+bool>
+          "%FILAMENT")
+  (export '%filament::filament+backend+create-driver "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<char> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+short>+value-type
+          "%FILAMENT")
+  (export '%filament::*filament+math+f-sqrt1-2* "%FILAMENT")
+  (export '%filament::filament+empty "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<float>+reference
+          "%FILAMENT")
+  (export '%filament::filament+get-tone-mapping "%FILAMENT")
+  (export '%filament::alignment "%FILAMENT")
+  (export '%filament::filament+fence "%FILAMENT")
+  (export '%filament::filament+get-child-count "%FILAMENT")
+  (export '%filament::filament+backend+~fence "%FILAMENT")
+  (export '%filament::filament+view+tone-mapping "%FILAMENT")
+  (export '%filament::*filament+math+d+two-over-pi* "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<double>>
+          "%FILAMENT")
+  (export '%filament::hdr-color-buffer "%FILAMENT")
+  (export '%filament::filament+get-corners "%FILAMENT")
+  (export '%filament::filament+vertex-buffer+attribute-type
+          "%FILAMENT")
+  (export '%filament::filament+is-depth-write-enabled "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+char>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+set-depth-of-field-options
+          "%FILAMENT")
+  (export '%filament::utils+entity-instance<filament+renderable-manager+false>
+          "%FILAMENT")
+  (export '%filament::dirt-strength "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-helpers<t-mat33+float>
+          "%FILAMENT")
+  (export '%filament::filament+backend+default-platform+destroy
+          "%FILAMENT")
+  (export '%filament::filament+set-name "%FILAMENT")
+  (export '%filament::filament+texture+sampler "%FILAMENT")
+  (export '%filament::filament+get-texture "%FILAMENT")
+  (export '%filament::filament+set-sun-halo-size "%FILAMENT")
+  (export '%filament::filament+material+shading "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+float>
+          "%FILAMENT")
+  (export '%filament::filament+is-double-sided "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<float>
+          "%FILAMENT")
+  (export '%filament::height "%FILAMENT")
+  (export '%filament::*filament+backend+fence-wait-for-ever*
+          "%FILAMENT")
+  (export '%filament::filament+skybox "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>
+          "%FILAMENT")
+  (export '%filament::filament+commit-local-transform-transaction
+          "%FILAMENT")
+  (export '%filament::filament+set-temporal-anti-aliasing-options
+          "%FILAMENT")
+  (export '%filament::bottom "%FILAMENT")
+  (export '%filament::utils+job-system "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<bool>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+texture-sampler "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+arithmetic-result<float+float>+type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+~builder "%FILAMENT")
+  (export '%filament::filament+material-instance+culling-mode
+          "%FILAMENT")
+  (export '%filament::filament+renderable-manager+bone "%FILAMENT")
+  (export '%filament::filament+debug-registry "%FILAMENT")
+  (export '%filament::filament+get-entity "%FILAMENT")
+  (export '%filament::filament+normalized "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<int>+reference
+          "%FILAMENT")
+  (export '%filament::filament+get-specular-anti-aliasing-threshold
+          "%FILAMENT")
+  (export '%filament::filament+swizzle "%FILAMENT")
+  (export '%filament::filament+uniform-buffer "%FILAMENT")
+  (export '%filament::filament+get-layer-mask "%FILAMENT")
+  (export '%filament::filament+get-color-grading "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+int>
+          "%FILAMENT")
+  (export '%filament::filament+get-light-count "%FILAMENT")
+  (export '%filament::filament+get-blending-mode "%FILAMENT")
+  (export '%filament::filament+backend+has-callback "%FILAMENT")
+  (export '%filament::filament+math+details+get-row-size "%FILAMENT")
+  (export '%filament::filament+math+details+get-row-count
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+float>
+          "%FILAMENT")
+  (export '%filament::filament+~box "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+row-major-init
+          "%FILAMENT")
+  (export '%filament::|FILAMENT+MATH+OPERATOR""-K| "%FILAMENT")
+  (export '%filament::filament+backend+raster-state+depth-func
+          "%FILAMENT")
+  (export '%filament::min-scale "%FILAMENT")
+  (export '%filament::filament+get-vertex-count "%FILAMENT")
+  (export '%filament::out-buffer "%FILAMENT")
+  (export '%filament::filament+get-debug-registry "%FILAMENT")
+  (export '%filament::filament+temporal-anti-aliasing-options
+          "%FILAMENT")
+  (export '%filament::utils+destroy "%FILAMENT")
+  (export '%filament::filament+color-grading "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+int>
+          "%FILAMENT")
+  (export '%filament::filament+backend+sampler-compare-mode
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<char>+reference
+          "%FILAMENT")
+  (export '%filament::filament+spot-light-cone "%FILAMENT")
+  (export '%filament::uintptr-t "%FILAMENT")
+  (export '%filament::out-stride "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<int>>
+          "%FILAMENT")
+  (export '%filament::presentation-deadline-nanos "%FILAMENT")
+  (export '%filament::filament+get-culling-projection-matrix
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+double>
+          "%FILAMENT")
+  (export '%filament::filament+get-normalized-plane "%FILAMENT")
+  (export '%filament::low-pass-filter "%FILAMENT")
+  (export '%filament::*filament+math+d+sqrt1-2* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+int>
+          "%FILAMENT")
+  (export '%filament::*filament+base-level* "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec2<double>>
+          "%FILAMENT")
+  (export '%filament::*filament+math+d+ln2* "%FILAMENT")
+  (export '%filament::filament+flush-and-wait "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+char>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-product-operators<t-quaternion+bool>
+          "%FILAMENT")
+  (export '%filament::*filament+material-version* "%FILAMENT")
+  (export '%filament::filament+backend+is-compressed-format
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-quat-product-operators
+          "%FILAMENT")
+  (export '%filament::filament+~vertex-buffer "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+const-reference
+          "%FILAMENT")
+  (export '%filament::*filament+clear* "%FILAMENT")
+  (export '%filament::filament+get-position "%FILAMENT")
+  (export '%filament::filament+get-anisotropy "%FILAMENT")
+  (export '%filament::*filament+math+f+deg-to-rad* "%FILAMENT")
+  (export '%filament::filament+~frustum "%FILAMENT")
+  (export '%filament::filament+texture-sampler+wrap-mode "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<char>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<float>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+short>
+          "%FILAMENT")
+  (export '%filament::screen-space-contact-shadows "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+bool>
+          "%FILAMENT")
+  (export '%filament::filament+set-dynamic-lighting-options
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+backend+sampler-mag-filter
+          "%FILAMENT")
+  (export '%filament::filament+backend+blend-equation "%FILAMENT")
+  (export '%filament::filament+get-sun-angular-radius "%FILAMENT")
+  (export '%filament::filament+create-swap-chain "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<double>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<short>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+get-wrap-mode-s "%FILAMENT")
+  (export '%filament::filament+backend+shader-model "%FILAMENT")
+  (export '%filament::s "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+float>
+          "%FILAMENT")
+  (export '%filament::filament+set-sun-halo-falloff "%FILAMENT")
+  (export '%filament::filament+end-frame "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+char>
+          "%FILAMENT")
+  (export '%filament::filament+create-renderer "%FILAMENT")
+  (export '%filament::filament+radiance "%FILAMENT")
+  (export '%filament::filament+view+vsm-shadow-options "%FILAMENT")
+  (export '%filament::filament+material+vertex-domain "%FILAMENT")
+  (export '%filament::filament+set-screen-space-contact-shadows
+          "%FILAMENT")
+  (export '%filament::filament+light-manager+type "%FILAMENT")
+  (export '%filament::uint8-t "%FILAMENT")
+  (export '%filament::filament+backend+~render-pass-flags
+          "%FILAMENT")
+  (export '%filament::map-size "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>+reference
+          "%FILAMENT")
+  (export '%filament::*filament+max-morph-targets* "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-transform<t-mat44+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+float>
+          "%FILAMENT")
+  (export '%filament::filament+set-shadow-type "%FILAMENT")
+  (export '%filament::filament+set-cast-shadows "%FILAMENT")
+  (export '%filament::filament+set-default-parameter "%FILAMENT")
+  (export '%filament::*filament+math+f-ln2* "%FILAMENT")
+  (export '%filament::max-aperture-diameter "%FILAMENT")
+  (export '%filament::*filament+math+d+sqrt2* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>+no-init
+          "%FILAMENT")
+  (export '%filament::filament+set-falloff "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+char>+reference
+          "%FILAMENT")
+  (export '%filament::*filament+math+details+num-cols* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-mat44+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<int>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+backend+pixel-buffer-descriptor+compute-data-size
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>
+          "%FILAMENT")
+  (export '%filament::utils+is-valid "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+double>
+          "%FILAMENT")
+  (export '%filament::filament+backend+viewport "%FILAMENT")
+  (export '%filament::filament+color-conversion "%FILAMENT")
+  (export '%filament::x "%FILAMENT")
+  (export '%filament::filament+get-sun-halo-falloff "%FILAMENT")
+  (export '%filament::filament+math+uint4 "%FILAMENT")
+  (export '%filament::filament+index-count "%FILAMENT")
+  (export '%filament::filament+render-target "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<double>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>+reference
+          "%FILAMENT")
+  (export '%filament::filament+color+cct "%FILAMENT")
+  (export '%filament::filament+backend+face-offsets+size-type
+          "%FILAMENT")
+  (export '%filament::bias "%FILAMENT")
+  (export '%filament::filament+create "%FILAMENT")
+  (export '%filament::filament+set-mag-filter "%FILAMENT")
+  (export '%filament::filament+is-frustum-culling-enabled
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+int>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<short> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-quaternion<float>>
+          "%FILAMENT")
+  (export '%filament::filament+math+int2 "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+fog-options "%FILAMENT")
+  (export '%filament::intensity "%FILAMENT")
+  (export '%filament::uint16-t "%FILAMENT")
+  (export '%filament::filament+engine+destroy "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-quaternion+double>
+          "%FILAMENT")
+  (export '%filament::cascade-split-positions "%FILAMENT")
+  (export '%filament::filament+get-format "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>
+          "%FILAMENT")
+  (export '%filament::filament+set-shadowing-enabled "%FILAMENT")
+  (export '%filament::utils+entity-instance-base "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+short>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+get-sample-count "%FILAMENT")
+  (export '%filament::filament+is-directional "%FILAMENT")
+  (export '%filament::filament+interpolation "%FILAMENT")
+  (export '%filament::filter-width "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+get-column-count
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+get-transform-for-normals
+          "%FILAMENT")
+  (export '%filament::std+array<filament+backend+attribute+16>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<int>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+set-wrap-mode-t "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+bool>
+          "%FILAMENT")
+  (export '%filament::refresh-rate "%FILAMENT")
+  (export '%filament::filament+light-manager+builder "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+no-init
+          "%FILAMENT")
+  (export '%filament::filament+f-texture "%FILAMENT")
+  (export '%filament::*filament+math+f-pi-4* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+backend+has-blending "%FILAMENT")
+  (export '%filament::filament+math+half2 "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+int>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+aabb+corners+value-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+char>
+          "%FILAMENT")
+  (export '%filament::filament+backend+primitive-type "%FILAMENT")
+  (export '%filament::filament+backend+sampler-min-filter
+          "%FILAMENT")
+  (export '%filament::filament+f-light-manager "%FILAMENT")
+  (export '%filament::filament+remove-entities "%FILAMENT")
+  (export '%filament::filament+vertex-buffer "%FILAMENT")
+  (export '%filament::filament+backend+polygon-offset "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+get-name "%FILAMENT")
+  (export '%filament::filament+get-max "%FILAMENT")
+  (export '%filament::filament+texture+compressed-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>+size-type
+          "%FILAMENT")
+  (export '%filament::*filament+math+e-shift* "%FILAMENT")
+  (export '%filament::filament+sun-angular-radius "%FILAMENT")
+  (export '%filament::filament+get-axis-aligned-bounding-box
+          "%FILAMENT")
+  (export '%filament::filament+generate-mipmaps "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-transform<t-mat33+double>
+          "%FILAMENT")
+  (export '%filament::filament+is-empty "%FILAMENT")
+  (export '%filament::filament+texture+type "%FILAMENT")
+  (export '%filament::filament+set-lens-projection "%FILAMENT")
+  (export '%filament::*filament+max-custom-attributes* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+get-transform-for-normals
+          "%FILAMENT")
+  (export '%filament::filament+view+dithering "%FILAMENT")
+  (export '%filament::filament+shading "%FILAMENT")
+  (export '%filament::*filament+math+d+one-over-pi* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<bool> "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+row-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<bool>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+buffer-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+short>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+set "%FILAMENT")
+  (export '%filament::filament+backend+face-offsets "%FILAMENT")
+  (export '%filament::filament+get-backend "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-product-operators<t-mat33+float+t-vec3>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+bool>
+          "%FILAMENT")
+  (export '%filament::|FILAMENT+MATH+OPERATOR""-J| "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+int>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+get-min-filter "%FILAMENT")
+  (export '%filament::utils+~entity-instance-base "%FILAMENT")
+  (export '%filament::utils+entity-manager "%FILAMENT")
+  (export '%filament::filament+math+half3 "%FILAMENT")
+  (export '%filament::filament+math+set-s "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<int> "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-functions<t-quaternion+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+~fp "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+char>
+          "%FILAMENT")
+  (export '%filament::filament+texture+pixel-buffer-descriptor
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+direction "%FILAMENT")
+  (export '%filament::filament+backend+operator= "%FILAMENT")
+  (export '%filament::filament+backend+pixel-buffer-descriptor+pixel-data-format
+          "%FILAMENT")
+  (export '%filament::filament+get-camera "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+short>+reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+platform "%FILAMENT")
+  (export '%filament::filament+get-irradiance-texture "%FILAMENT")
+  (export '%filament::center "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<short>
+          "%FILAMENT")
+  (export '%filament::utils+get-id "%FILAMENT")
+  (export '%filament::filament+~temporal-anti-aliasing-options
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+ortho
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+reference
+          "%FILAMENT")
+  (export '%filament::filament+light-manager+shadow-cascades+compute-uniform-splits
+          "%FILAMENT")
+  (export '%filament::filament+get-shutter-speed "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<double>+reference
+          "%FILAMENT")
+  (export '%filament::*filament+math+d+rad-to-deg* "%FILAMENT")
+  (export '%filament::filament+renderer+display-info "%FILAMENT")
+  (export '%filament::filament+set-render-quality "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>
+          "%FILAMENT")
+  (export '%filament::int8-t "%FILAMENT")
+  (export '%filament::*filament+backend+shader-model-count*
+          "%FILAMENT")
+  (export '%filament::filament+set-custom-projection "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<filament+math+half>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+get-up-vector "%FILAMENT")
+  (export '%filament::width "%FILAMENT")
+  (export '%filament::filament+set-visible-layers "%FILAMENT")
+  (export '%filament::filament+backend+backend "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+view+ambient-occlusion-options
+          "%FILAMENT")
+  (export '%filament::filament+backend+~stream "%FILAMENT")
+  (export '%filament::filament+is-front-face-winding-inverted
+          "%FILAMENT")
+  (export '%filament::filament+math+details+size "%FILAMENT")
+  (export '%filament::filament+backend+frame-finished-callback
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+no-init
+          "%FILAMENT")
+  (export '%filament::filament+backend+~present-callable "%FILAMENT")
+  (export '%filament::filament+renderable-manager+primitive-type
+          "%FILAMENT")
+  (export '%filament::filament+format "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-functions<t-quaternion+bool>
+          "%FILAMENT")
+  (export '%filament::filament+~shadow-cascades "%FILAMENT")
+  (export '%filament::filament+width "%FILAMENT")
+  (export '%filament::filament+get-near "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+double>
+          "%FILAMENT")
+  (export '%filament::filament+set-intensity-candela "%FILAMENT")
+  (export '%filament::filament+engine+backend "%FILAMENT")
+  (export '%filament::filament+set-intensity "%FILAMENT")
+  (export '%filament::flags "%FILAMENT")
+  (export '%filament::filament+view+blend-mode "%FILAMENT")
+  (export '%filament::mirror "%FILAMENT")
+  (export '%filament::filament+backend+~pixel-buffer-descriptor
+          "%FILAMENT")
+  (export '%filament::|FILAMENT+MATH+DETAILS+OPERATOR()| "%FILAMENT")
+  (export '%filament::filament+specular-ambient-occlusion
+          "%FILAMENT")
+  (export '%filament::shadow-cascades "%FILAMENT")
+  (export '%filament::filament+texture+cubemap-face "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+short>
+          "%FILAMENT")
+  (export '%filament::filament+show-sun "%FILAMENT")
+  (export '%filament::filament+set-blend-order-at "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<int> "%FILAMENT")
+  (export '%filament::size-t "%FILAMENT")
+  (export '%filament::filament+renderer+clear-options "%FILAMENT")
+  (export '%filament::filament+texture-sampler+compare-func
+          "%FILAMENT")
+  (export '%filament::type "%FILAMENT")
+  (export '%filament::filament+to-srgb "%FILAMENT")
+  (export '%filament::utils+entity-manager+get "%FILAMENT")
+  (export '%filament::filament+math+byte4 "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44+fov "%FILAMENT")
+  (export '%filament::filament+math+mat2 "%FILAMENT")
+  (export '%filament::*filament+efficiency-fluorescent* "%FILAMENT")
+  (export '%filament::utils+on-entities-destroyed "%FILAMENT")
+  (export '%filament::filament+set-layer-mask "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+short>
+          "%FILAMENT")
+  (export '%filament::ssct "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-square-functions<t-mat33+float>
+          "%FILAMENT")
+  (export '%filament::*filament+math+details+col-size* "%FILAMENT")
+  (export '%filament::filament+material+culling-mode "%FILAMENT")
+  (export '%filament::filament+f-vertex-buffer "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>
+          "%FILAMENT")
+  (export '%filament::min-horizon-angle-rad "%FILAMENT")
+  (export '%filament::filament+backend+sampler-format "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+double>
+          "%FILAMENT")
+  (export '%filament::filament+get-vsm-shadow-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<int>+reference
+          "%FILAMENT")
+  (export '%filament::filament+~aabb "%FILAMENT")
+  (export '%filament::filament+transform-manager+instance
+          "%FILAMENT")
+  (export '%filament::half-extent "%FILAMENT")
+  (export '%filament::filament+backend+is-etc2compression
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<int> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-mat33+float>
+          "%FILAMENT")
+  (export '%filament::filament+color+illuminant-d "%FILAMENT")
+  (export '%filament::*filament+backend+swap-chain-config-enable-xcb*
+          "%FILAMENT")
+  (export '%filament::utils+operator-- "%FILAMENT")
+  (export '%filament::filament+material "%FILAMENT")
+  (export '%filament::filament+math+mat4 "%FILAMENT")
+  (export '%filament::filament+get-children-end "%FILAMENT")
+  (export '%filament::filament+math+short3 "%FILAMENT")
+  (export '%filament::filament+set-projection "%FILAMENT")
+  (export '%filament::filament+get-transform-manager "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<double>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<int>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+reference
+          "%FILAMENT")
+  (export '%filament::filament+destroy-camera-component "%FILAMENT")
+  (export '%filament::filament+view+shadow-type "%FILAMENT")
+  (export '%filament::int32-t "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<filament+math+half>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+blend-order "%FILAMENT")
+  (export '%filament::filament+set-clear-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-quat-product-operators<t-quaternion+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+int>
+          "%FILAMENT")
+  (export '%filament::in-scattering-size "%FILAMENT")
+  (export '%filament::filament+texture+compute-texture-data-size
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<bool>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+get-temporal-anti-aliasing-options
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+char>
+          "%FILAMENT")
+  (export '%filament::*filament+math+f+sqrt1-2* "%FILAMENT")
+  (export '%filament::left "%FILAMENT")
+  (export '%filament::*filament+math+f-log2e* "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+perspective
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+short>+reference
+          "%FILAMENT")
+  (export '%filament::*filament+backend+flag-normalized* "%FILAMENT")
+  (export '%filament::filament+set-front-face-winding-inverted
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<float>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<filament+math+half>
+          "%FILAMENT")
+  (export '%filament::near "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+fuzzy-equal
+          "%FILAMENT")
+  (export '%filament::filament+math+details+to-quaternion
+          "%FILAMENT")
+  (export '%filament::filament+get-light-manager "%FILAMENT")
+  (export '%filament::*filament+math+m-shift* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-mat44+float>
+          "%FILAMENT")
+  (export '%filament::*filament+math+d+log10e* "%FILAMENT")
+  (export '%filament::filament+get-falloff "%FILAMENT")
+  (export '%filament::filament+set-spot-light-cone "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+filament+math+half>
+          "%FILAMENT")
+  (export '%filament::filament+attribute-bitset "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-quaternion+bool>
+          "%FILAMENT")
+  (export '%filament::normals-stride "%FILAMENT")
+  (export '%filament::filament+math+details+get-column-size
+          "%FILAMENT")
+  (export '%filament::filament+get-color-estimate "%FILAMENT")
+  (export '%filament::filament+set-shadow-options "%FILAMENT")
+  (export '%filament::filament+vertex-domain "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<double>+const-reference
+          "%FILAMENT")
+  (export '%filament::|FILAMENT+MATH+OPERATOR""-H| "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+short>
+          "%FILAMENT")
+  (export '%filament::contact-distance-max "%FILAMENT")
+  (export '%filament::filament+set-specular-anti-aliasing-variance
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+short>
+          "%FILAMENT")
+  (export '%filament::filament+refraction-type "%FILAMENT")
+  (export '%filament::unit-quaternion "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<double>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+clear-options "%FILAMENT")
+  (export '%filament::filament+set-morph-weights "%FILAMENT")
+  (export '%filament::filament+math+set-e "%FILAMENT")
+  (export '%filament::filament+backend+pixel-data-format "%FILAMENT")
+  (export '%filament::filament+intensity "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<bool>+size-type
+          "%FILAMENT")
+  (export '%filament::st "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<short>>
+          "%FILAMENT")
+  (export '%filament::filament+bounding-box "%FILAMENT")
+  (export '%filament::filament+backend+~render-pass-params
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::size "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-mat44+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+pack-tangent-frame
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-quat-functions
+          "%FILAMENT")
+  (export '%filament::filament+set-vsm-shadow-options "%FILAMENT")
+  (export '%filament::quality "%FILAMENT")
+  (export '%filament::filament+rgb-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+col-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+int>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+top "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+perspective
+          "%FILAMENT")
+  (export '%filament::filament+f-indirect-light "%FILAMENT")
+  (export '%filament::filament+skybox+builder "%FILAMENT")
+  (export '%filament::filament+math+ubyte3 "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-helpers<t-mat44+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<double>
+          "%FILAMENT")
+  (export '%filament::filament+set-depth-write "%FILAMENT")
+  (export '%filament::filament+get-reflections-texture "%FILAMENT")
+  (export '%filament::filament+color "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+col-type
+          "%FILAMENT")
+  (export '%filament::filament+~quat-tangent-context "%FILAMENT")
+  (export '%filament::filament+corners "%FILAMENT")
+  (export '%filament::filament+math+mat3f "%FILAMENT")
+  (export '%filament::filament+backend+attribute "%FILAMENT")
+  (export '%filament::filament+shadow-cascades "%FILAMENT")
+  (export '%filament::filament+math+mat2f "%FILAMENT")
+  (export '%filament::filament+backend+attribute-array "%FILAMENT")
+  (export '%filament::scale-rate "%FILAMENT")
+  (export '%filament::filament+backend+fence "%FILAMENT")
+  (export '%filament::filament+set-ambient-occlusion "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-quaternion+bool>
+          "%FILAMENT")
+  (export '%filament::filament+get-vignette-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<filament+math+half>+size
+          "%FILAMENT")
+  (export '%filament::depth-bias "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<double>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<bool> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+char>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+fp<1+5+10> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+char>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+operator+float "%FILAMENT")
+  (export '%filament::filament+view "%FILAMENT")
+  (export '%filament::filament+set-external-stream "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-product-operators<t-mat44+double+t-vec4>
+          "%FILAMENT")
+  (export '%filament::filament+get-shadow-options "%FILAMENT")
+  (export '%filament::polygon-offset-slope "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>+reference
+          "%FILAMENT")
+  (export '%filament::utils+operator++ "%FILAMENT")
+  (export '%filament::filament+math+double2 "%FILAMENT")
+  (export '%filament::filament+bloom-options "%FILAMENT")
+  (export '%filament::filament+texture+builder "%FILAMENT")
+  (export '%filament::filament+set-shadows-enabled "%FILAMENT")
+  (export '%filament::filament+get-material-domain "%FILAMENT")
+  (export '%filament::anisotropy "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+get-dynamic-resolution-options
+          "%FILAMENT")
+  (export '%filament::light-direction "%FILAMENT")
+  (export '%filament::filament+math+double3 "%FILAMENT")
+  (export '%filament::filament+refraction-mode "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<short>+reference
+          "%FILAMENT")
+  (export '%filament::filament+~corners "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-quaternion<double>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-square-functions<t-mat44+double>
+          "%FILAMENT")
+  (export '%filament::filament+set-depth-culling "%FILAMENT")
+  (export '%filament::filament+math+short2 "%FILAMENT")
+  (export '%filament::filament+get-engine "%FILAMENT")
+  (export '%filament::filament+~viewport "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+short>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+short>
+          "%FILAMENT")
+  (export '%filament::filament+set-debug-camera "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<float>>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+col-type
+          "%FILAMENT")
+  (export '%filament::filament+view+bloom-options+blend-mode
+          "%FILAMENT")
+  (export '%filament::filament+unset-scissor "%FILAMENT")
+  (export '%filament::filament+create-scene "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+fov
+          "%FILAMENT")
+  (export '%filament::filament+math+ubyte2 "%FILAMENT")
+  (export '%filament::filament+backend+texture-swizzle "%FILAMENT")
+  (export '%filament::filament+extent "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+short>
+          "%FILAMENT")
+  (export '%filament::filament+backend+sampler-wrap-mode "%FILAMENT")
+  (export '%filament::filament+set-color-write "%FILAMENT")
+  (export '%filament::*filament+math+f+two-over-sqrtpi* "%FILAMENT")
+  (export '%filament::filament+get-refraction-mode "%FILAMENT")
+  (export '%filament::stable "%FILAMENT")
+  (export '%filament::*filament+backend+max-sampler-count*
+          "%FILAMENT")
+  (export '%filament::filament+~depth-of-field-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+view+bloom-options "%FILAMENT")
+  (export '%filament::filament+set-scissor "%FILAMENT")
+  (export '%filament::utils+entity-instance<filament+transform-manager+true>
+          "%FILAMENT")
+  (export '%filament::filament+set-fog-options "%FILAMENT")
+  (export '%filament::filament+backend+~depth-range "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<bool>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+f-render-primitive "%FILAMENT")
+  (export '%filament::filament+get-camera-component "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<char> "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<filament+math+half>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+view+dynamic-resolution-options
+          "%FILAMENT")
+  (export '%filament::filament+operator* "%FILAMENT")
+  (export '%filament::filament+cast-light "%FILAMENT")
+  (export '%filament::filament+get-aperture "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<filament+math+half>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+bool>
+          "%FILAMENT")
+  (export '%filament::filament+set-bones "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+int>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+~view "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec4+char>
+          "%FILAMENT")
+  (export '%filament::clear-depth "%FILAMENT")
+  (export '%filament::filament+~display-info "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<filament+math+half>+const-reference
+          "%FILAMENT")
+  (export '%filament::quat-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>
+          "%FILAMENT")
+  (export '%filament::filament+set-color "%FILAMENT")
+  (export '%filament::filament+get-parameter-count "%FILAMENT")
+  (export '%filament::top "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>+no-init
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+row-major-init
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<unsigned+short>>
+          "%FILAMENT")
+  (export '%filament::uint32-t "%FILAMENT")
+  (export '%filament::filament+set-priority "%FILAMENT")
+  (export '%filament::filament+backend+shader-type "%FILAMENT")
+  (export '%filament::filament+sun-halo-size "%FILAMENT")
+  (export '%filament::filament+get-blend-mode "%FILAMENT")
+  (export '%filament::*filament+math+d+log2e* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+set-sample-count "%FILAMENT")
+  (export '%filament::*filament+material-properties-count*
+          "%FILAMENT")
+  (export '%filament::filament+reflections "%FILAMENT")
+  (export '%filament::filament+falloff "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<int> "%FILAMENT")
+  (export '%filament::filament+get-direction-estimate "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+viewport "%FILAMENT")
+  (export '%filament::filament+is-shadow-caster "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+backend+get-mrt-color-flag
+          "%FILAMENT")
+  (export '%filament::filament+render-quality "%FILAMENT")
+  (export '%filament::utils+operator>= "%FILAMENT")
+  (export '%filament::utils+operator+unsigned+int "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-quaternion+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>+size
+          "%FILAMENT")
+  (export '%filament::filament+f-skybox "%FILAMENT")
+  (export '%filament::*filament+math+f+pi* "%FILAMENT")
+  (export '%filament::*filament+math+f-ln10* "%FILAMENT")
+  (export '%filament::filament+is-shadow-receiver "%FILAMENT")
+  (export '%filament::filament+get-parent "%FILAMENT")
+  (export '%filament::utils+operator< "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<short>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+intersects "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+texture-format "%FILAMENT")
+  (export '%filament::filament+get-depth-of-field-options
+          "%FILAMENT")
+  (export '%filament::utils+entity-instance<filament+light-manager+false>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+bool>
+          "%FILAMENT")
+  (export '%filament::filament+remove "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+get-height "%FILAMENT")
+  (export '%filament::filament+get-min "%FILAMENT")
+  (export '%filament::filament+math+details+~arithmetic-result
+          "%FILAMENT")
+  (export '%filament::filament+get-shading "%FILAMENT")
+  (export '%filament::utils+operator<= "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+make-half "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-mat44+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<double>+size
+          "%FILAMENT")
+  (export '%filament::filament+backend+uniform-type "%FILAMENT")
+  (export '%filament::*filament+math+d+ln10* "%FILAMENT")
+  (export '%filament::filament+morphing "%FILAMENT")
+  (export '%filament::shadow-distance "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<char>+size-type
+          "%FILAMENT")
+  (export '%filament::utils+entity+smuggle "%FILAMENT")
+  (export '%filament::filament+backend+buffer-descriptor+callback
+          "%FILAMENT")
+  (export '%filament::filament+set-viewport "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+float>
+          "%FILAMENT")
+  (export '%filament::filament+view+quality-level "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+short>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<bool>+reference
+          "%FILAMENT")
+  (export '%filament::filament+transform-manager "%FILAMENT")
+  (export '%filament::filament+math+get-e "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<short>
+          "%FILAMENT")
+  (export '%filament::filament+index-buffer+builder "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+renderable-manager+instance
+          "%FILAMENT")
+  (export '%filament::*filament+math+f-sqrt2* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+math+mat4f "%FILAMENT")
+  (export '%filament::*filament+math+d+e* "%FILAMENT")
+  (export '%filament::filament+set-transform "%FILAMENT")
+  (export '%filament::filament+backend+~raster-state "%FILAMENT")
+  (export '%filament::filament+backend+right "%FILAMENT")
+  (export '%filament::enabled "%FILAMENT")
+  (export '%filament::filament+execute "%FILAMENT")
+  (export '%filament::filament+indirect-light+get-direction-estimate
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+short>
+          "%FILAMENT")
+  (export '%filament::filament+set-frame-rate-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+short>
+          "%FILAMENT")
+  (export '%filament::filament+contains "%FILAMENT")
+  (export '%filament::filament+light-manager+builder+result
+          "%FILAMENT")
+  (export '%filament::discard-start "%FILAMENT")
+  (export '%filament::xyz "%FILAMENT")
+  (export '%filament::filament+backend+target-buffer-flags
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<int>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+math+~half "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<char>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+~clear-options "%FILAMENT")
+  (export '%filament::filament+math+details+~t-mat44 "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+set-double-sided "%FILAMENT")
+  (export '%filament::*filament+math+f+sqrt2* "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44+row-major-init
+          "%FILAMENT")
+  (export '%filament::filament+material-domain "%FILAMENT")
+  (export '%filament::filament+sun-halo-falloff "%FILAMENT")
+  (export '%filament::filament+sampler "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+texture+format "%FILAMENT")
+  (export '%filament::*filament+math+m-mask* "%FILAMENT")
+  (export '%filament::filament+set-compare-mode "%FILAMENT")
+  (export '%filament::filament+math+details+~t-quaternion
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+char>
+          "%FILAMENT")
+  (export '%filament::filament+get-ambient-occlusion "%FILAMENT")
+  (export '%filament::offset "%FILAMENT")
+  (export '%filament::head-room-ratio "%FILAMENT")
+  (export '%filament::filament+renderable-manager+builder
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+no-init
+          "%FILAMENT")
+  (export '%filament::blend-mode "%FILAMENT")
+  (export '%filament::utils+register-listener "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec3<bool>>
+          "%FILAMENT")
+  (export '%filament::filament+get-directional-light-camera
+          "%FILAMENT")
+  (export '%filament::filament+backend+operator!= "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<double>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+get-refraction-type "%FILAMENT")
+  (export '%filament::vertices "%FILAMENT")
+  (export '%filament::filament+math+uint2 "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+const-reference
+          "%FILAMENT")
+  (export '%filament::density "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<filament+math+half>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec2 "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-quaternion+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+no-init
+          "%FILAMENT")
+  (export '%filament::filament+math+int3 "%FILAMENT")
+  (export '%filament::filament+math+details+~t-vec-unary-operators
+          "%FILAMENT")
+  (export '%filament::utils+~entity-instance "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+float>
+          "%FILAMENT")
+  (export '%filament::utils+entity-manager+get-max-entity-count
+          "%FILAMENT")
+  (export '%filament::filament+math+details+~t-mat33 "%FILAMENT")
+  (export '%filament::*filament+math+details+num-rows* "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+details+t-vec4<bool>>
+          "%FILAMENT")
+  (export '%filament::filament+depth-of-field-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<double>+reference
+          "%FILAMENT")
+  (export '%filament::*filament+backend+config-uniform-binding-count*
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+fuzzy-equal
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<bool>
+          "%FILAMENT")
+  (export '%filament::utils+entity-manager+listener "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+short>+size-type
+          "%FILAMENT")
+  (export '%filament::max "%FILAMENT")
+  (export '%filament::utils+is-alive "%FILAMENT")
+  (export '%filament::*filament+math+f+ln2* "%FILAMENT")
+  (export '%filament::filament+get-width "%FILAMENT")
+  (export '%filament::filament+backend+sampler-type "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<filament+math+half>+reference
+          "%FILAMENT")
+  (export '%filament::filament+backend+get-callback "%FILAMENT")
+  (export '%filament::filament+operator== "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat22<float>
+          "%FILAMENT")
+  (export '%filament::*filament+backend+swap-chain-config-transparent*
+          "%FILAMENT")
+  (export '%filament::filament+vertex-buffer+builder "%FILAMENT")
+  (export '%filament::upsampling "%FILAMENT")
+  (export '%filament::filament+backend+platform+stream "%FILAMENT")
+  (export '%filament::filament+operator++ "%FILAMENT")
+  (export '%filament::filament+build "%FILAMENT")
+  (export '%filament::filament+backend+sync-status "%FILAMENT")
+  (export '%filament::filament+property "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+double>
+          "%FILAMENT")
+  (export '%filament::filament+renderable-manager "%FILAMENT")
+  (export '%filament::filament+texture+prefilter-options "%FILAMENT")
+  (export '%filament::filament+f-transform-manager "%FILAMENT")
+  (export '%filament::filament+screen-space-contact-shadows
+          "%FILAMENT")
+  (export '%filament::filament+~fog-options "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<float>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+operator!= "%FILAMENT")
+  (export '%filament::filament+backend+is-s3tcsrgb-compression
+          "%FILAMENT")
+  (export '%filament::filament+backend+~polygon-offset "%FILAMENT")
+  (export '%filament::filament+math+float4 "%FILAMENT")
+  (export '%filament::*filament+math+f+ln10* "%FILAMENT")
+  (export '%filament::filament+f-index-buffer "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-mat33+double>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+bool3 "%FILAMENT")
+  (export '%filament::filament+~color "%FILAMENT")
+  (export '%filament::filament+set-position "%FILAMENT")
+  (export '%filament::filament+material+sampler-type "%FILAMENT")
+  (export '%filament::filament+texture-sampler+min-filter
+          "%FILAMENT")
+  (export '%filament::filament+create-view "%FILAMENT")
+  (export '%filament::filament+get-dithering "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<bool> "%FILAMENT")
+  (export '%filament::filament+math+details+operator- "%FILAMENT")
+  (export '%filament::filament+s-rgb-color "%FILAMENT")
+  (export '%filament::filament+math+byte2 "%FILAMENT")
+  (export '%filament::filament+center "%FILAMENT")
+  (export '%filament::filament+layer-mask "%FILAMENT")
+  (export '%filament::distance "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+short>
+          "%FILAMENT")
+  (export '%filament::levels "%FILAMENT")
+  (export '%filament::filament+position "%FILAMENT")
+  (export '%filament::filament+get-render-target "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+short>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+~renderer "%FILAMENT")
+  (export '%filament::*filament+backend+swap-chain-config-readable*
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>
+          "%FILAMENT")
+  (export '%filament::filament+~texture-sampler "%FILAMENT")
+  (export '%filament::intptr-t "%FILAMENT")
+  (export '%filament::filament+vertex-attribute "%FILAMENT")
+  (export '%filament::filament+vertex-count "%FILAMENT")
+  (export '%filament::filament+frustum "%FILAMENT")
+  (export '%filament::stride "%FILAMENT")
+  (export '%filament::filament+view+ambient-occlusion-options+ssct
+          "%FILAMENT")
+  (export '%filament::filament+get-levels "%FILAMENT")
+  (export '%filament::filament+backend+raster-state+blend-function
+          "%FILAMENT")
+  (export '%filament::filament+get-projection-matrix "%FILAMENT")
+  (export '%filament::filament+f-engine "%FILAMENT")
+  (export '%filament::y "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec3+short>
+          "%FILAMENT")
+  (export '%filament::filament+get-compare-mode "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+char>
+          "%FILAMENT")
+  (export '%filament::filament+begin-frame "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<float>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec4+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+unsigned+int>
+          "%FILAMENT")
+  (export '%filament::filament+f-renderable-manager "%FILAMENT")
+  (export '%filament::resolution "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-transform<t-mat44+double>
+          "%FILAMENT")
+  (export '%filament::filament+look-at "%FILAMENT")
+  (export '%filament::filament+get-bloom-options "%FILAMENT")
+  (export '%filament::filament+linear-color-a "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+row-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec3+double>
+          "%FILAMENT")
+  (export '%filament::viewport "%FILAMENT")
+  (export '%filament::filament+cast-shadows "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec4+int>
+          "%FILAMENT")
+  (export '%filament::normal-bias "%FILAMENT")
+  (export '%filament::filament+math+details+t-quaternion<bool>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+col-type
+          "%FILAMENT")
+  (export '%filament::filament+set-dynamic-resolution-options
+          "%FILAMENT")
+  (export '%filament::filament+texture+swizzle "%FILAMENT")
+  (export '%filament::filament+backend+texture-usage "%FILAMENT")
+  (export '%filament::filament+set-external-image "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+int>+reference
+          "%FILAMENT")
+  (export '%filament::max-shadow-distance "%FILAMENT")
+  (export '%filament::dirt "%FILAMENT")
+  (export '%filament::filament+index-buffer+index-type "%FILAMENT")
+  (export '%filament::filament+get-world-transform "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<double>+row-major-init
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<float>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+view+temporal-anti-aliasing-options
+          "%FILAMENT")
+  (export '%filament::filament+~camera "%FILAMENT")
+  (export '%filament::filament+set-mask-threshold "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec4+short>
+          "%FILAMENT")
+  (export '%filament::filament+renderable-manager+builder+result
+          "%FILAMENT")
+  (export '%filament::filament+frame-rate-options "%FILAMENT")
+  (export '%filament::utils+is-null "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<int>+reference
+          "%FILAMENT")
+  (export '%filament::w "%FILAMENT")
+  (export '%filament::filament+quat-tangent-context "%FILAMENT")
+  (export '%filament::filament+set-post-processing-enabled
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-transform<t-mat33+float>
+          "%FILAMENT")
+  (export '%filament::filament+color+absorption-at-distance
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+pack-tangent-frame
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+unsigned+short>
+          "%FILAMENT")
+  (export '%filament::filament+get-left-vector "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<short>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<int>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+set-parameter "%FILAMENT")
+  (export '%filament::filament+has-parameter "%FILAMENT")
+  (export '%filament::filament+~texture "%FILAMENT")
+  (export '%filament::depth-range "%FILAMENT")
+  (export '%filament::filament+scale "%FILAMENT")
+  (export '%filament::filament+vertex-buffer+quat-type "%FILAMENT")
+  (export '%filament::filament+backend+precision "%FILAMENT")
+  (export '%filament::filament+bone "%FILAMENT")
+  (export '%filament::filament+engine+platform "%FILAMENT")
+  (export '%filament::*filament+math+f-e* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<char>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+engine+create-async "%FILAMENT")
+  (export '%filament::filament+get-component-count "%FILAMENT")
+  (export '%filament::filament+math+details+operator[] "%FILAMENT")
+  (export '%filament::filament+get-normalized-planes "%FILAMENT")
+  (export '%filament::filament+add-entity "%FILAMENT")
+  (export '%filament::filament+set-shadow-caster "%FILAMENT")
+  (export '%filament::constant "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<short>+value-type
+          "%FILAMENT")
+  (export '%filament::*filament+math+f+log2e* "%FILAMENT")
+  (export '%filament::filament+~frame-rate-options "%FILAMENT")
+  (export '%filament::filament+material-instance "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec3+int>
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+bool>
+          "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<float> "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<short>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec3+int>
+          "%FILAMENT")
+  (export '%filament::filament+set-polygon-offset "%FILAMENT")
+  (export '%filament::filament+backend+~viewport "%FILAMENT")
+  (export '%filament::filament+math+bool2 "%FILAMENT")
+  (export '%filament::filament+math+fp<1+5+10>+type "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+char>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+transform "%FILAMENT")
+  (export '%filament::filament+set-vignette-options "%FILAMENT")
+  (export '%filament::*filament+math+d+deg-to-rad* "%FILAMENT")
+  (export '%filament::filament+create-camera "%FILAMENT")
+  (export '%filament::*filament+math+e-mask* "%FILAMENT")
+  (export '%filament::coc-scale "%FILAMENT")
+  (export '%filament::filament+get-spot-light-outer-cone "%FILAMENT")
+  (export '%filament::*filament+math+f-2-pi* "%FILAMENT")
+  (export '%filament::filament+get-mag-filter "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+fov
+          "%FILAMENT")
+  (export '%filament::history "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33<float>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+rgba-type "%FILAMENT")
+  (export '%filament::quat-count "%FILAMENT")
+  (export '%filament::filament+renderer+frame-rate-options
+          "%FILAMENT")
+  (export '%filament::filament+backend+backend-to-string "%FILAMENT")
+  (export '%filament::filament+backend+pixel-buffer-descriptor+pixel-data-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec3+float>
+          "%FILAMENT")
+  (export '%filament::*filament+backend+flag-integer-target*
+          "%FILAMENT")
+  (export '%filament::filament+shadow-options "%FILAMENT")
+  (export '%filament::utils+clear "%FILAMENT")
+  (export '%filament::precision "%FILAMENT")
+  (export '%filament::filament+set-receive-shadows "%FILAMENT")
+  (export '%filament::filament+~parameter-info "%FILAMENT")
+  (export '%filament::filament+backend+present-callable+present-fn
+          "%FILAMENT")
+  (export '%filament::filament+get-job-system "%FILAMENT")
+  (export '%filament::filament+backend+buffer-descriptor "%FILAMENT")
+  (export '%filament::filament+package "%FILAMENT")
+  (export '%filament::filament+get-primitive-count "%FILAMENT")
+  (export '%filament::filament+aabb "%FILAMENT")
+  (export '%filament::*filament+math+f+rad-to-deg* "%FILAMENT")
+  (export '%filament::filament+math+fp<1+5+10>+tof "%FILAMENT")
+  (export '%filament::filament+backend+stream-callback "%FILAMENT")
+  (export '%filament::filament+light-manager+shadow-cascades
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<unsigned+short>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+get-visible-layers "%FILAMENT")
+  (export '%filament::utils+operator+bool "%FILAMENT")
+  (export '%filament::filament+backend+raster-state "%FILAMENT")
+  (export '%filament::filament+view+ambient-occlusion "%FILAMENT")
+  (export '%filament::filament+get-render-quality "%FILAMENT")
+  (export '%filament::filament+vertex-buffer+quat-tangent-context
+          "%FILAMENT")
+  (export '%filament::filament+depth "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-functions<t-vec2+char>
+          "%FILAMENT")
+  (export '%filament::filament+view+depth-of-field-options
+          "%FILAMENT")
+  (export '%filament::filament+union-self "%FILAMENT")
+  (export '%filament::max-scale "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<bool> "%FILAMENT")
+  (export '%filament::filament+math+ushort4 "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec2+double>
+          "%FILAMENT")
+  (export '%filament::filament+indirect-light "%FILAMENT")
+  (export '%filament::*filament+math+details+row-size* "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+set-parent "%FILAMENT")
+  (export '%filament::filament+vignette-options "%FILAMENT")
+  (export '%filament::color "%FILAMENT")
+  (export '%filament::filament+create-instance "%FILAMENT")
+  (export '%filament::utils+entity-instance<filament+renderable-manager+true>
+          "%FILAMENT")
+  (export '%filament::filament+math+quat "%FILAMENT")
+  (export '%filament::filament+backend+get-os-version "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec3<double>+reference
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<char>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+backend+platform+fence "%FILAMENT")
+  (export '%filament::filament+backend+culling-mode "%FILAMENT")
+  (export '%filament::focus-distance "%FILAMENT")
+  (export '%filament::shadow-far-hint "%FILAMENT")
+  (export '%filament::filament+get-transparency-mode "%FILAMENT")
+  (export '%filament::filament+math+half4 "%FILAMENT")
+  (export '%filament::tangents "%FILAMENT")
+  (export '%filament::image "%FILAMENT")
+  (export '%filament::filament+~material "%FILAMENT")
+  (export '%filament::filament+math+~is-arithmetic "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>
+          "%FILAMENT")
+  (export '%filament::filament+backend+texture-cubemap-face
+          "%FILAMENT")
+  (export '%filament::filament+texture-sampler+compare-mode
+          "%FILAMENT")
+  (export '%filament::rgb "%FILAMENT")
+  (export '%filament::filament+texture-sampler+mag-filter
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-add-operators<t-vec2+char>
+          "%FILAMENT")
+  (export '%filament::filament+get-culling-mode "%FILAMENT")
+  (export '%filament::utils+entity+type "%FILAMENT")
+  (export '%filament::filament+material+transparency-mode
+          "%FILAMENT")
+  (export '%filament::filament+filament-api "%FILAMENT")
+  (export '%filament::filament+math+quatf "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec2<unsigned+short>+const-reference
+          "%FILAMENT")
+  (export '%filament::filament+get-parameters "%FILAMENT")
+  (export '%filament::filament+math+is-arithmetic<filament+math+half>
+          "%FILAMENT")
+  (export '%filament::utils+get-generation-for-index "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-product-operators<t-vec4+unsigned+char>
+          "%FILAMENT")
+  (export '%filament::feather "%FILAMENT")
+  (export '%filament::*filament+math+f+pi-4* "%FILAMENT")
+  (export '%filament::filament+geometry "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<double>+frustum
+          "%FILAMENT")
+  (export '%filament::shadow-far "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat33+row-major-init
+          "%FILAMENT")
+  (export '%filament::filament+set-direction "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<char>+value-type
+          "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec4<double>+size-type
+          "%FILAMENT")
+  (export '%filament::filament+set-render-target "%FILAMENT")
+  (export '%filament::filament+generate-prefilter-mipmap "%FILAMENT")
+  (export '%filament::filament+view+render-quality "%FILAMENT")
+  (export '%filament::depth-slope-bias "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat44<float>+ortho
+          "%FILAMENT")
+  (export '%filament::filament+~renderable-manager "%FILAMENT")
+  (export '%filament::filament+backend+pixel-data-type "%FILAMENT")
+  (export '%filament::filament+backend+~swap-chain "%FILAMENT")
+  (export '%filament::filament+camera+fov "%FILAMENT")
+  (export '%filament::filament+set-screen-space-refraction-enabled
+          "%FILAMENT")
+  (export '%filament::filament+math+ushort3 "%FILAMENT")
+  (export '%filament::filament+get-default-material "%FILAMENT")
+  (export '%filament::filament+color+to-linear "%FILAMENT")
+  (export '%filament::*filament+math+f+pi-2* "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-vec2+char>
+          "%FILAMENT")
+  (export '%filament::filament+math+ubyte4 "%FILAMENT")
+  (export '%filament::filament+prefilter-options "%FILAMENT")
+  (export '%filament::filament+get-depth "%FILAMENT")
+  (export '%filament::step-count "%FILAMENT")
+  (export '%filament::filament+math+details+t-mat-square-functions<t-mat33+double>
+          "%FILAMENT")
+  (export '%filament::filament+is-color-write-enabled "%FILAMENT")
+  (export '%filament::filament+data "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-unary-operators<t-mat44+double>
+          "%FILAMENT")
+  (export '%filament::filament+renderer "%FILAMENT")
+  (export '%filament::filament+math+details+t-vec-comparison-operators<t-vec2+float>
+          "%FILAMENT")
+  (export '%filament::filament+get-scaling "%FILAMENT")
+  (export '%filament::filament+backend+~sampler-params "%FILAMENT")
+  (export '%filament::filament+aabb+corners "%FILAMENT")
+  (export '%filament::filament+~indirect-light "%FILAMENT")
+  (export '%filament::filament+get-index-count "%FILAMENT")
+  (export '%filament::filament+end "%FILAMENT"))
 

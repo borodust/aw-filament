@@ -16,7 +16,7 @@
 
 (iffi:defitype %filament.util::size-t
                :unsigned-long
-               "/usr/lib/clang/11.0.0/include/stddef.h:46:23")
+               "/usr/lib/clang/11.0.1/include/stddef.h:46:23")
 
 (iffi:defifun ("__claw__ZN4claw8filament14InMemoryConfigC1EPKcS3_m"
                %filament.util::claw+filament+in-memory-config)
@@ -25,8 +25,8 @@
               (%filament.util::%%claw-this-
                (:pointer
                 %filament.util::claw+filament+in-memory-config))
-              (%filament.util::name (:pointer :unsigned-char))
-              (%filament.util::data (:pointer :unsigned-char))
+              (%filament.util::name claw-utils:claw-string)
+              (%filament.util::data claw-utils:claw-string)
               (%filament.util::size %filament.util::size-t))
 
 (iffi:deficlass (%filament.util::matc+config+input :size-reporter
@@ -61,16 +61,16 @@
                (:pointer
                 %filament.util::claw+filament+in-memory-config)))
 
-(iffi:deficlass (%filament.util::std+basic-string<unsigned+char>
+(iffi:deficlass (%filament.util::std+basic-string<char>
                  :size-reporter
-                 "__claw_sizeof_std_basic_string_unsigned_char_"
+                 "__claw_sizeof_std_basic_string_char_"
                  :alignment-reporter
-                 "__claw_alignof_std_basic_string_unsigned_char_")
+                 "__claw_alignof_std_basic_string_char_")
                 nil
                 "/usr/include/c++/10.2.0/bits/basic_string.tcc:1618:25")
 
 (iffi:defitype %filament.util::std+string
-               %filament.util::std+basic-string<unsigned+char>
+               %filament.util::std+basic-string<char>
                "/usr/include/c++/10.2.0/bits/stringfwd.h:79:33")
 
 (iffi:defifun ("__claw__ZNK4claw8filament14InMemoryConfig8toStringB5cxx11Ev"
@@ -111,8 +111,8 @@
               (%filament.util::%%claw-this-
                (:pointer
                 %filament.util::claw+filament+in-memory-input))
-              (%filament.util::name (:pointer :unsigned-char))
-              (%filament.util::data (:pointer :unsigned-char))
+              (%filament.util::name claw-utils:claw-string)
+              (%filament.util::data claw-utils:claw-string)
               (%filament.util::size %filament.util::size-t))
 
 (iffi:defifun ("__claw__ZN4claw8filament13InMemoryInput5closeEv"
@@ -126,7 +126,7 @@
 (iffi:defifun ("__claw__ZNK4claw8filament13InMemoryInput7getNameEv"
                %filament.util::claw+filament+get-name :non-mutating
                t)
-              (:pointer :unsigned-char)
+              claw-utils:claw-string
               "/home/borodust/devel/repo/claw-filament/src/lib/ClawMemIo.h:94:17"
               (%filament.util::%%claw-this-
                (:pointer
@@ -144,22 +144,22 @@
                (:pointer
                 %filament.util::claw+filament+in-memory-input)))
 
-(iffi:deficlass (%filament.util::std+unique-ptr<const+unsigned+char[]+std+default-delete<const+unsigned+char[]>>
+(iffi:deficlass (%filament.util::std+unique-ptr<const+char[]+std+default-delete<const+char[]>>
                  :size-reporter
-                 "__claw_sizeof_std_unique_ptr_const_unsigned_char___std_default_delete_const_unsigned_char____"
+                 "__claw_sizeof_std_unique_ptr_const_char___std_default_delete_const_char____"
                  :alignment-reporter
-                 "__claw_alignof_std_unique_ptr_const_unsigned_char___std_default_delete_const_unsigned_char____")
+                 "__claw_alignof_std_unique_ptr_const_char___std_default_delete_const_char____")
                 nil
                 "/usr/include/c++/10.2.0/bits/unique_ptr.h:477:11")
 
 (iffi:defifun ("__claw__ZN4claw8filament13InMemoryInput4readEv"
                %filament.util::claw+filament+read)
               (:pointer
-               %filament.util::std+unique-ptr<const+unsigned+char[]+std+default-delete<const+unsigned+char[]>>)
+               %filament.util::std+unique-ptr<const+char[]+std+default-delete<const+char[]>>)
               "/home/borodust/devel/repo/claw-filament/src/lib/ClawMemIo.h:83:35"
               (%filament.util::%%claw-result-
                (:pointer
-                %filament.util::std+unique-ptr<const+unsigned+char[]+std+default-delete<const+unsigned+char[]>>))
+                %filament.util::std+unique-ptr<const+char[]+std+default-delete<const+char[]>>))
               (%filament.util::%%claw-this-
                (:pointer
                 %filament.util::claw+filament+in-memory-input)))
@@ -200,16 +200,16 @@
                (:pointer
                 %filament.util::claw+filament+in-memory-output)))
 
-(iffi:deficlass (%filament.util::std+basic-ostream<unsigned+char>
+(iffi:deficlass (%filament.util::std+basic-ostream<char>
                  :size-reporter
-                 "__claw_sizeof_std_basic_ostream_unsigned_char_"
+                 "__claw_sizeof_std_basic_ostream_char_"
                  :alignment-reporter
-                 "__claw_alignof_std_basic_ostream_unsigned_char_")
+                 "__claw_alignof_std_basic_ostream_char_")
                 nil
                 "/usr/include/c++/10.2.0/bits/ostream.tcc:359:25")
 
 (iffi:defitype %filament.util::std+ostream
-               %filament.util::std+basic-ostream<unsigned+char>
+               %filament.util::std+basic-ostream<char>
                "/usr/include/c++/10.2.0/iosfwd:141:33")
 
 (iffi:defifun ("__claw__ZN4claw8filament14InMemoryOutput15getOutputStreamEv"
@@ -360,117 +360,53 @@
               (%filament.util::%%claw-this-
                (:pointer %filament.util::matc+material-compiler)))
 
-(export '%filament.util::uint8-t "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+data "%FILAMENT.UTIL")
-
-(export '%filament.util::size-t "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+read "%FILAMENT.UTIL")
-
-(export '%filament.util::std+basic-string<unsigned+char>
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+to-string "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+close "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+in-memory-input
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+config+input "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+material-compiler "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+material-compiler+material-config-processor
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+config "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-output-stream
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~material-data
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-name "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-input "%FILAMENT.UTIL")
-
-(export '%filament.util::std+unique-ptr<const+unsigned+char[]+std+default-delete<const+unsigned+char[]>>
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::std+ostream "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~in-memory-input
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+size "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+write "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+open "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+in-memory-config
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+run "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+material-data "%FILAMENT.UTIL")
-
-(export '%filament.util::std+string "%FILAMENT.UTIL")
-
-(export '%filament.util::std+basic-ostream<unsigned+char>
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::ssize-t "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+check-parameters "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+in-memory-output
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+~material-compiler "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~in-memory-output
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+material-compiler+material-config-processor-json
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::matc+config+output "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+~in-memory-config
-        "%FILAMENT.UTIL")
-
-(export '%filament.util::claw+filament+get-output "%FILAMENT.UTIL")
-
-(defmethod claw.generator.common:build-adapter ((claw.generator.common::wrapper-name
-                                                 (eql
-                                                  ':claw-filament-util))
-                                                &key
-                                                claw.generator.common::target
-                                                claw.generator.common::dependencies
-                                                claw.generator.common::compiler
-                                                claw.generator.common::flags)
-  (declare (ignore claw.generator.common::wrapper-name))
-  (claw.generator.common::build-static-adapter
-    nil
-    #P"/home/borodust/devel/repo/claw-filament/src/lib/util-adapter.cxx"
-    (list #P"/home/borodust/devel/repo/claw-filament/src/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/utils/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/math/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/libs/filamat/include/"
-          #P"/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/")
-    (merge-pathnames
-      (or claw.generator.common::target "adapter.so")
-      #P"/home/borodust/devel/repo/claw-filament/src/")
-    :dependencies
-    claw.generator.common::dependencies
-    :compiler
-    claw.generator.common::compiler
-    :flags
-    claw.generator.common::flags
-    :intrinsics
-    'nil))
+(eval-when (:load-toplevel :compile-toplevel :execute)
+  (export '%filament.util::std+basic-ostream<char> "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+data "%FILAMENT.UTIL")
+  (export '%filament.util::std+unique-ptr<const+char[]+std+default-delete<const+char[]>>
+          "%FILAMENT.UTIL")
+  (export '%filament.util::size-t "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+read "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+to-string "%FILAMENT.UTIL")
+  (export '%filament.util::std+basic-string<char> "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+close "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+in-memory-input
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+config+input "%FILAMENT.UTIL")
+  (export '%filament.util::matc+material-compiler "%FILAMENT.UTIL")
+  (export '%filament.util::uint8-t "%FILAMENT.UTIL")
+  (export '%filament.util::matc+material-compiler+material-config-processor
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+config "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-output-stream
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~material-data
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-name "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-input "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~in-memory-input
+          "%FILAMENT.UTIL")
+  (export '%filament.util::std+ostream "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+size "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+write "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+open "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+in-memory-config
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+run "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+material-data
+          "%FILAMENT.UTIL")
+  (export '%filament.util::std+string "%FILAMENT.UTIL")
+  (export '%filament.util::ssize-t "%FILAMENT.UTIL")
+  (export '%filament.util::matc+check-parameters "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+in-memory-output
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+~material-compiler "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~in-memory-output
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+material-compiler+material-config-processor-json
+          "%FILAMENT.UTIL")
+  (export '%filament.util::matc+config+output "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+~in-memory-config
+          "%FILAMENT.UTIL")
+  (export '%filament.util::claw+filament+get-output "%FILAMENT.UTIL"))
 

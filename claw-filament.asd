@@ -4,7 +4,7 @@
   :author "Pavel Korolev"
   :mailto "dev@borodust.org"
   :license "MIT"
-  :depends-on (:claw-filament/runtime :claw-filament/util))
+  :depends-on (:claw-filament/runtime :claw-filament/support))
 
 
 (asdf:defsystem :claw-filament/runtime
@@ -16,7 +16,7 @@
   :depends-on (:claw-filament-runtime-bindings))
 
 
-(asdf:defsystem :claw-filament/util
+(asdf:defsystem :claw-filament/support
   :description "Wrapper over Filament rendering engine"
   :version "1.0.0"
   :author "Pavel Korolev"

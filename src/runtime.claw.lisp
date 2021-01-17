@@ -31,28 +31,28 @@
                           (:includes :filament-includes :backend-includes
                                      :util-includes :math-includes
                                      :filabridge-includes)
+                          (:instantiate #'instantiate-some)
+                          (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
+                                    ((:and :aarch64 :android) "aarch64-linux-android"))
+                          (:persistent :claw-filament-runtime-bindings
+                           :asd-path "../claw-filament-runtime-bindings.asd"
+                           :bindings-path "../bindings/runtime/"
+                           :depends-on (:claw-utils))
+                          (:language :c++)
                           (:include-definitions "^filament::.*"
                                                 "^utils::Entity.*")
                           (:exclude-definitions "^utils::bitset.*"
-                                                "^filament::math::fp"
-                                                "^filament::math::details::half"
                                                 "::includeCallback"
                                                 "::function<"
-                                                "filament::math::half"
+                                                "::T.*Operators<.*half.*>"
+                                                "fp<.*>::bits$"
+                                                "::_M_elems"
 
                                                 ;; TODO: i don't know why those friends
                                                 ;; are not welcome, smth to do
                                                 ;; with crazy namespacing
                                                 "filament::math::details::length2"
-                                                "filament::math::details::norm2")
-                          (:instantiate #'instantiate-some)
-                          (:targets (:and :x86-64 :linux) "x86_64-pc-linux-gnu"
-                                    (:and :aarch64 :android) "aarch64-linux-android")
-                          (:persistent :claw-filament-runtime-bindings
-                           :asd-path "../claw-filament-runtime-bindings.asd"
-                           :bindings-path "../bindings/runtime/"
-                           :depends-on (:claw-utils))
-                          (:language :c++))
+                                                "filament::math::details::norm2"))
   :in-package :%filament
   :trim-enum-prefix t
   :recognize-bitfields t
