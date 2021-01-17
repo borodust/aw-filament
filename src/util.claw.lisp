@@ -4,13 +4,13 @@
   (:use))
 
 (claw.wrapper:defwrapper (filament::claw-filament-util
-                          (:system :claw-filament)
+                          (:system :claw-filament/wrapper)
                           (:headers ;; material compiler
-                                    "matc/MaterialCompiler.h"
-                                    "matc/Config.h"
+                           "matc/MaterialCompiler.h"
+                           "matc/Config.h"
 
-                                    ;; memory io for matc
-                                    "lib/ClawMemIo.h")
+                           ;; memory io for matc
+                           "lib/ClawMemIo.h")
                           (:includes :util-includes :math-includes
                                      :filamat-includes :matc-includes)
                           (:include-definitions "^matc::MaterialCompiler"
@@ -18,8 +18,12 @@
                           (:exclude-definitions "::includeCallback"
                                                 "::function<")
                           (:instantiate #'instantiate-some)
-                          (:targets :local)
-                          (:persistent nil)
+                          (:targets (:and :x86-64 :linux) "x86_64-pc-linux-gnu"
+                                    (:and :aarch64 :android) "aarch64-linux-android")
+                          (:persistent :claw-filament-util-bindings
+                           :asd-path "../claw-filament-util-bindings.asd"
+                           :bindings-path "../bindings/util/"
+                           :depends-on (:claw-utils))
                           (:language :c++))
   :in-package :%filament.util
   :trim-enum-prefix t
