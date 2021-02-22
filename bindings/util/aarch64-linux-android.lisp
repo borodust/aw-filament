@@ -312,12 +312,12 @@
                  %filament.util::matc+material-compiler :destructor
                  %filament.util::matc+~material-compiler)
                 nil
-                "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:36:7")
+                "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:34:7")
 
 (iffi:defifun ("__claw__ZN4matc16MaterialCompilerC1Ev"
                %filament.util::matc+material-compiler)
               :void
-              "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:38:5"
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:36:5"
               (%filament.util::%%claw-this-
                (:pointer %filament.util::matc+material-compiler)))
 
@@ -330,7 +330,7 @@
 (iffi:defifun ("__claw__ZN4matc16MaterialCompiler15checkParametersERKNS_6ConfigE"
                %filament.util::matc+check-parameters)
               :bool
-              "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:42:10"
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:40:10"
               (%filament.util::%%claw-this-
                (:pointer %filament.util::matc+material-compiler))
               (%filament.util::config
@@ -339,7 +339,7 @@
 (iffi:defifun ("__claw__ZN4matc16MaterialCompiler3runERKNS_6ConfigE"
                %filament.util::matc+run)
               :bool
-              "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:40:10"
+              "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:38:10"
               (%filament.util::%%claw-this-
                (:pointer %filament.util::matc+material-compiler))
               (%filament.util::config
@@ -347,11 +347,11 @@
 
 (iffi:defitype %filament.util::matc+material-compiler+material-config-processor
                (:pointer :pointer)
-               "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:70:11")
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:71:11")
 
 (iffi:defitype %filament.util::matc+material-compiler+material-config-processor-json
                (:pointer :pointer)
-               "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:76:11")
+               "/home/borodust/devel/repo/claw-filament/src/lib/filament/tools/matc/src/matc/MaterialCompiler.h:77:11")
 
 (iffi:defifun ("__claw_cE3AE40NE40matcE40SE40MaterialCompiler_claw_dtor"
                %filament.util::matc+~material-compiler)
