@@ -105,6 +105,7 @@ public:
     explicit InMemoryConfig(const char *name, const char *data, size_t size) {
         mInput = new InMemoryInput(name, data, size);
         mOutput = new InMemoryOutput();
+        mTargetApi = TargetApi::ALL;
     }
 
     virtual ~InMemoryConfig() {
