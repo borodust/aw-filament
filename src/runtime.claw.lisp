@@ -1,8 +1,5 @@
 (cl:in-package :filament)
 
-(uiop:define-package :%filament
-  (:use))
-
 (claw.wrapper:defwrapper (filament::claw-filament
                           (:system :claw-filament/wrapper)
                           (:headers "filament/Engine.h"
