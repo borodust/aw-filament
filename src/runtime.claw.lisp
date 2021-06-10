@@ -1,7 +1,7 @@
 (cl:in-package :filament)
 
-(claw.wrapper:defwrapper (filament::claw-filament
-                          (:system :claw-filament/wrapper)
+(claw.wrapper:defwrapper (:aw-filament
+                          (:system :aw-filament/wrapper)
                           (:headers "filament/Engine.h"
                                     "filament/Renderer.h"
                                     "filament/View.h"
@@ -31,8 +31,8 @@
                           (:instantiate #'instantiate-some)
                           (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                                     ((:and :aarch64 :android) "aarch64-linux-android"))
-                          (:persistent :claw-filament-runtime-bindings
-                           :asd-path "../claw-filament-runtime-bindings.asd"
+                          (:persistent :aw-filament-runtime-bindings
+                           :asd-path "../aw-filament-runtime-bindings.asd"
                            :bindings-path "../bindings/runtime/"
                            :depends-on (:claw-utils))
                           (:language :c++)

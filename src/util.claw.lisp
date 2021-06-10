@@ -3,8 +3,8 @@
 (uiop:define-package :%filament.util
   (:use))
 
-(claw.wrapper:defwrapper (filament::claw-filament-util
-                          (:system :claw-filament/wrapper)
+(claw.wrapper:defwrapper (:aw-filament-util
+                          (:system :aw-filament/wrapper)
                           (:headers ;; material compiler
                            "matc/MaterialCompiler.h"
                            "matc/Config.h"
@@ -16,8 +16,8 @@
                           (:instantiate #'instantiate-some)
                           (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                                     ((:and :aarch64 :android) "aarch64-linux-android"))
-                          (:persistent :claw-filament-util-bindings
-                           :asd-path "../claw-filament-util-bindings.asd"
+                          (:persistent :aw-filament-util-bindings
+                           :asd-path "../aw-filament-util-bindings.asd"
                            :bindings-path "../bindings/util/"
                            :depends-on (:claw-utils))
                           (:language :c++)

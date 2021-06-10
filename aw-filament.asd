@@ -1,31 +1,31 @@
-(asdf:defsystem :claw-filament
+(asdf:defsystem :aw-filament
   :description "Wrapper over Filament rendering engine"
   :version "1.0.0"
   :author "Pavel Korolev"
   :mailto "dev@borodust.org"
   :license "MIT"
-  :depends-on (:claw-filament/runtime :claw-filament/support))
+  :depends-on (:aw-filament/runtime :aw-filament/support))
 
 
-(asdf:defsystem :claw-filament/runtime
+(asdf:defsystem :aw-filament/runtime
   :description "Wrapper over Filament rendering engine"
   :version "1.0.0"
   :author "Pavel Korolev"
   :mailto "dev@borodust.org"
   :license "MIT"
-  :depends-on (:claw-filament-runtime-bindings))
+  :depends-on (:aw-filament-runtime-bindings))
 
 
-(asdf:defsystem :claw-filament/support
+(asdf:defsystem :aw-filament/support
   :description "Wrapper over Filament rendering engine"
   :version "1.0.0"
   :author "Pavel Korolev"
   :mailto "dev@borodust.org"
   :license "MIT"
-  :depends-on (:claw-filament-util-bindings))
+  :depends-on (:aw-filament-util-bindings))
 
 
-(asdf:defsystem :claw-filament/wrapper
+(asdf:defsystem :aw-filament/wrapper
   :description "Wrapper over Filament rendering engine"
   :version "1.0.0"
   :author "Pavel Korolev"
@@ -46,7 +46,7 @@
                (:module :matc-includes :pathname "lib/filament/tools/matc/src/")))
 
 
-(asdf:defsystem :claw-filament/example
+(asdf:defsystem :aw-filament/example
   :description "bodge-sndfile simple example"
   :version "1.0.0"
   :author "Pavel Korolev"
