@@ -31,7 +31,7 @@ add_subdirectory(${FILAMENT_DIR})
 # MAIN
 #
 set(TARGET filament.clawed)
-set(ADAPTER "adapter.${TARGET_TRIPLE}.cxx")
+set(ADAPTER "adapter/runtime/adapter.${TARGET_TRIPLE}.cxx")
 
 add_library(${TARGET} SHARED ${ADAPTER})
 set_source_files_properties(${ADAPTER} PROPERTIES LANGUAGE CXX)
@@ -39,7 +39,7 @@ set_source_files_properties(${ADAPTER} PROPERTIES LANGUAGE CXX)
 set_property(TARGET ${TARGET} PROPERTY CXX_STANDARD 17)
 
 target_include_directories(${TARGET}
-  PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/../"
+  PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/"
   PRIVATE "${FILAMENT_DIR}/filament/include/"
   PRIVATE "${FILAMENT_DIR}/libs/filamat/include/"
   PRIVATE "${FILAMENT_DIR}/filament/backend/include/"
@@ -60,7 +60,7 @@ option(BUILD_FILAMENT_UTILS "Build utility library" ON)
 
 if(BUILD_FILAMENT_UTILS)
   set(UTIL_TARGET filament.util.clawed)
-  set(UTIL_ADAPTER "util-adapter.${TARGET_TRIPLE}.cxx")
+  set(UTIL_ADAPTER "adapter/tools/adapter.${TARGET_TRIPLE}.cxx")
 
   add_library(${UTIL_TARGET} SHARED ${UTIL_ADAPTER})
   set_source_files_properties(${UTIL_ADAPTER} PROPERTIES LANGUAGE CXX)
@@ -68,7 +68,7 @@ if(BUILD_FILAMENT_UTILS)
   set_property(TARGET ${UTIL_TARGET} PROPERTY CXX_STANDARD 17)
 
   target_include_directories(${UTIL_TARGET}
-    PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/../"
+    PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/"
     PRIVATE "${FILAMENT_DIR}/filament/include/"
     PRIVATE "${FILAMENT_DIR}/libs/filamat/include/"
     PRIVATE "${FILAMENT_DIR}/filament/backend/include/"

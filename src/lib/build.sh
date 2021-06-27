@@ -67,6 +67,7 @@ function build_android {
     mkdir -p $BUILD_DIR && cd $BUILD_DIR
     cmake -G Ninja \
           -DCMAKE_BUILD_TYPE=${RELEASE_MODE} \
+          -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
           -DCLAW_ANDROID_BUILD=ON \
           -DBUILD_FILAMENT_UTILS=OFF \
           -DFILAMENT_SKIP_SAMPLES=ON \
@@ -82,6 +83,7 @@ function build_desktop {
     mkdir -p $BUILD_DIR && cd $BUILD_DIR
     cmake -G Ninja \
           -DCMAKE_BUILD_TYPE=${RELEASE_MODE} \
+          -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
           -DCMAKE_C_COMPILER=clang \
           -DCMAKE_CXX_COMPILER=clang++ \
           -DFILAMENT_ENABLE_JAVA=OFF \
