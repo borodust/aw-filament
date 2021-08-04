@@ -24,7 +24,9 @@
                             "filament/TextureSampler.h"
                             "backend/PixelBufferDescriptor.h"
 
-                            "utils/EntityManager.h")
+                            "utils/EntityManager.h"
+
+                            "math/mathfwd.h")
                   (:includes :filament-includes :backend-includes
                              :util-includes :math-includes
                              :filabridge-includes)
@@ -35,13 +37,15 @@
                    :bindings-path "bindings/runtime/"
                    :depends-on (:claw-utils))
                   (:language :c++)
+                  (:standard "c++17")
                   (:include-definitions "^filament::.*"
-                                        "^utils::Entity.*")
+                                        "^utils::Entity.*"
+                                        "^FILAMENT_")
                   (:exclude-definitions "^utils::bitset.*"
                                         "::includeCallback"
                                         "::function<"
                                         "::T.*Operators<.*half.*>"
-                                        "fp<.*>::bits$"
+                                        "fp.*::bits$"
                                         "::_"
 
                                         ;; TODO: i don't know why those friends

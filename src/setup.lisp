@@ -7,11 +7,29 @@
 (defun ignore-uninstantiable ()
   (claw.resect:ignore-functions
     (:in-class "filament::math::details::TVec4<filament::math::half>"
-               (:ctor))
+               (:ctor)
+               ("operator-" :any))
     (:in-class "filament::math::details::TVec3<filament::math::half>"
-               (:ctor))
+               (:ctor)
+               ("operator-" :any))
     (:in-class "filament::math::details::TVec2<filament::math::half>"
-               (:ctor))
+               (:ctor)
+               ("operator-" :any))
+    (:in-class "filament::math::details::TQuatProductOperators<TQuaternion,filament::math::half>"
+               ("operator*=" :any)
+               ("operator/=" :any))
+    (:in-class "filament::math::details::TVecAddOperators<TVec2,filament::math::half>"
+               ("operator-" :any))
+    (:in-class "filament::math::details::TVecAddOperators<TVec3,filament::math::half>"
+               ("operator-" :any))
+    (:in-class "filament::math::details::TVecAddOperators<TVec4,filament::math::half>"
+               ("operator-" :any))
+    (:in-class "filament::math::details::TVecUnaryOperators<TVec2,filament::math::half>"
+               ("operator-" :any))
+    (:in-class "filament::math::details::TVecUnaryOperators<TVec3,filament::math::half>"
+               ("operator-" :any))
+    (:in-class "filament::math::details::TVecUnaryOperators<TVec4,filament::math::half>"
+               ("operator-" :any))
     (:in-class "filament::math::fp<1,5,10>"
                (:ctor :any))
 
@@ -24,6 +42,7 @@
                (:ctor))
 
     ("filament::math::getBits" :any)))
+
 
 (defun instantiate-some (decl)
   (when (and (string= "filament" (claw.resect:declaration-namespace decl))
