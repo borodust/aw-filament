@@ -12,14 +12,16 @@
                                      :math-includes :filamat-includes :matc-includes)
                           (:instantiate #'instantiate-some)
                           (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
-                                    ((:and :aarch64 :android) "aarch64-linux-android"))
+                                    ((:and :aarch64 :android) "aarch64-linux-android")
+                                    ((:and :x86-64 :windows) "x86_64-pc-windows-gnu"))
                           (:persistent t
                            :bindings-path "bindings/tools/"
                            :depends-on (:claw-utils))
                           (:language :c++)
                           (:include-definitions "^matc::MaterialCompiler"
                                                 "^claw::filament::.*")
-                          (:exclude-definitions "::includeCallback"
+                          (:exclude-definitions "^std::"
+                                                "::includeCallback"
                                                 "::function<"))
   :in-package :%filament.util
   :trim-enum-prefix t

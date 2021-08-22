@@ -1,12 +1,14 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.15)
 project(filament.clawed)
 
 if (MSVC)
-  add_compile_options(/O2)
+  set(TARGET_TRIPLE x86_64-pc-windows-gnu)
+  set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreadedDebug)
   if (NOT ANDROID_ABI)
     add_compile_options(/arch:AVX)
   endif()
 else()
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
   add_compile_options(-O2)
   if (CLAW_ANDROID_BUILD OR ANDROID_ABI)
     set(TARGET_TRIPLE aarch64-linux-android)
@@ -20,8 +22,6 @@ endif()
 set(CMAKE_C_COMPILER_TARGET ${triple})
 set(CMAKE_CXX_COMPILER_TARGET ${triple})
 
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
 set(FILAMENT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/filament)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
@@ -65,7 +65,7 @@ if(BUILD_FILAMENT_UTILS)
   add_library(${UTIL_TARGET} SHARED ${UTIL_ADAPTER})
   set_source_files_properties(${UTIL_ADAPTER} PROPERTIES LANGUAGE CXX)
 
-  set_property(TARGET ${UTIL_TARGET} PROPERTY CXX_STANDARD 17)
+  set_property(TARGET ${UTIL_TARGET} PROPERTY CXX_STANDARD 20)
 
   target_include_directories(${UTIL_TARGET}
     PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/"
