@@ -16,10 +16,10 @@
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/ClawMemIo.h:103:7")
 
 (iffi:defitype %filament.util::size-t
-               :unsigned-long
-               "/usr/lib/clang/12.0.1/include/stddef.h:46:23")
+               :unsigned-long-long
+               "/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:209:23")
 
-(iffi:defifun ("__claw__ZN4claw8filament14InMemoryConfigC1EPKcS3_m"
+(iffi:defifun ("__claw__ZN4claw8filament14InMemoryConfigC1EPKcS3_y"
                %filament.util::claw+filament+in-memory-config)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/ClawMemIo.h:105:14"
@@ -84,7 +84,7 @@
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/ClawMemIo.h:72:7")
 
-(iffi:defifun ("__claw__ZN4claw8filament13InMemoryInputC1EPKcS3_m"
+(iffi:defifun ("__claw__ZN4claw8filament13InMemoryInputC1EPKcS3_y"
                %filament.util::claw+filament+in-memory-input)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/ClawMemIo.h:74:14"
@@ -113,7 +113,7 @@
                 %filament.util::claw+filament+in-memory-input)))
 
 (iffi:defitype %filament.util::ssize-t
-               :int
+               :long
                "/usr/include/sys/types.h:108:19")
 
 (iffi:defifun ("__claw__ZN4claw8filament13InMemoryInput4openEv"
@@ -193,7 +193,7 @@
                :unsigned-char
                "/usr/include/bits/stdint-uintn.h:24:19")
 
-(iffi:defifun ("__claw__ZN4claw8filament14InMemoryOutput5writeEPKhm"
+(iffi:defifun ("__claw__ZN4claw8filament14InMemoryOutput5writeEPKhy"
                %filament.util::claw+filament+write)
               :bool
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/ClawMemIo.h:49:10"
@@ -212,7 +212,7 @@
                (claw-utils:claw-pointer
                 %filament.util::claw+filament+in-memory-output)))
 
-(iffi:defifun ("__claw__ZN4claw8filament12MaterialDataC1EPvm"
+(iffi:defifun ("__claw__ZN4claw8filament12MaterialDataC1EPvy"
                %filament.util::claw+filament+material-data)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/ClawMemIo.h:14:5"

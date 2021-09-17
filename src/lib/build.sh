@@ -86,7 +86,7 @@ function build_desktop {
           -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
           -DCMAKE_C_COMPILER=clang \
           -DCMAKE_CXX_COMPILER=clang++ \
-          -DFILAMENT_ENABLE_JAVA=OFF \
+          -DCMAKE_SHARED_LINKER_FLAGS="-stdlib=libc++ -lc++abi" \
           -DFILAMENT_SKIP_SAMPLES=${FILAMENT_SKIP_SAMPLES} \
           $WORK_DIR
     cmake --build .

@@ -37,7 +37,7 @@
 
 (defparameter %filament::+math+e-shift+ nil)
 
-(defparameter %filament::+backend+fence-wait-for-ever+ -1)
+(defparameter %filament::+backend+fence-wait-for-ever+ 4294967295)
 
 (defparameter %filament::+backend+flag-integer-target+ 2)
 
@@ -373,7 +373,7 @@
                  :alignment-reporter
                  "__claw_alignof_std_array_filament_backend_Attribute_16_")
                 nil
-                "/usr/include/c++/11.1.0/array:95:12")
+                "/usr/include/c++/v1/array:132:29")
 
 (iffi:defitype %filament::backend+attribute-array
                %filament::std+array<filament+backend+attribute+16>
@@ -831,10 +831,10 @@
                (:split-easu 0))
 
 (iffi:defitype %filament::size-t
-               :unsigned-long
-               "/usr/lib/clang/12.0.1/include/stddef.h:46:23")
+               :unsigned-long-long
+               "/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:209:23")
 
-(iffi:defifun ("__claw__ZN8filament7backend22getTargetBufferFlagsAtEm"
+(iffi:defifun ("__claw__ZN8filament7backend22getTargetBufferFlagsAtEy"
                %filament::backend+get-target-buffer-flags-at)
               %filament::backend+target-buffer-flags
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/DriverEnums.h:109:36"
@@ -953,7 +953,7 @@
                (claw-utils:claw-pointer
                 %filament::backend+buffer-descriptor)))
 
-(iffi:defifun ("__claw__ZN8filament7backend16BufferDescriptorC1EPKvmPFvPvmS4_ES4_"
+(iffi:defifun ("__claw__ZN8filament7backend16BufferDescriptorC1EPKvyPFvPvyS4_ES4_"
                %filament::backend+buffer-descriptor)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/BufferDescriptor.h:89:5"
@@ -1002,7 +1002,7 @@
                (claw-utils:claw-pointer
                 %filament::backend+buffer-descriptor)))
 
-(iffi:defifun ("__claw__ZN8filament7backend16BufferDescriptor11setCallbackEPFvPvmS2_ES2_"
+(iffi:defifun ("__claw__ZN8filament7backend16BufferDescriptor11setCallbackEPFvPvyS2_ES2_"
                %filament::backend+set-callback)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/BufferDescriptor.h:99:10"
@@ -1097,7 +1097,7 @@
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/Platform.h:29:7")
 
 (iffi:defitype %filament::backend+face-offsets+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/DriverEnums.h:598:11")
 
 (iffi:defistruct (%filament::backend+face-offsets :size-reporter
@@ -1128,7 +1128,7 @@
                (claw-utils:claw-pointer
                 %filament::backend+face-offsets)))
 
-(iffi:defifun ("__claw__ZN8filament7backend11FaceOffsetsC1Em"
+(iffi:defifun ("__claw__ZN8filament7backend11FaceOffsetsC1Ey"
                %filament::backend+face-offsets)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/DriverEnums.h:613:14"
@@ -1150,7 +1150,7 @@
                (claw-utils:claw-pointer
                 %filament::backend+face-offsets)))
 
-(iffi:defifun ("__claw__ZN8filament7backend11FaceOffsetsixEm"
+(iffi:defifun ("__claw__ZN8filament7backend11FaceOffsetsixEy"
                %filament::backend+operator[])
               (claw-utils:claw-pointer
                %filament::backend+face-offsets+size-type)
@@ -1160,7 +1160,7 @@
                 %filament::backend+face-offsets))
               (%filament::n %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament7backend11FaceOffsetsixEm"
+(iffi:defifun ("__claw__ZNK8filament7backend11FaceOffsetsixEy"
                %filament::backend+operator[] :non-mutating t)
               %filament::backend+face-offsets+size-type
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/DriverEnums.h:610:16"
@@ -1231,7 +1231,7 @@
                (claw-utils:claw-pointer
                 %filament::backend+pixel-buffer-descriptor)))
 
-(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptorC1EPKvmNS0_23CompressedPixelDataTypeEjPFvPvmS5_ES5_"
+(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptorC1EPKvyNS0_23CompressedPixelDataTypeEjPFvPvyS5_ES5_"
                %filament::backend+pixel-buffer-descriptor)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/PixelBufferDescriptor.h:100:5"
@@ -1247,7 +1247,7 @@
                %filament::backend+buffer-descriptor+callback)
               (%filament::user (claw-utils:claw-pointer :void)))
 
-(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptorC1EPKvmNS0_15PixelDataFormatENS0_13PixelDataTypeEPFvPvmS6_ES6_"
+(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptorC1EPKvyNS0_15PixelDataFormatENS0_13PixelDataTypeEPFvPvyS6_ES6_"
                %filament::backend+pixel-buffer-descriptor)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/PixelBufferDescriptor.h:83:5"
@@ -1264,7 +1264,7 @@
                %filament::backend+buffer-descriptor+callback)
               (%filament::user (claw-utils:claw-pointer :void)))
 
-(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptorC1EPKvmNS0_15PixelDataFormatENS0_13PixelDataTypeEhjjjPFvPvmS6_ES6_"
+(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptorC1EPKvyNS0_15PixelDataFormatENS0_13PixelDataTypeEhjjjPFvPvyS6_ES6_"
                %filament::backend+pixel-buffer-descriptor)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/PixelBufferDescriptor.h:64:5"
@@ -1285,7 +1285,7 @@
                %filament::backend+buffer-descriptor+callback)
               (%filament::user (claw-utils:claw-pointer :void)))
 
-(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptor15computeDataSizeENS0_15PixelDataFormatENS0_13PixelDataTypeEmmm"
+(iffi:defifun ("__claw__ZN8filament7backend21PixelBufferDescriptor15computeDataSizeENS0_15PixelDataFormatENS0_13PixelDataTypeEyyy"
                %filament::backend+pixel-buffer-descriptor+compute-data-size)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/backend/include/backend/PixelBufferDescriptor.h:118:29"
@@ -1336,8 +1336,8 @@
                (claw-utils:claw-pointer %filament::backend+platform)))
 
 (iffi:defitype %filament::uintptr-t
-               :unsigned-int
-               "/usr/include/stdint.h:96:23")
+               :unsigned-long
+               "/usr/include/stdint.h:90:27")
 
 (iffi:defistruct (%filament::backend+platform+external-texture
                   :size-reporter
@@ -1886,25 +1886,19 @@
               (%filament::rhs
                (claw-utils:claw-pointer %filament::math+mat4f)))
 
-(cffi:defcstruct (%filament::half :class %filament::emulated$half
-                  :size 2)
-                 (%filament::data :unsigned-char :count 2))
-
-(defmethod cffi:foreign-type-alignment ((%filament::this
-                                         %filament::emulated$half))
-  (declare (ignore %filament::this))
-  2)
-
-(cffi:defctype %filament::half (:struct %filament::half))
-
-(iffi:defitype %filament::math+half
-               %filament::half
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:126:7")
+(iffi:deficlass (%filament::math+half :size-reporter
+                 "__claw_sizeof_filament_math_half"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_half" :constructor
+                 %filament::math+half :destructor
+                 %filament::math+~half)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:138:7")
 
 (iffi:defifun ("__claw__ZN8filament4math8makeHalfEt"
                %filament::math+make-half)
               (claw-utils:claw-pointer %filament::math+half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:132:23"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:157:23"
               (%filament::%%claw-result-
                (claw-utils:claw-pointer %filament::math+half))
               (%filament::bits %filament::uint16-t))
@@ -2106,7 +2100,7 @@
                %filament::math+details+t-vec3<double>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat3.h:88:22")
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IdEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IdEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer
                %filament::math+details+t-mat33<double>+col-type)
@@ -2116,7 +2110,7 @@
                 %filament::math+details+t-mat33<double>))
               (%filament::column %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details6TMat33IdEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details6TMat33IdEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer
                %filament::math+details+t-mat33<double>+col-type)
@@ -2126,7 +2120,7 @@
                 %filament::math+details+t-mat33<double>))
               (%filament::column %filament::size-t))
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IdE16packTangentFrameERKS3_m"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IdE16packTangentFrameERKS3_y"
                %filament::math+details+t-mat33<double>+pack-tangent-frame)
               (claw-utils:claw-pointer
                %filament::math+details+t-quaternion<double>)
@@ -2212,7 +2206,7 @@
                %filament::math+details+t-vec3<float>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat3.h:88:22")
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IfEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IfEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer
                %filament::math+details+t-mat33<float>+col-type)
@@ -2222,7 +2216,7 @@
                 %filament::math+details+t-mat33<float>))
               (%filament::column %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details6TMat33IfEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details6TMat33IfEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer
                %filament::math+details+t-mat33<float>+col-type)
@@ -2243,7 +2237,7 @@
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:36:24")
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IfE16packTangentFrameERKS3_m"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat33IfE16packTangentFrameERKS3_y"
                %filament::math+details+t-mat33<float>+pack-tangent-frame)
               (claw-utils:claw-pointer
                %filament::math+details+t-quaternion<float>)
@@ -2373,7 +2367,7 @@
                %filament::math+details+t-vec4<bool>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:96:22")
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat44IbEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat44IbEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer
                %filament::math+details+t-mat44<bool>+col-type)
@@ -2383,7 +2377,7 @@
                 %filament::math+details+t-mat44<bool>))
               (%filament::column %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details6TMat44IbEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details6TMat44IbEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer
                %filament::math+details+t-mat44<bool>+col-type)
@@ -2526,7 +2520,7 @@
                %filament::math+details+t-vec4<double>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:96:22")
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat44IdEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat44IdEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer
                %filament::math+details+t-mat44<double>+col-type)
@@ -2536,7 +2530,7 @@
                 %filament::math+details+t-mat44<double>))
               (%filament::column %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details6TMat44IdEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details6TMat44IdEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer
                %filament::math+details+t-mat44<double>+col-type)
@@ -2675,7 +2669,7 @@
                %filament::math+details+t-vec4<float>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:96:22")
 
-(iffi:defifun ("__claw__ZN8filament4math7details6TMat44IfEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details6TMat44IfEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer
                %filament::math+details+t-mat44<float>+col-type)
@@ -2685,7 +2679,7 @@
                 %filament::math+details+t-mat44<float>))
               (%filament::column %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details6TMat44IfEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details6TMat44IfEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer
                %filament::math+details+t-mat44<float>+col-type)
@@ -2806,7 +2800,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-mat-helpers<t-mat33+double>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat33EdEclEmm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat33EdEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()|)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:684:15"
@@ -2816,7 +2810,7 @@
               (%filament::row %filament::size-t)
               (%filament::col %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat33EdEclEmm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat33EdEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()| :non-mutating t)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:680:31"
@@ -2903,7 +2897,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-mat-helpers<t-mat33+float>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat33EfEclEmm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat33EfEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()|)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:684:15"
@@ -2913,7 +2907,7 @@
               (%filament::row %filament::size-t)
               (%filament::col %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat33EfEclEmm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat33EfEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()| :non-mutating t)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:680:31"
@@ -3000,7 +2994,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-mat-helpers<t-mat44+bool>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat44EbEclEmm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat44EbEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()|)
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:684:15"
@@ -3010,7 +3004,7 @@
               (%filament::row %filament::size-t)
               (%filament::col %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat44EbEclEmm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat44EbEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()| :non-mutating t)
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:680:31"
@@ -3097,7 +3091,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-mat-helpers<t-mat44+double>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat44EdEclEmm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat44EdEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()|)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:684:15"
@@ -3107,7 +3101,7 @@
               (%filament::row %filament::size-t)
               (%filament::col %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat44EdEclEmm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat44EdEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()| :non-mutating t)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:680:31"
@@ -3194,7 +3188,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-mat-helpers<t-mat44+float>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat44EfEclEmm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TMatHelpersINS1_6TMat44EfEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()|)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:684:15"
@@ -3204,7 +3198,7 @@
               (%filament::row %filament::size-t)
               (%filament::col %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat44EfEclEmm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TMatHelpersINS1_6TMat44EfEclEyy"
                %filament::|MATH+DETAILS+OPERATOR()| :non-mutating t)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TMatHelpers.h:680:31"
@@ -3729,6 +3723,34 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-mat-transform<t-mat44+float>)))
 
+(iffi:deficlass (%filament::math+details+t-quat-functions<t-quaternion+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TQuatFunctions_TQuaternion_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TQuatFunctions_TQuaternion_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-quat-functions<t-quaternion+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-quat-functions)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:156:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-quat-functions<t-quaternion+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:156:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quat-functions<t-quaternion+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-quat-functions)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:156:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quat-functions<t-quaternion+filament+math+half>)))
+
 (iffi:deficlass (%filament::math+details+t-quat-functions<t-quaternion+bool>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TQuatFunctions_TQuaternion_bool_"
@@ -3813,33 +3835,33 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-quat-functions<t-quaternion+float>)))
 
-(iffi:deficlass (%filament::math+details+t-quat-functions<t-quaternion+half>
+(iffi:deficlass (%filament::math+details+t-quat-product-operators<t-quaternion+filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_details_TQuatFunctions_TQuaternion_half_"
+                 "__claw_sizeof_filament_math_details_TQuatProductOperators_TQuaternion_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TQuatFunctions_TQuaternion_half_"
+                 "__claw_alignof_filament_math_details_TQuatProductOperators_TQuaternion_filament_math_half_"
                  :constructor
-                 %filament::math+details+t-quat-functions<t-quaternion+half>
+                 %filament::math+details+t-quat-product-operators<t-quaternion+filament+math+half>
                  :destructor
-                 %filament::math+details+~t-quat-functions)
+                 %filament::math+details+~t-quat-product-operators)
                 nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:156:7")
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:50:7")
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_ctor"
-               %filament::math+details+t-quat-functions<t-quaternion+half>)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-quat-product-operators<t-quaternion+filament+math+half>)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:156:7"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:50:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quat-functions<t-quaternion+half>)))
+                %filament::math+details+t-quat-product-operators<t-quaternion+filament+math+half>)))
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_dtor"
-               %filament::math+details+~t-quat-functions)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-quat-product-operators)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:156:7"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:50:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quat-functions<t-quaternion+half>)))
+                %filament::math+details+t-quat-product-operators<t-quaternion+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-quat-product-operators<t-quaternion+bool>
                  :size-reporter
@@ -3985,93 +4007,144 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-quat-product-operators<t-quaternion+float>)))
 
-(iffi:deficlass (%filament::math+details+t-quat-product-operators<t-quaternion+half>
+(iffi:deficlass (%filament::math+details+t-vec2<filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_details_TQuatProductOperators_TQuaternion_half_"
+                 "__claw_sizeof_filament_math_details_TVec2_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TQuatProductOperators_TQuaternion_half_"
+                 "__claw_alignof_filament_math_details_TVec2_filament_math_half_"
                  :constructor
-                 %filament::math+details+t-quat-product-operators<t-quaternion+half>
-                 :destructor
-                 %filament::math+details+~t-quat-product-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:50:7")
-
-(iffi:deficlass (%filament::math+details+t-vec2<half> :size-reporter
-                 "__claw_sizeof_filament_math_details_TVec2_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVec2_half_"
-                 :constructor %filament::math+details+t-vec2<half>
+                 %filament::math+details+t-vec2<filament+math+half>
                  :destructor %filament::math+details+~t-vec2)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:36:24")
 
-(iffi:deficlass (%filament::math+details+t-vec3<half> :size-reporter
-                 "__claw_sizeof_filament_math_details_TVec3_half_"
+(iffi:deficlass (%filament::math+details+t-vec3<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVec3_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVec3_half_"
-                 :constructor %filament::math+details+t-vec3<half>
+                 "__claw_alignof_filament_math_details_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec3<filament+math+half>
                  :destructor %filament::math+details+~t-vec3)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24")
 
-(iffi:deficlass (%filament::math+details+t-vec4<half> :size-reporter
-                 "__claw_sizeof_filament_math_details_TVec4_half_"
+(iffi:deficlass (%filament::math+details+t-vec4<filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVec4_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVec4_half_"
-                 :constructor %filament::math+details+t-vec4<half>
+                 "__claw_alignof_filament_math_details_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec4<filament+math+half>
                  :destructor %filament::math+details+~t-vec4)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:34:24")
 
-(iffi:deficlass (%filament::math+details+t-quaternion<half>
+(iffi:deficlass (%filament::math+details+t-quaternion<filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_details_TQuaternion_half_"
+                 "__claw_sizeof_filament_math_details_TQuaternion_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TQuaternion_half_"
+                 "__claw_alignof_filament_math_details_TQuaternion_filament_math_half_"
                  :constructor
-                 %filament::math+details+t-quaternion<half>
+                 %filament::math+details+t-quaternion<filament+math+half>
                  :destructor %filament::math+details+~t-quaternion)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:36:24")
 
-(iffi:defifun ("__claw__ZN8filament4math7details21TQuatProductOperatorsINS1_11TQuaternionEDhEmLEDh"
-               %filament::math+details+operator*=)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-quaternion<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:64:30"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quat-product-operators<t-quaternion+half>))
-              (%filament::v
-               (claw-utils:claw-pointer %filament::half)))
+(cffi:defcenum (%filament::math+details+t-quaternion<filament+math+half>+no-init
+                :unsigned-int)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:43:10"
+               (:no-init 0))
 
-(iffi:defifun ("__claw__ZN8filament4math7details21TQuatProductOperatorsINS1_11TQuaternionEDhEdVEDh"
-               %filament::math+details+operator/=)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-quaternion<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:72:30"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quat-product-operators<t-quaternion+half>))
-              (%filament::v
-               (claw-utils:claw-pointer %filament::half)))
+(defparameter %filament::+size+ 4)
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_ctor"
-               %filament::math+details+t-quat-product-operators<t-quaternion+half>)
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEC1Ev"
+               %filament::math+details+t-quaternion<filament+math+half>)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:50:7"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:96:15"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quat-product-operators<t-quaternion+half>)))
+                %filament::math+details+t-quaternion<filament+math+half>)))
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TQuatProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_dtor"
-               %filament::math+details+~t-quat-product-operators)
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEC1ENS4_7no_initE"
+               %filament::math+details+t-quaternion<filament+math+half>)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TQuatHelpers.h:50:7"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:93:24"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quat-product-operators<t-quaternion+half>)))
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::arg0
+               %filament::math+details+t-quaternion<filament+math+half>+no-init))
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEC1ERKS4_"
+               %filament::math+details+t-quaternion<filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:86:5"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::arg0
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>)))
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEaSERKS4_"
+               %filament::math+details+operator=)
+              (claw-utils:claw-pointer
+               %filament::math+details+t-quaternion<filament+math+half>)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:88:18"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::arg0
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>)))
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEEixEy"
+               %filament::math+details+operator[])
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:79:25"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionINS0_4halfEEixEy"
+               %filament::math+details+operator[] :non-mutating t)
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:73:31"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionINS0_4halfEEcoEv"
+               %filament::math+details+operator~ :non-mutating t)
+              (claw-utils:claw-pointer
+               %filament::math+details+t-quaternion<filament+math+half>)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:120:27"
+              (%filament::%%claw-result-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>)))
+
+(iffi:defitype %filament::math+details+t-quaternion<filament+math+half>+size-type
+               :unsigned-long-long
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:49:20")
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEE4sizeEv"
+               %filament::math+details+t-quaternion<filament+math+half>+size)
+              %filament::math+details+t-quaternion<filament+math+half>+size-type
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:70:39")
+
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionINS0_4halfEED1Ev"
+               %filament::math+details+~t-quaternion)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:87:5"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>)))
 
 (cffi:defcenum (%filament::math+details+t-quaternion<bool>+no-init
                 :unsigned-int)
@@ -4121,7 +4194,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-quaternion<bool>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIbEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIbEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:79:25"
@@ -4130,7 +4203,7 @@
                 %filament::math+details+t-quaternion<bool>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIbEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIbEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:73:31"
@@ -4152,7 +4225,7 @@
                 %filament::math+details+t-quaternion<bool>)))
 
 (iffi:defitype %filament::math+details+t-quaternion<bool>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:49:20")
 
 (iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIbE4sizeEv"
@@ -4216,7 +4289,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-quaternion<double>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIdEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIdEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:79:25"
@@ -4225,7 +4298,7 @@
                 %filament::math+details+t-quaternion<double>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIdEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIdEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:73:31"
@@ -4247,7 +4320,7 @@
                 %filament::math+details+t-quaternion<double>)))
 
 (iffi:defitype %filament::math+details+t-quaternion<double>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:49:20")
 
 (iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIdE4sizeEv"
@@ -4311,7 +4384,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-quaternion<float>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIfEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIfEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:79:25"
@@ -4320,7 +4393,7 @@
                 %filament::math+details+t-quaternion<float>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIfEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIfEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:73:31"
@@ -4342,7 +4415,7 @@
                 %filament::math+details+t-quaternion<float>)))
 
 (iffi:defitype %filament::math+details+t-quaternion<float>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:49:20")
 
 (iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIfE4sizeEv"
@@ -4358,100 +4431,43 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-quaternion<float>)))
 
-(cffi:defcenum (%filament::math+details+t-quaternion<half>+no-init
-                :unsigned-int)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:43:10"
-               (:no-init 0))
-
-(defparameter %filament::+size+ 4)
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhEC1Ev"
-               %filament::math+details+t-quaternion<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:96:15"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhEC1ENS3_7no_initE"
-               %filament::math+details+t-quaternion<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:93:24"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
-              (%filament::arg0
-               %filament::math+details+t-quaternion<half>+no-init))
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhEC1ERKS3_"
-               %filament::math+details+t-quaternion<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:86:5"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
-              (%filament::arg0
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhEaSERKS3_"
-               %filament::math+details+operator=)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-quaternion<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:88:18"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
-              (%filament::arg0
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2INS0_4halfEEixEy"
                %filament::math+details+operator[])
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:79:25"
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
+                %filament::math+details+t-vec2<filament+math+half>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIDhEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2INS0_4halfEEixEy"
                %filament::math+details+operator[] :non-mutating t)
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:73:31"
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
+                %filament::math+details+t-vec2<filament+math+half>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details11TQuaternionIDhEcoEv"
-               %filament::math+details+operator~ :non-mutating t)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-quaternion<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:120:27"
-              (%filament::%%claw-result-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
+(iffi:defitype %filament::math+details+t-vec2<filament+math+half>+size-type
+               :unsigned-long-long
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2INS0_4halfEE4sizeEv"
+               %filament::math+details+size :non-mutating t)
+              %filament::math+details+t-vec2<filament+math+half>+size-type
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:56:32"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>)))
+                %filament::math+details+t-vec2<filament+math+half>)))
 
-(iffi:defitype %filament::math+details+t-quaternion<half>+size-type
-               :unsigned-long
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:49:20")
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhE4sizeEv"
-               %filament::math+details+t-quaternion<half>+size)
-              %filament::math+details+t-quaternion<half>+size-type
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:70:39")
-
-(iffi:defifun ("__claw__ZN8filament4math7details11TQuaternionIDhED1Ev"
-               %filament::math+details+~t-quaternion)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec2)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:87:5"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:36:24"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>)))
+                %filament::math+details+t-vec2<filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec2<int> :size-reporter
                  "__claw_sizeof_filament_math_details_TVec2_int_"
@@ -4470,7 +4486,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<int>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IiEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IiEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4479,7 +4495,7 @@
                 %filament::math+details+t-vec2<int>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IiEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IiEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4489,7 +4505,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<int>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IiE4sizeEv"
@@ -4525,7 +4541,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<short>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IsEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IsEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4534,7 +4550,7 @@
                 %filament::math+details+t-vec2<short>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IsEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IsEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4544,7 +4560,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<short>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IsE4sizeEv"
@@ -4571,7 +4587,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<bool>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IbEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IbEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4580,7 +4596,7 @@
                 %filament::math+details+t-vec2<bool>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IbEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IbEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4590,7 +4606,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<bool>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IbE4sizeEv"
@@ -4628,7 +4644,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<unsigned+char>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IhEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IhEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-char)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4637,7 +4653,7 @@
                 %filament::math+details+t-vec2<unsigned+char>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IhEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IhEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-char)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4647,7 +4663,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<unsigned+char>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IhE4sizeEv"
@@ -4674,7 +4690,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<double>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IdEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IdEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4683,7 +4699,7 @@
                 %filament::math+details+t-vec2<double>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IdEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IdEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4693,7 +4709,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<double>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IdE4sizeEv"
@@ -4720,7 +4736,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<float>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IfEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IfEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4729,7 +4745,7 @@
                 %filament::math+details+t-vec2<float>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IfEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IfEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4739,7 +4755,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<float>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IfE4sizeEv"
@@ -4757,52 +4773,6 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<float>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IDhEC1Ev"
-               %filament::math+details+t-vec2<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:72:33"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec2<half>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IDhEixEm"
-               %filament::math+details+operator[])
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec2<half>))
-              (%filament::i %filament::size-t))
-
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IDhEixEm"
-               %filament::math+details+operator[] :non-mutating t)
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec2<half>))
-              (%filament::i %filament::size-t))
-
-(iffi:defitype %filament::math+details+t-vec2<half>+size-type
-               :unsigned-long
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
-
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IDhE4sizeEv"
-               %filament::math+details+size :non-mutating t)
-              %filament::math+details+t-vec2<half>+size-type
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:56:32"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec2<half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23h_claw_dtor"
-               %filament::math+details+~t-vec2)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:36:24"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec2<half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec2<unsigned+int>
                  :size-reporter
@@ -4823,7 +4793,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<unsigned+int>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IjEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IjEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4832,7 +4802,7 @@
                 %filament::math+details+t-vec2<unsigned+int>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IjEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IjEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4842,7 +4812,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<unsigned+int>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IjE4sizeEv"
@@ -4878,7 +4848,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<char>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IaEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2IaEixEy"
                %filament::math+details+operator[])
               claw-utils:claw-string
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4887,7 +4857,7 @@
                 %filament::math+details+t-vec2<char>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IaEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IaEixEy"
                %filament::math+details+operator[] :non-mutating t)
               claw-utils:claw-string
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4897,7 +4867,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<char>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2IaE4sizeEv"
@@ -4935,7 +4905,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<unsigned+short>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec2ItEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec2ItEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:64:25"
@@ -4944,7 +4914,7 @@
                 %filament::math+details+t-vec2<unsigned+short>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2ItEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec2ItEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:59:31"
@@ -4954,7 +4924,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec2<unsigned+short>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:46:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec2ItE4sizeEv"
@@ -4973,6 +4943,44 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec2<unsigned+short>)))
 
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3INS0_4halfEEixEy"
+               %filament::math+details+operator[])
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec3<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3INS0_4halfEEixEy"
+               %filament::math+details+operator[] :non-mutating t)
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec3<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defitype %filament::math+details+t-vec3<filament+math+half>+size-type
+               :unsigned-long-long
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3INS0_4halfEE4sizeEv"
+               %filament::math+details+size :non-mutating t)
+              %filament::math+details+t-vec3<filament+math+half>+size-type
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:68:32"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec3<filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec3)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec3<filament+math+half>)))
+
 (iffi:deficlass (%filament::math+details+t-vec3<int> :size-reporter
                  "__claw_sizeof_filament_math_details_TVec3_int_"
                  :alignment-reporter
@@ -4990,7 +4998,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<int>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IiEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IiEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -4999,7 +5007,7 @@
                 %filament::math+details+t-vec3<int>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IiEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IiEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5009,7 +5017,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<int>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IiE4sizeEv"
@@ -5045,7 +5053,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<short>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IsEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IsEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5054,7 +5062,7 @@
                 %filament::math+details+t-vec3<short>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IsEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IsEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5064,7 +5072,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<short>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IsE4sizeEv"
@@ -5091,7 +5099,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<bool>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IbEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IbEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5100,7 +5108,7 @@
                 %filament::math+details+t-vec3<bool>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IbEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IbEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5110,7 +5118,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<bool>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IbE4sizeEv"
@@ -5148,7 +5156,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<unsigned+char>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IhEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IhEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-char)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5157,7 +5165,7 @@
                 %filament::math+details+t-vec3<unsigned+char>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IhEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IhEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-char)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5167,7 +5175,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<unsigned+char>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IhE4sizeEv"
@@ -5194,7 +5202,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<double>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IdEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IdEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5203,7 +5211,7 @@
                 %filament::math+details+t-vec3<double>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IdEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IdEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5213,7 +5221,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<double>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IdE4sizeEv"
@@ -5240,7 +5248,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<float>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IfEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IfEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5249,7 +5257,7 @@
                 %filament::math+details+t-vec3<float>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IfEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IfEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5259,7 +5267,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<float>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IfE4sizeEv"
@@ -5277,52 +5285,6 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<float>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IDhEC1Ev"
-               %filament::math+details+t-vec3<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:84:33"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec3<half>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IDhEixEm"
-               %filament::math+details+operator[])
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec3<half>))
-              (%filament::i %filament::size-t))
-
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IDhEixEm"
-               %filament::math+details+operator[] :non-mutating t)
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec3<half>))
-              (%filament::i %filament::size-t))
-
-(iffi:defitype %filament::math+details+t-vec3<half>+size-type
-               :unsigned-long
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
-
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IDhE4sizeEv"
-               %filament::math+details+size :non-mutating t)
-              %filament::math+details+t-vec3<half>+size-type
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:68:32"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec3<half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23h_claw_dtor"
-               %filament::math+details+~t-vec3)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:33:24"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec3<half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec3<unsigned+int>
                  :size-reporter
@@ -5343,7 +5305,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<unsigned+int>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IjEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IjEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5352,7 +5314,7 @@
                 %filament::math+details+t-vec3<unsigned+int>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IjEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IjEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5362,7 +5324,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<unsigned+int>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IjE4sizeEv"
@@ -5398,7 +5360,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<char>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IaEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3IaEixEy"
                %filament::math+details+operator[])
               claw-utils:claw-string
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5407,7 +5369,7 @@
                 %filament::math+details+t-vec3<char>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IaEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IaEixEy"
                %filament::math+details+operator[] :non-mutating t)
               claw-utils:claw-string
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5417,7 +5379,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<char>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3IaE4sizeEv"
@@ -5455,7 +5417,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<unsigned+short>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec3ItEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec3ItEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:76:25"
@@ -5464,7 +5426,7 @@
                 %filament::math+details+t-vec3<unsigned+short>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3ItEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec3ItEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:71:31"
@@ -5474,7 +5436,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec3<unsigned+short>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:43:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec3ItE4sizeEv"
@@ -5493,6 +5455,44 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec3<unsigned+short>)))
 
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4INS0_4halfEEixEy"
+               %filament::math+details+operator[])
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec4<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4INS0_4halfEEixEy"
+               %filament::math+details+operator[] :non-mutating t)
+              (claw-utils:claw-pointer %filament::math+half)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec4<filament+math+half>))
+              (%filament::i %filament::size-t))
+
+(iffi:defitype %filament::math+details+t-vec4<filament+math+half>+size-type
+               :unsigned-long-long
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4INS0_4halfEE4sizeEv"
+               %filament::math+details+size :non-mutating t)
+              %filament::math+details+t-vec4<filament+math+half>+size-type
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:69:32"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec4<filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec4)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:34:24"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec4<filament+math+half>)))
+
 (iffi:deficlass (%filament::math+details+t-vec4<int> :size-reporter
                  "__claw_sizeof_filament_math_details_TVec4_int_"
                  :alignment-reporter
@@ -5510,7 +5510,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<int>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IiEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IiEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5519,7 +5519,7 @@
                 %filament::math+details+t-vec4<int>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IiEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IiEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5529,7 +5529,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<int>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IiE4sizeEv"
@@ -5565,7 +5565,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<short>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IsEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IsEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5574,7 +5574,7 @@
                 %filament::math+details+t-vec4<short>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IsEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IsEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5584,7 +5584,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<short>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IsE4sizeEv"
@@ -5611,7 +5611,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<bool>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IbEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IbEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5620,7 +5620,7 @@
                 %filament::math+details+t-vec4<bool>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IbEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IbEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :bool)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5630,7 +5630,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<bool>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IbE4sizeEv"
@@ -5668,7 +5668,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<unsigned+char>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IhEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IhEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-char)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5677,7 +5677,7 @@
                 %filament::math+details+t-vec4<unsigned+char>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IhEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IhEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-char)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5687,7 +5687,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<unsigned+char>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IhE4sizeEv"
@@ -5714,7 +5714,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<double>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IdEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IdEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5723,7 +5723,7 @@
                 %filament::math+details+t-vec4<double>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IdEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IdEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :double)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5733,7 +5733,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<double>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IdE4sizeEv"
@@ -5760,7 +5760,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<float>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IfEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IfEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5769,7 +5769,7 @@
                 %filament::math+details+t-vec4<float>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IfEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IfEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :float)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5779,7 +5779,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<float>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IfE4sizeEv"
@@ -5797,52 +5797,6 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<float>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IDhEC1Ev"
-               %filament::math+details+t-vec4<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:85:33"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec4<half>)))
-
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IDhEixEm"
-               %filament::math+details+operator[])
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec4<half>))
-              (%filament::i %filament::size-t))
-
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IDhEixEm"
-               %filament::math+details+operator[] :non-mutating t)
-              (claw-utils:claw-pointer %filament::half)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec4<half>))
-              (%filament::i %filament::size-t))
-
-(iffi:defitype %filament::math+details+t-vec4<half>+size-type
-               :unsigned-long
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
-
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IDhE4sizeEv"
-               %filament::math+details+size :non-mutating t)
-              %filament::math+details+t-vec4<half>+size-type
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:69:32"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec4<half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23h_claw_dtor"
-               %filament::math+details+~t-vec4)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:34:24"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec4<half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec4<unsigned+int>
                  :size-reporter
@@ -5863,7 +5817,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<unsigned+int>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IjEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IjEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5872,7 +5826,7 @@
                 %filament::math+details+t-vec4<unsigned+int>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IjEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IjEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-int)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5882,7 +5836,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<unsigned+int>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IjE4sizeEv"
@@ -5918,7 +5872,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<char>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IaEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4IaEixEy"
                %filament::math+details+operator[])
               claw-utils:claw-string
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5927,7 +5881,7 @@
                 %filament::math+details+t-vec4<char>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IaEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IaEixEy"
                %filament::math+details+operator[] :non-mutating t)
               claw-utils:claw-string
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5937,7 +5891,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<char>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4IaE4sizeEv"
@@ -5975,7 +5929,7 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec4<unsigned+short>)))
 
-(iffi:defifun ("__claw__ZN8filament4math7details5TVec4ItEixEm"
+(iffi:defifun ("__claw__ZN8filament4math7details5TVec4ItEixEy"
                %filament::math+details+operator[])
               (claw-utils:claw-pointer :unsigned-short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:77:25"
@@ -5984,7 +5938,7 @@
                 %filament::math+details+t-vec4<unsigned+short>))
               (%filament::i %filament::size-t))
 
-(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4ItEixEm"
+(iffi:defifun ("__claw__ZNK8filament4math7details5TVec4ItEixEy"
                %filament::math+details+operator[] :non-mutating t)
               (claw-utils:claw-pointer :unsigned-short)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:72:31"
@@ -5994,7 +5948,7 @@
               (%filament::i %filament::size-t))
 
 (iffi:defitype %filament::math+details+t-vec4<unsigned+short>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:44:20")
 
 (iffi:defifun ("__claw__ZNK8filament4math7details5TVec4ItE4sizeEv"
@@ -6153,6 +6107,34 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-mat44+float>)))
 
+(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-quaternion+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecAddOperators_TQuaternion_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecAddOperators_TQuaternion_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-add-operators<t-quaternion+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-add-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-add-operators<t-quaternion+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-add-operators<t-quaternion+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-add-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-add-operators<t-quaternion+filament+math+half>)))
+
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-quaternion+bool>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecAddOperators_TQuaternion_bool_"
@@ -6237,33 +6219,33 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-quaternion+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-quaternion+half>
+(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec2+filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecAddOperators_TQuaternion_half_"
+                 "__claw_sizeof_filament_math_details_TVecAddOperators_TVec2_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecAddOperators_TQuaternion_half_"
+                 "__claw_alignof_filament_math_details_TVecAddOperators_TVec2_filament_math_half_"
                  :constructor
-                 %filament::math+details+t-vec-add-operators<t-quaternion+half>
+                 %filament::math+details+t-vec-add-operators<t-vec2+filament+math+half>
                  :destructor
                  %filament::math+details+~t-vec-add-operators)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_ctor"
-               %filament::math+details+t-vec-add-operators<t-quaternion+half>)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-add-operators<t-vec2+filament+math+half>)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-quaternion+half>)))
+                %filament::math+details+t-vec-add-operators<t-vec2+filament+math+half>)))
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_dtor"
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
                %filament::math+details+~t-vec-add-operators)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-quaternion+half>)))
+                %filament::math+details+t-vec-add-operators<t-vec2+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec2+int>
                  :size-reporter
@@ -6433,34 +6415,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-vec2+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec2+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecAddOperators_TVec2_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecAddOperators_TVec2_half_"
-                 :constructor
-                 %filament::math+details+t-vec-add-operators<t-vec2+half>
-                 :destructor
-                 %filament::math+details+~t-vec-add-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_ctor"
-               %filament::math+details+t-vec-add-operators<t-vec2+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-vec2+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_dtor"
-               %filament::math+details+~t-vec-add-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-vec2+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec2+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecAddOperators_TVec2_unsigned_int_"
@@ -6544,6 +6498,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-vec2+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec3+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecAddOperators_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecAddOperators_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-add-operators<t-vec3+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-add-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-add-operators<t-vec3+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-add-operators<t-vec3+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-add-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-add-operators<t-vec3+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec3+int>
                  :size-reporter
@@ -6713,34 +6695,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-vec3+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec3+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecAddOperators_TVec3_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecAddOperators_TVec3_half_"
-                 :constructor
-                 %filament::math+details+t-vec-add-operators<t-vec3+half>
-                 :destructor
-                 %filament::math+details+~t-vec-add-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_ctor"
-               %filament::math+details+t-vec-add-operators<t-vec3+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-vec3+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_dtor"
-               %filament::math+details+~t-vec-add-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-vec3+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec3+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecAddOperators_TVec3_unsigned_int_"
@@ -6824,6 +6778,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-vec3+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec4+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecAddOperators_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecAddOperators_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-add-operators<t-vec4+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-add-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-add-operators<t-vec4+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-add-operators<t-vec4+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-add-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-add-operators<t-vec4+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec4+int>
                  :size-reporter
@@ -6992,34 +6974,6 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-add-operators<t-vec4+float>)))
-
-(iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec4+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecAddOperators_TVec4_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecAddOperators_TVec4_half_"
-                 :constructor
-                 %filament::math+details+t-vec-add-operators<t-vec4+half>
-                 :destructor
-                 %filament::math+details+~t-vec-add-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_ctor"
-               %filament::math+details+t-vec-add-operators<t-vec4+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-vec4+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecAddOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_dtor"
-               %filament::math+details+~t-vec-add-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:74:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-add-operators<t-vec4+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-add-operators<t-vec4+unsigned+int>
                  :size-reporter
@@ -7245,6 +7199,34 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-mat44+float>)))
 
+(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-quaternion+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TQuaternion_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TQuaternion_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-comparison-operators<t-quaternion+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-comparison-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-comparison-operators<t-quaternion+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-comparison-operators<t-quaternion+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-comparison-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-comparison-operators<t-quaternion+filament+math+half>)))
+
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-quaternion+bool>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecComparisonOperators_TQuaternion_bool_"
@@ -7329,33 +7311,33 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-quaternion+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-quaternion+half>
+(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec2+filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TQuaternion_half_"
+                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec2_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TQuaternion_half_"
+                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TVec2_filament_math_half_"
                  :constructor
-                 %filament::math+details+t-vec-comparison-operators<t-quaternion+half>
+                 %filament::math+details+t-vec-comparison-operators<t-vec2+filament+math+half>
                  :destructor
                  %filament::math+details+~t-vec-comparison-operators)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_ctor"
-               %filament::math+details+t-vec-comparison-operators<t-quaternion+half>)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-comparison-operators<t-vec2+filament+math+half>)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-quaternion+half>)))
+                %filament::math+details+t-vec-comparison-operators<t-vec2+filament+math+half>)))
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_dtor"
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
                %filament::math+details+~t-vec-comparison-operators)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-quaternion+half>)))
+                %filament::math+details+t-vec-comparison-operators<t-vec2+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec2+int>
                  :size-reporter
@@ -7525,34 +7507,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-vec2+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec2+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec2_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TVec2_half_"
-                 :constructor
-                 %filament::math+details+t-vec-comparison-operators<t-vec2+half>
-                 :destructor
-                 %filament::math+details+~t-vec-comparison-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_ctor"
-               %filament::math+details+t-vec-comparison-operators<t-vec2+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-vec2+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_dtor"
-               %filament::math+details+~t-vec-comparison-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-vec2+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec2+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec2_unsigned_int_"
@@ -7636,6 +7590,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-vec2+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec3+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-comparison-operators<t-vec3+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-comparison-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-comparison-operators<t-vec3+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-comparison-operators<t-vec3+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-comparison-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-comparison-operators<t-vec3+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec3+int>
                  :size-reporter
@@ -7805,34 +7787,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-vec3+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec3+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec3_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TVec3_half_"
-                 :constructor
-                 %filament::math+details+t-vec-comparison-operators<t-vec3+half>
-                 :destructor
-                 %filament::math+details+~t-vec-comparison-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_ctor"
-               %filament::math+details+t-vec-comparison-operators<t-vec3+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-vec3+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_dtor"
-               %filament::math+details+~t-vec-comparison-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-vec3+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec3+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec3_unsigned_int_"
@@ -7916,6 +7870,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-vec3+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec4+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-comparison-operators<t-vec4+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-comparison-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-comparison-operators<t-vec4+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-comparison-operators<t-vec4+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-comparison-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-comparison-operators<t-vec4+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec4+int>
                  :size-reporter
@@ -8085,34 +8067,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-vec4+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec4+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec4_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecComparisonOperators_TVec4_half_"
-                 :constructor
-                 %filament::math+details+t-vec-comparison-operators<t-vec4+half>
-                 :destructor
-                 %filament::math+details+~t-vec-comparison-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_ctor"
-               %filament::math+details+t-vec-comparison-operators<t-vec4+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-vec4+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecComparisonOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_dtor"
-               %filament::math+details+~t-vec-comparison-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:272:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-comparison-operators<t-vec4+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecComparisonOperators_TVec4_unsigned_int_"
@@ -8196,6 +8150,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-functions<t-vec2+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec2_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecFunctions_TVec2_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-functions<t-vec2+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-functions)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-functions<t-vec2+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-functions<t-vec2+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-functions)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-functions<t-vec2+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-functions<t-vec2+int>
                  :size-reporter
@@ -8365,34 +8347,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-functions<t-vec2+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-functions<t-vec2+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec2_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecFunctions_TVec2_half_"
-                 :constructor
-                 %filament::math+details+t-vec-functions<t-vec2+half>
-                 :destructor
-                 %filament::math+details+~t-vec-functions)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_ctor"
-               %filament::math+details+t-vec-functions<t-vec2+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-functions<t-vec2+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_dtor"
-               %filament::math+details+~t-vec-functions)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-functions<t-vec2+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-functions<t-vec2+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecFunctions_TVec2_unsigned_int_"
@@ -8476,6 +8430,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-functions<t-vec2+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-functions<t-vec3+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecFunctions_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-functions<t-vec3+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-functions)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-functions<t-vec3+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-functions<t-vec3+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-functions)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-functions<t-vec3+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-functions<t-vec3+int>
                  :size-reporter
@@ -8645,34 +8627,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-functions<t-vec3+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-functions<t-vec3+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec3_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecFunctions_TVec3_half_"
-                 :constructor
-                 %filament::math+details+t-vec-functions<t-vec3+half>
-                 :destructor
-                 %filament::math+details+~t-vec-functions)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_ctor"
-               %filament::math+details+t-vec-functions<t-vec3+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-functions<t-vec3+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_dtor"
-               %filament::math+details+~t-vec-functions)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-functions<t-vec3+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-functions<t-vec3+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecFunctions_TVec3_unsigned_int_"
@@ -8756,6 +8710,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-functions<t-vec3+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-functions<t-vec4+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecFunctions_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-functions<t-vec4+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-functions)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-functions<t-vec4+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-functions<t-vec4+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-functions)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-functions<t-vec4+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-functions<t-vec4+int>
                  :size-reporter
@@ -8925,34 +8907,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-functions<t-vec4+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-functions<t-vec4+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecFunctions_TVec4_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecFunctions_TVec4_half_"
-                 :constructor
-                 %filament::math+details+t-vec-functions<t-vec4+half>
-                 :destructor
-                 %filament::math+details+~t-vec-functions)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_ctor"
-               %filament::math+details+t-vec-functions<t-vec4+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-functions<t-vec4+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecFunctionsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_dtor"
-               %filament::math+details+~t-vec-functions)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:369:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-functions<t-vec4+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-functions<t-vec4+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecFunctions_TVec4_unsigned_int_"
@@ -9036,6 +8990,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-functions<t-vec4+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec2+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecProductOperators_TVec2_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecProductOperators_TVec2_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-product-operators<t-vec2+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-product-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-product-operators<t-vec2+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-product-operators<t-vec2+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-product-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-product-operators<t-vec2+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec2+int>
                  :size-reporter
@@ -9205,34 +9187,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-product-operators<t-vec2+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec2+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecProductOperators_TVec2_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecProductOperators_TVec2_half_"
-                 :constructor
-                 %filament::math+details+t-vec-product-operators<t-vec2+half>
-                 :destructor
-                 %filament::math+details+~t-vec-product-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_ctor"
-               %filament::math+details+t-vec-product-operators<t-vec2+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-product-operators<t-vec2+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_dtor"
-               %filament::math+details+~t-vec-product-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-product-operators<t-vec2+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec2+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecProductOperators_TVec2_unsigned_int_"
@@ -9316,6 +9270,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-product-operators<t-vec2+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec3+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecProductOperators_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecProductOperators_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-product-operators<t-vec3+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-product-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-product-operators<t-vec3+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-product-operators<t-vec3+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-product-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-product-operators<t-vec3+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec3+int>
                  :size-reporter
@@ -9485,34 +9467,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-product-operators<t-vec3+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec3+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecProductOperators_TVec3_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecProductOperators_TVec3_half_"
-                 :constructor
-                 %filament::math+details+t-vec-product-operators<t-vec3+half>
-                 :destructor
-                 %filament::math+details+~t-vec-product-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_ctor"
-               %filament::math+details+t-vec-product-operators<t-vec3+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-product-operators<t-vec3+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_dtor"
-               %filament::math+details+~t-vec-product-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-product-operators<t-vec3+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec3+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecProductOperators_TVec3_unsigned_int_"
@@ -9596,6 +9550,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-product-operators<t-vec3+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec4+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecProductOperators_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecProductOperators_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-product-operators<t-vec4+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-product-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-product-operators<t-vec4+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-product-operators<t-vec4+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-product-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-product-operators<t-vec4+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec4+int>
                  :size-reporter
@@ -9764,34 +9746,6 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-product-operators<t-vec4+float>)))
-
-(iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec4+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecProductOperators_TVec4_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecProductOperators_TVec4_half_"
-                 :constructor
-                 %filament::math+details+t-vec-product-operators<t-vec4+half>
-                 :destructor
-                 %filament::math+details+~t-vec-product-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_ctor"
-               %filament::math+details+t-vec-product-operators<t-vec4+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-product-operators<t-vec4+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecProductOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_dtor"
-               %filament::math+details+~t-vec-product-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:158:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-product-operators<t-vec4+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-product-operators<t-vec4+unsigned+int>
                  :size-reporter
@@ -10077,6 +10031,46 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-mat44+float>)))
 
+(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TQuaternion_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TQuaternion_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-unary-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
+
+(iffi:defifun ("__claw__ZNK8filament4math7details18TVecUnaryOperatorsINS1_11TQuaternionENS0_4halfEEngEv"
+               %filament::math+details+operator- :non-mutating t)
+              (claw-utils:claw-pointer
+               %filament::math+details+t-quaternion<filament+math+half>)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:253:25"
+              (%filament::%%claw-result-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-quaternion<filament+math+half>))
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-unary-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>)))
+
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-quaternion+bool>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecUnaryOperators_TQuaternion_bool_"
@@ -10197,45 +10191,33 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-quaternion+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-quaternion+half>
+(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec2+filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TQuaternion_half_"
+                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec2_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TQuaternion_half_"
+                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TVec2_filament_math_half_"
                  :constructor
-                 %filament::math+details+t-vec-unary-operators<t-quaternion+half>
+                 %filament::math+details+t-vec-unary-operators<t-vec2+filament+math+half>
                  :destructor
                  %filament::math+details+~t-vec-unary-operators)
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
 
-(iffi:defifun ("__claw__ZNK8filament4math7details18TVecUnaryOperatorsINS1_11TQuaternionEDhEngEv"
-               %filament::math+details+operator- :non-mutating t)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-quaternion<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:253:25"
-              (%filament::%%claw-result-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-quaternion<half>))
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-quaternion+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_ctor"
-               %filament::math+details+t-vec-unary-operators<t-quaternion+half>)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-unary-operators<t-vec2+filament+math+half>)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-quaternion+half>)))
+                %filament::math+details+t-vec-unary-operators<t-vec2+filament+math+half>)))
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TQuaternionE23h_claw_dtor"
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
                %filament::math+details+~t-vec-unary-operators)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-quaternion+half>)))
+                %filament::math+details+t-vec-unary-operators<t-vec2+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec2+int>
                  :size-reporter
@@ -10477,46 +10459,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-vec2+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec2+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec2_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TVec2_half_"
-                 :constructor
-                 %filament::math+details+t-vec-unary-operators<t-vec2+half>
-                 :destructor
-                 %filament::math+details+~t-vec-unary-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
-
-(iffi:defifun ("__claw__ZNK8filament4math7details18TVecUnaryOperatorsINS1_5TVec2EDhEngEv"
-               %filament::math+details+operator- :non-mutating t)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-vec2<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:253:25"
-              (%filament::%%claw-result-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec2<half>))
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec2+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_ctor"
-               %filament::math+details+t-vec-unary-operators<t-vec2+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec2+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec2E23h_claw_dtor"
-               %filament::math+details+~t-vec-unary-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec2+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec2+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec2_unsigned_int_"
@@ -10636,6 +10578,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-vec2+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec3+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec3_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TVec3_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-unary-operators<t-vec3+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-unary-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-unary-operators<t-vec3+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-vec3+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-unary-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-vec3+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec3+int>
                  :size-reporter
@@ -10877,46 +10847,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-vec3+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec3+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec3_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TVec3_half_"
-                 :constructor
-                 %filament::math+details+t-vec-unary-operators<t-vec3+half>
-                 :destructor
-                 %filament::math+details+~t-vec-unary-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
-
-(iffi:defifun ("__claw__ZNK8filament4math7details18TVecUnaryOperatorsINS1_5TVec3EDhEngEv"
-               %filament::math+details+operator- :non-mutating t)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-vec3<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:253:25"
-              (%filament::%%claw-result-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec3<half>))
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec3+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_ctor"
-               %filament::math+details+t-vec-unary-operators<t-vec3+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec3+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec3E23h_claw_dtor"
-               %filament::math+details+~t-vec-unary-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec3+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec3+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec3_unsigned_int_"
@@ -11036,6 +10966,34 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-vec3+unsigned+short>)))
+
+(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec4+filament+math+half>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec4_filament_math_half_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TVec4_filament_math_half_"
+                 :constructor
+                 %filament::math+details+t-vec-unary-operators<t-vec4+filament+math+half>
+                 :destructor
+                 %filament::math+details+~t-vec-unary-operators)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+details+t-vec-unary-operators<t-vec4+filament+math+half>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-vec4+filament+math+half>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+details+~t-vec-unary-operators)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+details+t-vec-unary-operators<t-vec4+filament+math+half>)))
 
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec4+int>
                  :size-reporter
@@ -11277,46 +11235,6 @@
                (claw-utils:claw-pointer
                 %filament::math+details+t-vec-unary-operators<t-vec4+float>)))
 
-(iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec4+half>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec4_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_details_TVecUnaryOperators_TVec4_half_"
-                 :constructor
-                 %filament::math+details+t-vec-unary-operators<t-vec4+half>
-                 :destructor
-                 %filament::math+details+~t-vec-unary-operators)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7")
-
-(iffi:defifun ("__claw__ZNK8filament4math7details18TVecUnaryOperatorsINS1_5TVec4EDhEngEv"
-               %filament::math+details+operator- :non-mutating t)
-              (claw-utils:claw-pointer
-               %filament::math+details+t-vec4<half>)
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:253:25"
-              (%filament::%%claw-result-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec4<half>))
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec4+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_ctor"
-               %filament::math+details+t-vec-unary-operators<t-vec4+half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec4+half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40NE40detailsE40SE40TVecUnaryOperatorsE3EE23E40NE40filamentE40NE40mathE40NE40detailsE40STE3E1E23TE40TVec4E23h_claw_dtor"
-               %filament::math+details+~t-vec-unary-operators)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/TVecHelpers.h:251:7"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+details+t-vec-unary-operators<t-vec4+half>)))
-
 (iffi:deficlass (%filament::math+details+t-vec-unary-operators<t-vec4+unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_details_TVecUnaryOperators_TVec4_unsigned_int_"
@@ -11490,6 +11408,128 @@
 
 (defparameter %filament::+size+ 0)
 
+(iffi:deficlass (%filament::math+fp<1+5+10> :size-reporter
+                 "__claw_sizeof_filament_math_fp_1_5_10_"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_fp_1_5_10_"
+                 :constructor %filament::math+fp<1+5+10> :destructor
+                 %filament::math+~fp)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:32:7")
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE5fromfEf"
+               %filament::math+fp<1+5+10>+fromf)
+              (claw-utils:claw-pointer %filament::math+fp<1+5+10>)
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:60:25"
+              (%filament::%%claw-result-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>))
+              (%filament::f :float))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE11getBitCountEv"
+               %filament::math+fp<1+5+10>+get-bit-count)
+              %filament::size-t
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:98:29")
+
+(iffi:defifun ("__claw__ZNK8filament4math2fpILj1ELj5ELj10EE4getEEv"
+               %filament::math+get-e :non-mutating t)
+              :unsigned-int
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:105:28"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>)))
+
+(iffi:defifun ("__claw__ZNK8filament4math2fpILj1ELj5ELj10EE4getMEv"
+               %filament::math+get-m :non-mutating t)
+              :unsigned-int
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:106:28"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>)))
+
+(iffi:defifun ("__claw__ZNK8filament4math2fpILj1ELj5ELj10EE4getSEv"
+               %filament::math+get-s :non-mutating t)
+              :unsigned-int
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:104:28"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>)))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE4setEEj"
+               %filament::math+set-e)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:102:20"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>))
+              (%filament::s :unsigned-int))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE4setMEj"
+               %filament::math+set-m)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:103:20"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>))
+              (%filament::s :unsigned-int))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE4setSEj"
+               %filament::math+set-s)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:101:20"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>))
+              (%filament::s :unsigned-int))
+
+(iffi:defifun ("__claw__ZN8filament4math2fpILj1ELj5ELj10EE3tofES2_"
+               %filament::math+fp<1+5+10>+tof)
+              :float
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:85:28"
+              (%filament::in
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>)))
+
+(iffi:defitype %filament::math+fp<1+5+10>+type
+               :unsigned-short
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:35:11")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40fpE3EE23Vi1E23Vi5E23Vi10_claw_dtor"
+               %filament::math+~fp)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:32:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+fp<1+5+10>)))
+
+(cffi:defcenum (%filament::math+half+binary :unsigned-int)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:151:10"
+               (:binary 0))
+
+(iffi:defifun ("__claw__ZN8filament4math4halfC1Ev"
+               %filament::math+half)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:142:5"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+half)))
+
+(iffi:defifun ("__claw__ZN8filament4math4halfC1Ef"
+               %filament::math+half)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:143:15"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+half))
+              (%filament::v :float))
+
+(iffi:defifun ("__claw__ZNK8filament4math4halfcvfEv"
+               %filament::math+operator+float :non-mutating t)
+              :float
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:144:15"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+half)))
+
+(iffi:defitype %filament::math+half+fp16
+               %filament::math+fp<1+5+10>
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:139:11")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+~half)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:138:7"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer %filament::math+half)))
+
 (iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-quaternion<float>>
                  :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TQuaternion_float__"
@@ -11516,6 +11556,33 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<filament+math+details+t-quaternion<float>>)))
+
+(iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec2_filament_math_half__"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec2_filament_math_half__"
+                 :constructor
+                 %filament::math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>
+                 :destructor %filament::math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+~is-arithmetic)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>)))
 
 (iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec2<int>>
                  :size-reporter
@@ -11679,33 +11746,6 @@
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<filament+math+details+t-vec2<float>>)))
 
-(iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec2<half>>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec2_half__"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec2_half__"
-                 :constructor
-                 %filament::math+is-arithmetic<filament+math+details+t-vec2<half>>
-                 :destructor %filament::math+~is-arithmetic)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23h_claw_ctor"
-               %filament::math+is-arithmetic<filament+math+details+t-vec2<half>>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<filament+math+details+t-vec2<half>>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec2E3EE23h_claw_dtor"
-               %filament::math+~is-arithmetic)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<filament+math+details+t-vec2<half>>)))
-
 (iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec2<unsigned+int>>
                  :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec2_unsigned_int__"
@@ -11786,6 +11826,33 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<filament+math+details+t-vec2<unsigned+short>>)))
+
+(iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec3_filament_math_half__"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec3_filament_math_half__"
+                 :constructor
+                 %filament::math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>
+                 :destructor %filament::math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+~is-arithmetic)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>)))
 
 (iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec3<int>>
                  :size-reporter
@@ -11949,33 +12016,6 @@
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<filament+math+details+t-vec3<float>>)))
 
-(iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec3<half>>
-                 :size-reporter
-                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec3_half__"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec3_half__"
-                 :constructor
-                 %filament::math+is-arithmetic<filament+math+details+t-vec3<half>>
-                 :destructor %filament::math+~is-arithmetic)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23h_claw_ctor"
-               %filament::math+is-arithmetic<filament+math+details+t-vec3<half>>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<filament+math+details+t-vec3<half>>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec3E3EE23h_claw_dtor"
-               %filament::math+~is-arithmetic)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<filament+math+details+t-vec3<half>>)))
-
 (iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec3<unsigned+int>>
                  :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec3_unsigned_int__"
@@ -12056,6 +12096,33 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<filament+math+details+t-vec3<unsigned+short>>)))
+
+(iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>
+                 :size-reporter
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec4_filament_math_half__"
+                 :alignment-reporter
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec4_filament_math_half__"
+                 :constructor
+                 %filament::math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>
+                 :destructor %filament::math+~is-arithmetic)
+                nil
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>)))
+
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
+               %filament::math+~is-arithmetic)
+              :void
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              (%filament::%%claw-this-
+               (claw-utils:claw-pointer
+                %filament::math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>)))
 
 (iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec4<bool>>
                  :size-reporter
@@ -12138,32 +12205,32 @@
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<filament+math+details+t-vec4<float>>)))
 
-(iffi:deficlass (%filament::math+is-arithmetic<filament+math+details+t-vec4<half>>
+(iffi:deficlass (%filament::math+is-arithmetic<filament+math+half>
                  :size-reporter
-                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_details_TVec4_half__"
+                 "__claw_sizeof_filament_math_is_arithmetic_filament_math_half_"
                  :alignment-reporter
-                 "__claw_alignof_filament_math_is_arithmetic_filament_math_details_TVec4_half__"
+                 "__claw_alignof_filament_math_is_arithmetic_filament_math_half_"
                  :constructor
-                 %filament::math+is-arithmetic<filament+math+details+t-vec4<half>>
+                 %filament::math+is-arithmetic<filament+math+half>
                  :destructor %filament::math+~is-arithmetic)
                 nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8")
+                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:167:19")
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23h_claw_ctor"
-               %filament::math+is-arithmetic<filament+math+details+t-vec4<half>>)
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_ctor"
+               %filament::math+is-arithmetic<filament+math+half>)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:167:19"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<filament+math+details+t-vec4<half>>)))
+                %filament::math+is-arithmetic<filament+math+half>)))
 
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40NE40detailsE40SE40TVec4E3EE23h_claw_dtor"
+(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23E24E40NE40filamentE40NE40mathE40SE40half_claw_dtor"
                %filament::math+~is-arithmetic)
               :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/compiler.h:121:8"
+              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:167:19"
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<filament+math+details+t-vec4<half>>)))
+                %filament::math+is-arithmetic<filament+math+half>)))
 
 (iffi:deficlass (%filament::math+is-arithmetic<int> :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_int_"
@@ -12317,31 +12384,6 @@
                (claw-utils:claw-pointer
                 %filament::math+is-arithmetic<float>)))
 
-(iffi:deficlass (%filament::math+is-arithmetic<half> :size-reporter
-                 "__claw_sizeof_filament_math_is_arithmetic_half_"
-                 :alignment-reporter
-                 "__claw_alignof_filament_math_is_arithmetic_half_"
-                 :constructor %filament::math+is-arithmetic<half>
-                 :destructor %filament::math+~is-arithmetic)
-                nil
-                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:167:19")
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23h_claw_ctor"
-               %filament::math+is-arithmetic<half>)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:167:19"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<half>)))
-
-(iffi:defifun ("__claw_cE3AE40NE40filamentE40NE40mathE40SE40is_arithmeticE3EE23h_claw_dtor"
-               %filament::math+~is-arithmetic)
-              :void
-              "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/half.h:167:19"
-              (%filament::%%claw-this-
-               (claw-utils:claw-pointer
-                %filament::math+is-arithmetic<half>)))
-
 (iffi:deficlass (%filament::math+is-arithmetic<unsigned+int>
                  :size-reporter
                  "__claw_sizeof_filament_math_is_arithmetic_unsigned_int_"
@@ -12466,15 +12508,15 @@
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:119:7")
 
 (iffi:defitype %filament::math+half2
-               %filament::math+details+t-vec2<half>
+               %filament::math+details+t-vec2<filament+math+half>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:101:7")
 
 (iffi:defitype %filament::math+half3
-               %filament::math+details+t-vec3<half>
+               %filament::math+details+t-vec3<filament+math+half>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:120:7")
 
 (iffi:defitype %filament::math+half4
-               %filament::math+details+t-vec4<half>
+               %filament::math+details+t-vec4<filament+math+half>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:119:7")
 
 (iffi:defitype %filament::math+int2
@@ -13967,10 +14009,10 @@
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Engine.h:46:7")
 
 (iffi:defitype %filament::uint64-t
-               :unsigned-long-long
+               :unsigned-long
                "/usr/include/bits/stdint-uintn.h:27:20")
 
-(iffi:defifun ("__claw__ZN8filament6Engine15createSwapChainEPvy"
+(iffi:defifun ("__claw__ZN8filament6Engine15createSwapChainEPvm"
                %filament::create-swap-chain)
               (claw-utils:claw-pointer %filament::swap-chain)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Engine.h:347:16"
@@ -13980,7 +14022,7 @@
                (claw-utils:claw-pointer :void))
               (%filament::flags %filament::uint64-t))
 
-(iffi:defifun ("__claw__ZN8filament6Engine15createSwapChainEjjy"
+(iffi:defifun ("__claw__ZN8filament6Engine15createSwapChainEjjm"
                %filament::create-swap-chain)
               (claw-utils:claw-pointer %filament::swap-chain)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Engine.h:361:16"
@@ -14389,7 +14431,7 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer %filament::engine)))
 
-(iffi:defifun ("__claw__ZN8filament6Engine11streamAllocEmm"
+(iffi:defifun ("__claw__ZN8filament6Engine11streamAllocEyy"
                %filament::stream-alloc)
               (claw-utils:claw-pointer :void)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Engine.h:510:11"
@@ -16085,7 +16127,7 @@
                   :documentation
                   "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Material.h:86:19"))
 
-(iffi:defifun ("__claw__ZNK8filament8Material13getParametersEPNS0_13ParameterInfoEm"
+(iffi:defifun ("__claw__ZNK8filament8Material13getParametersEPNS0_13ParameterInfoEy"
                %filament::get-parameters :non-mutating t)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Material.h:214:12"
@@ -16321,7 +16363,7 @@
               (%filament::rhs
                (claw-utils:claw-pointer %filament::material+builder)))
 
-(iffi:defifun ("__claw__ZN8filament8Material7Builder7packageEPKvm"
+(iffi:defifun ("__claw__ZN8filament8Material7Builder7packageEPKvy"
                %filament::package)
               (claw-utils:claw-pointer %filament::material+builder)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Material.h:106:18"
@@ -16664,7 +16706,7 @@
                 %filament::renderable-manager+instance))
               (%filament::channel :unsigned-int))
 
-(iffi:defifun ("__claw__ZNK8filament17RenderableManager21getMaterialInstanceAtEN5utils14EntityInstanceIS0_Lb0EEEm"
+(iffi:defifun ("__claw__ZNK8filament17RenderableManager21getMaterialInstanceAtEN5utils14EntityInstanceIS0_Lb0EEEy"
                %filament::get-material-instance-at :non-mutating t)
               (claw-utils:claw-pointer %filament::material-instance)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:499:23"
@@ -16732,7 +16774,7 @@
               (%filament::aabb
                (claw-utils:claw-pointer %filament::box)))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager15setBlendOrderAtEN5utils14EntityInstanceIS0_Lb0EEEmt"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager15setBlendOrderAtEN5utils14EntityInstanceIS0_Lb0EEEyt"
                %filament::set-blend-order-at)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:527:10"
@@ -16745,7 +16787,7 @@
               (%filament::primitive-index %filament::size-t)
               (%filament::order %filament::uint16-t))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager8setBonesEN5utils14EntityInstanceIS0_Lb0EEEPKNS_4math7details6TMat44IfEEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager8setBonesEN5utils14EntityInstanceIS0_Lb0EEEPKNS_4math7details6TMat44IfEEyy"
                %filament::set-bones)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:448:10"
@@ -16795,7 +16837,7 @@
                   :documentation
                   "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:110:15"))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager8setBonesEN5utils14EntityInstanceIS0_Lb0EEEPKNS0_4BoneEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager8setBonesEN5utils14EntityInstanceIS0_Lb0EEEPKNS0_4BoneEyy"
                %filament::set-bones)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:447:10"
@@ -16839,7 +16881,7 @@
                %filament::backend+primitive-type
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:88:11")
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager13setGeometryAtEN5utils14EntityInstanceIS0_Lb0EEEmNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager13setGeometryAtEN5utils14EntityInstanceIS0_Lb0EEEyNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferEyy"
                %filament::set-geometry-at)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:506:10"
@@ -16859,7 +16901,7 @@
               (%filament::offset %filament::size-t)
               (%filament::count %filament::size-t))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager13setGeometryAtEN5utils14EntityInstanceIS0_Lb0EEEmNS_7backend13PrimitiveTypeEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager13setGeometryAtEN5utils14EntityInstanceIS0_Lb0EEEyNS_7backend13PrimitiveTypeEyy"
                %filament::set-geometry-at)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:515:10"
@@ -16901,7 +16943,7 @@
               (%filament::channel :unsigned-int)
               (%filament::enable :bool))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager21setMaterialInstanceAtEN5utils14EntityInstanceIS0_Lb0EEEmPKNS_16MaterialInstanceE"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager21setMaterialInstanceAtEN5utils14EntityInstanceIS0_Lb0EEEyPKNS_16MaterialInstanceE"
                %filament::set-material-instance-at)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:493:10"
@@ -16970,7 +17012,7 @@
                 nil
                 "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:45:7")
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager17setSkinningBufferEN5utils14EntityInstanceIS0_Lb0EEEPNS_14SkinningBufferEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager17setSkinningBufferEN5utils14EntityInstanceIS0_Lb0EEEPNS_14SkinningBufferEyy"
                %filament::set-skinning-buffer)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:453:10"
@@ -17026,7 +17068,7 @@
                (claw-utils:claw-pointer
                 %filament::renderable-manager+builder)))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7BuilderC1Em"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7BuilderC1Ey"
                %filament::builder)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/RenderableManager.h:129:18"
@@ -17035,7 +17077,7 @@
                 %filament::renderable-manager+builder))
               (%filament::count %filament::size-t))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder10blendOrderEmt"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder10blendOrderEyt"
                %filament::blend-order)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17099,7 +17141,7 @@
                 %filament::renderable-manager+builder))
               (%filament::enabled :bool))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8geometryEmNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferE"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8geometryEyNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferE"
                %filament::geometry)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17115,7 +17157,7 @@
               (%filament::indices
                (claw-utils:claw-pointer %filament::index-buffer)))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8geometryEmNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8geometryEyNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferEyy"
                %filament::geometry)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17133,7 +17175,7 @@
               (%filament::offset %filament::size-t)
               (%filament::count %filament::size-t))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8geometryEmNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferEmmmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8geometryEyNS_7backend13PrimitiveTypeEPNS_12VertexBufferEPNS_11IndexBufferEyyyy"
                %filament::geometry)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17175,7 +17217,7 @@
               (%filament::channel :unsigned-int)
               (%filament::enable :bool))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8materialEmPKNS_16MaterialInstanceE"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8materialEyPKNS_16MaterialInstanceE"
                %filament::material)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17240,7 +17282,7 @@
                 %filament::renderable-manager+builder))
               (%filament::enable :bool))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEPNS_14SkinningBufferEmm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEPNS_14SkinningBufferEyy"
                %filament::skinning)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17253,7 +17295,7 @@
               (%filament::count %filament::size-t)
               (%filament::offset %filament::size-t))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEm"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEy"
                %filament::skinning)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17263,7 +17305,7 @@
                 %filament::renderable-manager+builder))
               (%filament::bone-count %filament::size-t))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEmPKNS_4math7details6TMat44IfEE"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEyPKNS_4math7details6TMat44IfEE"
                %filament::skinning)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17275,7 +17317,7 @@
               (%filament::transforms
                (claw-utils:claw-pointer %filament::math+mat4f)))
 
-(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEmPKNS0_4BoneE"
+(iffi:defifun ("__claw__ZN8filament17RenderableManager7Builder8skinningEyPKNS0_4BoneE"
                %filament::skinning)
               (claw-utils:claw-pointer
                %filament::renderable-manager+builder)
@@ -17316,7 +17358,7 @@
                :unsigned-int
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Renderer.h:177:11")
 
-(iffi:defifun ("__claw__ZN8filament8Renderer10beginFrameEPNS_9SwapChainEy"
+(iffi:defifun ("__claw__ZN8filament8Renderer10beginFrameEPNS_9SwapChainEm"
                %filament::begin-frame)
               :bool
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Renderer.h:243:10"
@@ -17587,7 +17629,7 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer %filament::renderer)))
 
-(iffi:defifun ("__claw__ZN8filament5Scene11addEntitiesEPKN5utils6EntityEm"
+(iffi:defifun ("__claw__ZN8filament5Scene11addEntitiesEPKN5utils6EntityEy"
                %filament::add-entities)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Scene.h:118:10"
@@ -17652,7 +17694,7 @@
               (%filament::entity
                (claw-utils:claw-pointer %filament::utils+entity)))
 
-(iffi:defifun ("__claw__ZN8filament5Scene14removeEntitiesEPKN5utils6EntityEm"
+(iffi:defifun ("__claw__ZN8filament5Scene14removeEntitiesEPKN5utils6EntityEy"
                %filament::remove-entities)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Scene.h:137:10"
@@ -17911,7 +17953,7 @@
                %filament::backend+pixel-data-type
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:76:11")
 
-(iffi:defifun ("__claw__ZN8filament7Texture22computeTextureDataSizeENS_7backend15PixelDataFormatENS1_13PixelDataTypeEmmm"
+(iffi:defifun ("__claw__ZN8filament7Texture22computeTextureDataSizeENS_7backend15PixelDataFormatENS1_13PixelDataTypeEyyy"
                %filament::texture+compute-texture-data-size)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:88:19"
@@ -17977,7 +18019,7 @@
                (claw-utils:claw-pointer
                 %filament::texture+prefilter-options)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture8getDepthEm"
+(iffi:defifun ("__claw__ZNK8filament7Texture8getDepthEy"
                %filament::get-depth :non-mutating t)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:269:12"
@@ -17996,7 +18038,7 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer %filament::texture)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture9getHeightEm"
+(iffi:defifun ("__claw__ZNK8filament7Texture9getHeightEy"
                %filament::get-height :non-mutating t)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:260:12"
@@ -18022,7 +18064,7 @@
               (%filament::%%claw-this-
                (claw-utils:claw-pointer %filament::texture)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture8getWidthEm"
+(iffi:defifun ("__claw__ZNK8filament7Texture8getWidthEy"
                %filament::get-width :non-mutating t)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:251:12"
@@ -18055,7 +18097,7 @@
                (claw-utils:claw-pointer %filament::engine))
               (%filament::image (claw-utils:claw-pointer :void)))
 
-(iffi:defifun ("__claw__ZN8filament7Texture16setExternalImageERNS_6EngineEPvm"
+(iffi:defifun ("__claw__ZN8filament7Texture16setExternalImageERNS_6EngineEPvy"
                %filament::set-external-image)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:444:10"
@@ -18077,7 +18119,7 @@
               (%filament::stream
                (claw-utils:claw-pointer %filament::stream)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEmONS_7backend21PixelBufferDescriptorERKNS3_11FaceOffsetsE"
+(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEyONS_7backend21PixelBufferDescriptorERKNS3_11FaceOffsetsE"
                %filament::set-image :non-mutating t)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:386:10"
@@ -18093,7 +18135,7 @@
                (claw-utils:claw-pointer
                 %filament::texture+face-offsets)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEmONS_7backend21PixelBufferDescriptorE"
+(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEyONS_7backend21PixelBufferDescriptorE"
                %filament::set-image :non-mutating t)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:315:10"
@@ -18106,7 +18148,7 @@
                (claw-utils:claw-pointer
                 %filament::texture+pixel-buffer-descriptor)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEmjjjjONS_7backend21PixelBufferDescriptorE"
+(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEyjjjjONS_7backend21PixelBufferDescriptorE"
                %filament::set-image :non-mutating t)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:339:10"
@@ -18123,7 +18165,7 @@
                (claw-utils:claw-pointer
                 %filament::texture+pixel-buffer-descriptor)))
 
-(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEmjjjjjjONS_7backend21PixelBufferDescriptorE"
+(iffi:defifun ("__claw__ZNK8filament7Texture8setImageERNS_6EngineEyjjjjjjONS_7backend21PixelBufferDescriptorE"
                %filament::set-image :non-mutating t)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:363:10"
@@ -18209,9 +18251,11 @@
                (claw-utils:claw-pointer %filament::texture+builder))
               (%filament::height %filament::uint32-t))
 
-(iffi:defitype %filament::intptr-t :int "/usr/include/stdint.h:93:15")
+(iffi:defitype %filament::intptr-t
+               :long
+               "/usr/include/stdint.h:87:19")
 
-(iffi:defifun ("__claw__ZN8filament7Texture7Builder6importEi"
+(iffi:defifun ("__claw__ZN8filament7Texture7Builder6importEl"
                %filament::import)
               (claw-utils:claw-pointer %filament::texture+builder)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/Texture.h:238:18"
@@ -18633,7 +18677,7 @@
                (claw-utils:claw-pointer
                 %filament::transform-manager+instance)))
 
-(iffi:defifun ("__claw__ZNK8filament16TransformManager11getChildrenEN5utils14EntityInstanceIS0_Lb0EEEPNS1_6EntityEm"
+(iffi:defifun ("__claw__ZNK8filament16TransformManager11getChildrenEN5utils14EntityInstanceIS0_Lb0EEEPNS1_6EntityEy"
                %filament::get-children :non-mutating t)
               %filament::size-t
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/TransformManager.h:197:12"
@@ -18849,18 +18893,18 @@
                (claw-utils:claw-pointer
                 %filament::transform-manager+children-iterator)))
 
-(iffi:defitype %filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long>+value-type
+(iffi:defitype %filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+long>+value-type
                %filament::utils+entity-instance<filament+transform-manager+false>
-               "/usr/include/c++/11.1.0/bits/stl_iterator_base_types.h:132:26")
+               "/usr/include/c++/v1/iterator:624:24")
 
 (iffi:defifun ("__claw__ZNK8filament16TransformManager17children_iteratordeEv"
                %filament::operator* :non-mutating t)
               (claw-utils:claw-pointer
-               %filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long>+value-type)
+               %filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+long>+value-type)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/filament/include/filament/TransformManager.h:96:20"
               (%filament::%%claw-result-
                (claw-utils:claw-pointer
-                %filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long>+value-type))
+                %filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+long>+value-type))
               (%filament::%%claw-this-
                (claw-utils:claw-pointer
                 %filament::transform-manager+children-iterator)))
@@ -19885,14 +19929,14 @@
                   :alignment-reporter
                   "__claw_alignof_std_forward_iterator_tag")
                  nil
-                 "/usr/include/c++/11.1.0/bits/stl_iterator_base_types.h:99:10")
+                 "/usr/include/c++/v1/iterator:438:29")
 
 (iffi:defistruct (%filament::std+input-iterator-tag :size-reporter
                   "__claw_sizeof_std_input_iterator_tag"
                   :alignment-reporter
                   "__claw_alignof_std_input_iterator_tag")
                  nil
-                 "/usr/include/c++/11.1.0/bits/stl_iterator_base_types.h:93:10")
+                 "/usr/include/c++/v1/iterator:436:29")
 
 (iffi:deficlass (%filament::std+integral-constant<bool+false>
                  :size-reporter
@@ -19900,7 +19944,7 @@
                  :alignment-reporter
                  "__claw_alignof_std_integral_constant_bool_false_")
                 nil
-                "/usr/include/c++/11.1.0/type_traits:57:12")
+                "/usr/include/c++/v1/type_traits:434:29")
 
 (iffi:deficlass (%filament::std+integral-constant<bool+true>
                  :size-reporter
@@ -19908,23 +19952,19 @@
                  :alignment-reporter
                  "__claw_alignof_std_integral_constant_bool_true_")
                 nil
-                "/usr/include/c++/11.1.0/type_traits:57:12")
+                "/usr/include/c++/v1/type_traits:434:29")
 
-(iffi:deficlass (%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long>
+(iffi:deficlass (%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+long>
                  :size-reporter
-                 "__claw_sizeof_std_iterator_std_forward_iterator_tag_utils_EntityInstance_filament_TransformManager_false__long_"
+                 "__claw_sizeof_std_iterator_std_forward_iterator_tag_utils_EntityInstance_filament_TransformManager_false__long_long_"
                  :alignment-reporter
-                 "__claw_alignof_std_iterator_std_forward_iterator_tag_utils_EntityInstance_filament_TransformManager_false__long_")
+                 "__claw_alignof_std_iterator_std_forward_iterator_tag_utils_EntityInstance_filament_TransformManager_false__long_long_")
                 nil
-                "/usr/include/c++/11.1.0/bits/stl_iterator_base_types.h:127:12")
-
-(iffi:defitype %filament::std+size-t
-               :unsigned-long
-               "/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h:280:26")
+                "/usr/include/c++/v1/iterator:622:29")
 
 (iffi:defitype %filament::std+true-type
                %filament::std+integral-constant<bool+true>
-               "/usr/include/c++/11.1.0/type_traits:75:45")
+               "/usr/include/c++/v1/type_traits:458:38")
 
 (iffi:defifun ("__claw__ZN5utils6EntityC1Ev" %filament::utils+entity)
               :void
@@ -20930,7 +20970,7 @@
                (claw-utils:claw-pointer
                 %filament::utils+entity-manager)))
 
-(iffi:defifun ("__claw__ZN5utils13EntityManager6createEmPNS_6EntityE"
+(iffi:defifun ("__claw__ZN5utils13EntityManager6createEyPNS_6EntityE"
                %filament::utils+create)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/utils/include/utils/EntityManager.h:58:10"
@@ -20951,7 +20991,7 @@
               (%filament::e
                (claw-utils:claw-pointer %filament::utils+entity)))
 
-(iffi:defifun ("__claw__ZN5utils13EntityManager7destroyEmPNS_6EntityE"
+(iffi:defifun ("__claw__ZN5utils13EntityManager7destroyEyPNS_6EntityE"
                %filament::utils+destroy)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/utils/include/utils/EntityManager.h:61:10"
@@ -20968,7 +21008,7 @@
                %filament::utils+entity-manager)
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/utils/include/utils/EntityManager.h:41:27")
 
-(iffi:defifun ("__claw__ZNK5utils13EntityManager21getGenerationForIndexEm"
+(iffi:defifun ("__claw__ZNK5utils13EntityManager21getGenerationForIndexEy"
                %filament::utils+get-generation-for-index
                :non-mutating t)
               %filament::uint8-t
@@ -21029,7 +21069,7 @@
     (when %filament::ptr
       (cffi:mem-ref %filament::ptr '%filament::utils+entity+type))))
 
-(iffi:defifun ("__claw__ZN5utils13EntityManager8Listener19onEntitiesDestroyedEmPKNS_6EntityE"
+(iffi:defifun ("__claw__ZN5utils13EntityManager8Listener19onEntitiesDestroyedEyPKNS_6EntityE"
                %filament::utils+on-entities-destroyed)
               :void
               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/utils/include/utils/EntityManager.h:45:22"
@@ -21203,9 +21243,17 @@
 
 (defparameter %filament::*math+details+i* 0)
 
+(defparameter %filament::*math+out* nil)
+
+(defparameter %filament::*math+in* nil)
+
 (defparameter %filament::*math+in* nil)
 
 (defparameter %filament::*math+sign* nil)
+
+(defparameter %filament::*math+sign* nil)
+
+(defparameter %filament::*math+out* nil)
 
 (defparameter %filament::*math+out* nil)
 
@@ -21224,7 +21272,7 @@
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat3.h:89:22")
 
 (iffi:defitype %filament::math+details+t-mat33<double>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat3.h:87:20")
 
 (iffi:defitype %filament::math+details+t-mat33<double>+value-type
@@ -21244,7 +21292,7 @@
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat3.h:89:22")
 
 (iffi:defitype %filament::math+details+t-mat33<float>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat3.h:87:20")
 
 (iffi:defitype %filament::math+details+t-mat33<float>+value-type
@@ -21272,7 +21320,7 @@
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:97:22")
 
 (iffi:defitype %filament::math+details+t-mat44<bool>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:95:20")
 
 (iffi:defitype %filament::math+details+t-mat44<bool>+value-type
@@ -21292,7 +21340,7 @@
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:97:22")
 
 (iffi:defitype %filament::math+details+t-mat44<double>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:95:20")
 
 (iffi:defitype %filament::math+details+t-mat44<double>+value-type
@@ -21312,7 +21360,7 @@
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:97:22")
 
 (iffi:defitype %filament::math+details+t-mat44<float>+size-type
-               :unsigned-long
+               :unsigned-long-long
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:95:20")
 
 (iffi:defitype %filament::math+details+t-mat44<float>+value-type
@@ -21330,6 +21378,18 @@
 (iffi:defitype %filament::math+mat4
                %filament::math+details+t-mat44<double>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/mat4.h:557:33")
+
+(iffi:defitype %filament::math+details+t-quaternion<filament+math+half>+const-reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:48:22")
+
+(iffi:defitype %filament::math+details+t-quaternion<filament+math+half>+reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:47:16")
+
+(iffi:defitype %filament::math+details+t-quaternion<filament+math+half>+value-type
+               %filament::math+half
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:46:15")
 
 (iffi:defitype %filament::math+details+t-quaternion<bool>+const-reference
                (claw-utils:claw-pointer :bool)
@@ -21367,21 +21427,21 @@
                :float
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:46:15")
 
-(iffi:defitype %filament::math+details+t-quaternion<half>+const-reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:48:22")
-
-(iffi:defitype %filament::math+details+t-quaternion<half>+reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:47:16")
-
-(iffi:defitype %filament::math+details+t-quaternion<half>+value-type
-               %filament::half
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:46:15")
-
 (iffi:defitype %filament::math+quath
-               %filament::math+details+t-quaternion<half>
+               %filament::math+details+t-quaternion<filament+math+half>
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/quat.h:137:36")
+
+(iffi:defitype %filament::math+details+t-vec2<filament+math+half>+const-reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:45:22")
+
+(iffi:defitype %filament::math+details+t-vec2<filament+math+half>+reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:44:16")
+
+(iffi:defitype %filament::math+details+t-vec2<filament+math+half>+value-type
+               %filament::math+half
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:43:15")
 
 (iffi:defitype %filament::math+details+t-vec2<int>+const-reference
                (claw-utils:claw-pointer :int)
@@ -21455,18 +21515,6 @@
                :float
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:43:15")
 
-(iffi:defitype %filament::math+details+t-vec2<half>+const-reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:45:22")
-
-(iffi:defitype %filament::math+details+t-vec2<half>+reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:44:16")
-
-(iffi:defitype %filament::math+details+t-vec2<half>+value-type
-               %filament::half
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:43:15")
-
 (iffi:defitype %filament::math+details+t-vec2<unsigned+int>+const-reference
                (claw-utils:claw-pointer :unsigned-int)
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:45:22")
@@ -21502,6 +21550,18 @@
 (iffi:defitype %filament::math+details+t-vec2<unsigned+short>+value-type
                :unsigned-short
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec2.h:43:15")
+
+(iffi:defitype %filament::math+details+t-vec3<filament+math+half>+const-reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:42:22")
+
+(iffi:defitype %filament::math+details+t-vec3<filament+math+half>+reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:41:16")
+
+(iffi:defitype %filament::math+details+t-vec3<filament+math+half>+value-type
+               %filament::math+half
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:40:15")
 
 (iffi:defitype %filament::math+details+t-vec3<int>+const-reference
                (claw-utils:claw-pointer :int)
@@ -21575,18 +21635,6 @@
                :float
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:40:15")
 
-(iffi:defitype %filament::math+details+t-vec3<half>+const-reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:42:22")
-
-(iffi:defitype %filament::math+details+t-vec3<half>+reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:41:16")
-
-(iffi:defitype %filament::math+details+t-vec3<half>+value-type
-               %filament::half
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:40:15")
-
 (iffi:defitype %filament::math+details+t-vec3<unsigned+int>+const-reference
                (claw-utils:claw-pointer :unsigned-int)
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:42:22")
@@ -21622,6 +21670,18 @@
 (iffi:defitype %filament::math+details+t-vec3<unsigned+short>+value-type
                :unsigned-short
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec3.h:40:15")
+
+(iffi:defitype %filament::math+details+t-vec4<filament+math+half>+const-reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:43:22")
+
+(iffi:defitype %filament::math+details+t-vec4<filament+math+half>+reference
+               (claw-utils:claw-pointer %filament::math+half)
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:42:16")
+
+(iffi:defitype %filament::math+details+t-vec4<filament+math+half>+value-type
+               %filament::math+half
+               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:41:15")
 
 (iffi:defitype %filament::math+details+t-vec4<int>+const-reference
                (claw-utils:claw-pointer :int)
@@ -21693,18 +21753,6 @@
 
 (iffi:defitype %filament::math+details+t-vec4<float>+value-type
                :float
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:41:15")
-
-(iffi:defitype %filament::math+details+t-vec4<half>+const-reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:43:22")
-
-(iffi:defitype %filament::math+details+t-vec4<half>+reference
-               (claw-utils:claw-pointer %filament::half)
-               "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:42:16")
-
-(iffi:defitype %filament::math+details+t-vec4<half>+value-type
-               %filament::half
                "/home/borodust/devel/repo/aw-projects/aw-filament/src/lib/filament/libs/math/include/math/vec4.h:41:15")
 
 (iffi:defitype %filament::math+details+t-vec4<unsigned+int>+const-reference
@@ -21851,8 +21899,6 @@
   (export '%filament::flush-and-wait :%filament)
   (export '%filament::set-clear-options :%filament)
   (export '%filament::create :%filament)
-  (export '%filament::math+details+t-vec-unary-operators<t-vec4+half>
-          :%filament)
   (export '%filament::math+details+t-quaternion<double>+size-type
           :%filament)
   (export '%filament::math+~is-arithmetic :%filament)
@@ -21860,30 +21906,33 @@
   (export '%filament::end-frame :%filament)
   (export '%filament::get-sensitivity :%filament)
   (export '%filament::+clear+ :%filament)
+  (export '%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+long>+value-type
+          :%filament)
   (export '%filament::math+details+t-mat-helpers<t-mat44+bool>
           :%filament)
   (export '%filament::+math+details+matrix+e+ :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec3+float>
           :%filament)
   (export '%filament::utils+entity+type :%filament)
-  (export '%filament::backend+frame-finished-callback :%filament)
+  (export '%filament::math+details+t-vec-functions<t-vec2+filament+math+half>
+          :%filament)
   (export '%filament::backend+~render-pass-flags :%filament)
   (export '%filament::material+precision :%filament)
   (export '%filament::backend+pump-events :%filament)
   (export '%filament::math+details+t-vec3<bool>+value-type
           :%filament)
-  (export '%filament::math+details+t-vec2<bool>+value-type
-          :%filament)
+  (export '%filament::backend+frame-finished-callback :%filament)
   (export '%filament::get-children :%filament)
   (export '%filament::math+details+t-vec4<float> :%filament)
   (export '%filament::set-mask-threshold :%filament)
   (export '%filament::max :%filament)
-  (export '%filament::math+details+t-vec4<half>+value-type
-          :%filament)
+  (export '%filament::math+details+operator*= :%filament)
   (export '%filament::light-manager+shadow-options+vsm :%filament)
   (export '%filament::radius :%filament)
   (export '%filament::get-directional-light-camera :%filament)
   (export '%filament::renderable-manager+builder :%filament)
+  (export '%filament::math+details+t-vec2<bool>+value-type
+          :%filament)
   (export '%filament::backend+sampler-mag-filter :%filament)
   (export '%filament::set-accurate-translations-enabled :%filament)
   (export '%filament::backend+buffer-usage :%filament)
@@ -21893,19 +21942,17 @@
           :%filament)
   (export '%filament::levels :%filament)
   (export '%filament::vertex-buffer+buffer-descriptor :%filament)
-  (export '%filament::math+details+t-vec-unary-operators<t-vec3+half>
-          :%filament)
+  (export '%filament::set-frustum-culling-enabled :%filament)
   (export '%filament::math+details+t-vec2<unsigned+int>+const-reference
           :%filament)
   (export '%filament::get-user-time :%filament)
+  (export '%filament::math+fp<1+5+10>+fromf :%filament)
   (export '%filament::get-parent :%filament)
   (export '%filament::set-intensity-candela :%filament)
-  (export '%filament::math+details+operator*= :%filament)
   (export '%filament::get-material-instance-at :%filament)
   (export '%filament::math+details+t-quaternion<double>+value-type
           :%filament)
   (export '%filament::backend+element-type :%filament)
-  (export '%filament::set-frustum-culling-enabled :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec2<float>>
           :%filament)
   (export '%filament::+math+details+matrix+c+ :%filament)
@@ -21925,7 +21972,7 @@
   (export '%filament::math+float4 :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec4+int>
           :%filament)
-  (export '%filament::~fog-options :%filament)
+  (export '%filament::math+get-s :%filament)
   (export '%filament::math+details+t-vec4<int>+value-type :%filament)
   (export '%filament::get-width :%filament)
   (export '%filament::roundness :%filament)
@@ -21939,12 +21986,12 @@
   (export '%filament::math+details+t-mat-square-functions<t-mat44+double>
           :%filament)
   (export '%filament::size :%filament)
-  (export '%filament::math+details+t-vec-unary-operators<t-vec2+half>
-          :%filament)
   (export '%filament::utils+as-value :%filament)
   (export '%filament::math+details+t-mat33<float>+col-type
           :%filament)
   (export '%filament::math+details+t-mat44<bool>+perspective
+          :%filament)
+  (export '%filament::math+details+t-quaternion<filament+math+half>+no-init
           :%filament)
   (export '%filament::set-culling :%filament)
   (export '%filament::backend+raster-state+blend-equation :%filament)
@@ -21955,6 +22002,7 @@
   (export '%filament::feedback :%filament)
   (export '%filament::engine+backend :%filament)
   (export '%filament::get-irradiance-texture :%filament)
+  (export '%filament::~fog-options :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec3+char>
           :%filament)
   (export '%filament::math+details+operator- :%filament)
@@ -21962,7 +22010,7 @@
           :%filament)
   (export '%filament::get-culling-projection-matrix :%filament)
   (export '%filament::~texture :%filament)
-  (export '%filament::math+details+t-vec-functions<t-vec3+half>
+  (export '%filament::math+details+t-quaternion<float>+value-type
           :%filament)
   (export '%filament::math+details+t-mat44+row-major-init :%filament)
   (export '%filament::get-left-vector :%filament)
@@ -21978,8 +22026,6 @@
   (export '%filament::backend+~raster-state :%filament)
   (export '%filament::~index-buffer :%filament)
   (export '%filament::backend+texture-usage :%filament)
-  (export '%filament::math+details+t-quaternion<float>+value-type
-          :%filament)
   (export '%filament::math+details+t-vec4<bool>+value-type
           :%filament)
   (export '%filament::bent-normals :%filament)
@@ -22001,8 +22047,7 @@
   (export '%filament::math+details+t-quaternion<double>+no-init
           :%filament)
   (export '%filament::create-swap-chain :%filament)
-  (export '%filament::math+details+t-vec-functions<t-vec4+unsigned+char>
-          :%filament)
+  (export '%filament::math+half+fp16 :%filament)
   (export '%filament::math+details+t-vec4<unsigned+char>+value-type
           :%filament)
   (export '%filament::+math+details+s+ :%filament)
@@ -22018,6 +22063,8 @@
   (export '%filament::math+details+t-vec-product-operators<t-vec3+double>
           :%filament)
   (export '%filament::get-material-domain :%filament)
+  (export '%filament::math+details+t-vec-functions<t-vec4+unsigned+char>
+          :%filament)
   (export '%filament::texture+compressed-type :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec2+unsigned+short>
           :%filament)
@@ -22025,11 +22072,8 @@
   (export '%filament::math+details+operator~ :%filament)
   (export '%filament::end :%filament)
   (export '%filament::~material-instance :%filament)
-  (export '%filament::math+details+t-mat-square-functions<t-mat33+float>
-          :%filament)
+  (export '%filament::math+set-s :%filament)
   (export '%filament::math+details+t-vec4<double>+const-reference
-          :%filament)
-  (export '%filament::math+details+t-vec-product-operators<t-vec3+half>
           :%filament)
   (export '%filament::math+details+t-quaternion<bool>+const-reference
           :%filament)
@@ -22046,6 +22090,8 @@
           :%filament)
   (export '%filament::set-buffer :%filament)
   (export '%filament::get-engine :%filament)
+  (export '%filament::math+is-arithmetic<filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec2+short>
           :%filament)
   (export '%filament::texture+internal-format :%filament)
@@ -22060,6 +22106,8 @@
   (export '%filament::backend+texture-format :%filament)
   (export '%filament::math+details+t-vec3<unsigned+short> :%filament)
   (export '%filament::+math+details+xw+ :%filament)
+  (export '%filament::math+details+t-mat-square-functions<t-mat33+float>
+          :%filament)
   (export '%filament::*math+details+matrix+row* :%filament)
   (export '%filament::get-temporal-anti-aliasing-options :%filament)
   (export '%filament::renderable-manager+instance :%filament)
@@ -22085,8 +22133,6 @@
   (export '%filament::+math+d+ln2+ :%filament)
   (export '%filament::set-compare-mode :%filament)
   (export '%filament::constant-bias :%filament)
-  (export '%filament::math+details+t-quaternion<half>+size
-          :%filament)
   (export '%filament::math+details+t-quaternion<float>+const-reference
           :%filament)
   (export '%filament::get-camera :%filament)
@@ -22109,18 +22155,17 @@
   (export '%filament::+max-custom-attributes+ :%filament)
   (export '%filament::sun-halo-falloff :%filament)
   (export '%filament::math+details+~t-mat33 :%filament)
-  (export '%filament::math+is-arithmetic<filament+math+details+t-vec4<half>>
-          :%filament)
+  (export '%filament::+math+details+matrix+t2+ :%filament)
   (export '%filament::math+details+t-vec-product-operators<t-vec3+short>
           :%filament)
   (export '%filament::*backend+bpp* :%filament)
   (export '%filament::set-model-matrix :%filament)
   (export '%filament::ambient-occlusion-options+ssct :%filament)
   (export '%filament::math+is-arithmetic<char> :%filament)
-  (export '%filament::+math+details+matrix+t2+ :%filament)
   (export '%filament::get-vertex-count :%filament)
   (export '%filament::backend+raster-state+depth-func :%filament)
   (export '%filament::view+dithering :%filament)
+  (export '%filament::math+fp<1+5+10>+get-bit-count :%filament)
   (export '%filament::material-instance+culling-mode :%filament)
   (export '%filament::+math+details+xy+ :%filament)
   (export '%filament::copy-frame :%filament)
@@ -22157,8 +22202,9 @@
   (export '%filament::math+details+t-vec-functions<t-vec3+short>
           :%filament)
   (export '%filament::rgb-type :%filament)
+  (export '%filament::math+details+t-vec3<filament+math+half>+const-reference
+          :%filament)
   (export '%filament::blend-order :%filament)
-  (export '%filament::math+details+t-vec3<half>+reference :%filament)
   (export '%filament::math+details+t-vec4<short>+const-reference
           :%filament)
   (export '%filament::backend+precision :%filament)
@@ -22170,6 +22216,8 @@
   (export '%filament::math+is-arithmetic<float> :%filament)
   (export '%filament::+math+f-sqrt1-2+ :%filament)
   (export '%filament::utils+entity :%filament)
+  (export '%filament::math+details+t-quaternion<filament+math+half>+value-type
+          :%filament)
   (export '%filament::math+details+t-vec3<unsigned+short>+const-reference
           :%filament)
   (export '%filament::backend+buffer-descriptor+callback :%filament)
@@ -22196,7 +22244,8 @@
   (export '%filament::material+blending-mode :%filament)
   (export '%filament::set-material-instance-at :%filament)
   (export '%filament::+efficiency-halogen+ :%filament)
-  (export '%filament::math+details+t-vec4<char>+reference :%filament)
+  (export '%filament::math+details+t-quaternion<float>+size
+          :%filament)
   (export '%filament::get-direction-estimate :%filament)
   (export '%filament::math+details+t-mat-product-operators<t-mat33+float+t-vec3>
           :%filament)
@@ -22209,10 +22258,11 @@
           :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec3+bool>
           :%filament)
+  (export '%filament::math+details+t-vec-add-operators<t-vec4+filament+math+half>
+          :%filament)
+  (export '%filament::math+details+t-vec4<char>+reference :%filament)
   (export '%filament::backend+platform+swap-chain :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec3+unsigned+int>
-          :%filament)
-  (export '%filament::math+details+t-quaternion<float>+size
           :%filament)
   (export '%filament::math+mat3 :%filament)
   (export '%filament::unit-quaternion :%filament)
@@ -22221,7 +22271,7 @@
           :%filament)
   (export '%filament::utils+entity+smuggle :%filament)
   (export '%filament::set-color-write :%filament)
-  (export '%filament::math+is-arithmetic<half> :%filament)
+  (export '%filament::create-scene :%filament)
   (export '%filament::f-index-buffer :%filament)
   (export '%filament::uint64-t :%filament)
   (export '%filament::+math+details+zw+ :%filament)
@@ -22261,7 +22311,8 @@
           :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec3<unsigned+char>>
           :%filament)
-  (export '%filament::create-scene :%filament)
+  (export '%filament::math+details+t-vec2<filament+math+half>+reference
+          :%filament)
   (export '%filament::+math+details+yz+ :%filament)
   (export '%filament::set-polygon-offset :%filament)
   (export '%filament::math+details+t-vec4<double> :%filament)
@@ -22279,6 +22330,8 @@
   (export '%filament::coc-scale :%filament)
   (export '%filament::utils+entity-instance-base+type :%filament)
   (export '%filament::view+vignette-options :%filament)
+  (export '%filament::math+details+t-quaternion<filament+math+half>+size-type
+          :%filament)
   (export '%filament::utils+is-null :%filament)
   (export '%filament::math+details+t-mat44<double>+reference
           :%filament)
@@ -22290,8 +22343,7 @@
           :%filament)
   (export '%filament::backend+sampler-wrap-mode :%filament)
   (export '%filament::math+short3 :%filament)
-  (export '%filament::math+is-arithmetic<filament+math+details+t-vec3<half>>
-          :%filament)
+  (export '%filament::light-manager+type :%filament)
   (export '%filament::light-direction :%filament)
   (export '%filament::set-sun-halo-falloff :%filament)
   (export '%filament::|MATH+OPERATOR""-H| :%filament)
@@ -22302,9 +22354,10 @@
   (export '%filament::math+details+t-vec2<bool>+size-type :%filament)
   (export '%filament::math+details+t-mat33<double>+reference
           :%filament)
-  (export '%filament::light-manager+type :%filament)
+  (export '%filament::step-count :%filament)
   (export '%filament::math+details+t-vec4<char>+const-reference
           :%filament)
+  (export '%filament::math+fp<1+5+10>+type :%filament)
   (export '%filament::texture+type :%filament)
   (export '%filament::+math+d+sqrt2+ :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec4+unsigned+int>
@@ -22320,7 +22373,6 @@
   (export '%filament::math+ushort2 :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec2+double>
           :%filament)
-  (export '%filament::step-count :%filament)
   (export '%filament::utils+entity-instance<filament+transform-manager+false>
           :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-mat44+float>
@@ -22331,19 +22383,20 @@
   (export '%filament::backend+pixel-data-type :%filament)
   (export '%filament::math+bool2 :%filament)
   (export '%filament::get-projection-matrix :%filament)
-  (export '%filament::get-compare-mode :%filament)
+  (export '%filament::math+details+t-vec3<filament+math+half>
+          :%filament)
   (export '%filament::frustum :%filament)
   (export '%filament::height-falloff :%filament)
+  (export '%filament::math+get-e :%filament)
   (export '%filament::material+builder :%filament)
-  (export '%filament::math+details+t-vec2<char>+const-reference
-          :%filament)
+  (export '%filament::get-compare-mode :%filament)
   (export '%filament::math+ushort4 :%filament)
   (export '%filament::utils+operator-- :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-vec2+short>
           :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec3+double>
           :%filament)
-  (export '%filament::math+details+t-vec-comparison-operators<t-quaternion+half>
+  (export '%filament::math+details+t-vec2<char>+const-reference
           :%filament)
   (export '%filament::material-instance+duplicate :%filament)
   (export '%filament::math+details+t-vec2<unsigned+int>+reference
@@ -22367,6 +22420,8 @@
   (export '%filament::backend+render-pass-params :%filament)
   (export '%filament::uint16-t :%filament)
   (export '%filament::math+details+t-vec3<short>+reference
+          :%filament)
+  (export '%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long+long>
           :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec2+char>
           :%filament)
@@ -22392,11 +22447,12 @@
           :%filament)
   (export '%filament::~skybox :%filament)
   (export '%filament::+math+d+two-over-pi+ :%filament)
-  (export '%filament::+backend+fence-wait-for-ever+ :%filament)
+  (export '%filament::math+details+t-vec4<filament+math+half>+value-type
+          :%filament)
   (export '%filament::remove-entities :%filament)
   (export '%filament::math+details+t-vec3<char>+size-type :%filament)
   (export '%filament::math+byte3 :%filament)
-  (export '%filament::get-entities :%filament)
+  (export '%filament::+backend+fence-wait-for-ever+ :%filament)
   (export '%filament::texture+face-offsets :%filament)
   (export '%filament::math+details+t-mat44<double>+col-type
           :%filament)
@@ -22413,7 +22469,10 @@
   (export '%filament::math+details+t-mat-square-functions<t-mat44+bool>
           :%filament)
   (export '%filament::get-spot-light-inner-cone :%filament)
+  (export '%filament::math+is-arithmetic<filament+math+details+t-vec4<filament+math+half>>
+          :%filament)
   (export '%filament::get-viewport :%filament)
+  (export '%filament::get-entities :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec3+bool>
           :%filament)
   (export '%filament::+math+details+matrix+denom+ :%filament)
@@ -22439,6 +22498,8 @@
   (export '%filament::math+details+t-vec-product-operators<t-vec3+int>
           :%filament)
   (export '%filament::build :%filament)
+  (export '%filament::math+details+t-vec2<filament+math+half>+size-type
+          :%filament)
   (export '%filament::~viewport :%filament)
   (export '%filament::backend+create-driver :%filament)
   (export '%filament::view+dynamic-resolution-options :%filament)
@@ -22455,6 +22516,8 @@
   (export '%filament::math+details+t-mat44<bool>+reference
           :%filament)
   (export '%filament::stable :%filament)
+  (export '%filament::math+details+t-vec4<filament+math+half>+reference
+          :%filament)
   (export '%filament::irradiance :%filament)
   (export '%filament::+backend+flag-normalized+ :%filament)
   (export '%filament::utils+~entity-instance :%filament)
@@ -22478,6 +22541,7 @@
   (export '%filament::backend+platform+fence :%filament)
   (export '%filament::*math+result* :%filament)
   (export '%filament::utils+is-alive :%filament)
+  (export '%filament::math+get-m :%filament)
   (export '%filament::+backend+swap-chain-config-readable+
           :%filament)
   (export '%filament::set-display-info :%filament)
@@ -22503,6 +22567,8 @@
   (export '%filament::math+details+t-vec3<float>+value-type
           :%filament)
   (export '%filament::math+details+t-mat33<float>+no-init :%filament)
+  (export '%filament::math+details+t-quaternion<filament+math+half>+const-reference
+          :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-quaternion+double>
           :%filament)
   (export '%filament::backend+attribute-array :%filament)
@@ -22532,13 +22598,17 @@
   (export '%filament::material+parameter-info :%filament)
   (export '%filament::backend+default-platform :%filament)
   (export '%filament::+material-version+ :%filament)
+  (export '%filament::math+details+t-vec-comparison-operators<t-vec2+filament+math+half>
+          :%filament)
   (export '%filament::+math+d+tau+ :%filament)
   (export '%filament::get-sun-halo-falloff :%filament)
   (export '%filament::+math+f-log2e+ :%filament)
   (export '%filament::unset-scissor :%filament)
-  (export '%filament::math+details+t-vec-functions<t-vec4+half>
+  (export '%filament::math+details+t-vec-add-operators<t-vec2+filament+math+half>
           :%filament)
   (export '%filament::dithering :%filament)
+  (export '%filament::math+details+t-vec4<filament+math+half>
+          :%filament)
   (export '%filament::set-shadow-options :%filament)
   (export '%filament::get-focal-length :%filament)
   (export '%filament::math+details+t-vec4<int>+reference :%filament)
@@ -22549,6 +22619,8 @@
   (export '%filament::math+details+t-vec-comparison-operators<t-vec2+short>
           :%filament)
   (export '%filament::+math+d+two-over-sqrtpi+ :%filament)
+  (export '%filament::math+details+t-vec-unary-operators<t-vec4+filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-mat33<float>+row-major-init
           :%filament)
   (export '%filament::+math+details+matrix+b+ :%filament)
@@ -22588,6 +22660,8 @@
   (export '%filament::math+details+t-vec-unary-operators<t-vec3+unsigned+int>
           :%filament)
   (export '%filament::refresh-rate :%filament)
+  (export '%filament::math+details+t-vec-unary-operators<t-vec2+filament+math+half>
+          :%filament)
   (export '%filament::get-color :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec3+int>
           :%filament)
@@ -22608,11 +22682,8 @@
   (export '%filament::math+details+t-vec3<unsigned+int>+size-type
           :%filament)
   (export '%filament::quality :%filament)
-  (export '%filament::math+details+t-vec4<half>+size-type :%filament)
   (export '%filament::math+details+t-mat22<float> :%filament)
   (export '%filament::get-camera-component :%filament)
-  (export '%filament::math+details+t-quaternion<half>+no-init
-          :%filament)
   (export '%filament::get-depth-of-field-options :%filament)
   (export '%filament::+utils-track-entities+ :%filament)
   (export '%filament::empty :%filament)
@@ -22629,7 +22700,7 @@
           :%filament)
   (export '%filament::backend+is-depth-format :%filament)
   (export '%filament::spot-light-cone :%filament)
-  (export '%filament::half :%filament)
+  (export '%filament::long-double :%filament)
   (export '%filament::math+details+t-vec3<unsigned+short>+reference
           :%filament)
   (export '%filament::color :%filament)
@@ -22639,7 +22710,6 @@
   (export '%filament::math+details+size :%filament)
   (export '%filament::~vertex-buffer :%filament)
   (export '%filament::material+transparency-mode :%filament)
-  (export '%filament::long-double :%filament)
   (export '%filament::set-parameter :%filament)
   (export '%filament::+math+f-ln10+ :%filament)
   (export '%filament::resolution :%filament)
@@ -22651,15 +22721,13 @@
   (export '%filament::+math+details+matrix+a+ :%filament)
   (export '%filament::get-dynamic-resolution-options :%filament)
   (export '%filament::destroy-camera-component :%filament)
-  (export '%filament::math+details+t-quaternion<half>+value-type
-          :%filament)
+  (export '%filament::+math+details+li+ :%filament)
   (export '%filament::material :%filament)
   (export '%filament::~clear-options :%filament)
   (export '%filament::get-format :%filament)
   (export '%filament::math+details+get-column-count :%filament)
   (export '%filament::create-renderer :%filament)
   (export '%filament::+efficiency-led+ :%filament)
-  (export '%filament::+math+details+li+ :%filament)
   (export '%filament::math+details+get-row-size :%filament)
   (export '%filament::+math+details+bias+ :%filament)
   (export '%filament::get-direction :%filament)
@@ -22667,6 +22735,8 @@
   (export '%filament::lens-flare :%filament)
   (export '%filament::texture+compute-texture-data-size :%filament)
   (export '%filament::get-vignette-options :%filament)
+  (export '%filament::math+details+t-vec-product-operators<t-vec2+filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-vec2+unsigned+short>
           :%filament)
   (export '%filament::buffer-type :%filament)
@@ -22682,11 +22752,14 @@
   (export '%filament::backend+~fence :%filament)
   (export '%filament::utils+register-listener :%filament)
   (export '%filament::set-sample-count :%filament)
+  (export '%filament::math+details+t-quat-product-operators<t-quaternion+filament+math+half>
+          :%filament)
   (export '%filament::utils+operator+bool :%filament)
   (export '%filament::+backend+max-sampler-count+ :%filament)
   (export '%filament::set-name :%filament)
   (export '%filament::math+mat3f :%filament)
-  (export '%filament::get-transparency-mode :%filament)
+  (export '%filament::math+details+t-vec3<filament+math+half>+value-type
+          :%filament)
   (export '%filament::f-render-primitive :%filament)
   (export '%filament::is-post-processing-enabled :%filament)
   (export '%filament::camera+compute-effective-focal-length
@@ -22701,8 +22774,10 @@
   (export '%filament::set-render-target :%filament)
   (export '%filament::remove :%filament)
   (export '%filament::buffer-object :%filament)
+  (export '%filament::get-transparency-mode :%filament)
   (export '%filament::set-color-grading :%filament)
-  (export '%filament::math+details+t-vec3<half> :%filament)
+  (export '%filament::math+details+t-mat44<bool>+value-type
+          :%filament)
   (export '%filament::indirect-light :%filament)
   (export '%filament::backend+present-callable+present-fn :%filament)
   (export '%filament::*backend+n* :%filament)
@@ -22716,15 +22791,14 @@
   (export '%filament::get-transform :%filament)
   (export '%filament::hdr-color-buffer :%filament)
   (export '%filament::+backend+shader-model-count+ :%filament)
-  (export '%filament::math+details+t-mat44<bool>+value-type
-          :%filament)
+  (export '%filament::position :%filament)
   (export '%filament::get-scaling :%filament)
   (export '%filament::depth-range :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec2+float>
           :%filament)
   (export '%filament::aabb+corners+value-type :%filament)
   (export '%filament::get-scene :%filament)
-  (export '%filament::position :%filament)
+  (export '%filament::backend+primitive-type :%filament)
   (export '%filament::~scene :%filament)
   (export '%filament::set-debug-camera :%filament)
   (export '%filament::direction :%filament)
@@ -22741,7 +22815,6 @@
   (export '%filament::backend+texture-swizzle :%filament)
   (export '%filament::+math+f-ln2+ :%filament)
   (export '%filament::camera+projection :%filament)
-  (export '%filament::backend+primitive-type :%filament)
   (export '%filament::backend+polygon-offset :%filament)
   (export '%filament::+math+details+x+ :%filament)
   (export '%filament::math+details+t-vec-product-operators<t-vec4+short>
@@ -22771,6 +22844,8 @@
   (export '%filament::+math+details+matrix+t+ :%filament)
   (export '%filament::math+details+t-quaternion<double> :%filament)
   (export '%filament::+math+d+ln10+ :%filament)
+  (export '%filament::math+details+t-vec-product-operators<t-vec3+filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-vec4<float>+value-type
           :%filament)
   (export '%filament::skybox :%filament)
@@ -22779,7 +22854,7 @@
   (export '%filament::utils+get-generation-for-index :%filament)
   (export '%filament::math+details+t-vec2<unsigned+short>+reference
           :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec3+short>
+  (export '%filament::math+details+t-quaternion<filament+math+half>+reference
           :%filament)
   (export '%filament::math+details+t-quat-product-operators<t-quaternion+bool>
           :%filament)
@@ -22799,6 +22874,8 @@
   (export '%filament::~shadow-options :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec3+char>
           :%filament)
+  (export '%filament::math+details+t-vec-add-operators<t-vec3+short>
+          :%filament)
   (export '%filament::math+details+t-vec4<double>+size-type
           :%filament)
   (export '%filament::get-index-count :%filament)
@@ -22808,8 +22885,6 @@
           :%filament)
   (export '%filament::is-depth-write-enabled :%filament)
   (export '%filament::light-manager+builder+result :%filament)
-  (export '%filament::math+details+t-vec2<half>+const-reference
-          :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec4+int>
           :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec4+double>
@@ -22836,6 +22911,7 @@
           :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec3<int>>
           :%filament)
+  (export '%filament::math+half+binary :%filament)
   (export '%filament::clear-options :%filament)
   (export '%filament::utils+entity-instance<filament+light-manager+false>
           :%filament)
@@ -22866,13 +22942,10 @@
   (export '%filament::transform :%filament)
   (export '%filament::math+details+t-mat33<double>+pack-tangent-frame
           :%filament)
-  (export '%filament::math+details+t-vec-comparison-operators<t-vec2+half>
-          :%filament)
   (export '%filament::backend+stream :%filament)
   (export '%filament::texture-sampler+wrap-mode :%filament)
   (export '%filament::get-entity :%filament)
-  (export '%filament::math+is-arithmetic<filament+math+details+t-vec2<half>>
-          :%filament)
+  (export '%filament::light-manager+instance :%filament)
   (export '%filament::get-render-target :%filament)
   (export '%filament::get-platform :%filament)
   (export '%filament::interpolation :%filament)
@@ -22892,11 +22965,10 @@
   (export '%filament::math+details+t-vec4<unsigned+short>+size-type
           :%filament)
   (export '%filament::homogeneous-scaling :%filament)
-  (export '%filament::light-manager+instance :%filament)
+  (export '%filament::+math+details+matrix+h+ :%filament)
   (export '%filament::backend+pixel-buffer-descriptor+compute-data-size
           :%filament)
   (export '%filament::render :%filament)
-  (export '%filament::+math+details+matrix+h+ :%filament)
   (export '%filament::+utils+generation-shift+ :%filament)
   (export '%filament::math+int4 :%filament)
   (export '%filament::math+details+t-vec4<unsigned+int>+value-type
@@ -22922,6 +22994,8 @@
   (export '%filament::math+details+t-vec3<unsigned+int>+reference
           :%filament)
   (export '%filament::set :%filament)
+  (export '%filament::math+details+t-vec2<filament+math+half>+const-reference
+          :%filament)
   (export '%filament::math+details+t-mat-transform<t-mat44+double>
           :%filament)
   (export '%filament::utils+unregister-listener :%filament)
@@ -22929,7 +23003,6 @@
           :%filament)
   (export '%filament::get-light-channel :%filament)
   (export '%filament::*math+details+i* :%filament)
-  (export '%filament::math+details+t-vec3<half>+size-type :%filament)
   (export '%filament::math+details+t-mat33<float>+pack-tangent-frame
           :%filament)
   (export '%filament::+backend+max-vertex-attribute-count+
@@ -22944,8 +23017,6 @@
   (export '%filament::math+details+t-mat-transform<t-mat33+float>
           :%filament)
   (export '%filament::math+details+t-vec2<char> :%filament)
-  (export '%filament::math+details+t-vec2<half>+value-type
-          :%filament)
   (export '%filament::math+details+t-vec2<unsigned+int> :%filament)
   (export '%filament::aabb+corners :%filament)
   (export '%filament::math+details+t-vec-product-operators<t-vec4+unsigned+short>
@@ -22975,11 +23046,11 @@
   (export '%filament::refraction-type :%filament)
   (export '%filament::translation :%filament)
   (export '%filament::~transform-manager :%filament)
-  (export '%filament::+math+d+one-over-pi+ :%filament)
+  (export '%filament::math+details+t-vec-unary-operators<t-vec3+filament+math+half>
+          :%filament)
   (export '%filament::exponent :%filament)
   (export '%filament::vsync-offset-nanos :%filament)
   (export '%filament::skinning-buffer :%filament)
-  (export '%filament::math+details+t-quaternion<half> :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec2<bool>>
           :%filament)
   (export '%filament::math+details+t-vec3<float>+const-reference
@@ -22987,21 +23058,20 @@
   (export '%filament::+math+d+pi-4+ :%filament)
   (export '%filament::set-exposure :%filament)
   (export '%filament::set-intensity :%filament)
-  (export '%filament::math+details+t-quaternion<half>+size-type
-          :%filament)
+  (export '%filament::backend+fence-status :%filament)
   (export '%filament::get-up-vector :%filament)
   (export '%filament::math+ubyte2 :%filament)
   (export '%filament::view :%filament)
   (export '%filament::shadow-far-hint :%filament)
   (export '%filament::backend+has-blending :%filament)
-  (export '%filament::std+input-iterator-tag :%filament)
+  (export '%filament::+math+d+one-over-pi+ :%filament)
   (export '%filament::math+details+t-vec4<short> :%filament)
   (export '%filament::scale :%filament)
   (export '%filament::+math+f-1-pi+ :%filament)
-  (export '%filament::backend+fence-status :%filament)
+  (export '%filament::std+input-iterator-tag :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+int>
           :%filament)
-  (export '%filament::get-shading :%filament)
+  (export '%filament::math+operator+float :%filament)
   (export '%filament::math+details+t-vec2<double>+value-type
           :%filament)
   (export '%filament::get-min-filter :%filament)
@@ -23016,19 +23086,17 @@
   (export '%filament::texture+cubemap-face :%filament)
   (export '%filament::rotation :%filament)
   (export '%filament::math+details+get-column-size :%filament)
+  (export '%filament::get-shading :%filament)
   (export '%filament::+math+d+deg-to-rad+ :%filament)
   (export '%filament::halo-thickness :%filament)
   (export '%filament::math+details+t-vec4<bool>+reference :%filament)
   (export '%filament::~bone :%filament)
-  (export '%filament::maximum-opacity :%filament)
+  (export '%filament::math+set-e :%filament)
   (export '%filament::backend+disable-blending :%filament)
   (export '%filament::view+bloom-options :%filament)
-  (export '%filament::math+details+t-vec3<half>+value-type
-          :%filament)
   (export '%filament::data :%filament)
   (export '%filament::distance :%filament)
-  (export '%filament::math+details+t-vec2<unsigned+char>+reference
-          :%filament)
+  (export '%filament::maximum-opacity :%filament)
   (export '%filament::math+details+t-vec2<unsigned+char>+size-type
           :%filament)
   (export '%filament::get-dithering :%filament)
@@ -23036,19 +23104,21 @@
           :%filament)
   (export '%filament::+math+details+y+ :%filament)
   (export '%filament::get-wrap-mode-t :%filament)
-  (export '%filament::math+details+t-quat-functions<t-quaternion+half>
-          :%filament)
-  (export '%filament::math+details+t-vec-unary-operators<t-quaternion+half>
+  (export '%filament::math+details+t-vec-unary-operators<t-quaternion+filament+math+half>
           :%filament)
   (export '%filament::+efficiency-fluorescent+ :%filament)
-  (export '%filament::math+details+t-vec-functions<t-vec4+char>
+  (export '%filament::math+details+t-vec-comparison-operators<t-vec3+filament+math+half>
           :%filament)
   (export '%filament::fast-gather-ring-count :%filament)
   (export '%filament::math+details+t-mat-helpers<t-mat33+float>
           :%filament)
+  (export '%filament::math+details+t-vec2<unsigned+char>+reference
+          :%filament)
   (export '%filament::backend+blend-equation :%filament)
   (export '%filament::material+vertex-domain :%filament)
   (export '%filament::max-background-coc :%filament)
+  (export '%filament::math+details+t-vec-functions<t-vec4+char>
+          :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec2+char>
           :%filament)
   (export '%filament::material+interpolation :%filament)
@@ -23075,8 +23145,6 @@
   (export '%filament::math+details+as-array :%filament)
   (export '%filament::math+details+t-mat33<bool> :%filament)
   (export '%filament::math+details+t-mat44<bool>+col-type :%filament)
-  (export '%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long>
-          :%filament)
   (export '%filament::*math+details+matrix+col* :%filament)
   (export '%filament::backend+sync-status :%filament)
   (export '%filament::strength :%filament)
@@ -23085,8 +23153,7 @@
   (export '%filament::set-morph-weights :%filament)
   (export '%filament::math+details+t-mat33+row-major-init :%filament)
   (export '%filament::bloom-options :%filament)
-  (export '%filament::math+details+t-quaternion<half>+const-reference
-          :%filament)
+  (export '%filament::math+quatf :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec4+unsigned+int>
           :%filament)
   (export '%filament::engine+destroy :%filament)
@@ -23100,10 +23167,7 @@
           :%filament)
   (export '%filament::math+mat4 :%filament)
   (export '%filament::math+ushort3 :%filament)
-  (export '%filament::math+quatf :%filament)
   (export '%filament::math+details+~t-vec4 :%filament)
-  (export '%filament::std+iterator<std+forward-iterator-tag+utils+entity-instance<filament+transform-manager+false>+long>+value-type
-          :%filament)
   (export '%filament::math+is-arithmetic<bool> :%filament)
   (export '%filament::mirror :%filament)
   (export '%filament::utils+create :%filament)
@@ -23138,8 +23202,6 @@
   (export '%filament::backend+sampler-params :%filament)
   (export '%filament::+math+d+rad-to-deg+ :%filament)
   (export '%filament::math+details+t-vec3<int>+value-type :%filament)
-  (export '%filament::math+details+t-vec3<half>+const-reference
-          :%filament)
   (export '%filament::math+details+t-vec3<int>+size-type :%filament)
   (export '%filament::sharpness :%filament)
   (export '%filament::backend+~viewport :%filament)
@@ -23155,9 +23217,8 @@
   (export '%filament::math+details+t-vec-functions<t-vec3+unsigned+short>
           :%filament)
   (export '%filament::add-entities :%filament)
-  (export '%filament::indirect-light+get-color-estimate :%filament)
-  (export '%filament::set-transform :%filament)
   (export '%filament::set-dithering :%filament)
+  (export '%filament::set-transform :%filament)
   (export '%filament::math+details+t-vec4<unsigned+int> :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec2+unsigned+char>
           :%filament)
@@ -23165,6 +23226,7 @@
   (export '%filament::math+details+t-vec4<char>+size-type :%filament)
   (export '%filament::math+details+t-quat-functions<t-quaternion+double>
           :%filament)
+  (export '%filament::indirect-light+get-color-estimate :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec2+double>
           :%filament)
   (export '%filament::f-texture :%filament)
@@ -23193,7 +23255,6 @@
   (export '%filament::math+details+t-vec4<unsigned+char>+reference
           :%filament)
   (export '%filament::vertex-buffer+attribute-type :%filament)
-  (export '%filament::math+details+t-vec2<half>+reference :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec2+float>
           :%filament)
   (export '%filament::get-transform-accurate :%filament)
@@ -23202,10 +23263,10 @@
   (export '%filament::math+details+t-vec-unary-operators<t-mat33+float>
           :%filament)
   (export '%filament::backend+platform+stream :%filament)
-  (export '%filament::get-max :%filament)
+  (export '%filament::math+fp<1+5+10>+tof :%filament)
   (export '%filament::depth :%filament)
   (export '%filament::name :%filament)
-  (export '%filament::math+details+t-vec4<double>+value-type
+  (export '%filament::math+details+t-mat44<float>+size-type
           :%filament)
   (export '%filament::create-view :%filament)
   (export '%filament::color-grading :%filament)
@@ -23222,26 +23283,33 @@
           :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec4+float>
           :%filament)
+  (export '%filament::math+details+t-vec4<double>+value-type
+          :%filament)
   (export '%filament::commit-local-transform-transaction :%filament)
   (export '%filament::utils+get-id :%filament)
   (export '%filament::dynamic-resolution-options :%filament)
   (export '%filament::get-frustum :%filament)
+  (export '%filament::get-max :%filament)
   (export '%filament::math+details+t-mat44<bool>+fuzzy-equal
           :%filament)
-  (export '%filament::math+details+t-mat44<float>+size-type
+  (export '%filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+short>
           :%filament)
   (export '%filament::math+is-arithmetic<unsigned+char> :%filament)
+  (export '%filament::math+details+t-vec-comparison-operators<t-vec4+filament+math+half>
+          :%filament)
   (export '%filament::get-falloff :%filament)
   (export '%filament::+backend+buffer-unused+ :%filament)
   (export '%filament::math+details+t-mat33<float>+reference
           :%filament)
   (export '%filament::math+details+~t-vec-comparison-operators
           :%filament)
+  (export '%filament::math+details+t-vec2<filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-vec3<bool>+reference :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec4+double>
           :%filament)
   (export '%filament::+efficiency-incandescent+ :%filament)
-  (export '%filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+short>
+  (export '%filament::math+details+t-vec-add-operators<t-vec3+filament+math+half>
           :%filament)
   (export '%filament::depth-of-field-options+filter :%filament)
   (export '%filament::get-world-transform-accurate :%filament)
@@ -23253,24 +23321,19 @@
   (export '%filament::+math+details+factor+ :%filament)
   (export '%filament::linear-color-a :%filament)
   (export '%filament::+math+details+size+ :%filament)
-  (export '%filament::math+details+t-vec2<half> :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-vec4+char>
           :%filament)
   (export '%filament::create-instance :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-quaternion+float>
           :%filament)
   (export '%filament::math+details+t-mat44<bool>+frustum :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec4+half>
-          :%filament)
-  (export '%filament::math+details+t-vec4<half>+const-reference
+  (export '%filament::math+details+t-vec-add-operators<t-vec3+bool>
           :%filament)
   (export '%filament::backend+set-callback :%filament)
   (export '%filament::math+details+t-mat33<double>+col-type
           :%filament)
   (export '%filament::light-cone-rad :%filament)
   (export '%filament::operator!= :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec3+bool>
-          :%filament)
   (export '%filament::set-spot-light-cone :%filament)
   (export '%filament::light-manager+shadow-options :%filament)
   (export '%filament::polygon-offset-constant :%filament)
@@ -23286,6 +23349,8 @@
   (export '%filament::math+details+t-vec-add-operators<t-vec2+unsigned+int>
           :%filament)
   (export '%filament::get-renderable-count :%filament)
+  (export '%filament::math+details+t-vec-functions<t-vec4+filament+math+half>
+          :%filament)
   (export '%filament::enable-buffer-objects :%filament)
   (export '%filament::is-point-light :%filament)
   (export '%filament::material+sampler-format :%filament)
@@ -23346,10 +23411,12 @@
   (export '%filament::clear-depth :%filament)
   (export '%filament::get-sample-count :%filament)
   (export '%filament::backend+default-platform+destroy :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec3+double>
+  (export '%filament::math+details+t-vec4<filament+math+half>+size-type
           :%filament)
   (export '%filament::math+details+t-vec3<int>+reference :%filament)
   (export '%filament::math+details+~t-mat-helpers :%filament)
+  (export '%filament::math+details+t-vec-add-operators<t-vec3+double>
+          :%filament)
   (export '%filament::math+details+t-vec2<int>+size-type :%filament)
   (export '%filament::math+details+t-mat-helpers<t-mat44+float>
           :%filament)
@@ -23381,29 +23448,27 @@
   (export '%filament::falloff :%filament)
   (export '%filament::get-vertex-domain :%filament)
   (export '%filament::|BACKEND+OPERATOR()| :%filament)
-  (export '%filament::utils+entity+import :%filament)
+  (export '%filament::get-refraction-mode :%filament)
   (export '%filament::interval :%filament)
   (export '%filament::get-wrap-mode-r :%filament)
   (export '%filament::has-parameter :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-quaternion+half>
-          :%filament)
   (export '%filament::backend+is-s3tc-compression :%filament)
   (export '%filament::is-shadow-caster :%filament)
+  (export '%filament::math+details+t-vec-comparison-operators<t-quaternion+filament+math+half>
+          :%filament)
   (export '%filament::shadow-type :%filament)
   (export '%filament::math+details+t-mat-helpers<t-mat44+double>
           :%filament)
   (export '%filament::math+details+t-mat44<float>+col-type
           :%filament)
-  (export '%filament::get-refraction-mode :%filament)
   (export '%filament::math+details+operator= :%filament)
   (export '%filament::sample-count :%filament)
   (export '%filament::math+half4 :%filament)
   (export '%filament::generate-mipmaps :%filament)
-  (export '%filament::is-subpass :%filament)
+  (export '%filament::utils+entity+import :%filament)
   (export '%filament::~camera :%filament)
   (export '%filament::backend+backend-to-string :%filament)
-  (export '%filament::math+details+t-vec4<short>+size-type
-          :%filament)
+  (export '%filament::is-subpass :%filament)
   (export '%filament::operator++ :%filament)
   (export '%filament::depth-bias :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec3+double>
@@ -23414,12 +23479,12 @@
   (export '%filament::std+forward-iterator-tag :%filament)
   (export '%filament::set-parent :%filament)
   (export '%filament::texture-sampler+min-filter :%filament)
+  (export '%filament::math+details+t-vec4<short>+size-type
+          :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec3+unsigned+short>
           :%filament)
   (export '%filament::math+double2 :%filament)
   (export '%filament::math+details+t-mat33<double>+value-type
-          :%filament)
-  (export '%filament::math+details+t-vec-functions<t-vec2+half>
           :%filament)
   (export '%filament::depth-of-field-options :%filament)
   (export '%filament::math+details+t-vec-product-operators<t-vec2+int>
@@ -23432,14 +23497,16 @@
           :%filament)
   (export '%filament::set-priority :%filament)
   (export '%filament::min :%filament)
+  (export '%filament::math+details+t-vec-add-operators<t-quaternion+filament+math+half>
+          :%filament)
+  (export '%filament::math+details+t-vec-functions<t-vec3+filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-vec2+unsigned+int>
           :%filament)
-  (export '%filament::math+details+t-vec-comparison-operators<t-vec4+half>
+  (export '%filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+char>
           :%filament)
   (export '%filament::+math+details+matrix+n+ :%filament)
   (export '%filament::polygon-offset-slope :%filament)
-  (export '%filament::math+details+t-vec-comparison-operators<t-vec4+unsigned+char>
-          :%filament)
   (export '%filament::filament-api :%filament)
   (export '%filament::math+details+t-mat44<bool>+row-type :%filament)
   (export '%filament::+math+f-tau+ :%filament)
@@ -23457,8 +23524,6 @@
   (export '%filament::image :%filament)
   (export '%filament::backend+pixel-buffer-descriptor+pixel-data-format
           :%filament)
-  (export '%filament::math+details+t-vec-product-operators<t-vec4+half>
-          :%filament)
   (export '%filament::light-bleed-reduction :%filament)
   (export '%filament::math+details+t-vec4<bool>+const-reference
           :%filament)
@@ -23470,10 +23535,14 @@
   (export '%filament::get-model-matrix :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-vec3+unsigned+short>
           :%filament)
+  (export '%filament::math+details+t-quaternion<filament+math+half>+size
+          :%filament)
   (export '%filament::filter :%filament)
   (export '%filament::math+details+t-mat44<float>+value-type
           :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-mat44+bool>
+          :%filament)
+  (export '%filament::math+is-arithmetic<filament+math+details+t-vec2<filament+math+half>>
           :%filament)
   (export '%filament::is-shadow-receiver :%filament)
   (export '%filament::get-child-count :%filament)
@@ -23492,6 +23561,8 @@
           :%filament)
   (export '%filament::math+int3 :%filament)
   (export '%filament::math+byte2 :%filament)
+  (export '%filament::math+details+t-vec4<filament+math+half>+const-reference
+          :%filament)
   (export '%filament::math+details+t-vec3<unsigned+char>+const-reference
           :%filament)
   (export '%filament::shadow-distance :%filament)
@@ -23504,8 +23575,7 @@
   (export '%filament::anamorphism :%filament)
   (export '%filament::get-blending-mode :%filament)
   (export '%filament::fog-options :%filament)
-  (export '%filament::math+details+t-mat33<double>+get-transform-for-normals
-          :%filament)
+  (export '%filament::skybox+builder :%filament)
   (export '%filament::culling :%filament)
   (export '%filament::mid-point :%filament)
   (export '%filament::view+temporal-anti-aliasing-options :%filament)
@@ -23515,9 +23585,10 @@
   (export '%filament::uintptr-t :%filament)
   (export '%filament::set-external-image :%filament)
   (export '%filament::set-buffer-object-at :%filament)
-  (export '%filament::skybox+builder :%filament)
+  (export '%filament::f-vertex-buffer :%filament)
   (export '%filament::set-color :%filament)
-  (export '%filament::operator= :%filament)
+  (export '%filament::math+details+t-quaternion<filament+math+half>
+          :%filament)
   (export '%filament::math+details+t-mat44<double>+no-init
           :%filament)
   (export '%filament::get-near :%filament)
@@ -23525,6 +23596,7 @@
   (export '%filament::get-visible-layers :%filament)
   (export '%filament::reserved :%filament)
   (export '%filament::get-axis-aligned-bounding-box :%filament)
+  (export '%filament::operator= :%filament)
   (export '%filament::math+details+t-vec4<char>+value-type
           :%filament)
   (export '%filament::backend+~render-pass-params :%filament)
@@ -23534,16 +23606,18 @@
   (export '%filament::utils+operator+unsigned+int :%filament)
   (export '%filament::math+details+t-quaternion<bool>+no-init
           :%filament)
+  (export '%filament::math+~fp :%filament)
   (export '%filament::vertices :%filament)
   (export '%filament::math+details+get-row-count :%filament)
-  (export '%filament::math+details+t-vec4<unsigned+int>+const-reference
+  (export '%filament::math+details+t-mat44<float>+fuzzy-equal
+          :%filament)
+  (export '%filament::math+details+t-mat33<double>+get-transform-for-normals
           :%filament)
   (export '%filament::get-default-material :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec2+unsigned+char>
           :%filament)
   (export '%filament::f-renderable-manager :%filament)
   (export '%filament::utils+entity-instance-base :%filament)
-  (export '%filament::f-vertex-buffer :%filament)
   (export '%filament::backend+backend :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec2+unsigned+int>
           :%filament)
@@ -23558,45 +23632,38 @@
   (export '%filament::set-viewport :%filament)
   (export '%filament::backend+has-callback :%filament)
   (export '%filament::shadow-cascades :%filament)
-  (export '%filament::math+details+t-quaternion<half>+reference
-          :%filament)
-  (export '%filament::math+details+t-vec4<half> :%filament)
+  (export '%filament::set-bones :%filament)
   (export '%filament::backend+depth-range :%filament)
   (export '%filament::get-name :%filament)
   (export '%filament::math+details+t-vec2<bool>+const-reference
           :%filament)
   (export '%filament::+math+details+v0+ :%filament)
-  (export '%filament::+backend+swap-chain-config-enable-xcb+
+  (export '%filament::math+details+t-vec2<filament+math+half>+value-type
           :%filament)
   (export '%filament::index-buffer+buffer-descriptor :%filament)
-  (export '%filament::std+size-t :%filament)
   (export '%filament::in-scattering-size :%filament)
-  (export '%filament::set-bones :%filament)
-  (export '%filament::math+details+t-mat44<float>+fuzzy-equal
-          :%filament)
-  (export '%filament::math+details+t-quat-product-operators<t-quaternion+half>
-          :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec2+half>
-          :%filament)
+  (export '%filament::backend+~buffer-descriptor :%filament)
   (export '%filament::view+blend-mode :%filament)
   (export '%filament::math+details+t-vec4<float>+reference
           :%filament)
-  (export '%filament::backend+~buffer-descriptor :%filament)
+  (export '%filament::+backend+swap-chain-config-enable-xcb+
+          :%filament)
+  (export '%filament::+math+infnan+ :%filament)
   (export '%filament::power :%filament)
   (export '%filament::renderable-manager+bone :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-vec3+char>
           :%filament)
   (export '%filament::set-fog-options :%filament)
   (export '%filament::get-render-quality :%filament)
-  (export '%filament::+math+infnan+ :%filament)
   (export '%filament::+math+details+yy+ :%filament)
+  (export '%filament::math+details+t-vec4<unsigned+int>+const-reference
+          :%filament)
   (export '%filament::+backend+swap-chain-config-apple-cvpixelbuffer+
           :%filament)
   (export '%filament::material+shader-model :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec4+bool>
           :%filament)
   (export '%filament::get-view-matrix :%filament)
-  (export '%filament::math+details+t-vec2<half>+size-type :%filament)
   (export '%filament::precision :%filament)
   (export '%filament::math+details+t-vec-product-operators<t-vec2+unsigned+char>
           :%filament)
@@ -23620,22 +23687,22 @@
   (export '%filament::math+details+t-vec2<unsigned+char>+const-reference
           :%filament)
   (export '%filament::swap-chain :%filament)
-  (export '%filament::view+ambient-occlusion-options :%filament)
+  (export '%filament::math+details+t-quat-functions<t-quaternion+filament+math+half>
+          :%filament)
   (export '%filament::is-frustum-culling-enabled :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-vec4+short>
           :%filament)
   (export '%filament::|MATH+OPERATOR""-I| :%filament)
   (export '%filament::set-custom-projection :%filament)
-  (export '%filament::math+details+t-vec-product-operators<t-vec2+half>
-          :%filament)
+  (export '%filament::backend+swap-chain :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec4+unsigned+short>
           :%filament)
   (export '%filament::+math+f-2-pi+ :%filament)
+  (export '%filament::math+fp<1+5+10> :%filament)
   (export '%filament::math+details+t-vec-comparison-operators<t-mat33+float>
           :%filament)
   (export '%filament::clear-color :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec3+half>
-          :%filament)
+  (export '%filament::view+ambient-occlusion-options :%filament)
   (export '%filament::std+integral-constant<bool+true> :%filament)
   (export '%filament::math+details+t-vec-functions<t-vec3+int>
           :%filament)
@@ -23643,11 +23710,10 @@
   (export '%filament::engine+get-engine :%filament)
   (export '%filament::math+details+t-quaternion<double>+reference
           :%filament)
-  (export '%filament::math+details+t-vec-add-operators<t-vec4+unsigned+char>
+  (export '%filament::math+details+t-vec-product-operators<t-vec4+filament+math+half>
           :%filament)
   (export '%filament::set-rotation :%filament)
   (export '%filament::flush :%filament)
-  (export '%filament::backend+swap-chain :%filament)
   (export '%filament::~frame-rate-options :%filament)
   (export '%filament::*utils+index-mask* :%filament)
   (export '%filament::+set-presentation-time+ :%filament)
@@ -23657,22 +23723,26 @@
   (export '%filament::max-foreground-coc :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec2<int>>
           :%filament)
-  (export '%filament::backend+~stream :%filament)
+  (export '%filament::math+details+t-vec-add-operators<t-vec4+unsigned+char>
+          :%filament)
   (export '%filament::math+details+t-vec3<double>+size-type
           :%filament)
   (export '%filament::is-screen-space-refraction-enabled :%filament)
   (export '%filament::frustum+plane :%filament)
   (export '%filament::set-vignette-options :%filament)
+  (export '%filament::math+~half :%filament)
   (export '%filament::create-camera :%filament)
   (export '%filament::math+details+t-vec4<unsigned+char>+size-type
           :%filament)
   (export '%filament::backend+~default-platform :%filament)
-  (export '%filament::math+details+t-vec4<unsigned+short>+const-reference
-          :%filament)
+  (export '%filament::*backend+bpr-aligned* :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec3<unsigned+int>>
           :%filament)
+  (export '%filament::backend+~stream :%filament)
   (export '%filament::render-target :%filament)
   (export '%filament::color-conversion :%filament)
+  (export '%filament::math+details+t-vec4<unsigned+short>+const-reference
+          :%filament)
   (export '%filament::screen-space-contact-shadows :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec2<double>>
           :%filament)
@@ -23686,7 +23756,7 @@
   (export '%filament::color+absorption-at-distance :%filament)
   (export '%filament::bottom :%filament)
   (export '%filament::backend+blend-function :%filament)
-  (export '%filament::backend+is-s3tcsrgb-compression :%filament)
+  (export '%filament::math+set-m :%filament)
   (export '%filament::math+details+t-vec-unary-operators<t-quaternion+float>
           :%filament)
   (export '%filament::math+details+~t-vec-add-operators :%filament)
@@ -23702,10 +23772,11 @@
   (export '%filament::math+details+t-mat44<double> :%filament)
   (export '%filament::math+is-arithmetic<filament+math+details+t-vec3<float>>
           :%filament)
-  (export '%filament::*backend+bpr-aligned* :%filament)
+  (export '%filament::math+details+t-vec3<filament+math+half>+size-type
+          :%filament)
   (export '%filament::has-shadow-multiplier :%filament)
   (export '%filament::backend+frame-scheduled-callback :%filament)
-  (export '%filament::math+details+t-vec4<half>+reference :%filament)
+  (export '%filament::backend+is-s3tcsrgb-compression :%filament)
   (export '%filament::backend+sampler-format :%filament)
   (export '%filament::intensity :%filament)
   (export '%filament::+base-level+ :%filament)
@@ -23727,15 +23798,15 @@
   (export '%filament::foreground-ring-count :%filament)
   (export '%filament::is-color-write-enabled :%filament)
   (export '%filament::+size+ :%filament)
-  (export '%filament::utils+entity-manager+get :%filament)
+  (export '%filament::math+is-arithmetic<filament+math+details+t-vec3<filament+math+half>>
+          :%filament)
   (export '%filament::math+details+t-mat44<float>+const-reference
           :%filament)
   (export '%filament::begin :%filament)
   (export '%filament::get-primitive-count :%filament)
   (export '%filament::~prefilter-options :%filament)
   (export '%filament::+math+details+zz+ :%filament)
-  (export '%filament::math+details+t-vec-comparison-operators<t-vec3+half>
-          :%filament)
+  (export '%filament::utils+entity-manager+get :%filament)
   (export '%filament::set-mag-filter :%filament)
   (export '%filament::math+details+~t-quat-product-operators
           :%filament)
@@ -23784,7 +23855,8 @@
   (export '%filament::math+details+t-vec3<char>+value-type
           :%filament)
   (export '%filament::math+details+t-vec3<unsigned+int> :%filament)
-  (export '%filament::*math+details+result* :%filament)
+  (export '%filament::math+details+t-vec3<filament+math+half>+reference
+          :%filament)
   (export '%filament::index-buffer+builder :%filament)
   (export '%filament::math+details+t-vec-add-operators<t-vec4+unsigned+short>
           :%filament)
@@ -23792,6 +23864,7 @@
   (export '%filament::set-shadow-type :%filament)
   (export '%filament::~corners :%filament)
   (export '%filament::get-reflections-texture :%filament)
+  (export '%filament::*math+details+result* :%filament)
   (export '%filament::math+details+t-mat33<float>+row-type
           :%filament)
   (export '%filament::filter-width :%filament)
