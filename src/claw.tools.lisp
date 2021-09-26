@@ -9,7 +9,8 @@
                            ;; memory io for matc
                            "ClawMemIo.h")
                           (:includes :lib-includes :util-includes
-                                     :math-includes :filamat-includes :matc-includes)
+                                     :math-includes :filamat-includes :matc-includes
+                                     :backend-includes :filabridge-includes)
                           (:instantiate #'instantiate-some)
                           (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                                     ((:and :aarch64 :android) "aarch64-linux-android")

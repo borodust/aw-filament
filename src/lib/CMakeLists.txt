@@ -56,7 +56,34 @@ target_include_directories(${TARGET}
 target_link_libraries(${TARGET}
   PRIVATE filament)
 
+#
+# UI
+#
+option(BUILD_FILAMENT_GUI "Build ImGui helper library" ON)
 
+if(BUILD_FILAMENT_GUI)
+  set(UI_TARGET filament.ui.clawed)
+  set(UI_ADAPTER "adapter/ui/adapter.${TARGET_TRIPLE}.cxx")
+  set(IMGUI_ADAPTER "adapter/imgui/adapter.${TARGET_TRIPLE}.cxx")
+
+  add_library(${UI_TARGET} SHARED ${UI_ADAPTER} ${IMGUI_ADAPTER})
+
+  set_property(TARGET ${UI_TARGET} PROPERTY CXX_STANDARD 20)
+
+  target_include_directories(${UI_TARGET}
+    PRIVATE "${FILAMENT_DIR}/libs/filagui/include/"
+    PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/"
+    PRIVATE "${FILAMENT_DIR}/filament/include/"
+    PRIVATE "${FILAMENT_DIR}/filament/backend/include/"
+    PRIVATE "${FILAMENT_DIR}/libs/math/include/"
+    PRIVATE "${FILAMENT_DIR}/libs/filabridge/include/"
+    PRIVATE "${FILAMENT_DIR}/libs/utils/include/"
+    PRIVATE "${FILAMENT_DIR}/third-party/imgui/")
+
+  target_link_libraries(${UI_TARGET}
+    PRIVATE filament.clawed
+    PRIVATE filagui)
+endif()
 
 #
 # UTIL

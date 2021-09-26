@@ -38,4 +38,5 @@ jobs:
         with:
           files: |
             src/lib/build/desktop/libfilament.clawed.so
+            src/lib/build/desktop/libfilament.ui.clawed.so
             src/lib/build/desktop/libfilament.util.clawed.so

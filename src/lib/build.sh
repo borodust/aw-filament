@@ -4,7 +4,7 @@ WORK_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 FILAMENT_DIR=$WORK_DIR/filament/
 
 FILAMENT_SKIP_SAMPLES=ON
-RELEASE_MODE="Release"
+RELEASE_MODE="MinSizeRel"
 
 REST_ARGS=
 while [[ $# -gt 0 ]]
