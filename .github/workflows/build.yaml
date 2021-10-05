@@ -4,7 +4,7 @@ on:
     tags:
       - "v*.*.*"
 jobs:
-  Build:
+  build-linux:
     runs-on: ubuntu-18.04
     steps:
       - name: Check Out Everything
@@ -40,3 +40,24 @@ jobs:
             src/lib/build/desktop/libfilament.clawed.so
             src/lib/build/desktop/libfilament.ui.clawed.so
             src/lib/build/desktop/libfilament.util.clawed.so
+  build-windows:
+    runs-on: windows-2019
+    steps:
+      - name: Check Out Everything
+        id: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Build Binaries
+        run: |
+          cd ${{ github.workspace }}/src/lib/
+          ./build.ps1
+      - name: Publish Binaries
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            src/lib/build/desktop/filament.clawed.dll
+            src/lib/build/desktop/filament.ui.clawed.dll
+            src/lib/build/desktop/filament.util.clawed.dll
