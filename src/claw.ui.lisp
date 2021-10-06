@@ -1,33 +1,5 @@
 (cl:in-package :filament)
 
-(claw.wrapper:defwrapper (:aw-filament-ui
-                          (:system :aw-filament/wrapper)
-                          (:headers "filagui/ImGuiHelper.h")
-                          (:includes :filagui-includes :filament-includes
-                                     :util-includes :math-includes
-                                     :backend-includes :filabridge-includes)
-                          (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
-                                    ((:and :aarch64 :android) "aarch64-linux-android")
-                                    ((:and :x86-64 :windows) "x86_64-pc-windows-gnu"))
-                          (:persistent t
-                           :bindings-path "bindings/ui/"
-                           :depends-on (:claw-utils))
-                          (:language :c++)
-                          (:standard :c++17)
-                          (:include-definitions "^filagui::ImGuiHelper" "^utils::Path")
-                          (:exclude-definitions "^std::basic_string" "__"))
-  :in-package :%filament.ui
-  :trim-enum-prefix t
-  :recognize-bitfields t
-  :recognize-strings t
-  :ignore-entities (filament::ignore-uninstantiable)
-  :with-adapter (:static
-                 :path "src/lib/adapter/ui/adapter.cxx")
-  :override-types ((:string claw-utils:claw-string)
-                   (:pointer claw-utils:claw-pointer))
-  :symbolicate-names (:by-removing-prefixes "filagui::" "FILAGUI_"))
-
-
 (claw.wrapper:defwrapper (:aw-filament-imgui
                           (:system :aw-filament/wrapper)
                           (:headers "imgui.h"
@@ -38,7 +10,7 @@
                           (:includes :imgui-includes)
                           (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                                     ((:and :aarch64 :android) "aarch64-linux-android")
-                                    ((:and :x86-64 :windows) "x86_64-pc-windows-gnu"))
+                                    ((:and :x86-64 :windows) "x86_64-w64-mingw32"))
                           (:persistent t
                            :bindings-path "bindings/imgui/"
                            :depends-on (:claw-utils))

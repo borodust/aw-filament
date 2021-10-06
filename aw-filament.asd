@@ -22,8 +22,7 @@
   :author "Pavel Korolev"
   :mailto "dev@borodust.org"
   :license "MIT"
-  :depends-on (:aw-filament-ui-bindings
-               :aw-filament-imgui-bindings
+  :depends-on (:aw-filament-imgui-bindings
                :aw-filament-tools-bindings))
 
 

@@ -59,5 +59,4 @@ jobs:
         with:
           files: |
             src/lib/build/desktop/filament.clawed.dll
-            src/lib/build/desktop/filament.ui.clawed.dll
             src/lib/build/desktop/filament.util.clawed.dll

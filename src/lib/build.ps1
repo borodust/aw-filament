@@ -30,14 +30,14 @@ pushd $BuildDir
 $PythonExecutable = Get-Command python3 | Select-Object -ExpandProperty Definition
 
 cmake -G "Visual Studio 16 2019" -A x64 -Thost=x64 `
+  -DCMAKE_BUILD_TYPE="$BuildType" `
   -DFILAMENT_SKIP_SAMPLES=ON `
   -DPYTHON_EXECUTABLE="$PythonExecutable" `
   "$WorkDir"
 
-cmake --build "$BuildDir" --config $BuildType --parallel $BuildThreadCount
+cmake --build "$BuildDir" --config "$BuildType" --parallel $BuildThreadCount
 
 cp $BuildDir/$BuildType/filament.clawed.dll $BuildDir/
-cp $BuildDir/$BuildType/filament.ui.clawed.dll $BuildDir/
 cp $BuildDir/$BuildType/filament.util.clawed.dll $BuildDir/
 
 popd
