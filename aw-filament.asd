@@ -13,7 +13,7 @@
   :author "Pavel Korolev"
   :mailto "dev@borodust.org"
   :license "MIT"
-  :depends-on (:aw-filament-runtime-bindings))
+  :depends-on (:aw-filament-runtime-bindings :aw-filament-extra-bindings))
 
 
 (asdf:defsystem :aw-filament/tools
@@ -38,6 +38,8 @@
                (:file "src/claw.runtime")
                (:file "src/claw.tools")
                (:file "src/claw.ui")
+               (:file "src/claw.extra")
+               (:module :aw-filament-includes :pathname "src/lib/adapter/pixel-format/")
                (:module :lib-includes :pathname "src/lib/")
                (:module :filament-includes :pathname "src/lib/filament/filament/include/")
                (:module :backend-includes :pathname "src/lib/filament/filament/backend/include/")

@@ -38,20 +38,27 @@ add_subdirectory(${FILAMENT_DIR})
 set(TARGET filament.clawed)
 set(ADAPTER "adapter/runtime/adapter.${TARGET_TRIPLE}.cxx")
 set(IMGUI_ADAPTER "adapter/imgui/adapter.${TARGET_TRIPLE}.cxx")
+if (WIN32)
+  set(PIXEL_FORMAT_ADAPTER "adapter/pixel-format/pixel_format_win.c")
+else()
+  set(PIXEL_FORMAT_ADAPTER "adapter/pixel-format/pixel_format.c")
+endif()
 
-add_library(${TARGET} SHARED ${ADAPTER} ${IMGUI_ADAPTER})
+add_library(${TARGET} SHARED ${ADAPTER} ${IMGUI_ADAPTER} ${PIXEL_FORMAT_ADAPTER})
 set_source_files_properties(${ADAPTER} PROPERTIES LANGUAGE CXX)
 
 set_property(TARGET ${TARGET} PROPERTY CXX_STANDARD 17)
 
 target_include_directories(${TARGET}
   PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/"
+  PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/adapter/pixel-format/"
   PRIVATE "${FILAMENT_DIR}/filament/include/"
   PRIVATE "${FILAMENT_DIR}/libs/filamat/include/"
   PRIVATE "${FILAMENT_DIR}/filament/backend/include/"
   PRIVATE "${FILAMENT_DIR}/libs/utils/include/"
   PRIVATE "${FILAMENT_DIR}/libs/math/include/"
   PRIVATE "${FILAMENT_DIR}/libs/filabridge/include/"
+  PRIVATE "${FILAMENT_DIR}/libs/bluegl/include/"
   PRIVATE "${FILAMENT_DIR}/tools/matc/src/"
   # UI
   PRIVATE "${FILAMENT_DIR}/libs/filagui/include/"
