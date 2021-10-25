@@ -113,6 +113,42 @@ public:
         delete mOutput;
     };
 
+    void setDebug(bool mDebug) {
+        InMemoryConfig::mDebug = mDebug;
+    }
+
+    bool isPrintShaders() const {
+        return mPrintShaders;
+    }
+
+    void setPrintShaders(bool printShaders) {
+        mPrintShaders = printShaders;
+    }
+
+    void setRawShaderMode(bool rawShaderMode) {
+        mRawShaderMode = rawShaderMode;
+    }
+
+    void setReflectionTarget(Metadata reflectionTarget) {
+        mReflectionTarget = reflectionTarget;
+    }
+
+    void setPlatform(Platform platform) {
+        mPlatform = platform;
+    }
+
+    void setOutputFormat(OutputFormat outputFormat) {
+        mOutputFormat = outputFormat;
+    }
+
+    void setTargetApi(TargetApi targetApi) {
+        mTargetApi = targetApi;
+    }
+
+    void setVariantFilter(uint8_t variantFilter) {
+        mVariantFilter = variantFilter;
+    }
+
     matc::Config::Output *getOutput() const noexcept override {
         return mOutput;
     }

@@ -20,6 +20,7 @@
                            :depends-on (:claw-utils))
                           (:language :c++)
                           (:include-definitions "^matc::MaterialCompiler"
+                                                "^matc::Config"
                                                 "^claw::filament::.*")
                           (:exclude-definitions "^std::"
                                                 "::includeCallback"
