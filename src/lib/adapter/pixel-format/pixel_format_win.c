@@ -48,7 +48,7 @@ int aw_filament_select_pixel_format(struct aw_filament_pixel_format *pf) {
     pf->accum_blue_bits = win_pf.cAccumBlueBits;
     pf->accum_alpha_bits = win_pf.cAccumAlphaBits;
 
-    pf->buffer_bits = win_pf.cColorBits;
+    pf->buffer_bits = win_pf.cColorBits + win_pf.cAlphaBits;
     pf->depth_bits = win_pf.cDepthBits;
     pf->stencil_bits = win_pf.cStencilBits;
 
