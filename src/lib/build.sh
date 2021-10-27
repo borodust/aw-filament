@@ -5,6 +5,7 @@ FILAMENT_DIR=$WORK_DIR/filament/
 
 FILAMENT_SKIP_SAMPLES=ON
 RELEASE_MODE="MinSizeRel"
+FILAMENT_IMPORT_EXECUTABLES_DIR="./"
 
 REST_ARGS=
 while [[ $# -gt 0 ]]
@@ -17,7 +18,14 @@ case $key in
         shift
         ;;
     --android-sdk)
+        RELEASE_MODE="Release"
+
         ANDROID_HOME="$2"
+        shift
+        shift
+        ;;
+    --import-executables-dir)
+        FILAMENT_IMPORT_EXECUTABLES_DIR="$2"
         shift
         shift
         ;;
@@ -70,13 +78,13 @@ function build_android {
           -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
           -DCLAW_ANDROID_BUILD=ON \
           -DBUILD_FILAMENT_UTILS=OFF \
+          -DFILAMENT_NDK_VERSION="22.1.7171670" \
           -DFILAMENT_SKIP_SAMPLES=ON \
           -DFILAMENT_BUILD_FILAMAT=OFF \
-          -DFILAMENT_ENABLE_JAVA=OFF \
-          -DIMPORT_EXECUTABLES_DIR="." \
+          -DIMPORT_EXECUTABLES_DIR="$FILAMENT_IMPORT_EXECUTABLES_DIR" \
           -DCMAKE_TOOLCHAIN_FILE="$FILAMENT_DIR/build/toolchain-${TOOLCHAIN_ARCH}-linux-android.cmake" \
           $WORK_DIR
-    cmake --build .
+    cmake --build . --config "$RELEASE_MODE"
 }
 
 function build_desktop {
@@ -89,7 +97,7 @@ function build_desktop {
           -DCMAKE_SHARED_LINKER_FLAGS="-stdlib=libc++ -lc++abi" \
           -DFILAMENT_SKIP_SAMPLES=${FILAMENT_SKIP_SAMPLES} \
           $WORK_DIR
-    cmake --build .
+    cmake --build . --config "$RELEASE_MODE"
 }
 
 
