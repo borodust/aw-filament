@@ -37,6 +37,10 @@ case $key in
         RELEASE_MODE="Debug"
         shift
         ;;
+    --release)
+        RELEASE_MODE="Release"
+        shift
+        ;;
     *)
         REST_ARGS+="$1"
         shift
