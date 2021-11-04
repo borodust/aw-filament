@@ -84,6 +84,7 @@ if(BUILD_FILAMENT_UTILS)
     PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/"
     PRIVATE "${FILAMENT_DIR}/filament/include/"
     PRIVATE "${FILAMENT_DIR}/libs/filamat/include/"
+    PRIVATE "${FILAMENT_DIR}/libs/filamat/src/"
     PRIVATE "${FILAMENT_DIR}/filament/backend/include/"
     PRIVATE "${FILAMENT_DIR}/libs/utils/include/"
     PRIVATE "${FILAMENT_DIR}/libs/math/include/"

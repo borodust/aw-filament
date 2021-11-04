@@ -94,7 +94,8 @@ jobs:
         id: vars
         run: >-
           export RELEASE_VERSION=${GITHUB_REF#refs/*/} &&
-          echo ::set-output name=runtime_binary::libfilament.clawed-android-aarch64-$RELEASE_VERSION.so
+          echo ::set-output name=runtime_binary::libfilament.clawed-android-aarch64-$RELEASE_VERSION.so &&
+          echo ::set-output name=util_binary::libfilament.util.clawed-android-aarch64-$RELEASE_VERSION.so
       - name: Install Required Packages
         run: sudo apt-get update && sudo apt-get install -y ninja-build libgl1-mesa-dev libgl1-mesa-glx libxi-dev libxxf86vm-dev
       - name: Install Required NDK version
@@ -124,7 +125,8 @@ jobs:
           android
       - name: Rename Binaries
         run: >-
-          mv src/lib/build/android/libfilament.clawed.so ${{ steps.vars.outputs.runtime_binary }}
+          mv src/lib/build/android/libfilament.clawed.so ${{ steps.vars.outputs.runtime_binary }} &&
+          mv src/lib/build/android/libfilament.util.clawed.so ${{ steps.vars.outputs.util_binary }}
       - name: Publish Binaries
         uses: softprops/action-gh-release@v1
         env:
@@ -132,3 +134,4 @@ jobs:
         with:
           files: |
             ${{ steps.vars.outputs.runtime_binary }}
+            ${{ steps.vars.outputs.util_binary }}

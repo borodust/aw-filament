@@ -81,10 +81,11 @@ function build_android {
           -DCMAKE_BUILD_TYPE=${RELEASE_MODE} \
           -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
           -DCLAW_ANDROID_BUILD=ON \
-          -DBUILD_FILAMENT_UTILS=OFF \
+          -DBUILD_FILAMENT_UTILS=ON \
           -DFILAMENT_NDK_VERSION="22.1.7171670" \
           -DFILAMENT_SKIP_SAMPLES=ON \
-          -DFILAMENT_BUILD_FILAMAT=OFF \
+          -DFILAMENT_BUILD_FILAMAT=ON \
+          -DFILAMENT_BUILD_MATC=ON \
           -DIMPORT_EXECUTABLES_DIR="$FILAMENT_IMPORT_EXECUTABLES_DIR" \
           -DCMAKE_TOOLCHAIN_FILE="$FILAMENT_DIR/build/toolchain-${TOOLCHAIN_ARCH}-linux-android.cmake" \
           $WORK_DIR
@@ -99,6 +100,8 @@ function build_desktop {
           -DCMAKE_C_COMPILER=clang \
           -DCMAKE_CXX_COMPILER=clang++ \
           -DCMAKE_SHARED_LINKER_FLAGS="-stdlib=libc++ -lc++abi" \
+          -DFILAMENT_BUILD_FILAMAT=ON \
+          -DFILAMENT_BUILD_MATC=ON \
           -DFILAMENT_SKIP_SAMPLES=${FILAMENT_SKIP_SAMPLES} \
           $WORK_DIR
     cmake --build . --config "$RELEASE_MODE"
