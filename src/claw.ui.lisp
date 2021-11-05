@@ -15,7 +15,7 @@
                            :bindings-path "bindings/imgui/"
                            :depends-on (:claw-utils))
                           (:language :c++)
-                          (:include-definitions "^ImGui" "^IMGUI_")
+                          (:include-definitions "^ImGui" "^IMGUI_" "^FLT_")
                           (:exclude-definitions "__"))
   :in-package :%filament.imgui
   :trim-enum-prefix t
