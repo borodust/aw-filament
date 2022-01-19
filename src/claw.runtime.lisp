@@ -51,6 +51,7 @@
                                         "::includeCallback"
                                         "::function<"
                                         "::T.*Operators<.*half.*>"
+                                        "::fp32"
                                         "fp.*::bits$"
                                         "::_"
                                         "^std::basic_string"
