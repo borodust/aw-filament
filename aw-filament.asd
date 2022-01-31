@@ -49,4 +49,5 @@
                (:module :filagui-includes :pathname "src/lib/filament/libs/filagui/include/")
                (:module :filamat-includes :pathname "src/lib/filament/libs/filamat/include/")
                (:module :matc-includes :pathname "src/lib/filament/tools/matc/src/")
-               (:module :imgui-includes :pathname "src/lib/filament/third_party/imgui/")))
+               (:module :imgui-includes :pathname "src/lib/filament/third_party/imgui/")
+               (:module :gltfio-includes :pathname "src/lib/filament/libs/gltfio/include/")))

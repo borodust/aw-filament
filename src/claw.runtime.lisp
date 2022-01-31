@@ -27,11 +27,15 @@
                             "utils/EntityManager.h"
 
                             "math/mathfwd.h"
+                            ;; UI
+                            "filagui/ImGuiHelper.h"
 
-                            "filagui/ImGuiHelper.h")
+                            ;; GLTF
+                            "gltfio/AssetLoader.h")
                   (:includes :filament-includes :backend-includes
                              :util-includes :math-includes
-                             :filabridge-includes :filagui-includes)
+                             :filabridge-includes :filagui-includes
+                             :gltfio-includes)
                   (:instantiate #'instantiate-some)
                   (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                             ((:and :aarch64 :android) "aarch64-linux-android")
@@ -46,7 +50,9 @@
                                         "^FILAMENT_"
 
                                         "^filagui::ImGuiHelper"
-                                        "^utils::Path")
+                                        "^utils::Path"
+
+                                        "^gltfio::.*")
                   (:exclude-definitions "^utils::bitset.*"
                                         "::includeCallback"
                                         "::function<"
