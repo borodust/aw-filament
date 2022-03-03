@@ -7,7 +7,8 @@
                            "matc/Config.h"
 
                            ;; memory io for matc
-                           "ClawMemIo.h")
+                           "ClawMemIo.h"
+                           "ClawUtil.h")
                           (:includes :lib-includes :util-includes
                                      :math-includes :filamat-includes :matc-includes
                                      :backend-includes :filabridge-includes)
@@ -21,7 +22,7 @@
                           (:language :c++)
                           (:include-definitions "^matc::MaterialCompiler"
                                                 "^matc::Config"
-                                                "^claw::filament::.*")
+                                                "^aw::filament::.*")
                           (:exclude-definitions "^std::"
                                                 "::includeCallback"
                                                 "::function<"))

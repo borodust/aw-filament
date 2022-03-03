@@ -1,12 +1,12 @@
-#ifndef _CLAW_IN_MEMORY_IO_
-#define _CLAW_IN_MEMORY_IO_
+#ifndef _AW_IN_MEMORY_IO_
+#define _AW_IN_MEMORY_IO_
 
 #include <sstream>
 
 #include "matc/Config.h"
 
 
-namespace claw {
+namespace aw {
 namespace filament {
 
 class MaterialData {
