@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 project(filament.clawed)
 
+
 if (MSVC)
     set(TARGET_TRIPLE x86_64-w64-mingw32)
     set(CMAKE_MSVC_RUNTIME_LIBRARY MultiThreaded)
@@ -9,6 +10,7 @@ else ()
     add_compile_options(-O2)
     if (CLAW_ANDROID_BUILD OR ANDROID_ABI)
         set(TARGET_TRIPLE aarch64-linux-android)
+        set(CLAW_ANDROID_BUILD ON)
     else ()
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
         set(TARGET_TRIPLE x86_64-pc-linux-gnu)
@@ -64,11 +66,16 @@ target_include_directories(${TARGET}
         PRIVATE "${FILAMENT_DIR}/libs/filagui/include/"
         PRIVATE "${FILAMENT_DIR}/third-party/imgui/")
 
-
-target_link_libraries(${TARGET}
-        PRIVATE filament
-        PRIVATE filagui
-        PRIVATE gltfio)
+if (CLAW_ANDROID_BUILD)
+    target_link_libraries(${TARGET}
+            PRIVATE filament
+            PRIVATE filagui)
+else ()
+    target_link_libraries(${TARGET}
+            PRIVATE filament
+            PRIVATE filagui
+            PRIVATE gltfio)
+endif ()
 
 #
 # UTIL

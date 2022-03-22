@@ -99,7 +99,7 @@ jobs:
       - name: Install Required Packages
         run: sudo apt-get update && sudo apt-get install -y ninja-build libgl1-mesa-dev libgl1-mesa-glx libxi-dev libxxf86vm-dev
       - name: Install Required NDK version
-        run: sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;22.1.7171670"
+        run: sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;23.1.7779620"
       - name: Cache LLVM and Clang
         id: cache-llvm
         uses: actions/cache@v2
