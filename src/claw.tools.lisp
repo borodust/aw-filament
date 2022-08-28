@@ -7,11 +7,19 @@
                            "matc/Config.h"
 
                            ;; memory io for matc
-                           "ClawMemIo.h"
-                           "ClawUtil.h")
+                           "AwMemIo.h"
+                           "AwToolUtils.h"
+
+                           ;; Image
+                           "image/LinearImage.h"
+                           "imageio/BasisEncoder.h"
+                           "imageio/ImageDecoder.h"
+                           "imageio/ImageEncoder.h")
                           (:includes :lib-includes :util-includes
-                                     :math-includes :filamat-includes :matc-includes
-                                     :backend-includes :filabridge-includes)
+                                     :math-includes :filamat-includes
+                                     :matc-includes :backend-includes
+                                     :filabridge-includes :tool-utils-includes
+                                     :imageio-includes :image-includes)
                           (:instantiate #'instantiate-some)
                           (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                                     ((:and :aarch64 :android) "aarch64-linux-android")
@@ -22,7 +30,8 @@
                           (:language :c++)
                           (:include-definitions "^matc::MaterialCompiler"
                                                 "^matc::Config"
-                                                "^aw::filament::.*")
+                                                "^image::"
+                                                "^aw::filament::tools")
                           (:exclude-definitions "^std::"
                                                 "::includeCallback"
                                                 "::function<"))

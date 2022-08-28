@@ -5,9 +5,7 @@
 
 #include "matc/Config.h"
 
-
-namespace aw {
-namespace filament {
+namespace aw::filament::tools::memio {
 
 class MaterialData {
 public:
@@ -167,7 +165,6 @@ private:
 };
 
 
-}
 }
 
 #endif

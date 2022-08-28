@@ -81,7 +81,7 @@ function build_android {
           -DCMAKE_BUILD_TYPE=${RELEASE_MODE} \
           -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
           -DCLAW_ANDROID_BUILD=ON \
-          -DBUILD_FILAMENT_UTILS=ON \
+          -DBUILD_FILAMENT_UTILS=OFF \
           -DFILAMENT_NDK_VERSION="23.1.7779620" \
           -DFILAMENT_SKIP_SAMPLES=ON \
           -DFILAMENT_BUILD_FILAMAT=ON \
@@ -100,6 +100,7 @@ function build_desktop {
           -DCMAKE_C_COMPILER=clang \
           -DCMAKE_CXX_COMPILER=clang++ \
           -DCMAKE_SHARED_LINKER_FLAGS="-stdlib=libc++ -lc++abi" \
+          -DUSE_STATIC_LIBCXX=OFF \
           -DFILAMENT_BUILD_FILAMAT=ON \
           -DFILAMENT_BUILD_MATC=ON \
           -DFILAMENT_SKIP_SAMPLES=${FILAMENT_SKIP_SAMPLES} \

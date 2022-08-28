@@ -1,3 +1,4 @@
-# claw-filament
+# aw-filament
 
-Work in progress playground for `:claw` `C++` generator.
+Thin Common Lisp bindings to [`Filament`](https://github.com/google/filament)
+rendering engine.

@@ -125,8 +125,7 @@ jobs:
           android
       - name: Rename Binaries
         run: >-
-          mv src/lib/build/android/libfilament.clawed.so ${{ steps.vars.outputs.runtime_binary }} &&
-          mv src/lib/build/android/libfilament.util.clawed.so ${{ steps.vars.outputs.util_binary }}
+          mv src/lib/build/android/libfilament.clawed.so ${{ steps.vars.outputs.runtime_binary }}
       - name: Publish Binaries
         uses: softprops/action-gh-release@v1
         env:
@@ -134,4 +133,3 @@ jobs:
         with:
           files: |
             ${{ steps.vars.outputs.runtime_binary }}
-            ${{ steps.vars.outputs.util_binary }}

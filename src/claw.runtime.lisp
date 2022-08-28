@@ -35,11 +35,18 @@
                             "gltfio/AssetLoader.h"
                             "gltfio/MaterialProvider.h"
                             "gltfio/ResourceLoader.h"
-                            "gltfio/Animator.h")
+                            "gltfio/Animator.h"
+
+                            ;; Image
+                            "ktxreader/Ktx2Reader.h"
+
+                            ;; Utils
+                            "AwRuntimeUtils.h")
                   (:includes :filament-includes :backend-includes
                              :util-includes :math-includes
                              :filabridge-includes :filagui-includes
-                             :gltfio-includes)
+                             :gltfio-includes :ktxreader-includes
+                             :runtime-utils-includes)
                   (:instantiate #'instantiate-some)
                   (:targets ((:and :x86-64 :linux) "x86_64-pc-linux-gnu")
                             ((:and :aarch64 :android) "aarch64-linux-android")
@@ -49,15 +56,21 @@
                    :depends-on (:claw-utils))
                   (:language :c++)
                   (:standard "c++17")
-                  (:include-definitions "^filament::.*"
-                                        "^utils::Entity.*"
+                  (:include-definitions "^filament::"
+                                        "^utils::Entity"
                                         "^FILAMENT_"
 
                                         "^filagui::ImGuiHelper"
                                         "^utils::Path"
 
-                                        "^gltfio::.*")
+                                        "^gltfio::"
+
+                                        "^ktxreader::"
+
+                                        "^aw::filament::runtime::util")
                   (:exclude-definitions "^utils::bitset.*"
+                                        "::StringLiteral"
+                                        "AssetLoader::getNodeManager"
                                         "::includeCallback"
                                         "::function<"
                                         "::T.*Operators<.*half.*>"
