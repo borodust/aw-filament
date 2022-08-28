@@ -58,6 +58,7 @@
 
                                         "^gltfio::.*")
                   (:exclude-definitions "^utils::bitset.*"
+                                        "::StringLiteral"
                                         "::includeCallback"
                                         "::function<"
                                         "::T.*Operators<.*half.*>"

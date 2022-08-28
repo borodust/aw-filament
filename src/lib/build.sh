@@ -100,6 +100,7 @@ function build_desktop {
           -DCMAKE_C_COMPILER=clang \
           -DCMAKE_CXX_COMPILER=clang++ \
           -DCMAKE_SHARED_LINKER_FLAGS="-stdlib=libc++ -lc++abi" \
+          -DUSE_STATIC_LIBCXX=OFF \
           -DFILAMENT_BUILD_FILAMAT=ON \
           -DFILAMENT_BUILD_MATC=ON \
           -DFILAMENT_SKIP_SAMPLES=${FILAMENT_SKIP_SAMPLES} \
