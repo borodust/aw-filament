@@ -2,7 +2,11 @@
 
 (claw.wrapper:defwrapper (:aw-filament-tools
                           (:system :aw-filament/wrapper)
-                          (:headers ;; material compiler
+                          (:headers
+                           ;; material compiler needs this to be available
+                           ;; for adapter compilation
+                           "private/filament/BufferInterfaceBlock.h"
+                           ;; material compiler
                            "matc/MaterialCompiler.h"
                            "matc/Config.h"
 
