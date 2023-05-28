@@ -33,7 +33,7 @@ jobs:
           directory: ${{ env.LLVM_INSTALL_PREFIX }}
           cached: ${{ steps.cache-llvm.outputs.cache-hit }}
       - name: Install Required Packages
-        run: sudo apt-get update && sudo apt-get install -y ninja-build libgl1-mesa-dev libgl1-mesa-glx libxi-dev
+        run: sudo apt-get update && sudo apt-get install -y ninja-build libgl1-mesa-dev libgl1-mesa-glx libxi-dev libxxf86vm-dev
       - name: Build Filament
         run: |
           cd ${{ github.workspace }}/src/lib/ && ./build.sh desktop
